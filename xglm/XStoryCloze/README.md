@@ -12,7 +12,7 @@ Please request the original English StoryCloze dataset through the [official cha
 head -361 spring2016.val.tsv > spring2016.val.en.tsv.split_20_80_train.tsv
 
 head -1 spring2016.val.tsv > spring2016.val.en.tsv.split_20_80_eval.tsv
-tail -1510 spring2016.val.tsv >> spring2016.val.en.tsv.split_20_80_eval.tsv
+tail -1511 spring2016.val.tsv >> spring2016.val.en.tsv.split_20_80_eval.tsv
 ```
 
 # Licence
