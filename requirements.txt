@@ -1,2 +1,6 @@
 transformers
 datasets
+sentencepiece
+torch
+tqdm
+pandas
