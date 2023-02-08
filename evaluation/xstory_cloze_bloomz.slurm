@@ -20,7 +20,8 @@ bloomz_model_names=(
     "bigscience/bloomz-1b7"
     "bigscience/bloomz-3b"
     "bigscience/bloomz-7b1"
-    "bigscience/bloomz"
+    "bigscience/bloomz-7b1-mt"
+    "bigscience/bloomz-7b1-p3"
 )
 
 # run xstory_cloze.py for each model

@@ -11,7 +11,7 @@
 
 # activate virtual environment
 source ../venv/bin/activate
-export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
+# export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # bloom model names
 bloom_model_names=(
@@ -20,7 +20,6 @@ bloom_model_names=(
     "bigscience/bloom-1b7"
     "bigscience/bloom-3b"
     "bigscience/bloom-7b1"
-    "bigscience/bloom"
 )
 
 # run xstory_cloze.py for each model
