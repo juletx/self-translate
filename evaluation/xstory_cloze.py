@@ -6,33 +6,9 @@ from tqdm import tqdm
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import load_dataset
+from argparse import ArgumentParser
 
 langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
-
-mgpt_model_names = ["sberbank-ai/mGPT"]
-xglm_model_names = [
-    "facebook/xglm-564M",
-    "facebook/xglm-1.7B",
-    "facebook/xglm-2.9B",
-    "facebook/xglm-4.5B",
-    "facebook/xglm-7.5B",
-]
-bloom_model_names = [
-    "bigscience/bloom-560m",
-    "bigscience/bloom-1b1",
-    "bigscience/bloom-1b7",
-    "bigscience/bloom-3b",
-    "bigscience/bloom-7b1",
-    "bigscience/bloom",
-]
-bloomz_model_names = [
-    "bigscience/bloomz-560m",
-    "bigscience/bloomz-1b1",
-    "bigscience/bloomz-1b7",
-    "bigscience/bloomz-3b",
-    "bigscience/bloomz-7b1",
-    "bigscience/bloomz",
-]
 
 
 def load_model(model_name: str) -> "tuple[AutoTokenizer, AutoModelForCausalLM]":
@@ -181,7 +157,7 @@ def get_perplexity(results_xstory_df):
     for lang in langs_xstory:
         correct = []
         incorrect = []
-        for idx, row in results_xstory_df.iterrows():
+        for _, row in results_xstory_df.iterrows():
             if row["label"] == 1:
                 correct.append(row[lang + "_ppl1"])
                 incorrect.append(row[lang + "_ppl2"])
@@ -215,13 +191,23 @@ def compute_metrics(model_name):
     )
 
     metrics_df.to_csv(
-        f"../results/xstory_cloze_{model_name}_metrics.tsv", sep="\t", index_label="lang"
+        f"../results/xstory_cloze_{model_name}_metrics.tsv",
+        sep="\t",
+        index_label="lang",
     )
 
 
 def main():
     """Main function."""
-    model_name = "sberbank-ai/mGPT"
+    parser = ArgumentParser("Evaluate a model on the xStoryCloze dataset")
+    parser.add_argument(
+        "model_name",
+        type=str,
+        help="Huggingface model name (e.g. 'bert-base-uncased') or path to a local model (e.g. 'models/bert-base-uncased/",
+    )
+    args = parser.parse_args()
+
+    model_name = args.model_name
     name = model_name.split("/")[-1]
     tokenizer, model = load_model(model_name)
     xstory_cloze = get_dataset()
