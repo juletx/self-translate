@@ -5,3 +5,4 @@ torch
 tqdm
 pandas
 protobuf
+matplotlib

@@ -53,8 +53,9 @@ def get_logprobs(prompt, tokenizer, model):
     inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
     input_ids, output_ids = inputs["input_ids"], inputs["input_ids"][:, 1:]
     outputs = model(**inputs, labels=input_ids)
-    logits = outputs.logits
-    logprobs = torch.gather(F.log_softmax(logits, dim=2), 2, output_ids.unsqueeze(2))
+    logprobs = torch.gather(F.log_softmax(outputs.logits, dim=2), 2, output_ids.unsqueeze(2))
+    del inputs, outputs
+    torch.cuda.empty_cache()
     return logprobs
 
 
@@ -82,10 +83,14 @@ def xstory_cloze_eval(example, tokenizer, model):
     prompt2 = input_sentences + " " + example["sentence_quiz2"]
     lprob1 = get_logprobs(prompt1, tokenizer, model).mean()
     lprob2 = get_logprobs(prompt2, tokenizer, model).mean()
-    ppl1 = torch.exp(-lprob1)
-    ppl2 = torch.exp(-lprob2)
-    pred = 1 if lprob1 > lprob2 else 2
-    return pred, lprob1, lprob2, ppl1, ppl2
+    ppl1 = torch.exp(-lprob1).item()
+    ppl2 = torch.exp(-lprob2).item()
+    lprob1i = lprob1.item()
+    lprob2i = lprob2.item()
+    pred = 1 if lprob1i > lprob2i else 2
+    del lprob1, lprob2
+    torch.cuda.empty_cache()
+    return pred, lprob1i, lprob2i, ppl1, ppl2
 
 
 def compute_results(xstory_cloze, tokenizer, model, model_name):
@@ -103,15 +108,15 @@ def compute_results(xstory_cloze, tokenizer, model, model_name):
     }
     for lang in langs_xstory:
         predictions, lprobs1, lprobs2, ppls1, ppls2 = [], [], [], [], []
-        for _, example in tqdm(enumerate(xstory_cloze[lang]["eval"]), total=size):
+        for _, example in tqdm(enumerate(xstory_cloze[lang]["eval"]), total=size, desc=f"Evaluating {model_name} on {lang}"):
             pred, lprob1, lprob2, ppl1, ppl2 = xstory_cloze_eval(
                 example, tokenizer, model
             )
             predictions.append(pred)
-            lprobs1.append(round(lprob1.item(), 2))
-            lprobs2.append(round(lprob2.item(), 2))
-            ppls1.append(round(ppl1.item(), 2))
-            ppls2.append(round(ppl2.item(), 2))
+            lprobs1.append(round(lprob1, 2))
+            lprobs2.append(round(lprob2, 2))
+            ppls1.append(round(ppl1, 2))
+            ppls2.append(round(ppl2, 2))
         results_xstory[lang] = predictions
         results_xstory[lang + "_lprob1"] = lprobs1
         results_xstory[lang + "_lprob2"] = lprobs2
@@ -203,7 +208,7 @@ def main():
     parser.add_argument(
         "model_name",
         type=str,
-        help="Huggingface model name (e.g. 'bert-base-uncased') or path to a local model (e.g. 'models/bert-base-uncased/",
+        help="Huggingface model name or path to a local model",
     )
     args = parser.parse_args()
 
