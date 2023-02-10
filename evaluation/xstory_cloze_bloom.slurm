@@ -22,8 +22,11 @@ bloom_model_names=(
     "bigscience/bloom-7b1"
 )
 
+# dataset name
+dataset_name="juletxara/xstory_cloze_mt_nllb-3B"
+
 # run xstory_cloze.py for each model
 for model_name in "${bloom_model_names[@]}"
 do
-    srun python3 xstory_cloze.py $model_name
+    srun python3 xstory_cloze.py $model_name $dataset_name
 done

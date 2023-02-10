@@ -12,7 +12,7 @@ import math
 langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
 
-def load_model(model_name: str) -> "tuple[AutoTokenizer, AutoModelForCausalLM]":
+def load_model(model_name):
     """Load a model and tokenizer.
 
     Args:
@@ -28,15 +28,18 @@ def load_model(model_name: str) -> "tuple[AutoTokenizer, AutoModelForCausalLM]":
     return tokenizer, model
 
 
-def get_dataset():
+def get_dataset(dataset_name):
     """Load the xStoryCloze dataset.
+
+    Args:
+        dataset_name (string): dataset name
 
     Returns:
         xstory_cloze: dataset
     """
     xstory_cloze = {}
     for lang in langs_xstory:
-        xstory_cloze[lang] = load_dataset("juletxara/xstory_cloze", lang)
+        xstory_cloze[lang] = load_dataset(dataset_name, lang)
     return xstory_cloze
 
 
@@ -94,13 +97,15 @@ def xstory_cloze_eval(example, tokenizer, model):
     return pred, lprob1i, lprob2i, ppl1, ppl2
 
 
-def compute_results(xstory_cloze, tokenizer, model, model_name):
+def compute_results(xstory_cloze, tokenizer, model, model_name, dataset_name):
     """Evaluate a model on the xStoryCloze dataset and save results.
 
     Args:
         xstory_cloze (dataset): dataset
         tokenizer (tokenizer): tokenizer
         model (model): model
+        model_name (string): model name
+        dataset_name (string): dataset name
     """
     size = len(xstory_cloze["en"]["eval"])
     results_xstory = {
@@ -124,8 +129,9 @@ def compute_results(xstory_cloze, tokenizer, model, model_name):
         results_xstory[lang + "_ppl1"] = ppls1
         results_xstory[lang + "_ppl2"] = ppls2
 
+    dname = dataset_name.split("/")[-1]
     pd.DataFrame(results_xstory).to_csv(
-        f"../results/xstory_cloze_{model_name}.tsv", sep="\t", index=False
+        f"../results/{dname}_{model_name}.tsv", sep="\t", index=False
     )
 
 
@@ -181,10 +187,15 @@ def get_perplexity(results_xstory_df):
     return perplexity_correct, perplexity_incorrect
 
 
-def compute_metrics(model_name):
-    """Compute metrics and save them."""
+def compute_metrics(model_name, dataset_name):
+    """Compute metrics and save them.
+    Args:
+        model_name (string): model name
+        dataset_name (string): dataset name 
+    """
+    dname = dataset_name.split("/")[-1]
     results_xstory_df = pd.read_csv(
-        f"../results/xstory_cloze_{model_name}.tsv", delimiter="\t"
+        f"../results/{dname}_{model_name}.tsv", delimiter="\t"
     )
     accuracy = get_accuracy(results_xstory_df)
     perplexity_correct, perplexity_incorrect = get_perplexity(results_xstory_df)
@@ -197,7 +208,7 @@ def compute_metrics(model_name):
     )
 
     metrics_df.to_csv(
-        f"../results/xstory_cloze_{model_name}_metrics.tsv",
+        f"../results/{dname}_{model_name}_metrics.tsv",
         sep="\t",
         index_label="lang",
     )
@@ -211,14 +222,20 @@ def main():
         type=str,
         help="Huggingface model name or path to a local model",
     )
+    parser.add_argument(
+        "dataset_name",
+        type=str,
+        help="Name of the dataset to use",
+    )
     args = parser.parse_args()
 
     model_name = args.model_name
     name = model_name.split("/")[-1]
     tokenizer, model = load_model(model_name)
-    xstory_cloze = get_dataset()
-    compute_results(xstory_cloze, tokenizer, model, name)
-    compute_metrics(name)
+    dataset_name = args.dataset_name
+    xstory_cloze = get_dataset(dataset_name)
+    compute_results(xstory_cloze, tokenizer, model, name, dataset_name)
+    compute_metrics(name, dataset_name)
 
 
 if __name__ == "__main__":
