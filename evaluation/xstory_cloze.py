@@ -7,6 +7,7 @@ import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import load_dataset
 from argparse import ArgumentParser
+import math
 
 langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
@@ -164,13 +165,13 @@ def get_perplexity(results_xstory_df):
         incorrect = []
         for _, row in results_xstory_df.iterrows():
             if row["label"] == 1:
-                correct.append(row[lang + "_ppl1"])
-                incorrect.append(row[lang + "_ppl2"])
+                correct.append(-row[lang + "_lprob1"])
+                incorrect.append(-row[lang + "_lprob2"])
             else:
-                correct.append(row[lang + "_ppl2"])
-                incorrect.append(row[lang + "_ppl1"])
-        perplexity_correct[lang] = round(sum(correct) / len(correct), 2)
-        perplexity_incorrect[lang] = round(sum(incorrect) / len(incorrect), 2)
+                correct.append(-row[lang + "_lprob2"])
+                incorrect.append(-row[lang + "_lprob1"])
+        perplexity_correct[lang] = round(math.exp(sum(correct) / len(correct)), 2)
+        perplexity_incorrect[lang] = round(math.exp(sum(incorrect) / len(incorrect)), 2)
     perplexity_correct["avg"] = round(
         sum(perplexity_correct.values()) / len(perplexity_correct), 2
     )
