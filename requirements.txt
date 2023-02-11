@@ -6,3 +6,4 @@ tqdm
 pandas
 protobuf
 matplotlib
+fairseq

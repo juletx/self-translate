@@ -1,13 +1,13 @@
 """Evaluate a model on the xStoryCloze dataset.
 """
+from argparse import ArgumentParser
+import math
 import torch
 import torch.nn.functional as F
 from tqdm import tqdm
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import load_dataset
-from argparse import ArgumentParser
-import math
 
 langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
@@ -57,7 +57,9 @@ def get_logprobs(prompt, tokenizer, model):
     inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
     input_ids, output_ids = inputs["input_ids"], inputs["input_ids"][:, 1:]
     outputs = model(**inputs, labels=input_ids)
-    logprobs = torch.gather(F.log_softmax(outputs.logits, dim=2), 2, output_ids.unsqueeze(2))
+    logprobs = torch.gather(
+        F.log_softmax(outputs.logits, dim=2), 2, output_ids.unsqueeze(2)
+    )
     del inputs, outputs
     torch.cuda.empty_cache()
     return logprobs
@@ -114,7 +116,11 @@ def compute_results(xstory_cloze, tokenizer, model, model_name, dataset_name):
     }
     for lang in langs_xstory:
         predictions, lprobs1, lprobs2, ppls1, ppls2 = [], [], [], [], []
-        for _, example in tqdm(enumerate(xstory_cloze[lang]["eval"]), total=size, desc=f"Evaluating {model_name} on {lang}"):
+        for _, example in tqdm(
+            enumerate(xstory_cloze[lang]["eval"]),
+            total=size,
+            desc=f"Evaluating {model_name} on {lang}",
+        ):
             pred, lprob1, lprob2, ppl1, ppl2 = xstory_cloze_eval(
                 example, tokenizer, model
             )
@@ -191,7 +197,7 @@ def compute_metrics(model_name, dataset_name):
     """Compute metrics and save them.
     Args:
         model_name (string): model name
-        dataset_name (string): dataset name 
+        dataset_name (string): dataset name
     """
     dname = dataset_name.split("/")[-1]
     results_xstory_df = pd.read_csv(
