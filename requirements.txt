@@ -7,3 +7,6 @@ pandas
 protobuf
 matplotlib
 fairseq
+evaluate
+scikit-learn
+wandb
