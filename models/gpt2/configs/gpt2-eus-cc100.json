@@ -32,10 +32,11 @@
   "warmup_steps": 3000,
   "seed": 42,
   "run_name": "gpt2-eus-cc100",
-  "metric_for_best_model": "perplexity",
-  "greater_is_better": false,
+  "metric_for_best_model": "eval_loss",
+  "greater_is_better": true,
   "optim": "adamw_torch",
   "report_to": "wandb",
+  "ddp_find_unused_parameters": false,
   "push_to_hub": true,
   "hub_model_id": "HiTZ/gpt2-eus-cc100",
   "torch_compile": false

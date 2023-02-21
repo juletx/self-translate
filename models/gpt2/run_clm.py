@@ -562,6 +562,12 @@ def main():
             data_args.max_train_samples if data_args.max_train_samples is not None else len(train_dataset)
         )
         metrics["train_samples"] = min(max_train_samples, len(train_dataset))
+        try:
+            perplexity = math.exp(metrics["loss"])
+        except OverflowError:
+            perplexity = float("inf")
+        metrics["perplexity"] = perplexity
+        logger.info(metrics["perplexity"])
 
         trainer.log_metrics("train", metrics)
         trainer.save_metrics("train", metrics)
@@ -579,7 +585,8 @@ def main():
             perplexity = math.exp(metrics["eval_loss"])
         except OverflowError:
             perplexity = float("inf")
-        metrics["perplexity"] = perplexity
+        metrics["eval_perplexity"] = perplexity
+        logger.info(metrics["eval_perplexity"])
 
         trainer.log_metrics("eval", metrics)
         trainer.save_metrics("eval", metrics)
