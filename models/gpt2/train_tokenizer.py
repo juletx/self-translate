@@ -11,20 +11,31 @@ def get_dataset(dataset_name):
     Returns:
         dataset: dataset
     """
-    raw_datasets = {}
     if dataset_name == "HiTZ/euscrawl":
-        raw_datasets["validation"] = load_dataset(dataset_name, split="train[:0.1%]")
-        raw_datasets["train"] = load_dataset(dataset_name, split="train[0.1%:]")
-    elif dataset_name == "cc100":
-        raw_datasets["validation"] = load_dataset(
-            dataset_name, lang="eu", split="train[:0.1%]"
-        )
-        raw_datasets["train"] = load_dataset(
-            dataset_name, lang="eu", split="train[0.1%:]"
-        )
+        dataset = load_dataset(dataset_name)
+    elif dataset_name == "mc4":
+        dataset = load_dataset(dataset_name, "eu")
     else:
-        raw_datasets = load_dataset(dataset_name, "eu")
-    return raw_datasets
+        dataset = load_dataset(dataset_name, lang="eu")
+    if "validation" not in dataset.keys():
+        dataset = split_dataset(dataset)
+    return dataset
+
+
+def split_dataset(dataset):
+    """Split a dataset.
+    Args:
+        dataset (dict): dataset
+    Returns:
+        dataset_split: split dataset
+    """
+    # euscrawl and cc100 by default only contain the 'train' split, so create a test split
+    dataset_split = dataset["train"].train_test_split(
+        test_size=0.001, seed=42, shuffle=True
+    )
+    # rename the test split to validation
+    dataset_split["validation"] = dataset_split.pop("test")
+    return dataset_split
 
 
 def get_training_corpus(raw_datasets, dataset_name):
