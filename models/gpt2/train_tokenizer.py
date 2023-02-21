@@ -11,31 +11,20 @@ def get_dataset(dataset_name):
     Returns:
         dataset: dataset
     """
+    raw_datasets = {}
     if dataset_name == "HiTZ/euscrawl":
-        dataset = load_dataset(dataset_name)
-    elif dataset_name == "mc4":
-        dataset = load_dataset(dataset_name, "eu")
+        raw_datasets["validation"] = load_dataset(dataset_name, split="train[:0.1%]")
+        raw_datasets["train"] = load_dataset(dataset_name, split="train[0.1%:]")
+    elif dataset_name == "cc100":
+        raw_datasets["validation"] = load_dataset(
+            dataset_name, lang="eu", split="train[:0.1%]"
+        )
+        raw_datasets["train"] = load_dataset(
+            dataset_name, lang="eu", split="train[0.1%:]"
+        )
     else:
-        dataset = load_dataset(dataset_name, lang="eu")
-    # if dataset_name in ["HiTZ/euscrawl", "cc100"]:
-    # dataset = split_dataset(dataset)
-    return dataset
-
-
-def split_dataset(dataset):
-    """Split a dataset.
-    Args:
-        dataset (dict): dataset
-    Returns:
-        dataset_split: split dataset
-    """
-    # euscrawl by default only contains the 'train' split, so create a test split
-    dataset_split = dataset["train"].train_test_split(
-        test_size=0.0005, seed=2357, shuffle=True
-    )
-    # rename the test split to validation
-    dataset_split["validation"] = dataset_split.pop("test")
-    return dataset_split
+        raw_datasets = load_dataset(dataset_name, "eu")
+    return raw_datasets
 
 
 def get_training_corpus(raw_datasets, dataset_name):
@@ -64,9 +53,7 @@ def train_tokenizer(training_corpus, model_name, tokenizer_name):
     old_tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # train tokenizer
-    tokenizer = old_tokenizer.train_new_from_iterator(
-        training_corpus, vocab_size=50304
-    )
+    tokenizer = old_tokenizer.train_new_from_iterator(training_corpus, vocab_size=50304)
 
     # save tokenizer
     tokenizer.save_pretrained(f"out/{tokenizer_name}")
