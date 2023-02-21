@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=run_clm_gpt2-eus-euscrawl
-#SBATCH --cpus-per-task=3
+#SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
-#SBATCH --gres=gpu:3
+#SBATCH --gres=gpu:1
 #SBATCH --output=.slurm/run_clm_gpt2-eus-euscrawl.out
 #SBATCH --error=.slurm/run_clm_gpt2-eus-euscrawl.err
 
@@ -22,5 +22,5 @@ configs=(
 )
 
 for config in "${configs[@]}"; do
-    srun torchrun --standalone --nproc_per_node=3 run_clm.py $config
+    srun torchrun --standalone --nproc_per_node=1 run_clm.py $config
 done
