@@ -287,7 +287,7 @@ def main():
         """
         # euscrawl and cc100 by default only contain the 'train' split, so create a test split
         dataset_split = dataset["train"].train_test_split(
-            test_size=data_args.validation_split_percentage / 100, seed=42, shuffle=True
+            test_size=data_args.validation_split_percentage / 100, seed=training_args.seed, shuffle=True
         )
         # rename the test split to validation
         dataset_split["validation"] = dataset_split.pop("test")
@@ -295,12 +295,20 @@ def main():
 
     if data_args.dataset_name is not None:
         # Downloading and loading a dataset from the hub.
-        raw_datasets = load_dataset(
-            data_args.dataset_name,
-            data_args.dataset_config_name,
-            cache_dir=model_args.cache_dir,
-            use_auth_token=True if model_args.use_auth_token else None,
-        )
+        if data_args.dataset_config_name != "lang='eu'":
+            raw_datasets = load_dataset(
+                data_args.dataset_name,
+                data_args.dataset_config_name,
+                cache_dir=model_args.cache_dir,
+                use_auth_token=True if model_args.use_auth_token else None,
+            )
+        else:
+            raw_datasets = load_dataset(
+                data_args.dataset_name,
+                lang = "eu",
+                cache_dir=model_args.cache_dir,
+                use_auth_token=True if model_args.use_auth_token else None,
+            )
         # If no validation data is there, validation_split_percentage will be used to divide the dataset.
         if "validation" not in raw_datasets.keys():
             raw_datasets = split_dataset(raw_datasets)
@@ -509,7 +517,14 @@ def main():
                 logits = logits[0]
             return logits.argmax(dim=-1)
 
-        metric = evaluate.load("accuracy")
+        # Define perplexity metric function
+        def compute_perplexity(preds, labels):
+            preds = preds.log_softmax(dim=-1)
+            mask = (labels != tokenizer.pad_token_id)
+            num_tokens = mask.sum().item()
+            cross_entropy = -preds.masked_select(mask).sum()
+            perplexity = torch.exp(cross_entropy / num_tokens)
+            return perplexity
 
         def compute_metrics(eval_preds):
             preds, labels = eval_preds
@@ -517,7 +532,8 @@ def main():
             # by preprocess_logits_for_metrics but we need to shift the labels
             labels = labels[:, 1:].reshape(-1)
             preds = preds[:, :-1].reshape(-1)
-            return metric.compute(predictions=preds, references=labels)
+            perplexity = compute_perplexity(preds, labels)
+            return {"perplexity": perplexity}
 
     # Initialize our Trainer
     trainer = Trainer(
