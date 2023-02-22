@@ -33,7 +33,7 @@
   "seed": 42,
   "run_name": "gpt2-medium-eus-cc100",
   "metric_for_best_model": "eval_loss",
-  "greater_is_better": true,
+  "greater_is_better": false,
   "optim": "adamw_torch",
   "report_to": "wandb",
   "ddp_find_unused_parameters": false,
