@@ -38,7 +38,7 @@
   "report_to": "wandb",
   "ddp_find_unused_parameters": false,
   "push_to_hub": true,
-  "resume_from_checkpoint": true,
+  "resume_from_checkpoint": false,
   "hub_model_id": "HiTZ/gpt2-xl-eus-euscrawl",
   "torch_compile": false
 }
