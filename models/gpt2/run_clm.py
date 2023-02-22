@@ -517,14 +517,7 @@ def main():
                 logits = logits[0]
             return logits.argmax(dim=-1)
 
-        # Define perplexity metric function
-        def compute_perplexity(preds, labels):
-            preds = preds.log_softmax(dim=-1)
-            mask = (labels != tokenizer.pad_token_id)
-            num_tokens = mask.sum().item()
-            cross_entropy = -preds.masked_select(mask).sum()
-            perplexity = torch.exp(cross_entropy / num_tokens)
-            return perplexity
+        metric = evaluate.load("accuracy")
 
         def compute_metrics(eval_preds):
             preds, labels = eval_preds
@@ -532,8 +525,7 @@ def main():
             # by preprocess_logits_for_metrics but we need to shift the labels
             labels = labels[:, 1:].reshape(-1)
             preds = preds[:, :-1].reshape(-1)
-            perplexity = compute_perplexity(preds, labels)
-            return {"perplexity": perplexity}
+            return metric.compute(predictions=preds, references=labels)
 
     # Initialize our Trainer
     trainer = Trainer(
