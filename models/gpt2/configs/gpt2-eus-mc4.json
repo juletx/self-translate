@@ -17,9 +17,9 @@
   "do_train": true,
   "do_eval": true,
   "evaluation_strategy": "steps",
-  "per_device_train_batch_size": 24,
-  "per_device_eval_batch_size": 24,
-  "gradient_accumulation_steps": 5,
+  "per_device_train_batch_size": 30,
+  "per_device_eval_batch_size": 30,
+  "gradient_accumulation_steps": 4,
   "learning_rate": 6e-4,
   "weight_decay": 0.1,
   "adam_beta1": 0.9,
@@ -45,5 +45,5 @@
   "resume_from_checkpoint": false,
   "hub_model_id": "HiTZ/gpt2-eus-mc4",
   "hub_private_repo": true,
-  "torch_compile": false
+  "torch_compile": true
 }
