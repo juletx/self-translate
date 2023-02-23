@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=train_tokenizer
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=4
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=1-00:00:00
@@ -16,8 +16,8 @@ model_name="gpt2"
 
 # dataset name
 dataset_names=(
-    #"HiTZ/euscrawl"
-    #"mc4"
+    "HiTZ/euscrawl"
+    "mc4"
     "cc100"
 )
 

@@ -5,9 +5,9 @@
     "n_embd": 768,
     "n_head": 12,
     "n_layer": 12,
-    "resid_pdrop": 0.1,
-    "embd_pdrop": 0.1,
-    "attn_pdrop": 0.1
+    "resid_pdrop": 0.2,
+    "embd_pdrop": 0.2,
+    "attn_pdrop": 0.2
   },
   "tokenizer_name": "HiTZ/gpt2-eus-mc4",
   "dataset_name": "mc4",
@@ -28,9 +28,14 @@
   "max_grad_norm": 1.0,
   "max_steps": 600000,
   "lr_scheduler_type": "cosine",
-  "warmup_steps": 3000,
+  "warmup_steps": 2000,
+  "logging_steps": 10,
+  "save_steps": 500,
   "seed": 42,
+  "bf16": true,
+  "eval_steps": 500,
   "run_name": "gpt2-eus-mc4",
+  "load_best_model_at_end": true,
   "metric_for_best_model": "eval_loss",
   "greater_is_better": false,
   "optim": "adamw_torch",
@@ -39,5 +44,6 @@
   "push_to_hub": true,
   "resume_from_checkpoint": false,
   "hub_model_id": "HiTZ/gpt2-eus-mc4",
+  "hub_private_repo": true,
   "torch_compile": false
 }
