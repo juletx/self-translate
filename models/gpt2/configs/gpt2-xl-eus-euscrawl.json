@@ -35,6 +35,7 @@
   "seed": 42,
   "bf16": true,
   "eval_steps": 500,
+  "save_total_limit": 4,
   "run_name": "gpt2-xl-eus-euscrawl",
   "load_best_model_at_end": true,
   "metric_for_best_model": "eval_loss",
