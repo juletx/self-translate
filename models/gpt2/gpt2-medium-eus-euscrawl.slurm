@@ -22,4 +22,4 @@ export WANDB_PROJECT=gpt2-eus
 export WANDB_RESUME=auto
 
 # pre-train model on 4 GPUs
-srun torchrun --nproc_per_node=4 run_clm.py configs/gpt2-medium-eus-euscrawl.yaml
+srun torchrun --standalone --nproc_per_node=4 run_clm.py configs/gpt2-medium-eus-euscrawl.yaml

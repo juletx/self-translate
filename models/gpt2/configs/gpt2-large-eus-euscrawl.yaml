@@ -35,6 +35,7 @@ eval_steps: 500
 per_device_train_batch_size: 30
 per_device_eval_batch_size: 30
 gradient_accumulation_steps: 4
+auto_find_batch_size: true
 
 # optimizer settings
 optim: adamw_torch

@@ -31,10 +31,11 @@ evaluation_strategy: steps
 logging_steps: 10
 eval_steps: 500
 
-# batch size: 30 batch size * 1024 block size * 4 gradaccum * 4 GPUs = 491,520
-per_device_train_batch_size: 30
-per_device_eval_batch_size: 30
-gradient_accumulation_steps: 4
+# batch size: 15 batch size * 1024 block size * 8 gradaccum * 4 GPUs = 491,520
+per_device_train_batch_size: 15
+per_device_eval_batch_size: 15
+gradient_accumulation_steps: 8
+auto_find_batch_size: true
 
 # optimizer settings
 optim: adamw_torch
