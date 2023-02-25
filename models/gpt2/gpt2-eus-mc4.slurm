@@ -18,5 +18,8 @@ source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
 # report to wandb
 export WANDB_PROJECT=gpt2-eus
 
+# resume an existing run in cases of failure
+export WANDB_RESUME=auto
+
 # pre-train model on 4 GPUs
-srun torchrun --nproc_per_node=4 run_clm.py configs/gpt2-eus-mc4.json
+srun torchrun --nproc_per_node=4 run_clm.py configs/gpt2-eus-mc4.yaml
