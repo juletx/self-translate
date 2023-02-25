@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=gpt2-eus-euscrawl
+#SBATCH --job-name=gpt2-medium-eus-euscrawl
 #SBATCH --cpus-per-task=16
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:4
-#SBATCH --output=.slurm/gpt2-eus-euscrawl.out
-#SBATCH --error=.slurm/gpt2-eus-euscrawl.err
+#SBATCH --output=.slurm/gpt2-medium-eus-euscrawl.out
+#SBATCH --error=.slurm/gpt2-medium-eus-euscrawl.err
 
 # activate virtual environment
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
