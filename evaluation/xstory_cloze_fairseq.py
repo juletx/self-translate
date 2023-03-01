@@ -25,7 +25,7 @@ def load_model(model_name):
         model = TransformerLanguageModel.from_pretrained(
             model_name,
             checkpoint_file="checkpoint.pt",
-            bpe="bytes",
+            bpe="fastbpe",
             bpe_codes=f"{model_name}/codes",
             dictionary=f"{model_name}/dict.txt",
         )

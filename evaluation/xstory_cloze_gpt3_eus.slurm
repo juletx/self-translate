@@ -20,16 +20,10 @@ gpt3_eus_model_names=(
 )
 
 # dataset name
-dataset_names=(
-    "juletxara/xstory_cloze"
-    #"juletxara/xstory_cloze_mt_nllb-3B"
-)
+dataset_name="juletxara/xstory_cloze"
 
 # run xstory_cloze_fairseq.py for each model and dataset
-for dataset_name in "${dataset_names[@]}"
+for model_name in "${gpt3_eus_model_names[@]}"
 do
-    for model_name in "${gpt3_eus_model_names[@]}"
-    do
-        srun python3 xstory_cloze_fairseq.py $model_name $dataset_name
-    done
+    srun python3 xstory_cloze_fairseq.py $model_name $dataset_name
 done
