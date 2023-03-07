@@ -54,7 +54,7 @@ def get_logprobs(prompt, tokenizer, model):
     Returns:
         logprobs: log probabilities
     """
-    inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
+    inputs = tokenizer(prompt, return_tensors="pt", truncation=True).to("cuda")
     input_ids, output_ids = inputs["input_ids"], inputs["input_ids"][:, 1:]
     outputs = model(**inputs, labels=input_ids)
     logprobs = torch.gather(

@@ -14,16 +14,21 @@ source ../venv/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # gpt3_eus model names
-gpt3_eus_model_names=(
-    #"/gscratch4/users/aormazabal024/GPT3_EUS/to_share/spm_model"
+model_names=(
+    "/gscratch4/users/aormazabal024/GPT3_EUS/to_share/spm_model"
     "/gscratch4/users/aormazabal024/GPT3_EUS/to_share/bpe_model"
 )
 
 # dataset name
-dataset_name="juletxara/xstory_cloze"
+dataset_names=(
+    "juletxara/xstory_cloze"
+)
 
-# run xstory_cloze_fairseq.py for each model and dataset
-for model_name in "${gpt3_eus_model_names[@]}"
+# run xstory_cloze.py for each dataset and model
+for dataset_name in "${dataset_names[@]}"
 do
-    srun python3 xstory_cloze_fairseq.py $model_name $dataset_name
+    for model_name in "${model_names[@]}"
+    do
+        srun python3 xstory_cloze.py $model_name $dataset_name
+    done
 done

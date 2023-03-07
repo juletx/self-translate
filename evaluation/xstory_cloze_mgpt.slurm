@@ -14,15 +14,21 @@ source ../venv/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # mgpt model names
-mgpt_model_names=(
+model_names=(
     "sberbank-ai/mGPT"
 )
 
 # dataset name
-dataset_name="juletxara/xstory_cloze_mt_nllb-3B"
+dataset_names=(
+    "juletxara/xstory_cloze"
+    "juletxara/xstory_cloze_mt_nllb-3B"
+)
 
-# run xstory_cloze.py for each model
-for model_name in "${mgpt_model_names[@]}"
+# run xstory_cloze.py for each dataset and model
+for dataset_name in "${dataset_names[@]}"
 do
-    srun python3 xstory_cloze.py $model_name $dataset_name
+    for model_name in "${model_names[@]}"
+    do
+        srun python3 xstory_cloze.py $model_name $dataset_name
+    done
 done
