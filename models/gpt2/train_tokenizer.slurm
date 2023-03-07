@@ -3,7 +3,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=1-00:00:00
+#SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --output=.slurm/train_tokenizer.out
 #SBATCH --error=.slurm/train_tokenizer.err
