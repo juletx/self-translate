@@ -11,7 +11,7 @@
 
 # activate virtual environment
 source ../venv/bin/activate
-export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
+# export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # bloom model names
 bloom_model_names=(

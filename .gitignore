@@ -5,3 +5,4 @@ venv2
 .slurm
 out
 wandb
+xstory_cloze_mt
