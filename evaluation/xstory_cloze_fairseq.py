@@ -9,7 +9,7 @@ from fairseq.models.transformer_lm import TransformerLanguageModel
 from datasets import load_dataset
 
 
-langs_xstory = ["eu"]
+langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
 
 def load_model(model_name):
@@ -28,6 +28,8 @@ def load_model(model_name):
             bpe="fastbpe",
             bpe_codes=f"{model_name}/codes",
             dictionary=f"{model_name}/dict.txt",
+            truncate_source=True,
+            truncate_target=True,
         )
     else:
         model = TransformerLanguageModel.from_pretrained(
@@ -37,6 +39,8 @@ def load_model(model_name):
             sentencepiece_model=f"{model_name}/spm.model",
             sentencepiece_vocab=f"{model_name}/spm.vocab",
             dictionary=f"{model_name}/dict.txt",
+            truncate_source=True,
+            truncate_target=True,
         )
     model.eval()
     model.cuda()
