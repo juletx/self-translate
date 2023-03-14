@@ -38,7 +38,7 @@ def get_references():
 def get_predictions(model, lang):
     filepath = f"../datasets/xstory_cloze_mt/{model}"
     filename = f"{filepath}/spring2016.val.{lang}.tsv.split_20_80_eval.tsv"
-    xstory_cloze_lang = pd.read_csv(filename, sep="\t")
+    xstory_cloze_lang = pd.read_csv(filename, sep="\t", na_filter=False)
     predictions = []
     for index, example in xstory_cloze_lang.iterrows():
         predictions.extend(
@@ -61,13 +61,23 @@ def main():
         "nllb-200-distilled-1.3B",
         "nllb-200-1.3B",
         "nllb-200-3.3B",
+        "xglm-564M",
+        "xglm-1.7B",
+        "xglm-2.9B",
+        "xglm-4.5B",
+        #"xglm-7.5B",
+        "bloom-560m",
+        "bloom-1b1",
+        "bloom-1b7",
+        "bloom-3b",
+        "bloom-7b1",
         "bloomz-560m",
         "bloomz-1b1",
         "bloomz-1b7",
         "bloomz-3b",
         "bloomz-7b1",
         "bloomz-7b1-mt",
-        #"bloomz-7b1-p3",
+        "bloomz-7b1-p3",
     ]
     results = {
         "model": [],
@@ -75,10 +85,11 @@ def main():
         "chrf": [],
         "bleu": [],
     }
-    for model in tqdm(model_names):
+    for model in model_names:
         avg_chrf = 0
         avg_bleu = 0
         for lang in langs_xstory:
+            print("Evaluating", model, lang)
             predictions = get_predictions(model, lang)
             chrf_results, bleu_results = calculate_metrics(predictions, references)
             results["model"].append(model)
