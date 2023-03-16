@@ -11,6 +11,14 @@ sacrebleu = evaluate.load("sacrebleu")
 
 
 def calculate_metrics(predictions, references):
+    """Calculate metrics for a given dataset
+    Args:
+        predictions (list): list of predictions
+        references (list): list of references
+    Returns:
+        chrf_results (dict): chrf results
+        bleu_results (dict): bleu results
+    """
     chrf_results = chrf.compute(
         predictions=predictions, references=references, word_order=2
     )
@@ -19,6 +27,10 @@ def calculate_metrics(predictions, references):
 
 
 def get_references():
+    """Get references for a given dataset
+    Returns:
+        references (list): list of references
+    """
     xstory_cloze_en = load_dataset("juletxara/xstory_cloze", "en", split="eval")
     references = []
     for example in xstory_cloze_en:
@@ -35,8 +47,16 @@ def get_references():
     return references
 
 
-def get_predictions(model, lang):
-    filepath = f"../datasets/xstory_cloze_mt/{model}"
+def get_predictions(model, lang, folder):
+    """Get predictions for a given dataset
+    Args:
+        model (str): model name
+        lang (str): language
+        folder (str): folder name
+    Returns:
+        predictions (list): list of predictions
+    """
+    filepath = f"../datasets/{folder}/{model}"
     filename = f"{filepath}/spring2016.val.{lang}.tsv.split_20_80_eval.tsv"
     xstory_cloze_lang = pd.read_csv(filename, sep="\t", na_filter=False)
     predictions = []
@@ -55,8 +75,10 @@ def get_predictions(model, lang):
 
 
 def main():
+    """Main function"""
     references = get_references()
-    model_names = [
+    model_names = {}
+    model_names["xstory_cloze_mt"] = [
         "nllb-200-distilled-600M",
         "nllb-200-distilled-1.3B",
         "nllb-200-1.3B",
@@ -65,7 +87,7 @@ def main():
         "xglm-1.7B",
         "xglm-2.9B",
         "xglm-4.5B",
-        #"xglm-7.5B",
+        "xglm-7.5B",
         "bloom-560m",
         "bloom-1b1",
         "bloom-1b7",
@@ -79,31 +101,38 @@ def main():
         "bloomz-7b1-mt",
         "bloomz-7b1-p3",
     ]
-    results = {
-        "model": [],
-        "lang": [],
-        "chrf": [],
-        "bleu": [],
-    }
-    for model in model_names:
-        avg_chrf = 0
-        avg_bleu = 0
-        for lang in langs_xstory:
-            print("Evaluating", model, lang)
-            predictions = get_predictions(model, lang)
-            chrf_results, bleu_results = calculate_metrics(predictions, references)
+    # model_names["xstory_cloze_mt_few_shot"] = model_names["xstory_cloze_mt"][4:]
+    model_names["xstory_cloze_mt_few_shot"] = [
+        "bloom-560m",
+        "bloomz-560m",
+        "bloomz-1b1",
+    ]
+    for folder in ["xstory_cloze_mt_few_shot"]:
+        results = {
+            "model": [],
+            "lang": [],
+            "chrf": [],
+            "bleu": [],
+        }
+        for model in model_names[folder]:
+            avg_chrf = 0
+            avg_bleu = 0
+            for lang in langs_xstory:
+                print("Evaluating", folder, model, lang)
+                predictions = get_predictions(model, lang, folder)
+                chrf_results, bleu_results = calculate_metrics(predictions, references)
+                results["model"].append(model)
+                results["lang"].append(lang)
+                results["chrf"].append(round(chrf_results["score"], 2))
+                results["bleu"].append(round(bleu_results["score"], 2))
+                avg_chrf += chrf_results["score"]
+                avg_bleu += bleu_results["score"]
             results["model"].append(model)
-            results["lang"].append(lang)
-            results["chrf"].append(round(chrf_results["score"], 2))
-            results["bleu"].append(round(bleu_results["score"], 2))
-            avg_chrf += chrf_results["score"]
-            avg_bleu += bleu_results["score"]
-        results["model"].append(model)
-        results["lang"].append("avg")
-        results["chrf"].append(round(avg_chrf / len(langs_xstory), 2))
-        results["bleu"].append(round(avg_bleu / len(langs_xstory), 2))
-    results_df = pd.DataFrame(results)
-    results_df.to_csv("translation_metrics.tsv", index=False, sep="\t")
+            results["lang"].append("avg")
+            results["chrf"].append(round(avg_chrf / len(langs_xstory), 2))
+            results["bleu"].append(round(avg_bleu / len(langs_xstory), 2))
+        results_df = pd.DataFrame(results)
+        results_df.to_csv(f"translation_metrics_{folder}.tsv", index=False, sep="\t")
 
 
 if __name__ == "__main__":

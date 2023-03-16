@@ -6,3 +6,4 @@ venv2
 out
 wandb
 xstory_cloze_mt
+xstory_cloze_mt_few_shot

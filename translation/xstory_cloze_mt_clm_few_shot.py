@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from datasets import load_dataset
 
-langs_xstory = ["ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
+langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
 lang_names = [
     "Russian",
@@ -65,17 +65,17 @@ def translate_example(example, tokenizer, model, prompt):
         translated_example: translated example
     """
     sentences = [
-        f"""{prompt} {example["input_sentence_1"]}\nEnglish:""",
-        f"""{prompt} {example["input_sentence_2"]}\nEnglish:""",
-        f"""{prompt} {example["input_sentence_3"]}\nEnglish:""",
-        f"""{prompt} {example["input_sentence_4"]}\nEnglish:""",
-        f"""{prompt} {example["sentence_quiz1"]}\nEnglish:""",
-        f"""{prompt} {example["sentence_quiz2"]}\nEnglish:""",
+        f'{prompt} {example["input_sentence_1"]}\nEnglish:',
+        f'{prompt} {example["input_sentence_2"]}\nEnglish:',
+        f'{prompt} {example["input_sentence_3"]}\nEnglish:',
+        f'{prompt} {example["input_sentence_4"]}\nEnglish:',
+        f'{prompt} {example["sentence_quiz1"]}\nEnglish:',
+        f'{prompt} {example["sentence_quiz2"]}\nEnglish:',
     ]
     inputs = tokenizer(sentences, return_tensors="pt", padding=True).to("cuda")
     translated_tokens = model.generate(
         **inputs,
-        max_length=50,
+        max_new_tokens=50,
     )
     translated_sentences = tokenizer.batch_decode(
         translated_tokens, skip_special_tokens=True
@@ -83,12 +83,12 @@ def translate_example(example, tokenizer, model, prompt):
     # remove prompt from generation results
     translated_example = {
         "story_id": example["story_id"],
-        "input_sentence_1": translated_sentences[0][len(sentences[0]) :],
-        "input_sentence_2": translated_sentences[1][len(sentences[1]) :],
-        "input_sentence_3": translated_sentences[2][len(sentences[2]) :],
-        "input_sentence_4": translated_sentences[3][len(sentences[3]) :],
-        "sentence_quiz1": translated_sentences[4][len(sentences[4]) :],
-        "sentence_quiz2": translated_sentences[5][len(sentences[5]) :],
+        "input_sentence_1": translated_sentences[0][len(sentences[0]) :].split("\n")[0],
+        "input_sentence_2": translated_sentences[1][len(sentences[1]) :].split("\n")[0],
+        "input_sentence_3": translated_sentences[2][len(sentences[2]) :].split("\n")[0],
+        "input_sentence_4": translated_sentences[3][len(sentences[3]) :].split("\n")[0],
+        "sentence_quiz1": translated_sentences[4][len(sentences[4]) :].split("\n")[0],
+        "sentence_quiz2": translated_sentences[5][len(sentences[5]) :].split("\n")[0],
         "answer_right_ending": example["answer_right_ending"],
     }
     del inputs, translated_sentences
@@ -105,7 +105,7 @@ def save_file(translated_examples, lang, split, name):
         split (string): train or eval
         name (string): model name
     """
-    dirname = f"../datasets/xstory_cloze_mt/{name}"
+    dirname = f"../datasets/xstory_cloze_mt_few_shot/{name}"
     filename = f"{dirname}/spring2016.val.{lang}.tsv.split_20_80_{split}.tsv"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(
@@ -142,9 +142,9 @@ def get_prompt_few_shot(xstory_cloze, lang, lang_name, shots):
     """
     prompt = ""
     for i in range(shots):
-        prompt += f"""{lang_name}: {xstory_cloze[lang]["train"][i]["input_sentence_1"]}\n"""
-        prompt += f"""English: {xstory_cloze["en"]["train"][i]["input_sentence_1"]}\n"""
-    prompt += f"""{lang_name}: """
+        prompt += f'{lang_name}: {xstory_cloze[lang]["train"][i]["input_sentence_1"]}\n'
+        prompt += f'English: {xstory_cloze["en"]["train"][i]["input_sentence_1"]}\n'
+    prompt += f'{lang_name}:'
     return prompt
 
 
@@ -157,7 +157,7 @@ def translate_dataset(xstory_cloze, tokenizer, model, model_name):
         model_name (string): model name
     """
     name = model_name.split("/")[-1]
-    for i, lang in enumerate(langs_xstory):
+    for i, lang in enumerate(langs_xstory[1:]):
         prompt = get_prompt_few_shot(xstory_cloze, lang, lang_names[i], 4)
         translated_examples = []
         for example in tqdm(

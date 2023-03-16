@@ -87,6 +87,17 @@ xglm-4.5B	sw	13.52	1.35
 xglm-4.5B	eu	11.27	0.13
 xglm-4.5B	my	7.15	0.29
 xglm-4.5B	avg	12.29	1.59
+xglm-7.5B	ru	13.92	2.25
+xglm-7.5B	zh	14.02	2.45
+xglm-7.5B	es	16.53	2.76
+xglm-7.5B	ar	16.37	3.87
+xglm-7.5B	hi	15.97	3.74
+xglm-7.5B	id	13.92	1.58
+xglm-7.5B	te	13.45	2.15
+xglm-7.5B	sw	14.71	2.71
+xglm-7.5B	eu	18.03	4.29
+xglm-7.5B	my	12.55	2.18
+xglm-7.5B	avg	14.95	2.8
 bloom-560m	ru	10.16	0.09
 bloom-560m	zh	9.58	0.28
 bloom-560m	es	11.97	0.23
