@@ -42,6 +42,7 @@ ipykernel==6.21.1
 ipython==8.9.0
 isort==5.12.0
 jedi==0.18.2
+Jinja2==3.1.2
 joblib==1.2.0
 jupyter_client==8.0.2
 jupyter_core==5.2.0
@@ -49,6 +50,7 @@ kiwisolver==1.4.4
 lazy-object-proxy==1.9.0
 lit==16.0.0rc3
 lxml==4.9.2
+MarkupSafe==2.1.2
 matplotlib==3.6.3
 matplotlib-inline==0.1.6
 mccabe==0.7.0
@@ -85,7 +87,6 @@ Pygments==2.14.0
 pylint==2.16.1
 pyparsing==3.0.9
 python-dateutil==2.8.2
-pytorch-triton==2.0.0+c8bfe3f548
 pytz==2022.7.1
 PyYAML==6.0
 pyzmq==25.0.0
@@ -108,12 +109,13 @@ threadpoolctl==3.1.0
 tokenizers==0.13.2
 tomli==2.0.1
 tomlkit==0.11.6
-torch==2.0.0.dev20230220+cu117
+torch==2.0.0+cu117
+torchaudio==2.0.1+cu117
 tornado==6.2
 tqdm==4.64.1
 traitlets==5.9.0
 transformers==4.26.0
-triton==2.0.0a2
+triton==2.0.0
 typing_extensions==4.5.0
 urllib3==1.26.14
 wandb==0.13.10
