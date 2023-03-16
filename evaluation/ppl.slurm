@@ -10,7 +10,7 @@
 #SBATCH --error=.slurm/xstory_cloze_xglm_ppl.err
 
 # activate virtual environment
-source ../venv/bin/activate
+source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # xglm model names

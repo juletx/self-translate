@@ -10,7 +10,7 @@
 #SBATCH --error=.slurm/xstory_cloze_mt_nllb.err
 
 # activate virtual environment
-source ../venv/bin/activate
+source ../venv2/bin/activate
 
 # nllb model names
 nllb_model_names=(

@@ -10,7 +10,7 @@
 #SBATCH --error=.slurm/xstory_cloze_mt0.err
 
 # activate virtual environment
-source ../venv/bin/activate
+source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # mt0 model names
