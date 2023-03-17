@@ -61,16 +61,28 @@ def get_predictions(model, lang, folder):
     xstory_cloze_lang = pd.read_csv(filename, sep="\t", na_filter=False)
     predictions = []
     for index, example in xstory_cloze_lang.iterrows():
-        predictions.extend(
-            [
-                example["input_sentence_1"],
-                example["input_sentence_2"],
-                example["input_sentence_3"],
-                example["input_sentence_4"],
-                example["sentence_quiz1"],
-                example["sentence_quiz2"],
-            ]
-        )
+        if model.startswith("xglm"):
+            predictions.extend(
+                [
+                    example["input_sentence_1"].split(".")[0],
+                    example["input_sentence_2"].split(".")[0],
+                    example["input_sentence_3"].split(".")[0],
+                    example["input_sentence_4"].split(".")[0],
+                    example["sentence_quiz1"].split(".")[0],
+                    example["sentence_quiz2"].split(".")[0],
+                ]
+            )
+        else:
+            predictions.extend(
+                [
+                    example["input_sentence_1"],
+                    example["input_sentence_2"],
+                    example["input_sentence_3"],
+                    example["input_sentence_4"],
+                    example["sentence_quiz1"],
+                    example["sentence_quiz2"],
+                ]
+            )
     return predictions
 
 
@@ -103,9 +115,16 @@ def main():
     ]
     # model_names["xstory_cloze_mt_few_shot"] = model_names["xstory_cloze_mt"][4:]
     model_names["xstory_cloze_mt_few_shot"] = [
+        "xglm-564M",
+        "xglm-1.7B",
+        "xglm-2.9B",
         "bloom-560m",
+        "bloom-1b1",
+        "bloom-1b7",
         "bloomz-560m",
         "bloomz-1b1",
+        "bloomz-1b7",
+        "bloomz-3b",
     ]
     for folder in ["xstory_cloze_mt_few_shot"]:
         results = {
