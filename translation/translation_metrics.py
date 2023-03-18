@@ -118,13 +118,20 @@ def main():
         "xglm-564M",
         "xglm-1.7B",
         "xglm-2.9B",
+        "xglm-4.5B",
+        #"xglm-7.5B",
         "bloom-560m",
         "bloom-1b1",
         "bloom-1b7",
+        #"bloom-3b",
+        #"bloom-7b1",
         "bloomz-560m",
         "bloomz-1b1",
         "bloomz-1b7",
         "bloomz-3b",
+        "bloomz-7b1",
+        "bloomz-7b1-mt",
+        "bloomz-7b1-p3",
     ]
     for folder in ["xstory_cloze_mt_few_shot"]:
         results = {
