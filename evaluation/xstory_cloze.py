@@ -22,7 +22,9 @@ def load_model(model_name):
         tokenizer, model: tokenizer and model
     """
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name, load_in_8bit=True, device_map="auto", torch_dtype=torch.float16
+    )
     model.eval()
     model.cuda()
     return tokenizer, model

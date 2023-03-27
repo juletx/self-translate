@@ -10,15 +10,15 @@
 #SBATCH --error=.slurm/xstory_cloze_llama.err
 
 # activate virtual environment
-source ../venv2/bin/activate
+source ../../alpaca-lora-mt/venv/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # llama model names
 model_names=(
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/hugginface/llama-7b/"
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/hugginface/llama-13b/"
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/hugginface/llama-30b/"
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/hugginface/llama-65b/"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
 )
 
 # dataset name
