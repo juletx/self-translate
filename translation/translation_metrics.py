@@ -31,17 +31,19 @@ def get_references():
     Returns:
         references (list): list of references
     """
-    xstory_cloze_en = load_dataset("juletxara/xstory_cloze", "en", split="eval")
+    filepath = "../datasets/xstory_cloze/"
+    filename = f"{filepath}/spring2016.val.en.tsv.split_20_80_eval.tsv"
+    xstory_cloze_en = pd.read_csv(filename, sep="\t", na_filter=False)
     references = []
-    for example in xstory_cloze_en:
+    for _, example in xstory_cloze_en.iterrows():
         references.extend(
             [
-                [example["input_sentence_1"]],
-                [example["input_sentence_2"]],
-                [example["input_sentence_3"]],
-                [example["input_sentence_4"]],
-                [example["sentence_quiz1"]],
-                [example["sentence_quiz2"]],
+                [example["InputSentence1"]],
+                [example["InputSentence2"]],
+                [example["InputSentence3"]],
+                [example["InputSentence4"]],
+                [example["RandomFifthSentenceQuiz1"]],
+                [example["RandomFifthSentenceQuiz2"]],
             ]
         )
     return references
@@ -60,7 +62,7 @@ def get_predictions(model, lang, folder):
     filename = f"{filepath}/spring2016.val.{lang}.tsv.split_20_80_eval.tsv"
     xstory_cloze_lang = pd.read_csv(filename, sep="\t", na_filter=False)
     predictions = []
-    for index, example in xstory_cloze_lang.iterrows():
+    for _, example in xstory_cloze_lang.iterrows():
         if model.startswith("xglm"):
             predictions.extend(
                 [
@@ -113,13 +115,18 @@ def main():
         "bloomz-7b1-mt",
         "bloomz-7b1-p3",
     ]
-    # model_names["xstory_cloze_mt_few_shot"] = model_names["xstory_cloze_mt"][4:]
     model_names["xstory_cloze_mt_few_shot"] = [
+        "opt-125m",
+        "opt-350m",
+        "opt-1.3b",
+        #"opt-2.7b",
+        #"opt-6.7b",
+        #"opt-13b",
         "xglm-564M",
         "xglm-1.7B",
         "xglm-2.9B",
         "xglm-4.5B",
-        #"xglm-7.5B",
+        "xglm-7.5B",
         "bloom-560m",
         "bloom-1b1",
         "bloom-1b7",

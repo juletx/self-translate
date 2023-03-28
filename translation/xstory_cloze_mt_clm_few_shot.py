@@ -34,6 +34,8 @@ def load_model(model_name):
         tokenizer, model: tokenizer and model
     """
     tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side="left")
+    if "LLaMA" in model_name:
+        tokenizer.pad_token = 0
     model = AutoModelForCausalLM.from_pretrained(model_name)
     model.eval()
     model.cuda()
