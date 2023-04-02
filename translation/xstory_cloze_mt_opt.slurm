@@ -15,12 +15,12 @@ export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # opt model names
 model_names=(
-    "facebook/opt-125m"
-    "facebook/opt-350m"
-    "facebook/opt-1.3b"
+    #"facebook/opt-125m"
+    #"facebook/opt-350m"
+    #"facebook/opt-1.3b"
     "facebook/opt-2.7b"
     "facebook/opt-6.7b"
-    "facebook/opt-13b"
+    #"facebook/opt-13b"
     #"facebook/opt-30b"
     #"facebook/opt-66b"
 )

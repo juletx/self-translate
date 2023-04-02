@@ -35,7 +35,7 @@ def load_model(model_name):
     """
     tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side="left")
     if "LLaMA" in model_name:
-        tokenizer.pad_token = 0
+        tokenizer.pad_token_id = 0
     model = AutoModelForCausalLM.from_pretrained(model_name)
     model.eval()
     model.cuda()
@@ -165,7 +165,7 @@ def translate_dataset(xstory_cloze, tokenizer, model, model_name):
         for example in tqdm(
             xstory_cloze[lang]["eval"],
             total=len(xstory_cloze[lang]["eval"]),
-            desc=f"Translating {lang}",
+            desc=f"Translating {name} {lang}",
         ):
             translated_example = translate_example(example, tokenizer, model, prompt)
             translated_examples.append(translated_example)
