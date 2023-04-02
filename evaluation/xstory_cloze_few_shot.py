@@ -7,7 +7,6 @@ import torch.nn.functional as F
 from tqdm import tqdm
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from datasets import load_dataset
 
 langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
@@ -28,7 +27,7 @@ def load_model(model_name):
     return tokenizer, model
 
 
-def get_dataset(dataset_name):
+def get_dataset(dataset_name, model_name):
     """Load the xStoryCloze dataset.
 
     Args:
@@ -37,9 +36,15 @@ def get_dataset(dataset_name):
     Returns:
         xstory_cloze: dataset
     """
+
     xstory_cloze = {}
-    for lang in langs_xstory:
-        xstory_cloze[lang] = load_dataset(dataset_name, lang)
+    filepath = "../datasets/xstory_cloze_mt_nllb-3B"
+    filename = f"{filepath}/spring2016.val.en.tsv.split_20_80_eval.tsv"
+    xstory_cloze["en"] = pd.read_csv(filename, sep="\t", na_filter=False)
+    filepath = f"../datasets/{dataset_name}/{model_name}"
+    for lang in langs_xstory[1:]:
+        filename = f"{filepath}/spring2016.val.{lang}.tsv.split_20_80_eval.tsv"
+        xstory_cloze[lang] = pd.read_csv(filename, sep="\t", na_filter=False)
     return xstory_cloze
 
 
@@ -76,17 +81,30 @@ def xstory_cloze_eval(example, tokenizer, model):
     Returns:
         pred, lprob1, lprob2, ppl1, ppl2: prediction, log probabilities and perplexities
     """
-    input_sentences = (
-        example["input_sentence_1"]
-        + " "
-        + example["input_sentence_2"]
-        + " "
-        + example["input_sentence_3"]
-        + " "
-        + example["input_sentence_4"]
-    )
-    prompt1 = input_sentences + " " + example["sentence_quiz1"]
-    prompt2 = input_sentences + " " + example["sentence_quiz2"]
+    if model.config.model_type == "xglm":
+        input_sentences = (
+            example["input_sentence_1"].split(".")[0]
+            + " "
+            + example["input_sentence_2"].split(".")[0]
+            + " "
+            + example["input_sentence_3"].split(".")[0]
+            + " "
+            + example["input_sentence_4"].split(".")[0]
+        )
+        prompt1 = input_sentences + " " + example["sentence_quiz1"].split(".")[0]
+        prompt2 = input_sentences + " " + example["sentence_quiz2"].split(".")[0]
+    else:
+        input_sentences = (
+            example["input_sentence_1"]
+            + " "
+            + example["input_sentence_2"]
+            + " "
+            + example["input_sentence_3"]
+            + " "
+            + example["input_sentence_4"]
+        )
+        prompt1 = input_sentences + " " + example["sentence_quiz1"]
+        prompt2 = input_sentences + " " + example["sentence_quiz2"]
     lprob1 = get_logprobs(prompt1, tokenizer, model).mean()
     lprob2 = get_logprobs(prompt2, tokenizer, model).mean()
     ppl1 = torch.exp(-lprob1).item()
@@ -109,15 +127,15 @@ def compute_results(xstory_cloze, tokenizer, model, model_name, dataset_name):
         model_name (string): model name
         dataset_name (string): dataset name
     """
-    size = len(xstory_cloze["en"]["eval"])
+    size = len(xstory_cloze["en"])
     results_xstory = {
         "idx": list(range(size)),
-        "label": xstory_cloze["en"]["eval"]["answer_right_ending"],
+        "label": xstory_cloze["en"]["answer_right_ending"],
     }
     for lang in langs_xstory:
         predictions, lprobs1, lprobs2, ppls1, ppls2 = [], [], [], [], []
         for _, example in tqdm(
-            enumerate(xstory_cloze[lang]["eval"]),
+            xstory_cloze[lang].iterrows(),
             total=size,
             desc=f"Evaluating {model_name} on {lang}",
         ):
@@ -135,9 +153,8 @@ def compute_results(xstory_cloze, tokenizer, model, model_name, dataset_name):
         results_xstory[lang + "_ppl1"] = ppls1
         results_xstory[lang + "_ppl2"] = ppls2
 
-    dname = dataset_name.split("/")[-1]
     pd.DataFrame(results_xstory).to_csv(
-        f"../results/{dname}_{model_name}.tsv", sep="\t", index=False
+        f"../results/{dataset_name}_{model_name}.tsv", sep="\t", index=False
     )
 
 
@@ -199,9 +216,8 @@ def compute_metrics(model_name, dataset_name):
         model_name (string): model name
         dataset_name (string): dataset name
     """
-    dname = dataset_name.split("/")[-1]
     results_xstory_df = pd.read_csv(
-        f"../results/{dname}_{model_name}.tsv", delimiter="\t"
+        f"../results/{dataset_name}_{model_name}.tsv", delimiter="\t"
     )
     accuracy = get_accuracy(results_xstory_df)
     perplexity_correct, perplexity_incorrect = get_perplexity(results_xstory_df)
@@ -214,7 +230,7 @@ def compute_metrics(model_name, dataset_name):
     )
 
     metrics_df.to_csv(
-        f"../results/{dname}_{model_name}_metrics.tsv",
+        f"../results/{dataset_name}_{model_name}_metrics.tsv",
         sep="\t",
         index_label="lang",
     )
@@ -239,7 +255,7 @@ def main():
     name = model_name.split("/")[-1]
     tokenizer, model = load_model(model_name)
     dataset_name = args.dataset_name
-    xstory_cloze = get_dataset(dataset_name)
+    xstory_cloze = get_dataset(dataset_name, name)
     compute_results(xstory_cloze, tokenizer, model, name, dataset_name)
     compute_metrics(name, dataset_name)
 
