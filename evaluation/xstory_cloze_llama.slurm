@@ -15,16 +15,16 @@ export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # llama model names
 model_names=(
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
     "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
 )
 
 # dataset name
 dataset_names=(
     "juletxara/xstory_cloze"
-    "juletxara/xstory_cloze_mt_nllb-3B"
+    #"juletxara/xstory_cloze_mt_nllb-3B"
 )
 
 # run xstory_cloze.py for each dataset and model

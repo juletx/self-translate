@@ -36,6 +36,6 @@ for dataset_name in "${dataset_names[@]}"
 do
     for model_name in "${model_names[@]}"
     do
-        python3 xstory_cloze_few_shot.py $model_name $dataset_name
+        srun python3 xstory_cloze_few_shot.py $model_name $dataset_name
     done
 done

@@ -60,7 +60,7 @@ def get_logprobs(prompt, tokenizer, model):
     logprobs = torch.gather(
         F.log_softmax(outputs.logits, dim=2), 2, output_ids.unsqueeze(2)
     )
-    del inputs, outputs
+    del inputs, outputs, input_ids, output_ids
     torch.cuda.empty_cache()
     return logprobs
 

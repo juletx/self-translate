@@ -1,27 +1,24 @@
 #!/bin/bash
-#SBATCH --job-name=xstory_cloze_xglm_few_shot
+#SBATCH --job-name=xstory_cloze_llama_few_shot
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/xstory_cloze_xglm_few_shot.out
-#SBATCH --error=.slurm/xstory_cloze_xglm_few_shot.err
+#SBATCH --output=.slurm/xstory_cloze_llama_few_shot.out
+#SBATCH --error=.slurm/xstory_cloze_llama_few_shot.err
 
 # activate virtual environment
-source ../venv2/bin/activate
+source ../../alpaca-lora-mt/venv/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
-export CUDA_VISIBLE_DEVICES=7
-
-# xglm model names
+# llama model names
 model_names=(
-    "facebook/xglm-564M"
-    "facebook/xglm-1.7B"
-    "facebook/xglm-2.9B"
-    "facebook/xglm-4.5B"
-    "facebook/xglm-7.5B"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
 )
 
 # dataset name
