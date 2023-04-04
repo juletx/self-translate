@@ -74,6 +74,29 @@ def get_predictions(model, lang, folder):
                     example["sentence_quiz2"].split(".")[0],
                 ]
             )
+        elif model in ["7B", "13B"]:
+            predictions.extend(
+                [
+                    example["input_sentence_1"].split(": ")[1]
+                    if ": " in example["input_sentence_1"]
+                    else example["input_sentence_1"],
+                    example["input_sentence_2"].split(": ")[1]
+                    if ": " in example["input_sentence_2"]
+                    else example["input_sentence_2"],
+                    example["input_sentence_3"].split(": ")[1]
+                    if ": " in example["input_sentence_3"]
+                    else example["input_sentence_3"],
+                    example["input_sentence_4"].split(": ")[1]
+                    if ": " in example["input_sentence_4"]
+                    else example["input_sentence_4"],
+                    example["sentence_quiz1"].split(": ")[1]
+                    if ": " in example["sentence_quiz1"]
+                    else example["sentence_quiz1"],
+                    example["sentence_quiz2"].split(": ")[1]
+                    if ": " in example["sentence_quiz2"]
+                    else example["sentence_quiz2"],
+                ]
+            )
         else:
             predictions.extend(
                 [
@@ -116,14 +139,14 @@ def main():
         "bloomz-7b1-p3",
     ]
     model_names["xstory_cloze_mt_few_shot"] = [
+        "7B",
+        #"13B",
         "opt-125m",
         "opt-350m",
         "opt-1.3b",
         "opt-2.7b",
         "opt-6.7b",
         "opt-13b",
-        "llama-7B",
-        #"llama-13B",
         "xglm-564M",
         "xglm-1.7B",
         "xglm-2.9B",
