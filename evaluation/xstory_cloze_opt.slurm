@@ -21,14 +21,14 @@ model_names=(
     #"facebook/opt-2.7b"
     #"facebook/opt-6.7b"
     "facebook/opt-13b"
-    "facebook/opt-30b"
-    "facebook/opt-66b"
+    #"facebook/opt-30b"
+    #"facebook/opt-66b"
 )
 
 # dataset name
 dataset_names=(
     "juletxara/xstory_cloze"
-    "juletxara/xstory_cloze_mt_nllb-3B"
+    #"juletxara/xstory_cloze_mt_nllb-3B"
 )
 
 # run xstory_cloze.py for each dataset and model

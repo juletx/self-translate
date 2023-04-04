@@ -17,12 +17,12 @@ export CUDA_VISIBLE_DEVICES=1
 
 # bloomz model names
 model_names=(
-    "bigscience/bloomz-560m"
-    "bigscience/bloomz-1b1"
-    "bigscience/bloomz-1b7"
-    "bigscience/bloomz-3b"
-    "bigscience/bloomz-7b1"
-    "bigscience/bloomz-7b1-mt"
+    #"bigscience/bloomz-560m"
+    #"bigscience/bloomz-1b1"
+    #"bigscience/bloomz-1b7"
+    #"bigscience/bloomz-3b"
+    #"bigscience/bloomz-7b1"
+    #"bigscience/bloomz-7b1-mt"
     "bigscience/bloomz-7b1-p3"
 )
 

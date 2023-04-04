@@ -16,7 +16,7 @@ export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 # llama model names
 model_names=(
     "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
-    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
     #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
     #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
 )

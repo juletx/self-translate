@@ -54,13 +54,15 @@ def get_logprobs(prompt, tokenizer, model):
     Returns:
         logprobs: log probabilities
     """
-    inputs = tokenizer(prompt, return_tensors="pt", truncation=True).to("cuda")
+    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=200).to("cuda")
     input_ids, output_ids = inputs["input_ids"], inputs["input_ids"][:, 1:]
     outputs = model(**inputs, labels=input_ids)
+    del inputs, input_ids
+    torch.cuda.empty_cache()
     logprobs = torch.gather(
         F.log_softmax(outputs.logits, dim=2), 2, output_ids.unsqueeze(2)
     )
-    del inputs, outputs, input_ids, output_ids
+    del outputs, output_ids
     torch.cuda.empty_cache()
     return logprobs
 
