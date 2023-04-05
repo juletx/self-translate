@@ -10,6 +10,19 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
+lang_names = {
+    "ru": "Russian",
+    "zh": "Chinese",
+    "es": "Spanish",
+    "ar": "Arabic",
+    "hi": "Hindi",
+    "id": "Indonesian",
+    "te": "Telugu",
+    "sw": "Swahili",
+    "eu": "Basque",
+    "my": "Burmese",
+}
+
 
 def load_model(model_name):
     """Load a model and tokenizer.
@@ -82,46 +95,65 @@ def xstory_cloze_eval(example, tokenizer, model, lang):
     Returns:
         pred, lprob1, lprob2, ppl1, ppl2: prediction, log probabilities and perplexities
     """
+    lang_name = lang_names[lang]
     if model.config.model_type == "xglm" and lang != "en":
         input_sentences = (
-            example["input_sentence_1"].split(".")[0]
+            example["input_sentence_1"].split(f" {lang_name}:")[0]
             + " "
-            + example["input_sentence_2"].split(".")[0]
+            + example["input_sentence_2"].split(f" {lang_name}:")[0]
             + " "
-            + example["input_sentence_3"].split(".")[0]
+            + example["input_sentence_3"].split(f" {lang_name}:")[0]
             + " "
-            + example["input_sentence_4"].split(".")[0]
+            + example["input_sentence_4"].split(f" {lang_name}:")[0]
         )
-        prompt1 = input_sentences + " " + example["sentence_quiz1"].split(".")[0]
-        prompt2 = input_sentences + " " + example["sentence_quiz2"].split(".")[0]
+        prompt1 = (
+            input_sentences + " " + example["sentence_quiz1"].split(f" {lang_name}:")[0]
+        )
+        prompt2 = (
+            input_sentences + " " + example["sentence_quiz2"].split(f" {lang_name}:")[0]
+        )
     elif model.config.model_type == "llama" and lang != "en":
-        input_sentences = (
+        input_sentence_1 = (
             example["input_sentence_1"].split(": ")[1]
             if ": " in example["input_sentence_1"]
             else example["input_sentence_1"]
-            + " "
-            + example["input_sentence_2"].split(": ")[1]
+        )
+        input_sentence_2 = (
+            example["input_sentence_2"].split(": ")[1]
             if ": " in example["input_sentence_2"]
             else example["input_sentence_2"]
-            + " "
-            + example["input_sentence_3"].split(": ")[1]
+        )
+        input_sentence_3 = (
+            example["input_sentence_3"].split(": ")[1]
             if ": " in example["input_sentence_3"]
             else example["input_sentence_3"]
-            + " "
-            + example["input_sentence_4"].split(": ")[1]
+        )
+        input_sentence_4 = (
+            example["input_sentence_4"].split(": ")[1]
             if ": " in example["input_sentence_4"]
             else example["input_sentence_4"]
         )
-        prompt1 = (
-            input_sentences + " " + example["sentence_quiz1"].split(": ")[1]
+        input_sentences = (
+            input_sentence_1
+            + " "
+            + input_sentence_2
+            + " "
+            + input_sentence_3
+            + " "
+            + input_sentence_4
+        )
+        sentence_quiz1 = (
+            example["sentence_quiz1"].split(": ")[1]
             if ": " in example["sentence_quiz1"]
             else example["sentence_quiz1"]
         )
-        prompt2 = (
-            input_sentences + " " + example["sentence_quiz2"].split(": ")[1]
+        sentence_quiz2 = (
+            example["sentence_quiz2"].split(": ")[1]
             if ": " in example["sentence_quiz2"]
             else example["sentence_quiz2"]
         )
+        prompt1 = input_sentences + " " + sentence_quiz1
+        prompt2 = input_sentences + " " + sentence_quiz2
     else:
         input_sentences = (
             example["input_sentence_1"]

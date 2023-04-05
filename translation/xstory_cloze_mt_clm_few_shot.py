@@ -10,18 +10,18 @@ from datasets import load_dataset
 
 langs_xstory = ["en", "ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
-lang_names = [
-    "Russian",
-    "Chinese",
-    "Spanish",
-    "Arabic",
-    "Hindi",
-    "Indonesian",
-    "Telugu",
-    "Swahili",
-    "Basque",
-    "Burmese",
-]
+lang_names = {
+    "ru": "Russian",
+    "zh": "Chinese",
+    "es": "Spanish",
+    "ar": "Arabic",
+    "hi": "Hindi",
+    "id": "Indonesian",
+    "te": "Telugu",
+    "sw": "Swahili",
+    "eu": "Basque",
+    "my": "Burmese",
+}
 
 
 def load_model(model_name):
@@ -160,7 +160,7 @@ def translate_dataset(xstory_cloze, tokenizer, model, model_name):
     """
     name = model_name.split("/")[-1]
     for i, lang in enumerate(langs_xstory[1:]):
-        prompt = get_prompt_few_shot(xstory_cloze, lang, lang_names[i], 4)
+        prompt = get_prompt_few_shot(xstory_cloze, lang, lang_names[lang], 4)
         translated_examples = []
         for example in tqdm(
             xstory_cloze[lang]["eval"],

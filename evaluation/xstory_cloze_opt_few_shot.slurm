@@ -13,8 +13,6 @@
 source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
-export CUDA_VISIBLE_DEVICES=3
-
 # opt model names
 model_names=(
     "facebook/opt-125m"

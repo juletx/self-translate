@@ -6,6 +6,19 @@ from tqdm import tqdm
 
 langs_xstory = ["ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 
+lang_names = {
+    "ru": "Russian",
+    "zh": "Chinese",
+    "es": "Spanish",
+    "ar": "Arabic",
+    "hi": "Hindi",
+    "id": "Indonesian",
+    "te": "Telugu",
+    "sw": "Swahili",
+    "eu": "Basque",
+    "my": "Burmese",
+}
+
 chrf = evaluate.load("chrf")
 sacrebleu = evaluate.load("sacrebleu")
 
@@ -60,18 +73,19 @@ def get_predictions(model, lang, folder):
     """
     filepath = f"../datasets/{folder}/{model}"
     filename = f"{filepath}/spring2016.val.{lang}.tsv.split_20_80_eval.tsv"
+    lang_name = lang_names[lang]
     xstory_cloze_lang = pd.read_csv(filename, sep="\t", na_filter=False)
     predictions = []
     for _, example in xstory_cloze_lang.iterrows():
         if model.startswith("xglm"):
             predictions.extend(
                 [
-                    example["input_sentence_1"].split(".")[0],
-                    example["input_sentence_2"].split(".")[0],
-                    example["input_sentence_3"].split(".")[0],
-                    example["input_sentence_4"].split(".")[0],
-                    example["sentence_quiz1"].split(".")[0],
-                    example["sentence_quiz2"].split(".")[0],
+                    example["input_sentence_1"].split(f" {lang_name}:")[0],
+                    example["input_sentence_2"].split(f" {lang_name}:")[0],
+                    example["input_sentence_3"].split(f" {lang_name}:")[0],
+                    example["input_sentence_4"].split(f" {lang_name}:")[0],
+                    example["sentence_quiz1"].split(f" {lang_name}:")[0],
+                    example["sentence_quiz2"].split(f" {lang_name}:")[0],
                 ]
             )
         elif model in ["7B", "13B"]:
@@ -140,7 +154,7 @@ def main():
     ]
     model_names["xstory_cloze_mt_few_shot"] = [
         "7B",
-        #"13B",
+        "13B",
         "opt-125m",
         "opt-350m",
         "opt-1.3b",
