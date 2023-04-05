@@ -95,8 +95,8 @@ def xstory_cloze_eval(example, tokenizer, model, lang):
     Returns:
         pred, lprob1, lprob2, ppl1, ppl2: prediction, log probabilities and perplexities
     """
-    lang_name = lang_names[lang]
     if model.config.model_type == "xglm" and lang != "en":
+        lang_name = lang_names[lang]
         input_sentences = (
             example["input_sentence_1"].split(f" {lang_name}:")[0]
             + " "
