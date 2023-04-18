@@ -4,6 +4,7 @@ from tqdm import tqdm
 import csv
 import torch
 from argparse import ArgumentParser
+import os
 
 langs_xstory = ["ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"]
 # BCP-47 language codes for the languages in the xStoryCloze dataset
@@ -30,7 +31,12 @@ def load_model(model_name):
     Returns:
         model: tokenizer and model
     """
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+    if model_name == "facebook/nllb-moe-54b":
+        model = AutoModelForSeq2SeqLM.from_pretrained(
+            model_name, load_in_8bit=True, device_map="auto", torch_dtype=torch.float16
+        )
+    else:
+        model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
     model.eval()
     model.cuda()
     return model
@@ -100,8 +106,11 @@ def save_file(translated_examples, lang, split, name):
         split (string): train or eval
         name (string): model name
     """
+    dirname = f"../datasets/xstory_cloze/{name}"
+    filename = f"{dirname}/spring2016.val.{lang}.tsv.split_20_80_{split}.tsv"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(
-        f"../datasets/xstory_cloze_mt/{name}/spring2016.val.{lang}.tsv.split_20_80_{split}.tsv",
+        filename,
         "w",
         encoding="utf-8",
     ) as f:
@@ -137,12 +146,12 @@ def translate_dataset(xstory_cloze, model, model_name):
         tokenizer = AutoTokenizer.from_pretrained(
             model_name, src_lang=langs_xstory_bcp47[i]
         )
-        for split in ["train", "eval"]:
+        for split in ["eval"]:
             translated_examples = []
             for example in tqdm(
                 xstory_cloze[lang][split],
                 total=len(xstory_cloze[lang][split]),
-                desc=f"Translating {lang} {split}",
+                desc=f"Translating {name} {lang}",
             ):
                 translated_example = translate_example(example, tokenizer, model)
                 translated_examples.append(translated_example)
