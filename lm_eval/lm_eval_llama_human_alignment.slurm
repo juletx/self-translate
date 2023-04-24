@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_llama_math
+#SBATCH --job-name=lm_eval_llama_human_alignment
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/lm_eval_llama_math.out
-#SBATCH --error=.slurm/lm_eval_llama_math.err
+#SBATCH --output=.slurm/lm_eval_llama_human_alignment.out
+#SBATCH --error=.slurm/lm_eval_llama_human_alignment.err
 
 # activate virtual environment
 source ../venv2/bin/activate
@@ -26,10 +26,10 @@ source tasks.sh
 
 # select tasks
 tasks_selected=(
-    "mathematical_reasoning"
+    "human_alignment"
 )
 
-num_fewshot=5
+num_fewshot=0
 
 for model_name in "${model_names[@]}"; do
     for group_name in "${tasks_selected[@]}"; do
