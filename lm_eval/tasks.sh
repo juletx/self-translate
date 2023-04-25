@@ -40,7 +40,7 @@ tasks["arithmetic"]=arithmetic_*
 tasks["mathematical_reasoning"]=gsm8k,mathqa,drop,math_*
 tasks["mathematical_reasoning_mgsm"]=mgsm_*
 
-tasks["human_alignment"]=toxigen,truthfulqa_gen,ethics_*,crows_pairs_english_*,crows_pairs_french_* # winogender
+tasks["human_alignment"]=toxigen,ethics_*,crows_pairs_english_*,crows_pairs_french_* # truthfulqa_gen, winogender
 tasks["ethics"]=ethics_*
 tasks["crows_pairs_english"]=crows_pairs_english_*
 tasks["crows_pairs_french"]=crows_pairs_french_*
