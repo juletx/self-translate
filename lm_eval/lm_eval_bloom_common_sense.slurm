@@ -39,7 +39,7 @@ for model_name in "${model_names[@]}"; do
             --model_args pretrained=$model_name,use_accelerate=True \
             --tasks ${tasks[${group_name}]} \
             --device cuda:0 \
-            --output_path results/${model_name:12}_${group_name}_${num_fewshot}-shot.json \
+            --output_path results/${model_name:11}_${group_name}_${num_fewshot}-shot.json \
             --batch_size auto \
             --no_cache \
             --num_fewshot ${num_fewshot}
