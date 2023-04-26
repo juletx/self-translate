@@ -10,7 +10,7 @@ tasks["lambada_standard"]=lambada_standard,lambada_standard_cloze
 tasks["lambada_openai_mt"]=lambada_openai_mt_*
 tasks["pile"]=pile_*
 
-tasks["common_sense_reasoning"]=boolq,piqa,winogrande,hellaswag,arc_easy,arc_challenge,openbookqa,copa,prost,mc_taco,swag # story_cloze_2016
+tasks["common_sense_reasoning"]=boolq,piqa,winogrande,hellaswag,arc_easy,arc_challenge,openbookqa,copa,prost,mc_taco,swag,wsc273 # story_cloze_2016
 tasks["xcopa"]=xcopa_*
 tasks["xstory_cloze"]=xstory_cloze_*
 tasks["xwinograd"]=xwinograd_*
