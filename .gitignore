@@ -1,6 +1,7 @@
 desktop.ini
 venv
 venv2
+helm-venv
 .vscode
 .slurm
 out
