@@ -12,6 +12,7 @@
 # activate virtual environment
 source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
+export TOKENIZERS_PARALLELISM=false
 
 # llama model names
 model_names=(
@@ -38,7 +39,7 @@ for model_name in "${model_names[@]}"; do
             --model hf-causal-experimental \
             --model_args pretrained=$model_name,use_accelerate=True \
             --tasks ${tasks[${group_name}]} \
-            --device cuda:0 \
+            --device cuda \
             --output_path results/llama-${model_name:48}_${group_name}_${num_fewshot}-shot.json \
             --batch_size auto \
             --no_cache \

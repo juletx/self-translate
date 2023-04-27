@@ -12,6 +12,7 @@
 # activate virtual environment
 source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
+export TOKENIZERS_PARALLELISM=false
 
 # llama model names
 model_names=(

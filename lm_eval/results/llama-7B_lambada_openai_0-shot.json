@@ -1,0 +1,31 @@
+{
+  "results": {
+    "lambada_openai_cloze": {
+      "ppl": 255791.01200673878,
+      "ppl_stderr": 11346.011014909947,
+      "acc": 0.00038812342324859306,
+      "acc_stderr": 0.00027441806845051746
+    },
+    "lambada_openai": {
+      "ppl": 2817268.143430195,
+      "ppl_stderr": 138308.34645292605,
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    }
+  },
+  "versions": {
+    "lambada_openai_cloze": 0,
+    "lambada_openai": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
