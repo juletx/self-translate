@@ -33,22 +33,25 @@ models=(
 )
 
 
-for model in "${models[@]}"
-do
-    # logfile="${model//\//-}"  # Replace slashes
-    # logfile="${logfile// /_}"   # Replace spaces
-    logfile=".log/${model:9}" # Remove the path prefix
+groups=(
+    "gsm"
+    "math_regular"
+    "math_chain_of_thougth"
+)
 
-    # Override with passed-in CLI arguments
-    # By default, the command will run the RunSpecs listed in src/helm/benchmark/presentation/run_specs.conf
-    # and output results to `benchmark_output/runs/<Today's date e.g., 06-28-2022>`.
-    execute "helm-run \
-        --models-to-run $model \
-        --enable-huggingface-models $model \
-        --conf helm/src/helm/benchmark/presentation/run_specs.conf \
-        --groups-to-run mmlu \
-        --local \
-        --suite v1 \
-        --num-threads 1 \
-        --max-eval-instances 1000"
+for model in "${models[@]}"; do
+    for group in "${groups[@]}"; do
+        # Override with passed-in CLI arguments
+        # By default, the command will run the RunSpecs listed in src/helm/benchmark/presentation/run_specs.conf
+        # and output results to `benchmark_output/runs/<Today's date e.g., 06-28-2022>`.
+        execute "helm-run \
+            --models-to-run $model \
+            --enable-huggingface-models $model \
+            --conf helm/src/helm/benchmark/presentation/run_specs.conf \
+            --groups-to-run $group \
+            --local \
+            --suite v1 \
+            --num-threads 4 \
+            --max-eval-instances 1000"
+    done
 done
