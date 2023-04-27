@@ -13,5 +13,11 @@
 source ../helm-venv/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
+# Summarize benchmark results
+helm-summarize --suite v1
+
+# Create plots
+helm-create-plots --suite v1
+
 # Run server
 helm-server
