@@ -14,7 +14,7 @@ source ../helm-venv/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # Perform dry run with just a single model to download and cache all the datasets
-model="bigscience/bloom-7b1"
+model="facebook/xglm-7.5B"
 helm-run \
     --models-to-run $model \
     --enable-huggingface-models $model \
