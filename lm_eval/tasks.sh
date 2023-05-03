@@ -47,3 +47,5 @@ tasks["crows_pairs_english"]=crows_pairs_english_*
 tasks["crows_pairs_french"]=crows_pairs_french_*
 
 tasks["mmlu"]=hendrycksTest-*
+
+tasks["bbh"]=bigbench_*
