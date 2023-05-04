@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa_zh": {
+      "acc": 0.68,
+      "acc_stderr": 0.046882617226215034
+    },
+    "xcopa_ht": {
+      "acc": 0.59,
+      "acc_stderr": 0.04943110704237101
+    },
+    "xcopa_id": {
+      "acc": 0.59,
+      "acc_stderr": 0.04943110704237102
+    },
+    "xcopa_ta": {
+      "acc": 0.56,
+      "acc_stderr": 0.04988876515698589
+    },
+    "xcopa_th": {
+      "acc": 0.55,
+      "acc_stderr": 0.049999999999999996
+    },
+    "xcopa_it": {
+      "acc": 0.68,
+      "acc_stderr": 0.04688261722621504
+    },
+    "xcopa_tr": {
+      "acc": 0.63,
+      "acc_stderr": 0.04852365870939099
+    },
+    "xcopa_qu": {
+      "acc": 0.52,
+      "acc_stderr": 0.050211673156867795
+    },
+    "xcopa_sw": {
+      "acc": 0.53,
+      "acc_stderr": 0.050161355804659205
+    },
+    "xcopa_et": {
+      "acc": 0.71,
+      "acc_stderr": 0.045604802157206845
+    },
+    "xcopa_vi": {
+      "acc": 0.7,
+      "acc_stderr": 0.046056618647183814
+    }
+  },
+  "versions": {
+    "xcopa_zh": 0,
+    "xcopa_ht": 0,
+    "xcopa_id": 0,
+    "xcopa_ta": 0,
+    "xcopa_th": 0,
+    "xcopa_it": 0,
+    "xcopa_tr": 0,
+    "xcopa_qu": 0,
+    "xcopa_sw": 0,
+    "xcopa_et": 0,
+    "xcopa_vi": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-4.5B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

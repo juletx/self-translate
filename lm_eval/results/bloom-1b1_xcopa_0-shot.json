@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa_tr": {
+      "acc": 0.57,
+      "acc_stderr": 0.049756985195624284
+    },
+    "xcopa_vi": {
+      "acc": 0.67,
+      "acc_stderr": 0.04725815626252607
+    },
+    "xcopa_id": {
+      "acc": 0.57,
+      "acc_stderr": 0.049756985195624284
+    },
+    "xcopa_zh": {
+      "acc": 0.64,
+      "acc_stderr": 0.04824181513244218
+    },
+    "xcopa_it": {
+      "acc": 0.63,
+      "acc_stderr": 0.04852365870939099
+    },
+    "xcopa_sw": {
+      "acc": 0.52,
+      "acc_stderr": 0.050211673156867795
+    },
+    "xcopa_th": {
+      "acc": 0.63,
+      "acc_stderr": 0.04852365870939099
+    },
+    "xcopa_qu": {
+      "acc": 0.46,
+      "acc_stderr": 0.05009082659620333
+    },
+    "xcopa_ht": {
+      "acc": 0.6,
+      "acc_stderr": 0.049236596391733084
+    },
+    "xcopa_et": {
+      "acc": 0.6,
+      "acc_stderr": 0.049236596391733084
+    },
+    "xcopa_ta": {
+      "acc": 0.54,
+      "acc_stderr": 0.05009082659620332
+    }
+  },
+  "versions": {
+    "xcopa_tr": 0,
+    "xcopa_vi": 0,
+    "xcopa_id": 0,
+    "xcopa_zh": 0,
+    "xcopa_it": 0,
+    "xcopa_sw": 0,
+    "xcopa_th": 0,
+    "xcopa_qu": 0,
+    "xcopa_ht": 0,
+    "xcopa_et": 0,
+    "xcopa_ta": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-1b1",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
