@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_xglm_xcopa_en
+#SBATCH --job-name=lm_eval_xglm_xcopa
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/lm_eval_xglm_xcopa_en.out
-#SBATCH --error=.slurm/lm_eval_xglm_xcopa_en.err
+#SBATCH --output=.slurm/lm_eval_xglm_xcopa.out
+#SBATCH --error=.slurm/lm_eval_xglm_xcopa.err
 
 # activate virtual environment
 source ../venv2/bin/activate

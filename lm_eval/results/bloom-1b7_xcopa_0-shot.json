@@ -1,62 +1,62 @@
 {
   "results": {
-    "xcopa_ht": {
-      "acc": 0.59,
-      "acc_stderr": 0.04943110704237101
-    },
-    "xcopa_qu": {
-      "acc": 0.48,
-      "acc_stderr": 0.050211673156867795
-    },
     "xcopa_ta": {
-      "acc": 0.57,
-      "acc_stderr": 0.04975698519562428
+      "acc": 0.566,
+      "acc_stderr": 0.022187215803029008
     },
     "xcopa_vi": {
-      "acc": 0.71,
-      "acc_stderr": 0.045604802157206845
-    },
-    "xcopa_sw": {
-      "acc": 0.53,
-      "acc_stderr": 0.05016135580465919
-    },
-    "xcopa_th": {
-      "acc": 0.6,
-      "acc_stderr": 0.04923659639173309
-    },
-    "xcopa_zh": {
-      "acc": 0.64,
-      "acc_stderr": 0.04824181513244218
-    },
-    "xcopa_it": {
-      "acc": 0.56,
-      "acc_stderr": 0.04988876515698589
+      "acc": 0.658,
+      "acc_stderr": 0.02123614719989926
     },
     "xcopa_id": {
-      "acc": 0.56,
-      "acc_stderr": 0.04988876515698589
+      "acc": 0.632,
+      "acc_stderr": 0.021588982568353544
     },
-    "xcopa_tr": {
-      "acc": 0.52,
-      "acc_stderr": 0.05021167315686779
+    "xcopa_th": {
+      "acc": 0.532,
+      "acc_stderr": 0.022337186479044296
     },
     "xcopa_et": {
-      "acc": 0.63,
-      "acc_stderr": 0.04852365870939098
+      "acc": 0.474,
+      "acc_stderr": 0.02235279165091416
+    },
+    "xcopa_tr": {
+      "acc": 0.528,
+      "acc_stderr": 0.022347949832668086
+    },
+    "xcopa_it": {
+      "acc": 0.526,
+      "acc_stderr": 0.022352791650914153
+    },
+    "xcopa_qu": {
+      "acc": 0.506,
+      "acc_stderr": 0.022381462412439324
+    },
+    "xcopa_sw": {
+      "acc": 0.518,
+      "acc_stderr": 0.02236856511738799
+    },
+    "xcopa_zh": {
+      "acc": 0.614,
+      "acc_stderr": 0.021793529219281165
+    },
+    "xcopa_ht": {
+      "acc": 0.504,
+      "acc_stderr": 0.022382357781962132
     }
   },
   "versions": {
-    "xcopa_ht": 0,
-    "xcopa_qu": 0,
     "xcopa_ta": 0,
     "xcopa_vi": 0,
-    "xcopa_sw": 0,
-    "xcopa_th": 0,
-    "xcopa_zh": 0,
-    "xcopa_it": 0,
     "xcopa_id": 0,
+    "xcopa_th": 0,
+    "xcopa_et": 0,
     "xcopa_tr": 0,
-    "xcopa_et": 0
+    "xcopa_it": 0,
+    "xcopa_qu": 0,
+    "xcopa_sw": 0,
+    "xcopa_zh": 0,
+    "xcopa_ht": 0
   },
   "config": {
     "model": "hf-causal-experimental",
