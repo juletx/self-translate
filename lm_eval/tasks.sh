@@ -14,6 +14,7 @@ tasks["common_sense_reasoning"]=boolq,piqa,winogrande,hellaswag,arc_easy,arc_cha
 tasks["xcopa"]=xcopa_*
 tasks["xstory_cloze"]=xstory_cloze_*
 tasks["xwinograd"]=xwinograd_*
+tasks["pawsx"]=pawsx_*
 
 tasks["reading_comprehension"]=race,coqa,drop # race-middle, quac
 

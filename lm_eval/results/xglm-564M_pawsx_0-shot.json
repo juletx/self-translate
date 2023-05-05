@@ -1,0 +1,73 @@
+{
+  "results": {
+    "pawsx_de": {
+      "acc": 0.491,
+      "acc_stderr": 0.01118132420626029,
+      "precision": 0.5335679144483286,
+      "recall": 0.5221668899618291,
+      "f1": 0.4593365879358767
+    },
+    "pawsx_ko": {
+      "acc": 0.4625,
+      "acc_stderr": 0.011151639095992287,
+      "precision": 0.5022886593822837,
+      "recall": 0.5010432841614907,
+      "f1": 0.40181919303461566
+    },
+    "pawsx_en": {
+      "acc": 0.5065,
+      "acc_stderr": 0.0111821910061423,
+      "precision": 0.5573911630929175,
+      "recall": 0.5356382350953396,
+      "f1": 0.46967859137607126
+    },
+    "pawsx_es": {
+      "acc": 0.5255,
+      "acc_stderr": 0.011168582883330072,
+      "precision": 0.5261561266008138,
+      "recall": 0.5263791532968646,
+      "f1": 0.5247585044565783
+    },
+    "pawsx_fr": {
+      "acc": 0.508,
+      "acc_stderr": 0.011181704488030002,
+      "precision": 0.5198001412228722,
+      "recall": 0.5189942165838373,
+      "f1": 0.5060394706590458
+    },
+    "pawsx_ja": {
+      "acc": 0.441,
+      "acc_stderr": 0.011105006104468738,
+      "precision": 0.4205513784461153,
+      "recall": 0.4991965009008315,
+      "f1": 0.3075504255653869
+    },
+    "pawsx_zh": {
+      "acc": 0.478,
+      "acc_stderr": 0.011172305500884872,
+      "precision": 0.5227040258466835,
+      "recall": 0.5130202960463771,
+      "f1": 0.43495730788548465
+    }
+  },
+  "versions": {
+    "pawsx_de": 0,
+    "pawsx_ko": 0,
+    "pawsx_en": 0,
+    "pawsx_es": 0,
+    "pawsx_fr": 0,
+    "pawsx_ja": 0,
+    "pawsx_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-564M,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

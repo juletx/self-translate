@@ -1,0 +1,73 @@
+{
+  "results": {
+    "pawsx_fr": {
+      "acc": 0.5285,
+      "acc_stderr": 0.01116495423642881,
+      "precision": 0.5189906980058772,
+      "recall": 0.5182931199657579,
+      "f1": 0.5168165022279986
+    },
+    "pawsx_de": {
+      "acc": 0.582,
+      "acc_stderr": 0.011031720148042082,
+      "precision": 0.5734168384097711,
+      "recall": 0.5694835562071843,
+      "f1": 0.5681635275874288
+    },
+    "pawsx_en": {
+      "acc": 0.5875,
+      "acc_stderr": 0.011010562712487564,
+      "precision": 0.5910831685714746,
+      "recall": 0.5914529767963113,
+      "f1": 0.5874355368026254
+    },
+    "pawsx_ja": {
+      "acc": 0.4675,
+      "acc_stderr": 0.011159486640120933,
+      "precision": 0.5044616992871357,
+      "recall": 0.5028733330562064,
+      "f1": 0.43393684170243096
+    },
+    "pawsx_ko": {
+      "acc": 0.457,
+      "acc_stderr": 0.011141704034140798,
+      "precision": 0.5122340425531915,
+      "recall": 0.5027901785714286,
+      "f1": 0.3607673616997231
+    },
+    "pawsx_zh": {
+      "acc": 0.459,
+      "acc_stderr": 0.011145474902641256,
+      "precision": 0.4942888894459345,
+      "recall": 0.4972349316924969,
+      "f1": 0.40229976489720887
+    },
+    "pawsx_es": {
+      "acc": 0.558,
+      "acc_stderr": 0.011107641056719623,
+      "precision": 0.5466835389387763,
+      "recall": 0.538664912831076,
+      "f1": 0.5264806585561304
+    }
+  },
+  "versions": {
+    "pawsx_fr": 0,
+    "pawsx_de": 0,
+    "pawsx_en": 0,
+    "pawsx_ja": 0,
+    "pawsx_ko": 0,
+    "pawsx_zh": 0,
+    "pawsx_es": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
