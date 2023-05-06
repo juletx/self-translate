@@ -15,6 +15,7 @@ tasks["xcopa"]=xcopa_*
 tasks["xstory_cloze"]=xstory_cloze_*
 tasks["xwinograd"]=xwinograd_*
 tasks["pawsx"]=pawsx_*
+tasks["xnli"]=xnli_*
 
 tasks["reading_comprehension"]=race,coqa,drop # race-middle, quac
 
