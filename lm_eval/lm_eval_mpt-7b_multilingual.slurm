@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_mpt-7b_5-shot
-#SBATCH --cpus-per-task=1
+#SBATCH --job-name=lm_eval_mpt-7b_multilingual
+#SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/lm_eval_mpt-7b_5-shot.out
-#SBATCH --error=.slurm/lm_eval_mpt-7b_5-shot.err
+#SBATCH --output=.slurm/lm_eval_mpt-7b_multilingual.out
+#SBATCH --error=.slurm/lm_eval_mpt-7b_multilingual.err
 
 # activate virtual environment
 source ../venv2/bin/activate
@@ -24,10 +24,14 @@ source tasks.sh
 
 # select tasks
 tasks_selected=(
-    "mmlu"
+    "xcopa"
+    "xstory_cloze"
+    "xwinograd"
+    "pawsx"
+    "xnli"
 )
 
-num_fewshot=5
+num_fewshot=0
 
 for model_name in "${model_names[@]}"; do
     for group_name in "${tasks_selected[@]}"; do
