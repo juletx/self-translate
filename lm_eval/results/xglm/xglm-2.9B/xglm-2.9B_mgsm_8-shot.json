@@ -1,0 +1,72 @@
+{
+  "results": {
+    "mgsm_bn": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_de": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874342
+    },
+    "mgsm_en": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964252
+    },
+    "mgsm_es": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874337
+    },
+    "mgsm_fr": {
+      "acc": 0.008,
+      "acc_stderr": 0.00564548367669018
+    },
+    "mgsm_ja": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm_ru": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964263
+    },
+    "mgsm_sw": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964256
+    },
+    "mgsm_te": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964271
+    },
+    "mgsm_th": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_zh": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694281
+    }
+  },
+  "versions": {
+    "mgsm_bn": 0,
+    "mgsm_de": 0,
+    "mgsm_en": 0,
+    "mgsm_es": 0,
+    "mgsm_fr": 0,
+    "mgsm_ja": 0,
+    "mgsm_ru": 0,
+    "mgsm_sw": 0,
+    "mgsm_te": 0,
+    "mgsm_th": 0,
+    "mgsm_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-2.9B,use_accelerate=True",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

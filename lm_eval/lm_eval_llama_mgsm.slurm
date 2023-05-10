@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_llama_gsm8k
+#SBATCH --job-name=lm_eval_llama_mgsm
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/lm_eval_llama_gsm8k.out
-#SBATCH --error=.slurm/lm_eval_llama_gsm8k.err
+#SBATCH --output=.slurm/lm_eval_llama_mgsm.out
+#SBATCH --error=.slurm/lm_eval_llama_mgsm.err
 
 # activate virtual environment
 source ../venv2/bin/activate
@@ -27,7 +27,7 @@ source tasks.sh
 
 # select tasks
 tasks_selected=(
-    "gsm8k"
+    "mgsm"
 )
 
 num_fewshot=8
@@ -36,8 +36,8 @@ for model_name in "${model_names[@]}"; do
     for group_name in "${tasks_selected[@]}"; do
         srun python3 lm-evaluation-harness/main.py \
             --model hf-causal-experimental \
-            --model_args pretrained=$model_name,use_accelerate=True \
-            --tasks ${group_name} \
+            --model_args pretrained=$model_name \
+            --tasks ${tasks[${group_name}]} \
             --device cuda \
             --output_path results/llama/llama-${model_name:48}/llama-${model_name:48}_${group_name}_${num_fewshot}-shot.json \
             --batch_size auto \
