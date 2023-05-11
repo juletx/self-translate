@@ -9,3 +9,4 @@ wandb
 xstory_cloze_mt
 xstory_cloze_mt_few_shot
 lm_cache
+*_detailed_eval_info.json

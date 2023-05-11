@@ -1,0 +1,72 @@
+{
+  "results": {
+    "mgsm_bn": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_de": {
+      "acc": 0.292,
+      "acc_stderr": 0.02881432040220564
+    },
+    "mgsm_en": {
+      "acc": 0.396,
+      "acc_stderr": 0.030993197854577853
+    },
+    "mgsm_es": {
+      "acc": 0.332,
+      "acc_stderr": 0.029844039047465902
+    },
+    "mgsm_fr": {
+      "acc": 0.304,
+      "acc_stderr": 0.02915021337415967
+    },
+    "mgsm_ja": {
+      "acc": 0.072,
+      "acc_stderr": 0.016381005750490105
+    },
+    "mgsm_ru": {
+      "acc": 0.272,
+      "acc_stderr": 0.028200088296310006
+    },
+    "mgsm_sw": {
+      "acc": 0.052,
+      "acc_stderr": 0.01407039102564163
+    },
+    "mgsm_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_th": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_zh": {
+      "acc": 0.228,
+      "acc_stderr": 0.02658743248726849
+    }
+  },
+  "versions": {
+    "mgsm_bn": 0,
+    "mgsm_de": 0,
+    "mgsm_en": 0,
+    "mgsm_es": 0,
+    "mgsm_fr": 0,
+    "mgsm_ja": 0,
+    "mgsm_ru": 0,
+    "mgsm_sw": 0,
+    "mgsm_te": 0,
+    "mgsm_th": 0,
+    "mgsm_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
