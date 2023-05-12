@@ -1,0 +1,22 @@
+{
+  "results": {
+    "gsm8k": {
+      "acc": 0.06292645943896892,
+      "acc_stderr": 0.006688762581532737
+    }
+  },
+  "versions": {
+    "gsm8k": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=mosaicml/mpt-7b,trust_remote_code=True,dtype=bfloat16",
+    "num_fewshot": 8,
+    "batch_size": "48",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

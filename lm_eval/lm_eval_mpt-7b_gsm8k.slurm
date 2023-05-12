@@ -37,7 +37,7 @@ for model_name in "${model_names[@]}"; do
             --tasks ${group_name} \
             --device cuda \
             --output_path results/mpt/${model_name:9}/${model_name:9}_${group_name}_${num_fewshot}-shot.json \
-            --batch_size auto \
+            --batch_size 48 \
             --no_cache \
             --num_fewshot ${num_fewshot} \
             --write_detailed_eval_info \
