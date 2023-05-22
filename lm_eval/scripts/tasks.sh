@@ -43,6 +43,7 @@ tasks["arithmetic"]=arithmetic_*
 tasks["mathematical_reasoning"]=gsm8k,mathqa,drop,math_*
 tasks["mathematical_reasoning_few_shot"]=gsm8k,mathqa,drop,math_algebra,math_counting_and_prob,math_geometry,math_intermediate_algebra,math_num_theory,math_prealgebra,math_precalc
 tasks["mgsm"]=mgsm_*
+tasks["mgsm-mt"]=mgsm-mt*
 
 tasks["human_alignment"]=toxigen,ethics_*,crows_pairs_english_*,crows_pairs_french_* # truthfulqa_gen, winogender
 tasks["ethics"]=ethics_*

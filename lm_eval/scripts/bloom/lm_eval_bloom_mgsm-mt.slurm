@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_bloom_xstory_cloze
+#SBATCH --job-name=lm_eval_bloom_mgsm-mt
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=../.slurm/lm_eval_bloom_xstory_cloze.out
-#SBATCH --error=../.slurm/lm_eval_bloom_xstory_cloze.err
+#SBATCH --output=../.slurm/lm_eval_bloom_mgsm-mt.out
+#SBATCH --error=../.slurm/lm_eval_bloom_mgsm-mt.err
 
 # activate virtual environment
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
@@ -28,10 +28,10 @@ source ../tasks.sh
 
 # select tasks
 tasks_selected=(
-    "xstory_cloze"
+    "mgsm-mt"
 )
 
-num_fewshot=0
+num_fewshot=8
 
 for model_name in "${model_names[@]}"; do
     for group_name in "${tasks_selected[@]}"; do
