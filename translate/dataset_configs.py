@@ -6,7 +6,6 @@ dataset_configs = {
             "bg",
             "de",
             "el",
-            "en",
             "es",
             "fr",
             "hi",
@@ -27,7 +26,6 @@ dataset_configs = {
             "bg": "bul_Cyrl",
             "de": "deu_Latn",
             "el": "ell_Grek",
-            "en": "eng_Latn",
             "es": "spa_Latn",
             "fr": "fra_Latn",
             "hi": "hin_Deva",
@@ -44,7 +42,6 @@ dataset_configs = {
             "bg": "Bulgarian",
             "de": "German",
             "el": "Greek",
-            "en": "English",
             "es": "Spanish",
             "fr": "French",
             "hi": "Hindi",
@@ -99,7 +96,6 @@ dataset_configs = {
     "mgsm": {
         "dataset": "juletxara/mgsm",
         "dataset_configs": [
-            "en",
             "es",
             "fr",
             "de",
@@ -116,7 +112,6 @@ dataset_configs = {
         "file_path": "../datasets/mgsm_mt",
         "filename": "mgsm_{config}.tsv",
         "lang_codes": {
-            "en": "eng_Latn",
             "es": "spa_Latn",
             "fr": "fra_Latn",
             "de": "deu_Latn",
@@ -129,7 +124,6 @@ dataset_configs = {
             "te": "tel_Telu",
         },
         "lang_names": {
-            "en": "English",
             "es": "Spanish",
             "fr": "French",
             "de": "German",
@@ -191,7 +185,6 @@ dataset_configs = {
     "pawsx": {
         "dataset": "paws-x",
         "dataset_configs": [
-            "en",
             "de",
             "es",
             "fr",
@@ -204,7 +197,6 @@ dataset_configs = {
         "file_path": "../datasets/pawsx_mt",
         "filename": "{config}_test_2k.tsv",
         "lang_codes": {
-            "en": "eng_Latn",
             "de": "deu_Latn",
             "es": "spa_Latn",
             "fr": "fra_Latn",
@@ -213,7 +205,6 @@ dataset_configs = {
             "zh": "zho_Hans",
         },
         "lang_names": {
-            "en": "English",
             "de": "German",
             "es": "Spanish",
             "fr": "French",
@@ -224,13 +215,12 @@ dataset_configs = {
     },
     "xwinograd": {
         "dataset": "Muennighoff/xwinograd",
-        "dataset_configs": ["en", "fr", "jp", "pt", "ru", "zh"],
+        "dataset_configs": ["fr", "jp", "pt", "ru", "zh"],
         "dataset_split": "test",
         "dataset_fields": ["sentence", "option1", "option2"],
         "file_path": "../datasets/xwinograd_mt",
         "filename": "{config}.jsonl",
         "lang_codes": {
-            "en": "eng_Latn",
             "fr": "fra_Latn",
             "jp": "jpn_Jpan",
             "pt": "por_Latn",
@@ -238,7 +228,6 @@ dataset_configs = {
             "zh": "zho_Hans",
         },
         "lang_names": {
-            "en": "English",
             "fr": "French",
             "jp": "Japanese",
             "pt": "Portuguese",
