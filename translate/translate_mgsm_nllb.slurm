@@ -28,7 +28,7 @@ do
     --target_lang "eng_Latn" \
     --starting_batch_size 1536 \
     --model_name $model_name \
-    --max_length 64 \
+    --max_length 128 \
     --num_beams 1 \
     --num_return_sequences 1 \
     --precision fp16
