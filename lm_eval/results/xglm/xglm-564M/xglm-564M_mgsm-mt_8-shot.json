@@ -1,0 +1,217 @@
+{
+  "results": {
+    "mgsm-mt_nllb-200-1.3B_bn": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000008
+    },
+    "mgsm-mt_nllb-200-1.3B_de": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694265
+    },
+    "mgsm-mt_nllb-200-1.3B_es": {
+      "acc": 0.008,
+      "acc_stderr": 0.00564548367669017
+    },
+    "mgsm-mt_nllb-200-1.3B_fr": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690154
+    },
+    "mgsm-mt_nllb-200-1.3B_ja": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874349
+    },
+    "mgsm-mt_nllb-200-1.3B_ru": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694271
+    },
+    "mgsm-mt_nllb-200-1.3B_sw": {
+      "acc": 0.008,
+      "acc_stderr": 0.00564548367669016
+    },
+    "mgsm-mt_nllb-200-1.3B_te": {
+      "acc": 0.016,
+      "acc_stderr": 0.00795166118887434
+    },
+    "mgsm-mt_nllb-200-1.3B_th": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690179
+    },
+    "mgsm-mt_nllb-200-1.3B_zh": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690166
+    },
+    "mgsm-mt_nllb-200-3.3B_bn": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694272
+    },
+    "mgsm-mt_nllb-200-3.3B_de": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694274
+    },
+    "mgsm-mt_nllb-200-3.3B_es": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690179
+    },
+    "mgsm-mt_nllb-200-3.3B_fr": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000001
+    },
+    "mgsm-mt_nllb-200-3.3B_ja": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_nllb-200-3.3B_ru": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874326
+    },
+    "mgsm-mt_nllb-200-3.3B_sw": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694265
+    },
+    "mgsm-mt_nllb-200-3.3B_te": {
+      "acc": 0.004,
+      "acc_stderr": 0.0040000000000000036
+    },
+    "mgsm-mt_nllb-200-3.3B_th": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_nllb-200-3.3B_zh": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_bn": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.008,
+      "acc_stderr": 0.00564548367669017
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690162
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.012,
+      "acc_stderr": 0.00690032302369427
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_ru": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694268
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_sw": {
+      "acc": 0.016,
+      "acc_stderr": 0.00795166118887434
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_th": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690158
+    },
+    "mgsm-mt_nllb-200-distilled-600M_bn": {
+      "acc": 0.012,
+      "acc_stderr": 0.0069003230236942955
+    },
+    "mgsm-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690167
+    },
+    "mgsm-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694273
+    },
+    "mgsm-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694276
+    },
+    "mgsm-mt_nllb-200-distilled-600M_ru": {
+      "acc": 0.016,
+      "acc_stderr": 0.00795166118887434
+    },
+    "mgsm-mt_nllb-200-distilled-600M_sw": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690187
+    },
+    "mgsm-mt_nllb-200-distilled-600M_te": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874337
+    },
+    "mgsm-mt_nllb-200-distilled-600M_th": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874313
+    },
+    "mgsm-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964233
+    }
+  },
+  "versions": {
+    "mgsm-mt_nllb-200-1.3B_bn": 0,
+    "mgsm-mt_nllb-200-1.3B_de": 0,
+    "mgsm-mt_nllb-200-1.3B_es": 0,
+    "mgsm-mt_nllb-200-1.3B_fr": 0,
+    "mgsm-mt_nllb-200-1.3B_ja": 0,
+    "mgsm-mt_nllb-200-1.3B_ru": 0,
+    "mgsm-mt_nllb-200-1.3B_sw": 0,
+    "mgsm-mt_nllb-200-1.3B_te": 0,
+    "mgsm-mt_nllb-200-1.3B_th": 0,
+    "mgsm-mt_nllb-200-1.3B_zh": 0,
+    "mgsm-mt_nllb-200-3.3B_bn": 0,
+    "mgsm-mt_nllb-200-3.3B_de": 0,
+    "mgsm-mt_nllb-200-3.3B_es": 0,
+    "mgsm-mt_nllb-200-3.3B_fr": 0,
+    "mgsm-mt_nllb-200-3.3B_ja": 0,
+    "mgsm-mt_nllb-200-3.3B_ru": 0,
+    "mgsm-mt_nllb-200-3.3B_sw": 0,
+    "mgsm-mt_nllb-200-3.3B_te": 0,
+    "mgsm-mt_nllb-200-3.3B_th": 0,
+    "mgsm-mt_nllb-200-3.3B_zh": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_bn": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_de": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_es": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_fr": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_ja": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_ru": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_sw": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_te": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_th": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_zh": 0,
+    "mgsm-mt_nllb-200-distilled-600M_bn": 0,
+    "mgsm-mt_nllb-200-distilled-600M_de": 0,
+    "mgsm-mt_nllb-200-distilled-600M_es": 0,
+    "mgsm-mt_nllb-200-distilled-600M_fr": 0,
+    "mgsm-mt_nllb-200-distilled-600M_ja": 0,
+    "mgsm-mt_nllb-200-distilled-600M_ru": 0,
+    "mgsm-mt_nllb-200-distilled-600M_sw": 0,
+    "mgsm-mt_nllb-200-distilled-600M_te": 0,
+    "mgsm-mt_nllb-200-distilled-600M_th": 0,
+    "mgsm-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-564M,use_accelerate=True",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
