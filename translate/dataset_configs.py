@@ -214,10 +214,10 @@ dataset_configs = {
         },
     },
     "xwinograd": {
-        "dataset": "Muennighoff/xwinograd",
+        "dataset": "juletxara/xwinograd",
         "dataset_configs": ["fr", "jp", "pt", "ru", "zh"],
         "dataset_split": "test",
-        "dataset_fields": ["sentence", "option1", "option2"],
+        "dataset_fields": ["sentence1", "sentence2"],
         "file_path": "../datasets/xwinograd_mt",
         "filename": "{config}.jsonl",
         "lang_codes": {
