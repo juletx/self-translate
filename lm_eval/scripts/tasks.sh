@@ -20,7 +20,8 @@ tasks["xstory_cloze-mt"]=xstory_cloze-mt*
 tasks["xwinograd-mt"]=xwinograd-mt*
 tasks["xcopa-mt"]=xcopa-mt*
 tasks["pawsx-mt"]=pawsx-mt*
-tasks["xnli-mt"]=xnli-mt*
+# tasks["xnli-mt"]=xnli-mt*
+tasks["xnli-mt"]=xnli-mt_nllb-200-3.3B*
 
 tasks["reading_comprehension"]=race,coqa,drop # race-middle, quac
 
