@@ -201,7 +201,7 @@ dataset_configs = {
             "es": "spa_Latn",
             "fr": "fra_Latn",
             "ja": "jpn_Jpan",
-            "ko": "jpn_Hang",
+            "ko": "kor_Hang",
             "zh": "zho_Hans",
         },
         "lang_names": {
