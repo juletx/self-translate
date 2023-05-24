@@ -39,7 +39,7 @@ for model_name in "${model_names[@]}"; do
             --model_args pretrained=$model_name \
             --tasks ${tasks[${group_name}]} \
             --device cuda \
-            --output_path ../../results/llama-${model_name:48}_${group_name}_${num_fewshot}-shot.json \
+            --output_path ../../results/llama/llama-${model_name:48}/llama-${model_name:48}_${group_name}_${num_fewshot}-shot.json \
             --batch_size auto \
             --no_cache \
             --num_fewshot ${num_fewshot}
