@@ -22,6 +22,7 @@ tasks["xcopa-mt"]=xcopa-mt*
 tasks["pawsx-mt"]=pawsx-mt*
 # tasks["xnli-mt"]=xnli-mt*
 tasks["xnli-mt"]=xnli-mt_nllb-200-3.3B*
+tasks["xnli-mt-all"]=xnli-mt_nllb-200-1.3B*,xnli-mt_nllb-200-distilled*
 
 tasks["reading_comprehension"]=race,coqa,drop # race-middle, quac
 
