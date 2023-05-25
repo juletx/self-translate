@@ -1,0 +1,137 @@
+{
+  "results": {
+    "pawsx-mt_nllb-200-1.3B_de": {
+      "acc": 0.517,
+      "acc_stderr": 0.011176670299310671
+    },
+    "pawsx-mt_nllb-200-1.3B_es": {
+      "acc": 0.509,
+      "acc_stderr": 0.011181324206260284
+    },
+    "pawsx-mt_nllb-200-1.3B_fr": {
+      "acc": 0.514,
+      "acc_stderr": 0.01117875137218487
+    },
+    "pawsx-mt_nllb-200-1.3B_ja": {
+      "acc": 0.5045,
+      "acc_stderr": 0.011182683094883903
+    },
+    "pawsx-mt_nllb-200-1.3B_ko": {
+      "acc": 0.4935,
+      "acc_stderr": 0.011182191006142303
+    },
+    "pawsx-mt_nllb-200-1.3B_zh": {
+      "acc": 0.49,
+      "acc_stderr": 0.011180899170152966
+    },
+    "pawsx-mt_nllb-200-3.3B_de": {
+      "acc": 0.5195,
+      "acc_stderr": 0.01117462800971815
+    },
+    "pawsx-mt_nllb-200-3.3B_es": {
+      "acc": 0.516,
+      "acc_stderr": 0.011177408788874894
+    },
+    "pawsx-mt_nllb-200-3.3B_fr": {
+      "acc": 0.5285,
+      "acc_stderr": 0.011164954236428798
+    },
+    "pawsx-mt_nllb-200-3.3B_ja": {
+      "acc": 0.502,
+      "acc_stderr": 0.011183046555618482
+    },
+    "pawsx-mt_nllb-200-3.3B_ko": {
+      "acc": 0.5115,
+      "acc_stderr": 0.011180177690296082
+    },
+    "pawsx-mt_nllb-200-3.3B_zh": {
+      "acc": 0.495,
+      "acc_stderr": 0.011182576850283838
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.512,
+      "acc_stderr": 0.011179914813969712
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.52,
+      "acc_stderr": 0.011174185930778313
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.5235,
+      "acc_stderr": 0.011170777418517836
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.503,
+      "acc_stderr": 0.011182934722804556
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": {
+      "acc": 0.4935,
+      "acc_stderr": 0.0111821910061423
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.51,
+      "acc_stderr": 0.011180899170152985
+    },
+    "pawsx-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.505,
+      "acc_stderr": 0.011182576850283836
+    },
+    "pawsx-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.5105,
+      "acc_stderr": 0.011180669867648657
+    },
+    "pawsx-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.5215,
+      "acc_stderr": 0.011172792428275123
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.491,
+      "acc_stderr": 0.01118132420626029
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ko": {
+      "acc": 0.5005,
+      "acc_stderr": 0.011183130429495184
+    },
+    "pawsx-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.503,
+      "acc_stderr": 0.011182934722804563
+    }
+  },
+  "versions": {
+    "pawsx-mt_nllb-200-1.3B_de": 0,
+    "pawsx-mt_nllb-200-1.3B_es": 0,
+    "pawsx-mt_nllb-200-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-3.3B_de": 0,
+    "pawsx-mt_nllb-200-3.3B_es": 0,
+    "pawsx-mt_nllb-200-3.3B_fr": 0,
+    "pawsx-mt_nllb-200-3.3B_ja": 0,
+    "pawsx-mt_nllb-200-3.3B_ko": 0,
+    "pawsx-mt_nllb-200-3.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_de": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_es": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-600M_de": 0,
+    "pawsx-mt_nllb-200-distilled-600M_es": 0,
+    "pawsx-mt_nllb-200-distilled-600M_fr": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ja": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ko": 0,
+    "pawsx-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-1.7B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

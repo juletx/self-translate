@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_nllb-200-3.3B_ar": {
+      "acc": 0.3409181636726547,
+      "acc_stderr": 0.006697600297167045
+    },
+    "xnli-mt_nllb-200-3.3B_bg": {
+      "acc": 0.35469061876247504,
+      "acc_stderr": 0.006759791870304989
+    },
+    "xnli-mt_nllb-200-3.3B_de": {
+      "acc": 0.3520958083832335,
+      "acc_stderr": 0.006748547459518584
+    },
+    "xnli-mt_nllb-200-3.3B_el": {
+      "acc": 0.35409181636726544,
+      "acc_stderr": 0.006757216323265885
+    },
+    "xnli-mt_nllb-200-3.3B_es": {
+      "acc": 0.35169660678642717,
+      "acc_stderr": 0.0067467982034054765
+    },
+    "xnli-mt_nllb-200-3.3B_fr": {
+      "acc": 0.3526946107784431,
+      "acc_stderr": 0.006751161657858728
+    },
+    "xnli-mt_nllb-200-3.3B_hi": {
+      "acc": 0.35409181636726544,
+      "acc_stderr": 0.006757216323265885
+    },
+    "xnli-mt_nllb-200-3.3B_ru": {
+      "acc": 0.3506986027944112,
+      "acc_stderr": 0.006742402433513946
+    },
+    "xnli-mt_nllb-200-3.3B_sw": {
+      "acc": 0.35149700598802397,
+      "acc_stderr": 0.006745921636677083
+    },
+    "xnli-mt_nllb-200-3.3B_th": {
+      "acc": 0.3397205588822355,
+      "acc_stderr": 0.006691897598048399
+    },
+    "xnli-mt_nllb-200-3.3B_tr": {
+      "acc": 0.3447105788423154,
+      "acc_stderr": 0.00671534560357611
+    },
+    "xnli-mt_nllb-200-3.3B_ur": {
+      "acc": 0.35149700598802397,
+      "acc_stderr": 0.0067459216366770785
+    },
+    "xnli-mt_nllb-200-3.3B_vi": {
+      "acc": 0.34810379241516964,
+      "acc_stderr": 0.006730821739872405
+    },
+    "xnli-mt_nllb-200-3.3B_zh": {
+      "acc": 0.3592814371257485,
+      "acc_stderr": 0.006779154425885915
+    }
+  },
+  "versions": {
+    "xnli-mt_nllb-200-3.3B_ar": 0,
+    "xnli-mt_nllb-200-3.3B_bg": 0,
+    "xnli-mt_nllb-200-3.3B_de": 0,
+    "xnli-mt_nllb-200-3.3B_el": 0,
+    "xnli-mt_nllb-200-3.3B_es": 0,
+    "xnli-mt_nllb-200-3.3B_fr": 0,
+    "xnli-mt_nllb-200-3.3B_hi": 0,
+    "xnli-mt_nllb-200-3.3B_ru": 0,
+    "xnli-mt_nllb-200-3.3B_sw": 0,
+    "xnli-mt_nllb-200-3.3B_th": 0,
+    "xnli-mt_nllb-200-3.3B_tr": 0,
+    "xnli-mt_nllb-200-3.3B_ur": 0,
+    "xnli-mt_nllb-200-3.3B_vi": 0,
+    "xnli-mt_nllb-200-3.3B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
