@@ -1,0 +1,137 @@
+{
+  "results": {
+    "pawsx-mt_nllb-200-1.3B_de": {
+      "acc": 0.6595,
+      "acc_stderr": 0.010598869893602354
+    },
+    "pawsx-mt_nllb-200-1.3B_es": {
+      "acc": 0.6525,
+      "acc_stderr": 0.010650285878540916
+    },
+    "pawsx-mt_nllb-200-1.3B_fr": {
+      "acc": 0.6535,
+      "acc_stderr": 0.010643096953254574
+    },
+    "pawsx-mt_nllb-200-1.3B_ja": {
+      "acc": 0.607,
+      "acc_stderr": 0.01092406369368979
+    },
+    "pawsx-mt_nllb-200-1.3B_ko": {
+      "acc": 0.5835,
+      "acc_stderr": 0.011026090074507987
+    },
+    "pawsx-mt_nllb-200-1.3B_zh": {
+      "acc": 0.6175,
+      "acc_stderr": 0.010869956438573785
+    },
+    "pawsx-mt_nllb-200-3.3B_de": {
+      "acc": 0.666,
+      "acc_stderr": 0.010548821679192955
+    },
+    "pawsx-mt_nllb-200-3.3B_es": {
+      "acc": 0.6625,
+      "acc_stderr": 0.010576048477607493
+    },
+    "pawsx-mt_nllb-200-3.3B_fr": {
+      "acc": 0.657,
+      "acc_stderr": 0.010617526356593694
+    },
+    "pawsx-mt_nllb-200-3.3B_ja": {
+      "acc": 0.5945,
+      "acc_stderr": 0.010981583336946118
+    },
+    "pawsx-mt_nllb-200-3.3B_ko": {
+      "acc": 0.599,
+      "acc_stderr": 0.010961732517713438
+    },
+    "pawsx-mt_nllb-200-3.3B_zh": {
+      "acc": 0.6145,
+      "acc_stderr": 0.010885960089194145
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.674,
+      "acc_stderr": 0.010484128885092767
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.655,
+      "acc_stderr": 0.010632216232329413
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.6615,
+      "acc_stderr": 0.010583708350158856
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.5755,
+      "acc_stderr": 0.011054907529701136
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": {
+      "acc": 0.606,
+      "acc_stderr": 0.01092893960365916
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.6325,
+      "acc_stderr": 0.01078332114923322
+    },
+    "pawsx-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.667,
+      "acc_stderr": 0.010540922897344401
+    },
+    "pawsx-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.651,
+      "acc_stderr": 0.010660972196009385
+    },
+    "pawsx-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.655,
+      "acc_stderr": 0.010632216232329413
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.5785,
+      "acc_stderr": 0.011044449507896285
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ko": {
+      "acc": 0.577,
+      "acc_stderr": 0.011049730687855404
+    },
+    "pawsx-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.601,
+      "acc_stderr": 0.010952601505572451
+    }
+  },
+  "versions": {
+    "pawsx-mt_nllb-200-1.3B_de": 0,
+    "pawsx-mt_nllb-200-1.3B_es": 0,
+    "pawsx-mt_nllb-200-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-3.3B_de": 0,
+    "pawsx-mt_nllb-200-3.3B_es": 0,
+    "pawsx-mt_nllb-200-3.3B_fr": 0,
+    "pawsx-mt_nllb-200-3.3B_ja": 0,
+    "pawsx-mt_nllb-200-3.3B_ko": 0,
+    "pawsx-mt_nllb-200-3.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_de": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_es": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-600M_de": 0,
+    "pawsx-mt_nllb-200-distilled-600M_es": 0,
+    "pawsx-mt_nllb-200-distilled-600M_fr": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ja": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ko": 0,
+    "pawsx-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
