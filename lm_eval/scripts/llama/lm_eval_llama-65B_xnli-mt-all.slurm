@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_llama-65B_multilingual
+#SBATCH --job-name=lm_eval_llama-65B_xnli-mt-all
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:6
-#SBATCH --output=../.slurm/lm_eval_llama-65B_multilingual.out
-#SBATCH --error=../.slurm/lm_eval_llama-65B_multilingual.err
+#SBATCH --output=../.slurm/lm_eval_llama-65B_xnli-mt-all.out
+#SBATCH --error=../.slurm/lm_eval_llama-65B_xnli-mt-all.err
 
 # activate virtual environment
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
@@ -27,11 +27,7 @@ source ../tasks.sh
 
 # select tasks
 tasks_selected=(
-    "xcopa"
-    "xstory_cloze"
-    "xwinograd"
-    "pawsx"
-    "xnli"
+    "xnli-mt-all"
 )
 
 num_fewshot=0
@@ -44,7 +40,7 @@ for model_name in "${model_names[@]}"; do
             --tasks ${tasks[${group_name}]} \
             --device cuda \
             --output_path ../../results/llama/llama-${model_name:48}/llama-${model_name:48}_${group_name}_${num_fewshot}-shot.json \
-            --batch_size 1 \
+            --batch_size 8 \
             --no_cache \
             --num_fewshot ${num_fewshot}
     done
