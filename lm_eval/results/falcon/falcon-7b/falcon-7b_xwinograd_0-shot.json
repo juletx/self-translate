@@ -1,0 +1,47 @@
+{
+  "results": {
+    "xwinograd_en": {
+      "acc": 0.8804301075268817,
+      "acc_stderr": 0.006730391078162496
+    },
+    "xwinograd_fr": {
+      "acc": 0.6987951807228916,
+      "acc_stderr": 0.0506639425494172
+    },
+    "xwinograd_jp": {
+      "acc": 0.6089676746611054,
+      "acc_stderr": 0.015765969995357915
+    },
+    "xwinograd_pt": {
+      "acc": 0.7376425855513308,
+      "acc_stderr": 0.027178095238831284
+    },
+    "xwinograd_ru": {
+      "acc": 0.5555555555555556,
+      "acc_stderr": 0.0280419147291705
+    },
+    "xwinograd_zh": {
+      "acc": 0.7956349206349206,
+      "acc_stderr": 0.017979444509028913
+    }
+  },
+  "versions": {
+    "xwinograd_en": 0,
+    "xwinograd_fr": 0,
+    "xwinograd_jp": 0,
+    "xwinograd_pt": 0,
+    "xwinograd_ru": 0,
+    "xwinograd_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=tiiuae/falcon-7b,trust_remote_code=True,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

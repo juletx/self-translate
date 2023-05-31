@@ -1,0 +1,137 @@
+{
+  "results": {
+    "pawsx-mt_nllb-200-1.3B_de": {
+      "acc": 0.574,
+      "acc_stderr": 0.0110599801799455
+    },
+    "pawsx-mt_nllb-200-1.3B_es": {
+      "acc": 0.567,
+      "acc_stderr": 0.01108227902799013
+    },
+    "pawsx-mt_nllb-200-1.3B_fr": {
+      "acc": 0.5645,
+      "acc_stderr": 0.011089696374691113
+    },
+    "pawsx-mt_nllb-200-1.3B_ja": {
+      "acc": 0.5455,
+      "acc_stderr": 0.011136735987003711
+    },
+    "pawsx-mt_nllb-200-1.3B_ko": {
+      "acc": 0.532,
+      "acc_stderr": 0.011160209457602885
+    },
+    "pawsx-mt_nllb-200-1.3B_zh": {
+      "acc": 0.5385,
+      "acc_stderr": 0.011149934327957061
+    },
+    "pawsx-mt_nllb-200-3.3B_de": {
+      "acc": 0.5645,
+      "acc_stderr": 0.011089696374691113
+    },
+    "pawsx-mt_nllb-200-3.3B_es": {
+      "acc": 0.5675,
+      "acc_stderr": 0.011080761103521707
+    },
+    "pawsx-mt_nllb-200-3.3B_fr": {
+      "acc": 0.5655,
+      "acc_stderr": 0.011086763872590777
+    },
+    "pawsx-mt_nllb-200-3.3B_ja": {
+      "acc": 0.539,
+      "acc_stderr": 0.011149065020234342
+    },
+    "pawsx-mt_nllb-200-3.3B_ko": {
+      "acc": 0.5345,
+      "acc_stderr": 0.011156482803925177
+    },
+    "pawsx-mt_nllb-200-3.3B_zh": {
+      "acc": 0.5395,
+      "acc_stderr": 0.011148184426533297
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.562,
+      "acc_stderr": 0.011096827014281874
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.5645,
+      "acc_stderr": 0.011089696374691116
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.566,
+      "acc_stderr": 0.011085280407858918
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.509,
+      "acc_stderr": 0.011181324206260283
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": {
+      "acc": 0.5185,
+      "acc_stderr": 0.011175478542788572
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.5275,
+      "acc_stderr": 0.01116620871686354
+    },
+    "pawsx-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.5625,
+      "acc_stderr": 0.011095423796079503
+    },
+    "pawsx-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.5585,
+      "acc_stderr": 0.011106329288974693
+    },
+    "pawsx-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.561,
+      "acc_stderr": 0.011099599116647336
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.521,
+      "acc_stderr": 0.011173268141438297
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ko": {
+      "acc": 0.5175,
+      "acc_stderr": 0.011176284251254179
+    },
+    "pawsx-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.5185,
+      "acc_stderr": 0.011175478542788572
+    }
+  },
+  "versions": {
+    "pawsx-mt_nllb-200-1.3B_de": 0,
+    "pawsx-mt_nllb-200-1.3B_es": 0,
+    "pawsx-mt_nllb-200-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-3.3B_de": 0,
+    "pawsx-mt_nllb-200-3.3B_es": 0,
+    "pawsx-mt_nllb-200-3.3B_fr": 0,
+    "pawsx-mt_nllb-200-3.3B_ja": 0,
+    "pawsx-mt_nllb-200-3.3B_ko": 0,
+    "pawsx-mt_nllb-200-3.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_de": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_es": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-600M_de": 0,
+    "pawsx-mt_nllb-200-distilled-600M_es": 0,
+    "pawsx-mt_nllb-200-distilled-600M_fr": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ja": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ko": 0,
+    "pawsx-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=tiiuae/falcon-7b-instruct,trust_remote_code=True,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

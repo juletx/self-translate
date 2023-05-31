@@ -1,0 +1,92 @@
+{
+  "results": {
+    "xnli_ar": {
+      "acc": 0.33652694610778444,
+      "acc_stderr": 0.006676456919028453
+    },
+    "xnli_bg": {
+      "acc": 0.4119760479041916,
+      "acc_stderr": 0.006954372928338047
+    },
+    "xnli_de": {
+      "acc": 0.48902195608782434,
+      "acc_stderr": 0.007063009381816137
+    },
+    "xnli_el": {
+      "acc": 0.34770459081836325,
+      "acc_stderr": 0.006729020595578698
+    },
+    "xnli_en": {
+      "acc": 0.549500998003992,
+      "acc_stderr": 0.007030005155676548
+    },
+    "xnli_es": {
+      "acc": 0.49520958083832334,
+      "acc_stderr": 0.007064388178197128
+    },
+    "xnli_fr": {
+      "acc": 0.4818363273453094,
+      "acc_stderr": 0.007060049324579861
+    },
+    "xnli_hi": {
+      "acc": 0.3660678642714571,
+      "acc_stderr": 0.006806544227730865
+    },
+    "xnli_ru": {
+      "acc": 0.40179640718562876,
+      "acc_stderr": 0.006927108932518387
+    },
+    "xnli_sw": {
+      "acc": 0.3475049900199601,
+      "acc_stderr": 0.006728118069361822
+    },
+    "xnli_th": {
+      "acc": 0.38083832335329343,
+      "acc_stderr": 0.0068611488330883
+    },
+    "xnli_tr": {
+      "acc": 0.36447105788423156,
+      "acc_stderr": 0.00680023113662144
+    },
+    "xnli_ur": {
+      "acc": 0.3343313373253493,
+      "acc_stderr": 0.006665643509474757
+    },
+    "xnli_vi": {
+      "acc": 0.3834331337325349,
+      "acc_stderr": 0.0068700420433864505
+    },
+    "xnli_zh": {
+      "acc": 0.3459081836327345,
+      "acc_stderr": 0.0067208508925307815
+    }
+  },
+  "versions": {
+    "xnli_ar": 0,
+    "xnli_bg": 0,
+    "xnli_de": 0,
+    "xnli_el": 0,
+    "xnli_en": 0,
+    "xnli_es": 0,
+    "xnli_fr": 0,
+    "xnli_hi": 0,
+    "xnli_ru": 0,
+    "xnli_sw": 0,
+    "xnli_th": 0,
+    "xnli_tr": 0,
+    "xnli_ur": 0,
+    "xnli_vi": 0,
+    "xnli_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=tiiuae/falcon-40b,trust_remote_code=True,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
