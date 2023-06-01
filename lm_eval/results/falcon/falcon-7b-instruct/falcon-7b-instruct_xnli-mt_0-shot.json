@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_nllb-200-3.3B_ar": {
+      "acc": 0.48363273453093814,
+      "acc_stderr": 0.00706092632020187
+    },
+    "xnli-mt_nllb-200-3.3B_bg": {
+      "acc": 0.5049900199600799,
+      "acc_stderr": 0.007064360593648111
+    },
+    "xnli-mt_nllb-200-3.3B_de": {
+      "acc": 0.501996007984032,
+      "acc_stderr": 0.007064656136786084
+    },
+    "xnli-mt_nllb-200-3.3B_el": {
+      "acc": 0.4994011976047904,
+      "acc_stderr": 0.007064707363006137
+    },
+    "xnli-mt_nllb-200-3.3B_es": {
+      "acc": 0.5077844311377245,
+      "acc_stderr": 0.007063856171465544
+    },
+    "xnli-mt_nllb-200-3.3B_fr": {
+      "acc": 0.5045908183632735,
+      "acc_stderr": 0.007064414636745465
+    },
+    "xnli-mt_nllb-200-3.3B_hi": {
+      "acc": 0.4744510978043912,
+      "acc_stderr": 0.007055483469949187
+    },
+    "xnli-mt_nllb-200-3.3B_ru": {
+      "acc": 0.49241516966067866,
+      "acc_stderr": 0.00706389952166147
+    },
+    "xnli-mt_nllb-200-3.3B_sw": {
+      "acc": 0.46187624750499,
+      "acc_stderr": 0.007044146498996045
+    },
+    "xnli-mt_nllb-200-3.3B_th": {
+      "acc": 0.4744510978043912,
+      "acc_stderr": 0.0070554834699491885
+    },
+    "xnli-mt_nllb-200-3.3B_tr": {
+      "acc": 0.49520958083832334,
+      "acc_stderr": 0.007064388178197128
+    },
+    "xnli-mt_nllb-200-3.3B_ur": {
+      "acc": 0.4473053892215569,
+      "acc_stderr": 0.007025369394682786
+    },
+    "xnli-mt_nllb-200-3.3B_vi": {
+      "acc": 0.49221556886227547,
+      "acc_stderr": 0.007063856171465526
+    },
+    "xnli-mt_nllb-200-3.3B_zh": {
+      "acc": 0.48502994011976047,
+      "acc_stderr": 0.007061545277230283
+    }
+  },
+  "versions": {
+    "xnli-mt_nllb-200-3.3B_ar": 0,
+    "xnli-mt_nllb-200-3.3B_bg": 0,
+    "xnli-mt_nllb-200-3.3B_de": 0,
+    "xnli-mt_nllb-200-3.3B_el": 0,
+    "xnli-mt_nllb-200-3.3B_es": 0,
+    "xnli-mt_nllb-200-3.3B_fr": 0,
+    "xnli-mt_nllb-200-3.3B_hi": 0,
+    "xnli-mt_nllb-200-3.3B_ru": 0,
+    "xnli-mt_nllb-200-3.3B_sw": 0,
+    "xnli-mt_nllb-200-3.3B_th": 0,
+    "xnli-mt_nllb-200-3.3B_tr": 0,
+    "xnli-mt_nllb-200-3.3B_ur": 0,
+    "xnli-mt_nllb-200-3.3B_vi": 0,
+    "xnli-mt_nllb-200-3.3B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=tiiuae/falcon-7b-instruct,trust_remote_code=True,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

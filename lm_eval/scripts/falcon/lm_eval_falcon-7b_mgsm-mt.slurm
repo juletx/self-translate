@@ -13,11 +13,12 @@
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 export TOKENIZERS_PARALLELISM=false
-export CUDA_VISIBLE_DEVICES=3
+export CUDA_VISIBLE_DEVICES=7
 
 # xglm model names
 model_names=(
-    "tiiuae/falcon-7b"
+    #"tiiuae/falcon-7b"
+    "tiiuae/falcon-7b-instruct"
 )
 
 # load tasks
