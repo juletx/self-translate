@@ -40,7 +40,7 @@ for model_name in "${model_names[@]}"; do
             --batch_size 48 \
             --no_cache \
             --num_fewshot ${num_fewshot} \
-            --write_detailed_eval_info \
-            --detailed_eval_info_path ../../results/mpt/${model_name:9}/
+            --write_out \
+            --output_base_path ../../results/mpt/${model_name:9}/
     done
 done

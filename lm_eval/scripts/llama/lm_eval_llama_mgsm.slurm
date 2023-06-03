@@ -43,7 +43,7 @@ for model_name in "${model_names[@]}"; do
             --batch_size auto \
             --no_cache \
             --num_fewshot ${num_fewshot} \
-            --write_detailed_eval_info \
-            --detailed_eval_info_path ../../results/llama/llama-${model_name:48}/
+            --write_out \
+            --output_base_path ../../results/llama/llama-${model_name:48}/
     done
 done

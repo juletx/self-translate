@@ -44,7 +44,7 @@ for model_name in "${model_names[@]}"; do
             --batch_size auto \
             --no_cache \
             --num_fewshot ${num_fewshot} \
-            --write_detailed_eval_info \
-            --detailed_eval_info_path ../../results/bloom/${model_name:11}/
+            --write_out \
+            --output_base_path ../../results/bloom/${model_name:11}/
     done
 done

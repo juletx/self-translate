@@ -1,8 +1,8 @@
 {
   "results": {
     "mgsm-mt_nllb-200-1.3B_bn": {
-      "acc": 0.008,
-      "acc_stderr": 0.005645483676690181
+      "acc": 0.0,
+      "acc_stderr": 0.0
     },
     "mgsm-mt_nllb-200-1.3B_de": {
       "acc": 0.0,
@@ -205,9 +205,9 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "pretrained=facebook/xglm-7.5B,use_accelerate=True",
+    "model_args": "pretrained=facebook/xglm-7.5B,use_accelerate=True,dtype=float16",
     "num_fewshot": 8,
-    "batch_size": "auto",
+    "batch_size": "1",
     "device": "cuda",
     "no_cache": true,
     "limit": null,

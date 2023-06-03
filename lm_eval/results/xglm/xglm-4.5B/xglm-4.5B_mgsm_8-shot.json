@@ -1,48 +1,48 @@
 {
   "results": {
     "mgsm_bn": {
-      "acc": 0.0,
-      "acc_stderr": 0.0
-    },
-    "mgsm_de": {
-      "acc": 0.02,
-      "acc_stderr": 0.008872139507342683
-    },
-    "mgsm_en": {
-      "acc": 0.008,
-      "acc_stderr": 0.005645483676690154
-    },
-    "mgsm_es": {
-      "acc": 0.016,
-      "acc_stderr": 0.00795166118887434
-    },
-    "mgsm_fr": {
-      "acc": 0.004,
-      "acc_stderr": 0.004000000000000003
-    },
-    "mgsm_ja": {
       "acc": 0.004,
       "acc_stderr": 0.004000000000000001
     },
-    "mgsm_ru": {
-      "acc": 0.024,
-      "acc_stderr": 0.00969908702696426
+    "mgsm_de": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874333
     },
-    "mgsm_sw": {
-      "acc": 0.028,
-      "acc_stderr": 0.010454721651927295
+    "mgsm_en": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874342
     },
-    "mgsm_te": {
+    "mgsm_es": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    },
+    "mgsm_fr": {
       "acc": 0.008,
       "acc_stderr": 0.00564548367669017
     },
+    "mgsm_ja": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694262
+    },
+    "mgsm_ru": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    },
+    "mgsm_sw": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874333
+    },
+    "mgsm_te": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694284
+    },
     "mgsm_th": {
-      "acc": 0.0,
-      "acc_stderr": 0.0
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
     },
     "mgsm_zh": {
       "acc": 0.016,
-      "acc_stderr": 0.007951661188874342
+      "acc_stderr": 0.007951661188874314
     }
   },
   "versions": {
@@ -60,9 +60,9 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "pretrained=facebook/xglm-4.5B,use_accelerate=True",
+    "model_args": "pretrained=facebook/xglm-4.5B,use_accelerate=True,dtype=float16",
     "num_fewshot": 8,
-    "batch_size": "auto",
+    "batch_size": "1",
     "device": "cuda",
     "no_cache": true,
     "limit": null,

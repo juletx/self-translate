@@ -5,44 +5,44 @@
       "acc_stderr": 0.0
     },
     "mgsm_de": {
-      "acc": 0.012,
-      "acc_stderr": 0.0069003230236943
+      "acc": 0.028,
+      "acc_stderr": 0.010454721651927297
     },
     "mgsm_en": {
-      "acc": 0.0,
-      "acc_stderr": 0.0
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899602
     },
     "mgsm_es": {
-      "acc": 0.0,
-      "acc_stderr": 0.0
+      "acc": 0.052,
+      "acc_stderr": 0.01407039102564165
     },
     "mgsm_fr": {
+      "acc": 0.044,
+      "acc_stderr": 0.012997373846574957
+    },
+    "mgsm_ja": {
       "acc": 0.0,
       "acc_stderr": 0.0
     },
-    "mgsm_ja": {
-      "acc": 0.004,
-      "acc_stderr": 0.004000000000000006
-    },
     "mgsm_ru": {
-      "acc": 0.024,
-      "acc_stderr": 0.009699087026964242
+      "acc": 0.0,
+      "acc_stderr": 0.0
     },
     "mgsm_sw": {
-      "acc": 0.004,
-      "acc_stderr": 0.004000000000000002
+      "acc": 0.012,
+      "acc_stderr": 0.0069003230236942895
     },
     "mgsm_te": {
-      "acc": 0.012,
-      "acc_stderr": 0.006900323023694279
+      "acc": 0.0,
+      "acc_stderr": 0.0
     },
     "mgsm_th": {
-      "acc": 0.016,
-      "acc_stderr": 0.007951661188874314
+      "acc": 0.0,
+      "acc_stderr": 0.0
     },
     "mgsm_zh": {
-      "acc": 0.012,
-      "acc_stderr": 0.006900323023694278
+      "acc": 0.04,
+      "acc_stderr": 0.012418408411301301
     }
   },
   "versions": {
@@ -60,9 +60,9 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "pretrained=facebook/xglm-7.5B,use_accelerate=True,dtype=float16",
+    "model_args": "pretrained=tiiuae/falcon-7b-instruct,trust_remote_code=True,dtype=bfloat16",
     "num_fewshot": 8,
-    "batch_size": "1",
+    "batch_size": "auto",
     "device": "cuda",
     "no_cache": true,
     "limit": null,

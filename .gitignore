@@ -11,5 +11,6 @@ xstory_cloze_mt_zero_shot
 xstory_cloze_mt_few_shot
 lm_cache
 *_detailed_eval_info.json
+*_write_out_info.json
 __pycache__
 datasets

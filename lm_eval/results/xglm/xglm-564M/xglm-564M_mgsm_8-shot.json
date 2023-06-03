@@ -1,16 +1,16 @@
 {
   "results": {
     "mgsm_bn": {
-      "acc": 0.016,
-      "acc_stderr": 0.007951661188874347
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694269
     },
     "mgsm_de": {
       "acc": 0.008,
       "acc_stderr": 0.005645483676690178
     },
     "mgsm_en": {
-      "acc": 0.016,
-      "acc_stderr": 0.007951661188874316
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
     },
     "mgsm_es": {
       "acc": 0.012,
@@ -22,7 +22,7 @@
     },
     "mgsm_ja": {
       "acc": 0.04,
-      "acc_stderr": 0.012418408411301308
+      "acc_stderr": 0.012418408411301304
     },
     "mgsm_ru": {
       "acc": 0.004,
@@ -33,16 +33,16 @@
       "acc_stderr": 0.00969908702696426
     },
     "mgsm_te": {
-      "acc": 0.008,
-      "acc_stderr": 0.00564548367669017
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000008
     },
     "mgsm_th": {
-      "acc": 0.012,
-      "acc_stderr": 0.006900323023694287
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874335
     },
     "mgsm_zh": {
-      "acc": 0.036,
-      "acc_stderr": 0.011805655169278133
+      "acc": 0.032,
+      "acc_stderr": 0.011153546809230822
     }
   },
   "versions": {
@@ -60,9 +60,9 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "pretrained=facebook/xglm-564M,use_accelerate=True",
+    "model_args": "pretrained=facebook/xglm-564M,use_accelerate=True,dtype=float16",
     "num_fewshot": 8,
-    "batch_size": "auto",
+    "batch_size": "1",
     "device": "cuda",
     "no_cache": true,
     "limit": null,

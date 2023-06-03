@@ -13,6 +13,7 @@
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 export TOKENIZERS_PARALLELISM=false
+export CUDA_VISIBLE_DEVICES=2
 
 # xglm model names
 model_names=(
@@ -35,14 +36,16 @@ num_fewshot=8
 
 for model_name in "${model_names[@]}"; do
     for group_name in "${tasks_selected[@]}"; do
-        srun python3 ../../lm-evaluation-harness/main.py \
+        python3 ../../lm-evaluation-harness/main.py \
             --model hf-causal-experimental \
-            --model_args pretrained=$model_name,use_accelerate=True \
+            --model_args pretrained=$model_name,use_accelerate=True,dtype=float16 \
             --tasks ${tasks[${group_name}]} \
             --device cuda \
             --output_path ../../results/xglm/${model_name:9}/${model_name:9}_${group_name}_${num_fewshot}-shot.json \
-            --batch_size auto \
+            --batch_size 1 \
             --no_cache \
-            --num_fewshot ${num_fewshot}
+            --num_fewshot ${num_fewshot} \
+            --write_out \
+            --output_base_path ../../results/xglm/${model_name:9}/ >> ../.slurm/lm_eval_xglm_mgsm-mt.out 2>> ../.slurm/lm_eval_xglm_mgsm-mt.err
     done
 done
