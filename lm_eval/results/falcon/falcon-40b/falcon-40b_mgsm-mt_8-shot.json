@@ -1,0 +1,67 @@
+{
+  "results": {
+    "mgsm-mt_nllb-200-3.3B_bn": {
+      "acc": 0.216,
+      "acc_stderr": 0.026078657663732727
+    },
+    "mgsm-mt_nllb-200-3.3B_de": {
+      "acc": 0.244,
+      "acc_stderr": 0.027217995464553175
+    },
+    "mgsm-mt_nllb-200-3.3B_es": {
+      "acc": 0.276,
+      "acc_stderr": 0.02832853727421134
+    },
+    "mgsm-mt_nllb-200-3.3B_fr": {
+      "acc": 0.26,
+      "acc_stderr": 0.027797315752644308
+    },
+    "mgsm-mt_nllb-200-3.3B_ja": {
+      "acc": 0.24,
+      "acc_stderr": 0.027065293652239007
+    },
+    "mgsm-mt_nllb-200-3.3B_ru": {
+      "acc": 0.192,
+      "acc_stderr": 0.024960691989172012
+    },
+    "mgsm-mt_nllb-200-3.3B_sw": {
+      "acc": 0.24,
+      "acc_stderr": 0.027065293652239003
+    },
+    "mgsm-mt_nllb-200-3.3B_te": {
+      "acc": 0.22,
+      "acc_stderr": 0.02625179282460584
+    },
+    "mgsm-mt_nllb-200-3.3B_th": {
+      "acc": 0.196,
+      "acc_stderr": 0.02515685731325593
+    },
+    "mgsm-mt_nllb-200-3.3B_zh": {
+      "acc": 0.184,
+      "acc_stderr": 0.02455581299422256
+    }
+  },
+  "versions": {
+    "mgsm-mt_nllb-200-3.3B_bn": 0,
+    "mgsm-mt_nllb-200-3.3B_de": 0,
+    "mgsm-mt_nllb-200-3.3B_es": 0,
+    "mgsm-mt_nllb-200-3.3B_fr": 0,
+    "mgsm-mt_nllb-200-3.3B_ja": 0,
+    "mgsm-mt_nllb-200-3.3B_ru": 0,
+    "mgsm-mt_nllb-200-3.3B_sw": 0,
+    "mgsm-mt_nllb-200-3.3B_te": 0,
+    "mgsm-mt_nllb-200-3.3B_th": 0,
+    "mgsm-mt_nllb-200-3.3B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=tiiuae/falcon-40b,use_accelerate=True,trust_remote_code=True,dtype=bfloat16",
+    "num_fewshot": 8,
+    "batch_size": "6",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
