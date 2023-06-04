@@ -161,7 +161,6 @@ def main(
 
     if not return_output:
         save_sentences.f = open(output_path, "w", encoding="utf-8")
-    save_sentences.sentences = []
 
     @find_executable_batch_size(starting_batch_size=starting_batch_size)
     def inference(batch_size):
@@ -181,6 +180,8 @@ def main(
 
         samples_seen: int = 0
 
+        save_sentences.sentences = []
+
         with tqdm(
             total=total_lines,
             desc="Dataset translation",
@@ -193,11 +194,9 @@ def main(
                     batch["input_ids"] = batch["input_ids"]
                     batch["attention_mask"] = batch["attention_mask"]
 
-                    batch = {
-                        k: v for k, v in batch.items() if k != "token_type_ids"
-                    }
+                    batch = {k: v for k, v in batch.items() if k != "token_type_ids"}
 
-                    generated_tokens = model.generate(**batch, **gen_kwargs)
+                    generated_tokens = accelerator.unwrap_model(model).generate(**batch, **gen_kwargs)
 
                     generated_tokens = accelerator.pad_across_processes(
                         generated_tokens, dim=1, pad_index=tokenizer.pad_token_id
@@ -224,7 +223,9 @@ def main(
                             ]
                         else:
                             samples_seen += len(tgt_text)
-                        save_sentences(tgt_text)
+                        save_sentences(
+                            [encode_string(sentence) for sentence in tgt_text]
+                        )
 
                     pbar.update(len(tgt_text) // gen_kwargs["num_return_sequences"])
 

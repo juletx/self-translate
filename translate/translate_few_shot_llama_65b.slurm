@@ -1,31 +1,29 @@
 #!/bin/bash
-#SBATCH --job-name=translate_few_shot_bloom
+#SBATCH --job-name=translate_few_shot_llama_65b
 #SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
-#SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/translate_few_shot_bloom.out
-#SBATCH --error=.slurm/translate_few_shot_bloom.err
+#SBATCH --gres=gpu:4
+#SBATCH --output=.slurm/translate_few_shot_llama_65b.out
+#SBATCH --error=.slurm/translate_few_shot_llama_65b.err
 
 # activate virtual environment
 source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
-# bloom model names
+# llama model names
 model_names=(
-    "bigscience/bloom-560m"
-    "bigscience/bloom-1b1"
-    "bigscience/bloom-1b7"
-    "bigscience/bloom-3b"
-    "bigscience/bloom-7b1"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
 )
-
 
 datasets=(
     "xcopa"
-    #"xstory_cloze"
+    "xstory_cloze"
     "mgsm"
     "pawsx"
     "xnli"
@@ -38,7 +36,7 @@ for dataset in "${datasets[@]}"; do
         max_new_tokens=64
     fi
     for model_name in "${model_names[@]}"; do
-        srun accelerate launch --mixed_precision fp16 translate_dataset_few_shot.py \
+        srun accelerate launch --mixed_precision fp16 --num_processes 4 --multi_gpu translate_dataset_few_shot.py \
         --dataset $dataset \
         --target_lang "eng_Latn" \
         --starting_batch_size 128 \

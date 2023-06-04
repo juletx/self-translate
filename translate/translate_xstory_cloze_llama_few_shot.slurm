@@ -26,7 +26,7 @@ do
     srun accelerate launch --mixed_precision fp16 translate_dataset_few_shot.py \
     --dataset xstory_cloze \
     --target_lang "eng_Latn" \
-    --starting_batch_size 512 \
+    --starting_batch_size 128 \
     --model_name $model_name \
     --max_length 1024 \
     --max_new_tokens 64 \

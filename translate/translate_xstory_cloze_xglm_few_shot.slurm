@@ -15,11 +15,12 @@ export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
 # xglm model names
 model_names=(
-    #"facebook/xglm-564M"
-    #"facebook/xglm-1.7B"
+    "facebook/xglm-564M"
+    "facebook/xglm-1.7B"
+    "facebook/xglm-4.5B"
     "facebook/xglm-2.9B"
     "facebook/xglm-4.5B"
-    #"facebook/xglm-7.5B"
+    "facebook/xglm-7.5B"
 )
 
 for model_name in "${model_names[@]}"
@@ -27,7 +28,7 @@ do
     srun accelerate launch --mixed_precision fp16 translate_dataset_few_shot.py \
     --dataset xstory_cloze \
     --target_lang "eng_Latn" \
-    --starting_batch_size 56 \
+    --starting_batch_size 128 \
     --model_name $model_name \
     --max_length 1024 \
     --max_new_tokens 64 \

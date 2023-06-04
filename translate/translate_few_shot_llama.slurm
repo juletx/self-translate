@@ -39,13 +39,13 @@ for dataset in "${datasets[@]}"; do
         srun accelerate launch --mixed_precision fp16 translate_dataset_few_shot.py \
         --dataset $dataset \
         --target_lang "eng_Latn" \
-        --starting_batch_size 512 \
+        --starting_batch_size 128 \
         --model_name $model_name \
         --max_length 1024 \
         --max_new_tokens $max_new_tokens \
         --num_beams 1 \
         --num_return_sequences 1 \
         --precision fp16 \
-        --eos_token "</s>"
+        --eos_token "\n"
     done
 done

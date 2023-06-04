@@ -100,6 +100,8 @@ def translate_texts(dataset, texts, translate_args, dataset_args):
 
 def save_file(translations, config, translate_args, dataset_args):
     name = translate_args["model_name"].split("/")[-1]
+    if "LLaMA" in translate_args["model_name"]:
+        name = f"llama-{name}"
     dirname = f"{dataset_args['file_path']}/{name}"
     # create directory if it does not exist
     if not os.path.exists(dirname):
