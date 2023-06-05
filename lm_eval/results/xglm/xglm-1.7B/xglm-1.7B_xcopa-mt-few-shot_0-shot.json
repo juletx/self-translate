@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa-mt_xglm-1.7B_et": {
+      "acc": 0.59,
+      "acc_stderr": 0.022017482578127676
+    },
+    "xcopa-mt_xglm-1.7B_ht": {
+      "acc": 0.57,
+      "acc_stderr": 0.022162634426652835
+    },
+    "xcopa-mt_xglm-1.7B_id": {
+      "acc": 0.606,
+      "acc_stderr": 0.02187429930168925
+    },
+    "xcopa-mt_xglm-1.7B_it": {
+      "acc": 0.6,
+      "acc_stderr": 0.021930844120728505
+    },
+    "xcopa-mt_xglm-1.7B_qu": {
+      "acc": 0.508,
+      "acc_stderr": 0.022380208834928035
+    },
+    "xcopa-mt_xglm-1.7B_sw": {
+      "acc": 0.578,
+      "acc_stderr": 0.02210903931061855
+    },
+    "xcopa-mt_xglm-1.7B_ta": {
+      "acc": 0.588,
+      "acc_stderr": 0.022033677993740865
+    },
+    "xcopa-mt_xglm-1.7B_th": {
+      "acc": 0.584,
+      "acc_stderr": 0.02206494331392886
+    },
+    "xcopa-mt_xglm-1.7B_tr": {
+      "acc": 0.608,
+      "acc_stderr": 0.02185468495561126
+    },
+    "xcopa-mt_xglm-1.7B_vi": {
+      "acc": 0.61,
+      "acc_stderr": 0.021834685869369205
+    },
+    "xcopa-mt_xglm-1.7B_zh": {
+      "acc": 0.584,
+      "acc_stderr": 0.02206494331392886
+    }
+  },
+  "versions": {
+    "xcopa-mt_xglm-1.7B_et": 0,
+    "xcopa-mt_xglm-1.7B_ht": 0,
+    "xcopa-mt_xglm-1.7B_id": 0,
+    "xcopa-mt_xglm-1.7B_it": 0,
+    "xcopa-mt_xglm-1.7B_qu": 0,
+    "xcopa-mt_xglm-1.7B_sw": 0,
+    "xcopa-mt_xglm-1.7B_ta": 0,
+    "xcopa-mt_xglm-1.7B_th": 0,
+    "xcopa-mt_xglm-1.7B_tr": 0,
+    "xcopa-mt_xglm-1.7B_vi": 0,
+    "xcopa-mt_xglm-1.7B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-1.7B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

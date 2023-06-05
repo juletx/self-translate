@@ -1,0 +1,67 @@
+{
+  "results": {
+    "xstory_cloze-mt_xglm-2.9B_ar": {
+      "acc": 0.5632031767041694,
+      "acc_stderr": 0.012763912250173627
+    },
+    "xstory_cloze-mt_xglm-2.9B_es": {
+      "acc": 0.6128391793514228,
+      "acc_stderr": 0.012535177511067364
+    },
+    "xstory_cloze-mt_xglm-2.9B_eu": {
+      "acc": 0.5691594970218399,
+      "acc_stderr": 0.012743443034698406
+    },
+    "xstory_cloze-mt_xglm-2.9B_hi": {
+      "acc": 0.5830575777630708,
+      "acc_stderr": 0.012688354121607811
+    },
+    "xstory_cloze-mt_xglm-2.9B_id": {
+      "acc": 0.6035737921906023,
+      "acc_stderr": 0.012588033568434754
+    },
+    "xstory_cloze-mt_xglm-2.9B_my": {
+      "acc": 0.5757776307081403,
+      "acc_stderr": 0.012718494399531063
+    },
+    "xstory_cloze-mt_xglm-2.9B_ru": {
+      "acc": 0.5969556585043018,
+      "acc_stderr": 0.012622895215907709
+    },
+    "xstory_cloze-mt_xglm-2.9B_sw": {
+      "acc": 0.5790866975512905,
+      "acc_stderr": 0.012705145598630693
+    },
+    "xstory_cloze-mt_xglm-2.9B_te": {
+      "acc": 0.5625413633355394,
+      "acc_stderr": 0.012766070974549605
+    },
+    "xstory_cloze-mt_xglm-2.9B_zh": {
+      "acc": 0.5777630708140304,
+      "acc_stderr": 0.012710555263676445
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_xglm-2.9B_ar": 0,
+    "xstory_cloze-mt_xglm-2.9B_es": 0,
+    "xstory_cloze-mt_xglm-2.9B_eu": 0,
+    "xstory_cloze-mt_xglm-2.9B_hi": 0,
+    "xstory_cloze-mt_xglm-2.9B_id": 0,
+    "xstory_cloze-mt_xglm-2.9B_my": 0,
+    "xstory_cloze-mt_xglm-2.9B_ru": 0,
+    "xstory_cloze-mt_xglm-2.9B_sw": 0,
+    "xstory_cloze-mt_xglm-2.9B_te": 0,
+    "xstory_cloze-mt_xglm-2.9B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-2.9B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

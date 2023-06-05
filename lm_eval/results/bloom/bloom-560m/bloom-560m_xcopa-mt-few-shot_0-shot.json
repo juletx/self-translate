@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa-mt_bloom-560m_et": {
+      "acc": 0.486,
+      "acc_stderr": 0.02237429816635319
+    },
+    "xcopa-mt_bloom-560m_ht": {
+      "acc": 0.524,
+      "acc_stderr": 0.022357273881016403
+    },
+    "xcopa-mt_bloom-560m_id": {
+      "acc": 0.546,
+      "acc_stderr": 0.022288147591176952
+    },
+    "xcopa-mt_bloom-560m_it": {
+      "acc": 0.48,
+      "acc_stderr": 0.022365160424231336
+    },
+    "xcopa-mt_bloom-560m_qu": {
+      "acc": 0.47,
+      "acc_stderr": 0.022342748192502846
+    },
+    "xcopa-mt_bloom-560m_sw": {
+      "acc": 0.478,
+      "acc_stderr": 0.02236139673920787
+    },
+    "xcopa-mt_bloom-560m_ta": {
+      "acc": 0.526,
+      "acc_stderr": 0.02235279165091416
+    },
+    "xcopa-mt_bloom-560m_th": {
+      "acc": 0.486,
+      "acc_stderr": 0.02237429816635319
+    },
+    "xcopa-mt_bloom-560m_tr": {
+      "acc": 0.51,
+      "acc_stderr": 0.022378596989230774
+    },
+    "xcopa-mt_bloom-560m_vi": {
+      "acc": 0.534,
+      "acc_stderr": 0.02233126442325838
+    },
+    "xcopa-mt_bloom-560m_zh": {
+      "acc": 0.568,
+      "acc_stderr": 0.022175109265613162
+    }
+  },
+  "versions": {
+    "xcopa-mt_bloom-560m_et": 0,
+    "xcopa-mt_bloom-560m_ht": 0,
+    "xcopa-mt_bloom-560m_id": 0,
+    "xcopa-mt_bloom-560m_it": 0,
+    "xcopa-mt_bloom-560m_qu": 0,
+    "xcopa-mt_bloom-560m_sw": 0,
+    "xcopa-mt_bloom-560m_ta": 0,
+    "xcopa-mt_bloom-560m_th": 0,
+    "xcopa-mt_bloom-560m_tr": 0,
+    "xcopa-mt_bloom-560m_vi": 0,
+    "xcopa-mt_bloom-560m_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-560m,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

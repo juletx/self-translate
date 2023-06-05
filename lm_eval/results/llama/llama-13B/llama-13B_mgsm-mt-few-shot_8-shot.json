@@ -1,0 +1,67 @@
+{
+  "results": {
+    "mgsm-mt_llama-13B_bn": {
+      "acc": 0.036,
+      "acc_stderr": 0.011805655169278133
+    },
+    "mgsm-mt_llama-13B_de": {
+      "acc": 0.176,
+      "acc_stderr": 0.024133497525457116
+    },
+    "mgsm-mt_llama-13B_es": {
+      "acc": 0.204,
+      "acc_stderr": 0.025537121574548165
+    },
+    "mgsm-mt_llama-13B_fr": {
+      "acc": 0.18,
+      "acc_stderr": 0.024346890650293516
+    },
+    "mgsm-mt_llama-13B_ja": {
+      "acc": 0.092,
+      "acc_stderr": 0.018316275379429644
+    },
+    "mgsm-mt_llama-13B_ru": {
+      "acc": 0.152,
+      "acc_stderr": 0.02275202449176546
+    },
+    "mgsm-mt_llama-13B_sw": {
+      "acc": 0.036,
+      "acc_stderr": 0.011805655169278133
+    },
+    "mgsm-mt_llama-13B_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_llama-13B_th": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874323
+    },
+    "mgsm-mt_llama-13B_zh": {
+      "acc": 0.104,
+      "acc_stderr": 0.01934510097484388
+    }
+  },
+  "versions": {
+    "mgsm-mt_llama-13B_bn": 0,
+    "mgsm-mt_llama-13B_de": 0,
+    "mgsm-mt_llama-13B_es": 0,
+    "mgsm-mt_llama-13B_fr": 0,
+    "mgsm-mt_llama-13B_ja": 0,
+    "mgsm-mt_llama-13B_ru": 0,
+    "mgsm-mt_llama-13B_sw": 0,
+    "mgsm-mt_llama-13B_te": 0,
+    "mgsm-mt_llama-13B_th": 0,
+    "mgsm-mt_llama-13B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

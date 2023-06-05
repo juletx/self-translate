@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa-mt_xglm-564M_et": {
+      "acc": 0.522,
+      "acc_stderr": 0.02236139673920787
+    },
+    "xcopa-mt_xglm-564M_ht": {
+      "acc": 0.542,
+      "acc_stderr": 0.022303966774269945
+    },
+    "xcopa-mt_xglm-564M_id": {
+      "acc": 0.594,
+      "acc_stderr": 0.021983962090086337
+    },
+    "xcopa-mt_xglm-564M_it": {
+      "acc": 0.518,
+      "acc_stderr": 0.02236856511738799
+    },
+    "xcopa-mt_xglm-564M_qu": {
+      "acc": 0.5,
+      "acc_stderr": 0.022383074051792257
+    },
+    "xcopa-mt_xglm-564M_sw": {
+      "acc": 0.526,
+      "acc_stderr": 0.022352791650914167
+    },
+    "xcopa-mt_xglm-564M_ta": {
+      "acc": 0.55,
+      "acc_stderr": 0.022270877485360437
+    },
+    "xcopa-mt_xglm-564M_th": {
+      "acc": 0.552,
+      "acc_stderr": 0.02226169729227013
+    },
+    "xcopa-mt_xglm-564M_tr": {
+      "acc": 0.552,
+      "acc_stderr": 0.02226169729227013
+    },
+    "xcopa-mt_xglm-564M_vi": {
+      "acc": 0.518,
+      "acc_stderr": 0.02236856511738799
+    },
+    "xcopa-mt_xglm-564M_zh": {
+      "acc": 0.504,
+      "acc_stderr": 0.02238235778196214
+    }
+  },
+  "versions": {
+    "xcopa-mt_xglm-564M_et": 0,
+    "xcopa-mt_xglm-564M_ht": 0,
+    "xcopa-mt_xglm-564M_id": 0,
+    "xcopa-mt_xglm-564M_it": 0,
+    "xcopa-mt_xglm-564M_qu": 0,
+    "xcopa-mt_xglm-564M_sw": 0,
+    "xcopa-mt_xglm-564M_ta": 0,
+    "xcopa-mt_xglm-564M_th": 0,
+    "xcopa-mt_xglm-564M_tr": 0,
+    "xcopa-mt_xglm-564M_vi": 0,
+    "xcopa-mt_xglm-564M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-564M,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

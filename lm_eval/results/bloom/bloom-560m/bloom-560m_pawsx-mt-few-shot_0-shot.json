@@ -1,0 +1,47 @@
+{
+  "results": {
+    "pawsx-mt_bloom-560m_de": {
+      "acc": 0.4705,
+      "acc_stderr": 0.011163654804511664
+    },
+    "pawsx-mt_bloom-560m_es": {
+      "acc": 0.4945,
+      "acc_stderr": 0.01118245942086763
+    },
+    "pawsx-mt_bloom-560m_fr": {
+      "acc": 0.507,
+      "acc_stderr": 0.011182040020027772
+    },
+    "pawsx-mt_bloom-560m_ja": {
+      "acc": 0.447,
+      "acc_stderr": 0.011120131683767737
+    },
+    "pawsx-mt_bloom-560m_ko": {
+      "acc": 0.483,
+      "acc_stderr": 0.011176670299310675
+    },
+    "pawsx-mt_bloom-560m_zh": {
+      "acc": 0.5025,
+      "acc_stderr": 0.01118299623099078
+    }
+  },
+  "versions": {
+    "pawsx-mt_bloom-560m_de": 0,
+    "pawsx-mt_bloom-560m_es": 0,
+    "pawsx-mt_bloom-560m_fr": 0,
+    "pawsx-mt_bloom-560m_ja": 0,
+    "pawsx-mt_bloom-560m_ko": 0,
+    "pawsx-mt_bloom-560m_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-560m,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

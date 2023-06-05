@@ -1,0 +1,67 @@
+{
+  "results": {
+    "mgsm-mt_xglm-2.9B_bn": {
+      "acc": 0.008,
+      "acc_stderr": 0.00564548367669017
+    },
+    "mgsm-mt_xglm-2.9B_de": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694272
+    },
+    "mgsm-mt_xglm-2.9B_es": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874325
+    },
+    "mgsm-mt_xglm-2.9B_fr": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874344
+    },
+    "mgsm-mt_xglm-2.9B_ja": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874316
+    },
+    "mgsm-mt_xglm-2.9B_ru": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694285
+    },
+    "mgsm-mt_xglm-2.9B_sw": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_xglm-2.9B_te": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694275
+    },
+    "mgsm-mt_xglm-2.9B_th": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964252
+    },
+    "mgsm-mt_xglm-2.9B_zh": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    }
+  },
+  "versions": {
+    "mgsm-mt_xglm-2.9B_bn": 0,
+    "mgsm-mt_xglm-2.9B_de": 0,
+    "mgsm-mt_xglm-2.9B_es": 0,
+    "mgsm-mt_xglm-2.9B_fr": 0,
+    "mgsm-mt_xglm-2.9B_ja": 0,
+    "mgsm-mt_xglm-2.9B_ru": 0,
+    "mgsm-mt_xglm-2.9B_sw": 0,
+    "mgsm-mt_xglm-2.9B_te": 0,
+    "mgsm-mt_xglm-2.9B_th": 0,
+    "mgsm-mt_xglm-2.9B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-2.9B,use_accelerate=True,dtype=float16",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

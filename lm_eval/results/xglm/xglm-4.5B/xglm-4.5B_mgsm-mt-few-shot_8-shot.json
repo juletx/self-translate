@@ -1,0 +1,67 @@
+{
+  "results": {
+    "mgsm-mt_xglm-4.5B_bn": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_xglm-4.5B_de": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000004
+    },
+    "mgsm-mt_xglm-4.5B_es": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000003
+    },
+    "mgsm-mt_xglm-4.5B_fr": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000003
+    },
+    "mgsm-mt_xglm-4.5B_ja": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000003
+    },
+    "mgsm-mt_xglm-4.5B_ru": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000002
+    },
+    "mgsm-mt_xglm-4.5B_sw": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000003
+    },
+    "mgsm-mt_xglm-4.5B_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_xglm-4.5B_th": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_xglm-4.5B_zh": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000006
+    }
+  },
+  "versions": {
+    "mgsm-mt_xglm-4.5B_bn": 0,
+    "mgsm-mt_xglm-4.5B_de": 0,
+    "mgsm-mt_xglm-4.5B_es": 0,
+    "mgsm-mt_xglm-4.5B_fr": 0,
+    "mgsm-mt_xglm-4.5B_ja": 0,
+    "mgsm-mt_xglm-4.5B_ru": 0,
+    "mgsm-mt_xglm-4.5B_sw": 0,
+    "mgsm-mt_xglm-4.5B_te": 0,
+    "mgsm-mt_xglm-4.5B_th": 0,
+    "mgsm-mt_xglm-4.5B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-4.5B,use_accelerate=True,dtype=float16",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "results": {
+    "mgsm-mt_bloom-7b1_bn": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964249
+    },
+    "mgsm-mt_bloom-7b1_de": {
+      "acc": 0.06,
+      "acc_stderr": 0.015050117079158754
+    },
+    "mgsm-mt_bloom-7b1_es": {
+      "acc": 0.044,
+      "acc_stderr": 0.01299737384657496
+    },
+    "mgsm-mt_bloom-7b1_fr": {
+      "acc": 0.04,
+      "acc_stderr": 0.012418408411301304
+    },
+    "mgsm-mt_bloom-7b1_ja": {
+      "acc": 0.044,
+      "acc_stderr": 0.012997373846574966
+    },
+    "mgsm-mt_bloom-7b1_ru": {
+      "acc": 0.032,
+      "acc_stderr": 0.011153546809230828
+    },
+    "mgsm-mt_bloom-7b1_sw": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694287
+    },
+    "mgsm-mt_bloom-7b1_te": {
+      "acc": 0.028,
+      "acc_stderr": 0.010454721651927311
+    },
+    "mgsm-mt_bloom-7b1_th": {
+      "acc": 0.012,
+      "acc_stderr": 0.0069003230236942764
+    },
+    "mgsm-mt_bloom-7b1_zh": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874337
+    }
+  },
+  "versions": {
+    "mgsm-mt_bloom-7b1_bn": 0,
+    "mgsm-mt_bloom-7b1_de": 0,
+    "mgsm-mt_bloom-7b1_es": 0,
+    "mgsm-mt_bloom-7b1_fr": 0,
+    "mgsm-mt_bloom-7b1_ja": 0,
+    "mgsm-mt_bloom-7b1_ru": 0,
+    "mgsm-mt_bloom-7b1_sw": 0,
+    "mgsm-mt_bloom-7b1_te": 0,
+    "mgsm-mt_bloom-7b1_th": 0,
+    "mgsm-mt_bloom-7b1_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-7b1,use_accelerate=True,dtype=float16",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

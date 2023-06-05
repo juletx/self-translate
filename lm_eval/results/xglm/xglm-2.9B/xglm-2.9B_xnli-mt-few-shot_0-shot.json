@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_xglm-2.9B_ar": {
+      "acc": 0.43872255489021955,
+      "acc_stderr": 0.007011456767132423
+    },
+    "xnli-mt_xglm-2.9B_bg": {
+      "acc": 0.481437125748503,
+      "acc_stderr": 0.007059842029029192
+    },
+    "xnli-mt_xglm-2.9B_de": {
+      "acc": 0.4844311377245509,
+      "acc_stderr": 0.007061286774932461
+    },
+    "xnli-mt_xglm-2.9B_el": {
+      "acc": 0.4726546906187625,
+      "acc_stderr": 0.007054139014220696
+    },
+    "xnli-mt_xglm-2.9B_es": {
+      "acc": 0.4820359281437126,
+      "acc_stderr": 0.007060151280212557
+    },
+    "xnli-mt_xglm-2.9B_fr": {
+      "acc": 0.48522954091816367,
+      "acc_stderr": 0.0070616291898849505
+    },
+    "xnli-mt_xglm-2.9B_hi": {
+      "acc": 0.4411177644710579,
+      "acc_stderr": 0.007015553014299587
+    },
+    "xnli-mt_xglm-2.9B_ru": {
+      "acc": 0.46467065868263474,
+      "acc_stderr": 0.007047054545583691
+    },
+    "xnli-mt_xglm-2.9B_sw": {
+      "acc": 0.4479041916167665,
+      "acc_stderr": 0.007026260907024242
+    },
+    "xnli-mt_xglm-2.9B_th": {
+      "acc": 0.45828343313373254,
+      "acc_stderr": 0.007040080446339793
+    },
+    "xnli-mt_xglm-2.9B_tr": {
+      "acc": 0.45229540918163674,
+      "acc_stderr": 0.007032484191375652
+    },
+    "xnli-mt_xglm-2.9B_ur": {
+      "acc": 0.4241516966067864,
+      "acc_stderr": 0.006982953245556186
+    },
+    "xnli-mt_xglm-2.9B_vi": {
+      "acc": 0.4660678642714571,
+      "acc_stderr": 0.007048425178540596
+    },
+    "xnli-mt_xglm-2.9B_zh": {
+      "acc": 0.4668662674650699,
+      "acc_stderr": 0.007049183454584236
+    }
+  },
+  "versions": {
+    "xnli-mt_xglm-2.9B_ar": 0,
+    "xnli-mt_xglm-2.9B_bg": 0,
+    "xnli-mt_xglm-2.9B_de": 0,
+    "xnli-mt_xglm-2.9B_el": 0,
+    "xnli-mt_xglm-2.9B_es": 0,
+    "xnli-mt_xglm-2.9B_fr": 0,
+    "xnli-mt_xglm-2.9B_hi": 0,
+    "xnli-mt_xglm-2.9B_ru": 0,
+    "xnli-mt_xglm-2.9B_sw": 0,
+    "xnli-mt_xglm-2.9B_th": 0,
+    "xnli-mt_xglm-2.9B_tr": 0,
+    "xnli-mt_xglm-2.9B_ur": 0,
+    "xnli-mt_xglm-2.9B_vi": 0,
+    "xnli-mt_xglm-2.9B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-2.9B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

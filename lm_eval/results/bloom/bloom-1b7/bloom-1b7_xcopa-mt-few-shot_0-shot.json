@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa-mt_bloom-1b7_et": {
+      "acc": 0.504,
+      "acc_stderr": 0.022382357781962143
+    },
+    "xcopa-mt_bloom-1b7_ht": {
+      "acc": 0.458,
+      "acc_stderr": 0.02230396677426994
+    },
+    "xcopa-mt_bloom-1b7_id": {
+      "acc": 0.61,
+      "acc_stderr": 0.02183468586936921
+    },
+    "xcopa-mt_bloom-1b7_it": {
+      "acc": 0.59,
+      "acc_stderr": 0.022017482578127676
+    },
+    "xcopa-mt_bloom-1b7_qu": {
+      "acc": 0.474,
+      "acc_stderr": 0.02235279165091416
+    },
+    "xcopa-mt_bloom-1b7_sw": {
+      "acc": 0.514,
+      "acc_stderr": 0.022374298166353185
+    },
+    "xcopa-mt_bloom-1b7_ta": {
+      "acc": 0.584,
+      "acc_stderr": 0.02206494331392886
+    },
+    "xcopa-mt_bloom-1b7_th": {
+      "acc": 0.492,
+      "acc_stderr": 0.022380208834928035
+    },
+    "xcopa-mt_bloom-1b7_tr": {
+      "acc": 0.526,
+      "acc_stderr": 0.022352791650914167
+    },
+    "xcopa-mt_bloom-1b7_vi": {
+      "acc": 0.626,
+      "acc_stderr": 0.021660710347204484
+    },
+    "xcopa-mt_bloom-1b7_zh": {
+      "acc": 0.634,
+      "acc_stderr": 0.021564276850201625
+    }
+  },
+  "versions": {
+    "xcopa-mt_bloom-1b7_et": 0,
+    "xcopa-mt_bloom-1b7_ht": 0,
+    "xcopa-mt_bloom-1b7_id": 0,
+    "xcopa-mt_bloom-1b7_it": 0,
+    "xcopa-mt_bloom-1b7_qu": 0,
+    "xcopa-mt_bloom-1b7_sw": 0,
+    "xcopa-mt_bloom-1b7_ta": 0,
+    "xcopa-mt_bloom-1b7_th": 0,
+    "xcopa-mt_bloom-1b7_tr": 0,
+    "xcopa-mt_bloom-1b7_vi": 0,
+    "xcopa-mt_bloom-1b7_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-1b7,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "results": {
+    "pawsx-mt_xglm-1.7B_de": {
+      "acc": 0.4995,
+      "acc_stderr": 0.011183130429495185
+    },
+    "pawsx-mt_xglm-1.7B_es": {
+      "acc": 0.516,
+      "acc_stderr": 0.011177408788874896
+    },
+    "pawsx-mt_xglm-1.7B_fr": {
+      "acc": 0.516,
+      "acc_stderr": 0.011177408788874896
+    },
+    "pawsx-mt_xglm-1.7B_ja": {
+      "acc": 0.4965,
+      "acc_stderr": 0.011182862030875934
+    },
+    "pawsx-mt_xglm-1.7B_ko": {
+      "acc": 0.491,
+      "acc_stderr": 0.01118132420626029
+    },
+    "pawsx-mt_xglm-1.7B_zh": {
+      "acc": 0.494,
+      "acc_stderr": 0.01118233080628221
+    }
+  },
+  "versions": {
+    "pawsx-mt_xglm-1.7B_de": 0,
+    "pawsx-mt_xglm-1.7B_es": 0,
+    "pawsx-mt_xglm-1.7B_fr": 0,
+    "pawsx-mt_xglm-1.7B_ja": 0,
+    "pawsx-mt_xglm-1.7B_ko": 0,
+    "pawsx-mt_xglm-1.7B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-1.7B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
