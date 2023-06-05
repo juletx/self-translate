@@ -99,7 +99,7 @@ def main(
 
     print(f"Loading model {model_name}...")
     model = AutoModelForCausalLM.from_pretrained(
-        pretrained_model_name_or_path=model_name, cache_dir=cache_dir
+        pretrained_model_name_or_path=model_name, cache_dir=cache_dir, device_map="auto"
     )
 
     model.eval()

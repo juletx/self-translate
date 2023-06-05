@@ -22,9 +22,9 @@ model_names=(
 )
 
 datasets=(
+    "mgsm"
     "xcopa"
     "xstory_cloze"
-    "mgsm"
     "pawsx"
     "xnli"
 )
@@ -36,10 +36,10 @@ for dataset in "${datasets[@]}"; do
         max_new_tokens=64
     fi
     for model_name in "${model_names[@]}"; do
-        srun accelerate launch --mixed_precision fp16 --num_processes 4 --multi_gpu translate_dataset_few_shot.py \
+        srun accelerate launch --mixed_precision fp16 --num_processes 4 translate_dataset_few_shot.py \
         --dataset $dataset \
         --target_lang "eng_Latn" \
-        --starting_batch_size 128 \
+        --starting_batch_size 1 \
         --model_name $model_name \
         --max_length 1024 \
         --max_new_tokens $max_new_tokens \
