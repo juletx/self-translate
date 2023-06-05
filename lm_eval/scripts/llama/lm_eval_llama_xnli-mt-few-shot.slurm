@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_llama-multilingual-mt-few-shot
-#SBATCH --cpus-per-task=1
+#SBATCH --job-name=lm_eval_llama_xnli-mt-few-shot
+#SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=../.slurm/lm_eval_llama-multilingual-mt-few-shot.out
-#SBATCH --error=../.slurm/lm_eval_llama-multilingual-mt-few-shot.err
+#SBATCH --output=../.slurm/lm_eval_llama_xnli-mt-few-shot.out
+#SBATCH --error=../.slurm/lm_eval_llama_xnli-mt-few-shot.err
 
 # activate virtual environment
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
@@ -27,10 +27,7 @@ source ../tasks.sh
 
 # select tasks
 tasks_selected=(
-    "xcopa-mt"
-    "xstory_cloze-mt"
-    "pawsx-mt"
-    #"xnli-mt"
+    "xnli-mt"
 )
 
 num_fewshot=0

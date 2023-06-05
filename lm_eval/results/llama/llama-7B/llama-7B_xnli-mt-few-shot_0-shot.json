@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_llama-7B_ar": {
+      "acc": 0.40678642714570856,
+      "acc_stderr": 0.006940859457813739
+    },
+    "xnli-mt_llama-7B_bg": {
+      "acc": 0.4872255489021956,
+      "acc_stderr": 0.007062406320113165
+    },
+    "xnli-mt_llama-7B_de": {
+      "acc": 0.5059880239520959,
+      "acc_stderr": 0.007064205780402843
+    },
+    "xnli-mt_llama-7B_el": {
+      "acc": 0.4349301397205589,
+      "acc_stderr": 0.007004631746068005
+    },
+    "xnli-mt_llama-7B_es": {
+      "acc": 0.49800399201596807,
+      "acc_stderr": 0.007064656136786098
+    },
+    "xnli-mt_llama-7B_fr": {
+      "acc": 0.4946107784431138,
+      "acc_stderr": 0.007064302046492294
+    },
+    "xnli-mt_llama-7B_hi": {
+      "acc": 0.3966067864271457,
+      "acc_stderr": 0.006912016487823611
+    },
+    "xnli-mt_llama-7B_ru": {
+      "acc": 0.4802395209580838,
+      "acc_stderr": 0.007059193064473104
+    },
+    "xnli-mt_llama-7B_sw": {
+      "acc": 0.34830339321357284,
+      "acc_stderr": 0.006731720358995404
+    },
+    "xnli-mt_llama-7B_th": {
+      "acc": 0.3626746506986028,
+      "acc_stderr": 0.006793032325047766
+    },
+    "xnli-mt_llama-7B_tr": {
+      "acc": 0.38043912175648703,
+      "acc_stderr": 0.00685976223134307
+    },
+    "xnli-mt_llama-7B_ur": {
+      "acc": 0.36427145708582837,
+      "acc_stderr": 0.006799436324129597
+    },
+    "xnli-mt_llama-7B_vi": {
+      "acc": 0.39900199600798403,
+      "acc_stderr": 0.006919082884572924
+    },
+    "xnli-mt_llama-7B_zh": {
+      "acc": 0.4606786427145709,
+      "acc_stderr": 0.007042832065436707
+    }
+  },
+  "versions": {
+    "xnli-mt_llama-7B_ar": 0,
+    "xnli-mt_llama-7B_bg": 0,
+    "xnli-mt_llama-7B_de": 0,
+    "xnli-mt_llama-7B_el": 0,
+    "xnli-mt_llama-7B_es": 0,
+    "xnli-mt_llama-7B_fr": 0,
+    "xnli-mt_llama-7B_hi": 0,
+    "xnli-mt_llama-7B_ru": 0,
+    "xnli-mt_llama-7B_sw": 0,
+    "xnli-mt_llama-7B_th": 0,
+    "xnli-mt_llama-7B_tr": 0,
+    "xnli-mt_llama-7B_ur": 0,
+    "xnli-mt_llama-7B_vi": 0,
+    "xnli-mt_llama-7B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
