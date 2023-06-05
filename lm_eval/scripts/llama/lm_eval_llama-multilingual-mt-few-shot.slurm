@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_llama-65B_multilingual-mt-few-shot
+#SBATCH --job-name=lm_eval_llama-multilingual-mt-few-shot
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:2
-#SBATCH --output=../.slurm/lm_eval_llama-65B_multilingual-mt-few-shot.out
-#SBATCH --error=../.slurm/lm_eval_llama-65B_multilingual-mt-few-shot.err
+#SBATCH --output=../.slurm/lm_eval_llama-multilingual-mt-few-shot.out
+#SBATCH --error=../.slurm/lm_eval_llama-multilingual-mt-few-shot.err
 
 # activate virtual environment
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
@@ -18,7 +18,7 @@ export TOKENIZERS_PARALLELISM=false
 model_names=(
     "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
     "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
-    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
+    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
     #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
 )
 
@@ -30,7 +30,7 @@ tasks_selected=(
     "xcopa-mt"
     "xstory_cloze-mt"
     "pawsx-mt"
-    "xnli-mt"
+    #"xnli-mt"
 )
 
 num_fewshot=0

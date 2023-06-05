@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_bloom-1b1_ar": {
+      "acc": 0.4558882235528942,
+      "acc_stderr": 0.007037164996757833
+    },
+    "xnli-mt_bloom-1b1_bg": {
+      "acc": 0.3778443113772455,
+      "acc_stderr": 0.006850629279757306
+    },
+    "xnli-mt_bloom-1b1_de": {
+      "acc": 0.4213572854291417,
+      "acc_stderr": 0.0069767792627397325
+    },
+    "xnli-mt_bloom-1b1_el": {
+      "acc": 0.33552894211576845,
+      "acc_stderr": 0.006671561788489333
+    },
+    "xnli-mt_bloom-1b1_es": {
+      "acc": 0.48582834331337327,
+      "acc_stderr": 0.007061874164078159
+    },
+    "xnli-mt_bloom-1b1_fr": {
+      "acc": 0.4906187624750499,
+      "acc_stderr": 0.007063468822840632
+    },
+    "xnli-mt_bloom-1b1_hi": {
+      "acc": 0.4365269461077844,
+      "acc_stderr": 0.007007556190794116
+    },
+    "xnli-mt_bloom-1b1_ru": {
+      "acc": 0.36846307385229543,
+      "acc_stderr": 0.006815862868043798
+    },
+    "xnli-mt_bloom-1b1_sw": {
+      "acc": 0.38283433133732536,
+      "acc_stderr": 0.0068680081575717465
+    },
+    "xnli-mt_bloom-1b1_th": {
+      "acc": 0.35608782435129743,
+      "acc_stderr": 0.006765756521605752
+    },
+    "xnli-mt_bloom-1b1_tr": {
+      "acc": 0.3349301397205589,
+      "acc_stderr": 0.006668608672768921
+    },
+    "xnli-mt_bloom-1b1_ur": {
+      "acc": 0.4095808383233533,
+      "acc_stderr": 0.006948235364889489
+    },
+    "xnli-mt_bloom-1b1_vi": {
+      "acc": 0.4626746506986028,
+      "acc_stderr": 0.007045000071900884
+    },
+    "xnli-mt_bloom-1b1_zh": {
+      "acc": 0.47085828343313374,
+      "acc_stderr": 0.007052702953973549
+    }
+  },
+  "versions": {
+    "xnli-mt_bloom-1b1_ar": 0,
+    "xnli-mt_bloom-1b1_bg": 0,
+    "xnli-mt_bloom-1b1_de": 0,
+    "xnli-mt_bloom-1b1_el": 0,
+    "xnli-mt_bloom-1b1_es": 0,
+    "xnli-mt_bloom-1b1_fr": 0,
+    "xnli-mt_bloom-1b1_hi": 0,
+    "xnli-mt_bloom-1b1_ru": 0,
+    "xnli-mt_bloom-1b1_sw": 0,
+    "xnli-mt_bloom-1b1_th": 0,
+    "xnli-mt_bloom-1b1_tr": 0,
+    "xnli-mt_bloom-1b1_ur": 0,
+    "xnli-mt_bloom-1b1_vi": 0,
+    "xnli-mt_bloom-1b1_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-1b1,use_accelerate=True,dtype=float16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
