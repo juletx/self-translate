@@ -1,0 +1,47 @@
+{
+  "results": {
+    "pawsx-mt_llama-30B_de": {
+      "acc": 0.565,
+      "acc_stderr": 0.011088235860011597
+    },
+    "pawsx-mt_llama-30B_es": {
+      "acc": 0.568,
+      "acc_stderr": 0.011079231683079107
+    },
+    "pawsx-mt_llama-30B_fr": {
+      "acc": 0.5805,
+      "acc_stderr": 0.011037245371590673
+    },
+    "pawsx-mt_llama-30B_ja": {
+      "acc": 0.5455,
+      "acc_stderr": 0.011136735987003717
+    },
+    "pawsx-mt_llama-30B_ko": {
+      "acc": 0.5215,
+      "acc_stderr": 0.011172792428275121
+    },
+    "pawsx-mt_llama-30B_zh": {
+      "acc": 0.555,
+      "acc_stderr": 0.01111527213509921
+    }
+  },
+  "versions": {
+    "pawsx-mt_llama-30B_de": 0,
+    "pawsx-mt_llama-30B_es": 0,
+    "pawsx-mt_llama-30B_fr": 0,
+    "pawsx-mt_llama-30B_ja": 0,
+    "pawsx-mt_llama-30B_ko": 0,
+    "pawsx-mt_llama-30B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
