@@ -1,0 +1,47 @@
+{
+  "results": {
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_de": {
+      "acc": 0.5765,
+      "acc_stderr": 0.011051467887626386
+    },
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_es": {
+      "acc": 0.5895,
+      "acc_stderr": 0.011002518016406629
+    },
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_fr": {
+      "acc": 0.5945,
+      "acc_stderr": 0.010981583336946123
+    },
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_ja": {
+      "acc": 0.5545,
+      "acc_stderr": 0.011116504096687393
+    },
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_ko": {
+      "acc": 0.5255,
+      "acc_stderr": 0.011168582883330072
+    },
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_zh": {
+      "acc": 0.5675,
+      "acc_stderr": 0.011080761103521707
+    }
+  },
+  "versions": {
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_de": 0,
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_es": 0,
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_fr": 0,
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_ja": 0,
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_ko": 0,
+    "pawsx-mt_RedPajama-INCITE-Base-3B-v1_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-Base-3B-v1",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

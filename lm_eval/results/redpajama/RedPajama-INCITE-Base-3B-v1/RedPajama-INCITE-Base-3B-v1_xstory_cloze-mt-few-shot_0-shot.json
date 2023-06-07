@@ -1,0 +1,67 @@
+{
+  "results": {
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_ar": {
+      "acc": 0.5043017868960953,
+      "acc_stderr": 0.012866649085718846
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_es": {
+      "acc": 0.6048974189278623,
+      "acc_stderr": 0.01258077297613326
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_eu": {
+      "acc": 0.48974189278623426,
+      "acc_stderr": 0.012864417047980475
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_hi": {
+      "acc": 0.4870946393117141,
+      "acc_stderr": 0.01286283860572848
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_id": {
+      "acc": 0.49702183984116477,
+      "acc_stderr": 0.012866897066011228
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_my": {
+      "acc": 0.5195234943745863,
+      "acc_stderr": 0.012857312531836852
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_ru": {
+      "acc": 0.5691594970218399,
+      "acc_stderr": 0.012743443034698395
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_sw": {
+      "acc": 0.5016545334215751,
+      "acc_stderr": 0.012867054869163343
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_te": {
+      "acc": 0.48908007941760423,
+      "acc_stderr": 0.012864056278255038
+    },
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_zh": {
+      "acc": 0.5698213103904699,
+      "acc_stderr": 0.012741052817471078
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_ar": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_es": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_eu": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_hi": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_id": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_my": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_ru": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_sw": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_te": 0,
+    "xstory_cloze-mt_RedPajama-INCITE-Base-3B-v1_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-Base-3B-v1",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

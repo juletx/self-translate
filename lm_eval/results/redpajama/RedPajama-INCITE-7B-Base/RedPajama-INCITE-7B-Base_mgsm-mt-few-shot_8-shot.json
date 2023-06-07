@@ -1,0 +1,67 @@
+{
+  "results": {
+    "mgsm-mt_RedPajama-INCITE-7B-Base_bn": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000003
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_de": {
+      "acc": 0.04,
+      "acc_stderr": 0.012418408411301306
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_es": {
+      "acc": 0.068,
+      "acc_stderr": 0.01595374841074702
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_fr": {
+      "acc": 0.06,
+      "acc_stderr": 0.015050117079158768
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_ja": {
+      "acc": 0.028,
+      "acc_stderr": 0.010454721651927311
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_ru": {
+      "acc": 0.056,
+      "acc_stderr": 0.0145706973368996
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_sw": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342686
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_te": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000001
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_th": {
+      "acc": 0.004,
+      "acc_stderr": 0.004000000000000008
+    },
+    "mgsm-mt_RedPajama-INCITE-7B-Base_zh": {
+      "acc": 0.036,
+      "acc_stderr": 0.011805655169278133
+    }
+  },
+  "versions": {
+    "mgsm-mt_RedPajama-INCITE-7B-Base_bn": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_de": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_es": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_fr": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_ja": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_ru": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_sw": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_te": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_th": 0,
+    "mgsm-mt_RedPajama-INCITE-7B-Base_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-7B-Base",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
