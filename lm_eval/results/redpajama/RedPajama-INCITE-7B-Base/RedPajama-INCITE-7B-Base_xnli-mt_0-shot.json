@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_nllb-200-3.3B_ar": {
+      "acc": 0.49780439121756487,
+      "acc_stderr": 0.0070646443152978826
+    },
+    "xnli-mt_nllb-200-3.3B_bg": {
+      "acc": 0.5067864271457085,
+      "acc_stderr": 0.007064061660296377
+    },
+    "xnli-mt_nllb-200-3.3B_de": {
+      "acc": 0.5085828343313373,
+      "acc_stderr": 0.007063671507909923
+    },
+    "xnli-mt_nllb-200-3.3B_el": {
+      "acc": 0.5089820359281437,
+      "acc_stderr": 0.007063572418157862
+    },
+    "xnli-mt_nllb-200-3.3B_es": {
+      "acc": 0.5189620758483033,
+      "acc_stderr": 0.0070596302207670365
+    },
+    "xnli-mt_nllb-200-3.3B_fr": {
+      "acc": 0.5135728542914172,
+      "acc_stderr": 0.0070621089934305836
+    },
+    "xnli-mt_nllb-200-3.3B_hi": {
+      "acc": 0.500998003992016,
+      "acc_stderr": 0.007064698356225163
+    },
+    "xnli-mt_nllb-200-3.3B_ru": {
+      "acc": 0.5023952095808383,
+      "acc_stderr": 0.007064631367930948
+    },
+    "xnli-mt_nllb-200-3.3B_sw": {
+      "acc": 0.4818363273453094,
+      "acc_stderr": 0.007060049324579859
+    },
+    "xnli-mt_nllb-200-3.3B_th": {
+      "acc": 0.480439121756487,
+      "acc_stderr": 0.00705930404614747
+    },
+    "xnli-mt_nllb-200-3.3B_tr": {
+      "acc": 0.5049900199600799,
+      "acc_stderr": 0.007064360593648109
+    },
+    "xnli-mt_nllb-200-3.3B_ur": {
+      "acc": 0.4596806387225549,
+      "acc_stderr": 0.007041705454856259
+    },
+    "xnli-mt_nllb-200-3.3B_vi": {
+      "acc": 0.49740518962075847,
+      "acc_stderr": 0.007064617294679292
+    },
+    "xnli-mt_nllb-200-3.3B_zh": {
+      "acc": 0.5,
+      "acc_stderr": 0.00706471242931543
+    }
+  },
+  "versions": {
+    "xnli-mt_nllb-200-3.3B_ar": 0,
+    "xnli-mt_nllb-200-3.3B_bg": 0,
+    "xnli-mt_nllb-200-3.3B_de": 0,
+    "xnli-mt_nllb-200-3.3B_el": 0,
+    "xnli-mt_nllb-200-3.3B_es": 0,
+    "xnli-mt_nllb-200-3.3B_fr": 0,
+    "xnli-mt_nllb-200-3.3B_hi": 0,
+    "xnli-mt_nllb-200-3.3B_ru": 0,
+    "xnli-mt_nllb-200-3.3B_sw": 0,
+    "xnli-mt_nllb-200-3.3B_th": 0,
+    "xnli-mt_nllb-200-3.3B_tr": 0,
+    "xnli-mt_nllb-200-3.3B_ur": 0,
+    "xnli-mt_nllb-200-3.3B_vi": 0,
+    "xnli-mt_nllb-200-3.3B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-7B-Base",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

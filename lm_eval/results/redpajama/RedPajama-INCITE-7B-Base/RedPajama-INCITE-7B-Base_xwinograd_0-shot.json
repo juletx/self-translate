@@ -1,0 +1,47 @@
+{
+  "results": {
+    "xwinograd_en": {
+      "acc": 0.8679569892473118,
+      "acc_stderr": 0.0070224515184346085
+    },
+    "xwinograd_fr": {
+      "acc": 0.6265060240963856,
+      "acc_stderr": 0.05341921480681956
+    },
+    "xwinograd_jp": {
+      "acc": 0.5589155370177268,
+      "acc_stderr": 0.016041730532390094
+    },
+    "xwinograd_pt": {
+      "acc": 0.6615969581749049,
+      "acc_stderr": 0.029232316577302644
+    },
+    "xwinograd_ru": {
+      "acc": 0.6095238095238096,
+      "acc_stderr": 0.027531368047811377
+    },
+    "xwinograd_zh": {
+      "acc": 0.6428571428571429,
+      "acc_stderr": 0.02136457356112441
+    }
+  },
+  "versions": {
+    "xwinograd_en": 0,
+    "xwinograd_fr": 0,
+    "xwinograd_jp": 0,
+    "xwinograd_pt": 0,
+    "xwinograd_ru": 0,
+    "xwinograd_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-7B-Base",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

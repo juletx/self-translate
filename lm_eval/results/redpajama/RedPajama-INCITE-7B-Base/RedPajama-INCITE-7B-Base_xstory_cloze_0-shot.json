@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xstory_cloze_ar": {
+      "acc": 0.47915287888815355,
+      "acc_stderr": 0.01285593628288127
+    },
+    "xstory_cloze_en": {
+      "acc": 0.7511581733951026,
+      "acc_stderr": 0.011125996404127694
+    },
+    "xstory_cloze_es": {
+      "acc": 0.6366644606221046,
+      "acc_stderr": 0.012377153306613273
+    },
+    "xstory_cloze_eu": {
+      "acc": 0.5129053606882858,
+      "acc_stderr": 0.01286283860572848
+    },
+    "xstory_cloze_hi": {
+      "acc": 0.5115817339510258,
+      "acc_stderr": 0.012863672949335889
+    },
+    "xstory_cloze_id": {
+      "acc": 0.5181998676373263,
+      "acc_stderr": 0.012858598401831844
+    },
+    "xstory_cloze_my": {
+      "acc": 0.49106551952349436,
+      "acc_stderr": 0.012865070917320805
+    },
+    "xstory_cloze_ru": {
+      "acc": 0.5810721376571807,
+      "acc_stderr": 0.012696855440486906
+    },
+    "xstory_cloze_sw": {
+      "acc": 0.5168762409000662,
+      "acc_stderr": 0.012859793919977606
+    },
+    "xstory_cloze_te": {
+      "acc": 0.5347452018530774,
+      "acc_stderr": 0.01283602058540744
+    },
+    "xstory_cloze_zh": {
+      "acc": 0.5466578424884183,
+      "acc_stderr": 0.012810980537828167
+    }
+  },
+  "versions": {
+    "xstory_cloze_ar": 0,
+    "xstory_cloze_en": 0,
+    "xstory_cloze_es": 0,
+    "xstory_cloze_eu": 0,
+    "xstory_cloze_hi": 0,
+    "xstory_cloze_id": 0,
+    "xstory_cloze_my": 0,
+    "xstory_cloze_ru": 0,
+    "xstory_cloze_sw": 0,
+    "xstory_cloze_te": 0,
+    "xstory_cloze_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-7B-Base",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

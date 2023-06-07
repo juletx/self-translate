@@ -1,0 +1,92 @@
+{
+  "results": {
+    "xnli_ar": {
+      "acc": 0.33592814371257484,
+      "acc_stderr": 0.006673523847107448
+    },
+    "xnli_bg": {
+      "acc": 0.3596806387225549,
+      "acc_stderr": 0.006780806188906262
+    },
+    "xnli_de": {
+      "acc": 0.4231536926147705,
+      "acc_stderr": 0.006980774514705827
+    },
+    "xnli_el": {
+      "acc": 0.34331337325349304,
+      "acc_stderr": 0.006708863113826308
+    },
+    "xnli_en": {
+      "acc": 0.53812375249501,
+      "acc_stderr": 0.007044146498996047
+    },
+    "xnli_es": {
+      "acc": 0.38822355289421157,
+      "acc_stderr": 0.006885917268784379
+    },
+    "xnli_fr": {
+      "acc": 0.49041916167664673,
+      "acc_stderr": 0.007063415335532708
+    },
+    "xnli_hi": {
+      "acc": 0.34331337325349304,
+      "acc_stderr": 0.006708863113826295
+    },
+    "xnli_ru": {
+      "acc": 0.38822355289421157,
+      "acc_stderr": 0.006885917268784374
+    },
+    "xnli_sw": {
+      "acc": 0.34930139720558884,
+      "acc_stderr": 0.006736193945189079
+    },
+    "xnli_th": {
+      "acc": 0.3345309381237525,
+      "acc_stderr": 0.006666633236850039
+    },
+    "xnli_tr": {
+      "acc": 0.34291417165668664,
+      "acc_stderr": 0.006706999150071526
+    },
+    "xnli_ur": {
+      "acc": 0.3345309381237525,
+      "acc_stderr": 0.006666633236850029
+    },
+    "xnli_vi": {
+      "acc": 0.33912175648702597,
+      "acc_stderr": 0.006689028372776542
+    },
+    "xnli_zh": {
+      "acc": 0.3159680638722555,
+      "acc_stderr": 0.006568773210450613
+    }
+  },
+  "versions": {
+    "xnli_ar": 0,
+    "xnli_bg": 0,
+    "xnli_de": 0,
+    "xnli_el": 0,
+    "xnli_en": 0,
+    "xnli_es": 0,
+    "xnli_fr": 0,
+    "xnli_hi": 0,
+    "xnli_ru": 0,
+    "xnli_sw": 0,
+    "xnli_th": 0,
+    "xnli_tr": 0,
+    "xnli_ur": 0,
+    "xnli_vi": 0,
+    "xnli_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-Base-3B-v1",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

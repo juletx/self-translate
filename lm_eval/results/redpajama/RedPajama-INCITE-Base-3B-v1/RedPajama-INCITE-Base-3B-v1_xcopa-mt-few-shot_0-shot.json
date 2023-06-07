@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_et": {
+      "acc": 0.52,
+      "acc_stderr": 0.022365160424231333
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_ht": {
+      "acc": 0.534,
+      "acc_stderr": 0.02233126442325838
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_id": {
+      "acc": 0.556,
+      "acc_stderr": 0.02224224437573102
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_it": {
+      "acc": 0.648,
+      "acc_stderr": 0.02138004238594604
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_qu": {
+      "acc": 0.502,
+      "acc_stderr": 0.022382894986483524
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_sw": {
+      "acc": 0.502,
+      "acc_stderr": 0.022382894986483524
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_ta": {
+      "acc": 0.502,
+      "acc_stderr": 0.02238289498648353
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_th": {
+      "acc": 0.51,
+      "acc_stderr": 0.02237859698923078
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_tr": {
+      "acc": 0.5,
+      "acc_stderr": 0.022383074051792257
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_vi": {
+      "acc": 0.462,
+      "acc_stderr": 0.02231833811987053
+    },
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_zh": {
+      "acc": 0.6,
+      "acc_stderr": 0.021930844120728505
+    }
+  },
+  "versions": {
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_et": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_ht": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_id": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_it": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_qu": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_sw": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_ta": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_th": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_tr": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_vi": 0,
+    "xcopa-mt_RedPajama-INCITE-Base-3B-v1_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-Base-3B-v1",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

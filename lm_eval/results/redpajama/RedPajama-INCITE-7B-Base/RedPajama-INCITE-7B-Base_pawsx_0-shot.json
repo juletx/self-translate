@@ -1,0 +1,52 @@
+{
+  "results": {
+    "pawsx_de": {
+      "acc": 0.5925,
+      "acc_stderr": 0.010990098549743105
+    },
+    "pawsx_en": {
+      "acc": 0.6025,
+      "acc_stderr": 0.010945628277499658
+    },
+    "pawsx_es": {
+      "acc": 0.623,
+      "acc_stderr": 0.010839476330688822
+    },
+    "pawsx_fr": {
+      "acc": 0.5585,
+      "acc_stderr": 0.01110632928897469
+    },
+    "pawsx_ja": {
+      "acc": 0.532,
+      "acc_stderr": 0.011160209457602885
+    },
+    "pawsx_ko": {
+      "acc": 0.4965,
+      "acc_stderr": 0.011182862030875934
+    },
+    "pawsx_zh": {
+      "acc": 0.4695,
+      "acc_stderr": 0.011162310405413173
+    }
+  },
+  "versions": {
+    "pawsx_de": 0,
+    "pawsx_en": 0,
+    "pawsx_es": 0,
+    "pawsx_fr": 0,
+    "pawsx_ja": 0,
+    "pawsx_ko": 0,
+    "pawsx_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-7B-Base",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

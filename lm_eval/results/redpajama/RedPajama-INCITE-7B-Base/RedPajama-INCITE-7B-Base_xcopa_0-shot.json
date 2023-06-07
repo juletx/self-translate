@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa_et": {
+      "acc": 0.49,
+      "acc_stderr": 0.02237859698923078
+    },
+    "xcopa_ht": {
+      "acc": 0.496,
+      "acc_stderr": 0.02238235778196214
+    },
+    "xcopa_id": {
+      "acc": 0.542,
+      "acc_stderr": 0.02230396677426994
+    },
+    "xcopa_it": {
+      "acc": 0.602,
+      "acc_stderr": 0.021912377885779957
+    },
+    "xcopa_qu": {
+      "acc": 0.48,
+      "acc_stderr": 0.02236516042423134
+    },
+    "xcopa_sw": {
+      "acc": 0.518,
+      "acc_stderr": 0.02236856511738799
+    },
+    "xcopa_ta": {
+      "acc": 0.548,
+      "acc_stderr": 0.022279694107843424
+    },
+    "xcopa_th": {
+      "acc": 0.53,
+      "acc_stderr": 0.022342748192502846
+    },
+    "xcopa_tr": {
+      "acc": 0.514,
+      "acc_stderr": 0.02237429816635318
+    },
+    "xcopa_vi": {
+      "acc": 0.496,
+      "acc_stderr": 0.02238235778196214
+    },
+    "xcopa_zh": {
+      "acc": 0.558,
+      "acc_stderr": 0.022231970696321122
+    }
+  },
+  "versions": {
+    "xcopa_et": 0,
+    "xcopa_ht": 0,
+    "xcopa_id": 0,
+    "xcopa_it": 0,
+    "xcopa_qu": 0,
+    "xcopa_sw": 0,
+    "xcopa_ta": 0,
+    "xcopa_th": 0,
+    "xcopa_tr": 0,
+    "xcopa_vi": 0,
+    "xcopa_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-7B-Base",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
