@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_llama-30B_ar": {
+      "acc": 0.4219560878243513,
+      "acc_stderr": 0.006978121525912941
+    },
+    "xnli-mt_llama-30B_bg": {
+      "acc": 0.47584830339321355,
+      "acc_stderr": 0.0070564658598637866
+    },
+    "xnli-mt_llama-30B_de": {
+      "acc": 0.47684630738522954,
+      "acc_stderr": 0.007057133671645295
+    },
+    "xnli-mt_llama-30B_el": {
+      "acc": 0.4483033932135729,
+      "acc_stderr": 0.00702684952618732
+    },
+    "xnli-mt_llama-30B_es": {
+      "acc": 0.4810379241516966,
+      "acc_stderr": 0.0070596302207670365
+    },
+    "xnli-mt_llama-30B_fr": {
+      "acc": 0.47784431137724553,
+      "acc_stderr": 0.007057773246468743
+    },
+    "xnli-mt_llama-30B_hi": {
+      "acc": 0.41417165668662675,
+      "acc_stderr": 0.006959849709759945
+    },
+    "xnli-mt_llama-30B_ru": {
+      "acc": 0.4728542914171657,
+      "acc_stderr": 0.007054292920881761
+    },
+    "xnli-mt_llama-30B_sw": {
+      "acc": 0.37305389221556884,
+      "acc_stderr": 0.006833219588289174
+    },
+    "xnli-mt_llama-30B_th": {
+      "acc": 0.37365269461077844,
+      "acc_stderr": 0.006835434878499953
+    },
+    "xnli-mt_llama-30B_tr": {
+      "acc": 0.42035928143712575,
+      "acc_stderr": 0.006974518775334312
+    },
+    "xnli-mt_llama-30B_ur": {
+      "acc": 0.38942115768463076,
+      "acc_stderr": 0.006889776461613038
+    },
+    "xnli-mt_llama-30B_vi": {
+      "acc": 0.4163672654690619,
+      "acc_stderr": 0.0069651840122133876
+    },
+    "xnli-mt_llama-30B_zh": {
+      "acc": 0.4431137724550898,
+      "acc_stderr": 0.007018840076132151
+    }
+  },
+  "versions": {
+    "xnli-mt_llama-30B_ar": 0,
+    "xnli-mt_llama-30B_bg": 0,
+    "xnli-mt_llama-30B_de": 0,
+    "xnli-mt_llama-30B_el": 0,
+    "xnli-mt_llama-30B_es": 0,
+    "xnli-mt_llama-30B_fr": 0,
+    "xnli-mt_llama-30B_hi": 0,
+    "xnli-mt_llama-30B_ru": 0,
+    "xnli-mt_llama-30B_sw": 0,
+    "xnli-mt_llama-30B_th": 0,
+    "xnli-mt_llama-30B_tr": 0,
+    "xnli-mt_llama-30B_ur": 0,
+    "xnli-mt_llama-30B_vi": 0,
+    "xnli-mt_llama-30B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

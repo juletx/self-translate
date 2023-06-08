@@ -1,0 +1,87 @@
+{
+  "results": {
+    "xnli-mt_RedPajama-INCITE-7B-Base_ar": {
+      "acc": 0.39900199600798403,
+      "acc_stderr": 0.00691908288457293
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_bg": {
+      "acc": 0.49500998003992014,
+      "acc_stderr": 0.007064360593648107
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_de": {
+      "acc": 0.5003992015968064,
+      "acc_stderr": 0.007064710177622648
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_el": {
+      "acc": 0.4215568862275449,
+      "acc_stderr": 0.006977227852451618
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_es": {
+      "acc": 0.5107784431137724,
+      "acc_stderr": 0.007063070754956939
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_fr": {
+      "acc": 0.5117764471057884,
+      "acc_stderr": 0.007062752622343649
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_hi": {
+      "acc": 0.37684630738522956,
+      "acc_stderr": 0.0068470610890415595
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_ru": {
+      "acc": 0.4844311377245509,
+      "acc_stderr": 0.00706128677493246
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_sw": {
+      "acc": 0.3333333333333333,
+      "acc_stderr": 0.006660674754535585
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_th": {
+      "acc": 0.3658682634730539,
+      "acc_stderr": 0.006805759501990722
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_tr": {
+      "acc": 0.37504990019960077,
+      "acc_stderr": 0.006840560403361571
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_ur": {
+      "acc": 0.3506986027944112,
+      "acc_stderr": 0.006742402433513948
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_vi": {
+      "acc": 0.3842315369261477,
+      "acc_stderr": 0.006872736752753577
+    },
+    "xnli-mt_RedPajama-INCITE-7B-Base_zh": {
+      "acc": 0.456686626746507,
+      "acc_stderr": 0.0070381550290041445
+    }
+  },
+  "versions": {
+    "xnli-mt_RedPajama-INCITE-7B-Base_ar": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_bg": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_de": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_el": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_es": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_fr": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_hi": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_ru": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_sw": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_th": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_tr": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_ur": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_vi": 0,
+    "xnli-mt_RedPajama-INCITE-7B-Base_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=togethercomputer/RedPajama-INCITE-7B-Base",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

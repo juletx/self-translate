@@ -1,0 +1,67 @@
+{
+  "results": {
+    "xstory_cloze-mt_llama-30B_ar": {
+      "acc": 0.5638649900727994,
+      "acc_stderr": 0.012761730431435756
+    },
+    "xstory_cloze-mt_llama-30B_es": {
+      "acc": 0.7399073461283918,
+      "acc_stderr": 0.011289227863061678
+    },
+    "xstory_cloze-mt_llama-30B_eu": {
+      "acc": 0.4884182660489742,
+      "acc_stderr": 0.012863672949335875
+    },
+    "xstory_cloze-mt_llama-30B_hi": {
+      "acc": 0.6015883520847121,
+      "acc_stderr": 0.012598743938252895
+    },
+    "xstory_cloze-mt_llama-30B_id": {
+      "acc": 0.6260754467240238,
+      "acc_stderr": 0.01245136184294448
+    },
+    "xstory_cloze-mt_llama-30B_my": {
+      "acc": 0.5102581072137657,
+      "acc_stderr": 0.012864417047980477
+    },
+    "xstory_cloze-mt_llama-30B_ru": {
+      "acc": 0.71409662475182,
+      "acc_stderr": 0.01162785634694061
+    },
+    "xstory_cloze-mt_llama-30B_sw": {
+      "acc": 0.48908007941760423,
+      "acc_stderr": 0.012864056278255043
+    },
+    "xstory_cloze-mt_llama-30B_te": {
+      "acc": 0.4990072799470549,
+      "acc_stderr": 0.012867099955422916
+    },
+    "xstory_cloze-mt_llama-30B_zh": {
+      "acc": 0.6697551290536069,
+      "acc_stderr": 0.012102848336416566
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_llama-30B_ar": 0,
+    "xstory_cloze-mt_llama-30B_es": 0,
+    "xstory_cloze-mt_llama-30B_eu": 0,
+    "xstory_cloze-mt_llama-30B_hi": 0,
+    "xstory_cloze-mt_llama-30B_id": 0,
+    "xstory_cloze-mt_llama-30B_my": 0,
+    "xstory_cloze-mt_llama-30B_ru": 0,
+    "xstory_cloze-mt_llama-30B_sw": 0,
+    "xstory_cloze-mt_llama-30B_te": 0,
+    "xstory_cloze-mt_llama-30B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B,use_accelerate=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
