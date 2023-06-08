@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xstory_cloze_ar": {
+      "acc": 0.4930509596293845,
+      "acc_stderr": 0.01286588257096072
+    },
+    "xstory_cloze_en": {
+      "acc": 0.7544672402382528,
+      "acc_stderr": 0.011076089145480224
+    },
+    "xstory_cloze_es": {
+      "acc": 0.6221045665122436,
+      "acc_stderr": 0.012477542072994658
+    },
+    "xstory_cloze_eu": {
+      "acc": 0.5036399735274653,
+      "acc_stderr": 0.01286678434828923
+    },
+    "xstory_cloze_hi": {
+      "acc": 0.5016545334215751,
+      "acc_stderr": 0.012867054869163346
+    },
+    "xstory_cloze_id": {
+      "acc": 0.5122435473196558,
+      "acc_stderr": 0.012863267059205548
+    },
+    "xstory_cloze_my": {
+      "acc": 0.4784910655195235,
+      "acc_stderr": 0.0128552142572966
+    },
+    "xstory_cloze_ru": {
+      "acc": 0.57180675049636,
+      "acc_stderr": 0.01273374279951516
+    },
+    "xstory_cloze_sw": {
+      "acc": 0.5036399735274653,
+      "acc_stderr": 0.012866784348289232
+    },
+    "xstory_cloze_te": {
+      "acc": 0.5301125082726671,
+      "acc_stderr": 0.012843769248432172
+    },
+    "xstory_cloze_zh": {
+      "acc": 0.5208471211118465,
+      "acc_stderr": 0.012855936282881269
+    }
+  },
+  "versions": {
+    "xstory_cloze_ar": 0,
+    "xstory_cloze_en": 0,
+    "xstory_cloze_es": 0,
+    "xstory_cloze_eu": 0,
+    "xstory_cloze_hi": 0,
+    "xstory_cloze_id": 0,
+    "xstory_cloze_my": 0,
+    "xstory_cloze_ru": 0,
+    "xstory_cloze_sw": 0,
+    "xstory_cloze_te": 0,
+    "xstory_cloze_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_7b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
