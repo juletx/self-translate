@@ -1,6 +1,7 @@
 dataset_configs = {
     "xnli": {
         "dataset": "xnli",
+        "dataset_mt": "juletxara/xnli_mt",
         "dataset_configs": [
             "ar",
             "bg",
@@ -56,6 +57,7 @@ dataset_configs = {
     },
     "xstory_cloze": {
         "dataset": "juletxara/xstory_cloze",
+        "dataset_mt": "juletxara/xstory_cloze_mt",
         "dataset_configs": ["ru", "zh", "es", "ar", "hi", "id", "te", "sw", "eu", "my"],
         "dataset_split": "eval",
         "dataset_fields": [
@@ -95,6 +97,7 @@ dataset_configs = {
     },
     "mgsm": {
         "dataset": "juletxara/mgsm",
+        "dataset_mt": "juletxara/mgsm_mt",
         "dataset_configs": [
             "es",
             "fr",
@@ -138,6 +141,7 @@ dataset_configs = {
     },
     "xcopa": {
         "dataset": "xcopa",
+        "dataset_mt": "juletxara/xcopa_mt",
         "dataset_configs": [
             "et",
             "ht",
@@ -184,6 +188,7 @@ dataset_configs = {
     },
     "pawsx": {
         "dataset": "paws-x",
+        "dataset_mt": "juletxara/pawsx_mt",
         "dataset_configs": [
             "de",
             "es",

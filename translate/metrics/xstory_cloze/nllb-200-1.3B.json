@@ -1,0 +1,262 @@
+{
+  "ru": {
+    "input_sentence_1": {
+      "sacrebleu": 48.29,
+      "chrf++": 66.98
+    },
+    "input_sentence_2": {
+      "sacrebleu": 41.48,
+      "chrf++": 61.04
+    },
+    "input_sentence_3": {
+      "sacrebleu": 40.29,
+      "chrf++": 60.32
+    },
+    "input_sentence_4": {
+      "sacrebleu": 40.38,
+      "chrf++": 60.05
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 45.03,
+      "chrf++": 63.84
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 43.85,
+      "chrf++": 63.48
+    }
+  },
+  "zh": {
+    "input_sentence_1": {
+      "sacrebleu": 36.41,
+      "chrf++": 58.48
+    },
+    "input_sentence_2": {
+      "sacrebleu": 30.61,
+      "chrf++": 53.0
+    },
+    "input_sentence_3": {
+      "sacrebleu": 30.71,
+      "chrf++": 52.75
+    },
+    "input_sentence_4": {
+      "sacrebleu": 30.04,
+      "chrf++": 52.21
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 31.76,
+      "chrf++": 53.93
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 32.88,
+      "chrf++": 54.98
+    }
+  },
+  "es": {
+    "input_sentence_1": {
+      "sacrebleu": 58.4,
+      "chrf++": 74.38
+    },
+    "input_sentence_2": {
+      "sacrebleu": 46.16,
+      "chrf++": 65.22
+    },
+    "input_sentence_3": {
+      "sacrebleu": 45.85,
+      "chrf++": 64.99
+    },
+    "input_sentence_4": {
+      "sacrebleu": 46.58,
+      "chrf++": 65.19
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 52.91,
+      "chrf++": 69.56
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 52.61,
+      "chrf++": 69.84
+    }
+  },
+  "ar": {
+    "input_sentence_1": {
+      "sacrebleu": 58.28,
+      "chrf++": 73.88
+    },
+    "input_sentence_2": {
+      "sacrebleu": 50.74,
+      "chrf++": 67.95
+    },
+    "input_sentence_3": {
+      "sacrebleu": 49.38,
+      "chrf++": 67.05
+    },
+    "input_sentence_4": {
+      "sacrebleu": 49.0,
+      "chrf++": 65.88
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 54.55,
+      "chrf++": 70.28
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 55.52,
+      "chrf++": 71.12
+    }
+  },
+  "hi": {
+    "input_sentence_1": {
+      "sacrebleu": 56.08,
+      "chrf++": 73.28
+    },
+    "input_sentence_2": {
+      "sacrebleu": 45.61,
+      "chrf++": 65.03
+    },
+    "input_sentence_3": {
+      "sacrebleu": 44.34,
+      "chrf++": 63.91
+    },
+    "input_sentence_4": {
+      "sacrebleu": 43.72,
+      "chrf++": 63.48
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 49.17,
+      "chrf++": 67.6
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 49.54,
+      "chrf++": 68.19
+    }
+  },
+  "id": {
+    "input_sentence_1": {
+      "sacrebleu": 47.16,
+      "chrf++": 66.42
+    },
+    "input_sentence_2": {
+      "sacrebleu": 37.05,
+      "chrf++": 58.39
+    },
+    "input_sentence_3": {
+      "sacrebleu": 38.67,
+      "chrf++": 59.52
+    },
+    "input_sentence_4": {
+      "sacrebleu": 38.32,
+      "chrf++": 59.05
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 43.14,
+      "chrf++": 62.43
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 42.45,
+      "chrf++": 62.21
+    }
+  },
+  "te": {
+    "input_sentence_1": {
+      "sacrebleu": 39.14,
+      "chrf++": 60.43
+    },
+    "input_sentence_2": {
+      "sacrebleu": 28.93,
+      "chrf++": 50.64
+    },
+    "input_sentence_3": {
+      "sacrebleu": 28.78,
+      "chrf++": 50.39
+    },
+    "input_sentence_4": {
+      "sacrebleu": 27.61,
+      "chrf++": 48.97
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 31.1,
+      "chrf++": 51.93
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 32.77,
+      "chrf++": 53.49
+    }
+  },
+  "sw": {
+    "input_sentence_1": {
+      "sacrebleu": 53.42,
+      "chrf++": 70.02
+    },
+    "input_sentence_2": {
+      "sacrebleu": 41.36,
+      "chrf++": 60.9
+    },
+    "input_sentence_3": {
+      "sacrebleu": 39.85,
+      "chrf++": 59.47
+    },
+    "input_sentence_4": {
+      "sacrebleu": 40.51,
+      "chrf++": 59.24
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 44.44,
+      "chrf++": 62.79
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 45.46,
+      "chrf++": 63.65
+    }
+  },
+  "eu": {
+    "input_sentence_1": {
+      "sacrebleu": 45.64,
+      "chrf++": 64.89
+    },
+    "input_sentence_2": {
+      "sacrebleu": 31.31,
+      "chrf++": 52.76
+    },
+    "input_sentence_3": {
+      "sacrebleu": 30.85,
+      "chrf++": 52.82
+    },
+    "input_sentence_4": {
+      "sacrebleu": 32.39,
+      "chrf++": 52.63
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 36.88,
+      "chrf++": 57.36
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 36.74,
+      "chrf++": 57.44
+    }
+  },
+  "my": {
+    "input_sentence_1": {
+      "sacrebleu": 37.26,
+      "chrf++": 58.51
+    },
+    "input_sentence_2": {
+      "sacrebleu": 30.05,
+      "chrf++": 52.06
+    },
+    "input_sentence_3": {
+      "sacrebleu": 27.99,
+      "chrf++": 49.58
+    },
+    "input_sentence_4": {
+      "sacrebleu": 25.46,
+      "chrf++": 47.59
+    },
+    "sentence_quiz1": {
+      "sacrebleu": 29.75,
+      "chrf++": 51.9
+    },
+    "sentence_quiz2": {
+      "sacrebleu": 29.13,
+      "chrf++": 51.47
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "de": {
+    "sentence1": {
+      "sacrebleu": 26.8,
+      "chrf++": 47.72
+    },
+    "sentence2": {
+      "sacrebleu": 26.55,
+      "chrf++": 47.59
+    }
+  },
+  "es": {
+    "sentence1": {
+      "sacrebleu": 46.12,
+      "chrf++": 65.41
+    },
+    "sentence2": {
+      "sacrebleu": 46.03,
+      "chrf++": 65.57
+    }
+  },
+  "fr": {
+    "sentence1": {
+      "sacrebleu": 45.16,
+      "chrf++": 65.49
+    },
+    "sentence2": {
+      "sacrebleu": 44.53,
+      "chrf++": 65.35
+    }
+  },
+  "ja": {
+    "sentence1": {
+      "sacrebleu": 4.37,
+      "chrf++": 19.43
+    },
+    "sentence2": {
+      "sacrebleu": 3.98,
+      "chrf++": 19.36
+    }
+  },
+  "ko": {
+    "sentence1": {
+      "sacrebleu": 1.34,
+      "chrf++": 12.43
+    },
+    "sentence2": {
+      "sacrebleu": 1.37,
+      "chrf++": 12.56
+    }
+  },
+  "zh": {
+    "sentence1": {
+      "sacrebleu": 13.96,
+      "chrf++": 36.4
+    },
+    "sentence2": {
+      "sacrebleu": 13.97,
+      "chrf++": 36.2
+    }
+  }
+}

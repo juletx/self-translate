@@ -1,12 +1,30 @@
+from typing import List, Tuple
 from torch.utils.data import IterableDataset
 
 
-def count_lines(input_list: list) -> int:
+def count_lines(input_list: List[str]) -> int:
+    """
+    Counts the number of lines in a list of strings.
+
+    Args:
+        input_list (List[str]): List of strings.
+
+    Returns:
+        int: Number of lines in the list.
+    """
     return len(input_list)
 
 
 class DatasetReader(IterableDataset):
-    def __init__(self, sentences, tokenizer, max_length=128):
+    def __init__(self, sentences: List[str], tokenizer, max_length: int = 128):
+        """
+        Initializes the DatasetReader class.
+
+        Args:
+            sentences (List[str]): List of sentences.
+            tokenizer: Tokenizer object.
+            max_length (int, optional): Maximum length of the tokenized sentence. Defaults to 128.
+        """
         self.sentences = sentences
         self.tokenizer = tokenizer
         self.max_length = max_length
@@ -14,7 +32,16 @@ class DatasetReader(IterableDataset):
         self.total_lines = count_lines(sentences)
         print(f"{self.total_lines} lines in list")
 
-    def preprocess(self, text: str):
+    def preprocess(self, text: str) -> dict:
+        """
+        Preprocesses a sentence by tokenizing it.
+
+        Args:
+            text (str): Input sentence.
+
+        Returns:
+            dict: Tokenized sentence.
+        """
         self.current_line += 1
         text = text.rstrip().strip()
         if len(text) == 0:
@@ -28,28 +55,44 @@ class DatasetReader(IterableDataset):
         )
 
     def __iter__(self):
-        # file_itr = open(self.filename, "r", encoding="utf8")
         mapped_itr = map(self.preprocess, self.sentences)
         return mapped_itr
 
-    def __len__(self):
+    def __len__(self) -> int:
         return self.total_lines
 
 
 class ParallelTextReader(IterableDataset):
-    def __init__(self, pred_path: str, gold_path: str):
-        self.pred_path = pred_path
-        self.gold_path = gold_path
-        pref_filename_lines = count_lines(pred_path)
-        gold_path_lines = count_lines(gold_path)
-        assert pref_filename_lines == gold_path_lines, (
-            f"Lines in {pred_path} and {gold_path} do not match "
-            f"{pref_filename_lines} vs {gold_path_lines}"
+    def __init__(self, predictions: List[str], references: List[str]):
+        """
+        Initializes the ParallelTextReader class.
+
+        Args:
+            predictions (List[str]): List of predicted sentences.
+            references (List[str]): List of reference sentences.
+        """
+        self.predictions = predictions
+        self.references = references
+        predictions_lines = count_lines(predictions)
+        references_lines = count_lines(references)
+        assert predictions_lines == references_lines, (
+            f"Lines in predictions and references do not match "
+            f"{predictions_lines} vs {references_lines}"
         )
-        self.num_sentences = gold_path_lines
+        self.num_sentences = references_lines
         self.current_line = 0
 
-    def preprocess(self, pred: str, gold: str):
+    def preprocess(self, pred: str, gold: str) -> Tuple[str, List[str]]:
+        """
+        Preprocesses a predicted and a reference sentence by stripping them.
+
+        Args:
+            pred (str): Predicted sentence.
+            gold (str): Reference sentence.
+
+        Returns:
+            Tuple[str, List[str]]: Tuple containing the predicted sentence and a list with the reference sentence.
+        """
         self.current_line += 1
         pred = pred.rstrip().strip()
         gold = gold.rstrip().strip()
@@ -60,10 +103,8 @@ class ParallelTextReader(IterableDataset):
         return pred, [gold]
 
     def __iter__(self):
-        pred_itr = open(self.pred_path, "r", encoding="utf8")
-        gold_itr = open(self.gold_path, "r", encoding="utf8")
-        mapped_itr = map(self.preprocess, pred_itr, gold_itr)
+        mapped_itr = map(self.preprocess, self.predictions, self.references)
         return mapped_itr
 
-    def __len__(self):
+    def __len__(self) -> int:
         return self.num_sentences

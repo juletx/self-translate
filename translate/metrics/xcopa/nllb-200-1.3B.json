@@ -1,0 +1,156 @@
+{
+  "et": {
+    "premise": {
+      "sacrebleu": 45.16,
+      "chrf++": 61.56
+    },
+    "choice1": {
+      "sacrebleu": 44.47,
+      "chrf++": 63.22
+    },
+    "choice2": {
+      "sacrebleu": 41.62,
+      "chrf++": 60.26
+    }
+  },
+  "ht": {
+    "premise": {
+      "sacrebleu": 38.85,
+      "chrf++": 58.58
+    },
+    "choice1": {
+      "sacrebleu": 37.54,
+      "chrf++": 57.66
+    },
+    "choice2": {
+      "sacrebleu": 38.39,
+      "chrf++": 56.64
+    }
+  },
+  "it": {
+    "premise": {
+      "sacrebleu": 52.4,
+      "chrf++": 69.98
+    },
+    "choice1": {
+      "sacrebleu": 48.96,
+      "chrf++": 67.35
+    },
+    "choice2": {
+      "sacrebleu": 51.42,
+      "chrf++": 68.49
+    }
+  },
+  "id": {
+    "premise": {
+      "sacrebleu": 42.24,
+      "chrf++": 62.09
+    },
+    "choice1": {
+      "sacrebleu": 35.55,
+      "chrf++": 58.57
+    },
+    "choice2": {
+      "sacrebleu": 33.88,
+      "chrf++": 56.74
+    }
+  },
+  "qu": {
+    "premise": {
+      "sacrebleu": 11.27,
+      "chrf++": 29.91
+    },
+    "choice1": {
+      "sacrebleu": 10.52,
+      "chrf++": 29.11
+    },
+    "choice2": {
+      "sacrebleu": 9.66,
+      "chrf++": 28.72
+    }
+  },
+  "sw": {
+    "premise": {
+      "sacrebleu": 35.78,
+      "chrf++": 56.72
+    },
+    "choice1": {
+      "sacrebleu": 35.66,
+      "chrf++": 55.39
+    },
+    "choice2": {
+      "sacrebleu": 34.72,
+      "chrf++": 54.41
+    }
+  },
+  "zh": {
+    "premise": {
+      "sacrebleu": 36.47,
+      "chrf++": 59.17
+    },
+    "choice1": {
+      "sacrebleu": 39.34,
+      "chrf++": 60.32
+    },
+    "choice2": {
+      "sacrebleu": 39.74,
+      "chrf++": 60.39
+    }
+  },
+  "ta": {
+    "premise": {
+      "sacrebleu": 38.28,
+      "chrf++": 58.79
+    },
+    "choice1": {
+      "sacrebleu": 36.2,
+      "chrf++": 58.09
+    },
+    "choice2": {
+      "sacrebleu": 37.6,
+      "chrf++": 57.94
+    }
+  },
+  "th": {
+    "premise": {
+      "sacrebleu": 23.52,
+      "chrf++": 44.58
+    },
+    "choice1": {
+      "sacrebleu": 22.81,
+      "chrf++": 43.16
+    },
+    "choice2": {
+      "sacrebleu": 23.74,
+      "chrf++": 43.3
+    }
+  },
+  "tr": {
+    "premise": {
+      "sacrebleu": 41.13,
+      "chrf++": 58.67
+    },
+    "choice1": {
+      "sacrebleu": 41.66,
+      "chrf++": 59.73
+    },
+    "choice2": {
+      "sacrebleu": 40.0,
+      "chrf++": 58.71
+    }
+  },
+  "vi": {
+    "premise": {
+      "sacrebleu": 40.21,
+      "chrf++": 59.99
+    },
+    "choice1": {
+      "sacrebleu": 32.77,
+      "chrf++": 53.09
+    },
+    "choice2": {
+      "sacrebleu": 34.02,
+      "chrf++": 53.65
+    }
+  }
+}

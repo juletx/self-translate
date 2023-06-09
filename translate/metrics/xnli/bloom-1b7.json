@@ -1,0 +1,142 @@
+{
+  "ar": {
+    "premise": {
+      "sacrebleu": 17.77,
+      "chrf++": 39.82
+    },
+    "hypothesis": {
+      "sacrebleu": 25.44,
+      "chrf++": 47.47
+    }
+  },
+  "bg": {
+    "premise": {
+      "sacrebleu": 3.36,
+      "chrf++": 18.57
+    },
+    "hypothesis": {
+      "sacrebleu": 3.32,
+      "chrf++": 20.85
+    }
+  },
+  "de": {
+    "premise": {
+      "sacrebleu": 14.42,
+      "chrf++": 35.91
+    },
+    "hypothesis": {
+      "sacrebleu": 17.96,
+      "chrf++": 40.54
+    }
+  },
+  "el": {
+    "premise": {
+      "sacrebleu": 2.75,
+      "chrf++": 16.36
+    },
+    "hypothesis": {
+      "sacrebleu": 2.67,
+      "chrf++": 18.94
+    }
+  },
+  "es": {
+    "premise": {
+      "sacrebleu": 33.58,
+      "chrf++": 56.66
+    },
+    "hypothesis": {
+      "sacrebleu": 41.88,
+      "chrf++": 63.41
+    }
+  },
+  "fr": {
+    "premise": {
+      "sacrebleu": 33.35,
+      "chrf++": 56.27
+    },
+    "hypothesis": {
+      "sacrebleu": 39.94,
+      "chrf++": 61.75
+    }
+  },
+  "hi": {
+    "premise": {
+      "sacrebleu": 11.74,
+      "chrf++": 34.2
+    },
+    "hypothesis": {
+      "sacrebleu": 18.99,
+      "chrf++": 42.55
+    }
+  },
+  "ru": {
+    "premise": {
+      "sacrebleu": 7.75,
+      "chrf++": 27.51
+    },
+    "hypothesis": {
+      "sacrebleu": 9.78,
+      "chrf++": 31.19
+    }
+  },
+  "sw": {
+    "premise": {
+      "sacrebleu": 8.82,
+      "chrf++": 25.93
+    },
+    "hypothesis": {
+      "sacrebleu": 12.34,
+      "chrf++": 32.19
+    }
+  },
+  "th": {
+    "premise": {
+      "sacrebleu": 1.3,
+      "chrf++": 14.16
+    },
+    "hypothesis": {
+      "sacrebleu": 0.84,
+      "chrf++": 16.1
+    }
+  },
+  "tr": {
+    "premise": {
+      "sacrebleu": 1.44,
+      "chrf++": 15.1
+    },
+    "hypothesis": {
+      "sacrebleu": 0.98,
+      "chrf++": 17.11
+    }
+  },
+  "ur": {
+    "premise": {
+      "sacrebleu": 8.0,
+      "chrf++": 27.62
+    },
+    "hypothesis": {
+      "sacrebleu": 12.52,
+      "chrf++": 34.36
+    }
+  },
+  "vi": {
+    "premise": {
+      "sacrebleu": 23.51,
+      "chrf++": 45.8
+    },
+    "hypothesis": {
+      "sacrebleu": 28.74,
+      "chrf++": 51.08
+    }
+  },
+  "zh": {
+    "premise": {
+      "sacrebleu": 14.08,
+      "chrf++": 37.82
+    },
+    "hypothesis": {
+      "sacrebleu": 19.57,
+      "chrf++": 43.29
+    }
+  }
+}

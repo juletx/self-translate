@@ -1,0 +1,62 @@
+{
+  "es": {
+    "question": {
+      "sacrebleu": 52.82,
+      "chrf++": 68.8
+    }
+  },
+  "fr": {
+    "question": {
+      "sacrebleu": 39.91,
+      "chrf++": 59.99
+    }
+  },
+  "de": {
+    "question": {
+      "sacrebleu": 45.06,
+      "chrf++": 63.82
+    }
+  },
+  "ru": {
+    "question": {
+      "sacrebleu": 36.93,
+      "chrf++": 57.13
+    }
+  },
+  "zh": {
+    "question": {
+      "sacrebleu": 15.82,
+      "chrf++": 35.58
+    }
+  },
+  "ja": {
+    "question": {
+      "sacrebleu": 15.38,
+      "chrf++": 37.21
+    }
+  },
+  "th": {
+    "question": {
+      "sacrebleu": 0.69,
+      "chrf++": 9.98
+    }
+  },
+  "sw": {
+    "question": {
+      "sacrebleu": 3.31,
+      "chrf++": 17.5
+    }
+  },
+  "bn": {
+    "question": {
+      "sacrebleu": 0.05,
+      "chrf++": 5.07
+    }
+  },
+  "te": {
+    "question": {
+      "sacrebleu": 0.05,
+      "chrf++": 5.97
+    }
+  }
+}
