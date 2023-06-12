@@ -73,11 +73,13 @@ def extract_translations(translations, texts, translate_args):
             translations[i] = translations[i].split("English:")[-1].strip()
         elif "bloom" in translate_args["model_name"]:
             translations[i] = translations[i][len(text) :].split(r"\n")[0].strip()
-        elif "LLaMA" in translate_args["model_name"]:
+        elif "llama" in translate_args["model_name"].lower():
             translations[i] = translations[i][len(text) :].split(r"\n")[0].strip()
             if ": " in translations[i]:
                 translations[i] = translations[i].split(": ")[1]
         elif "RedPajama" in translate_args["model_name"]:
+            translations[i] = translations[i][len(text) :].split(r"\n")[0].strip()
+        else:
             translations[i] = translations[i][len(text) :].split(r"\n")[0].strip()
     return translations
 

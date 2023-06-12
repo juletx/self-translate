@@ -1,29 +1,29 @@
 #!/bin/bash
-#SBATCH --job-name=translate_few_shot_open_llama_3b
+#SBATCH --job-name=translate_few_shot_falcon_7b
 #SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/translate_few_shot_open_llama_3b.out
-#SBATCH --error=.slurm/translate_few_shot_open_llama_3b.err
+#SBATCH --output=.slurm/translate_few_shot_falcon_7b.out
+#SBATCH --error=.slurm/translate_few_shot_falcon_7b.err
 
 # activate virtual environment
 source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
-# open_llama model names
+# falcon model names
 model_names=(
-    "openlm-research/open_llama_3b"
+    "tiiuae/falcon-7b"
 )
 
 
 datasets=(
-    #"xcopa"
-    #"mgsm"
-    #"xstory_cloze"
-    #"pawsx"
+    "xcopa"
+    "mgsm"
+    "xstory_cloze"
+    "pawsx"
     "xnli"
 )
 
@@ -34,7 +34,7 @@ for dataset in "${datasets[@]}"; do
         max_new_tokens=64
     fi
     for model_name in "${model_names[@]}"; do
-        srun accelerate launch --mixed_precision fp16 translate_dataset_few_shot.py \
+        srun accelerate launch --mixed_precision bf16 translate_dataset_few_shot.py \
         --dataset $dataset \
         --target_lang "eng_Latn" \
         --starting_batch_size 128 \
@@ -43,7 +43,7 @@ for dataset in "${datasets[@]}"; do
         --max_new_tokens $max_new_tokens \
         --num_beams 1 \
         --num_return_sequences 1 \
-        --precision fp16 \
+        --precision bf16 \
         --eos_token "\n"
     done
 done

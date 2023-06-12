@@ -20,9 +20,9 @@ model_names=(
 
 
 datasets=(
-    "xcopa"
-    "mgsm"
-    "xstory_cloze"
+    #"xcopa"
+    #"mgsm"
+    #"xstory_cloze"
     "pawsx"
     "xnli"
 )
