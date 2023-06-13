@@ -1,0 +1,67 @@
+{
+  "results": {
+    "xstory_cloze-mt_open_llama_7b_ar": {
+      "acc": 0.5056254136333554,
+      "acc_stderr": 0.01286631092307251
+    },
+    "xstory_cloze-mt_open_llama_7b_es": {
+      "acc": 0.6737260092653872,
+      "acc_stderr": 0.012065474625979053
+    },
+    "xstory_cloze-mt_open_llama_7b_eu": {
+      "acc": 0.5095962938451357,
+      "acc_stderr": 0.012864755260408957
+    },
+    "xstory_cloze-mt_open_llama_7b_hi": {
+      "acc": 0.5234943745863666,
+      "acc_stderr": 0.01285291253005175
+    },
+    "xstory_cloze-mt_open_llama_7b_id": {
+      "acc": 0.5380542686962276,
+      "acc_stderr": 0.012829804720321704
+    },
+    "xstory_cloze-mt_open_llama_7b_my": {
+      "acc": 0.528127068166777,
+      "acc_stderr": 0.012846749995797695
+    },
+    "xstory_cloze-mt_open_llama_7b_ru": {
+      "acc": 0.6518861681005956,
+      "acc_stderr": 0.012259084803727359
+    },
+    "xstory_cloze-mt_open_llama_7b_sw": {
+      "acc": 0.500330906684315,
+      "acc_stderr": 0.012867122498493411
+    },
+    "xstory_cloze-mt_open_llama_7b_te": {
+      "acc": 0.5095962938451357,
+      "acc_stderr": 0.012864755260408957
+    },
+    "xstory_cloze-mt_open_llama_7b_zh": {
+      "acc": 0.6062210456651225,
+      "acc_stderr": 0.012573415912965184
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_open_llama_7b_ar": 0,
+    "xstory_cloze-mt_open_llama_7b_es": 0,
+    "xstory_cloze-mt_open_llama_7b_eu": 0,
+    "xstory_cloze-mt_open_llama_7b_hi": 0,
+    "xstory_cloze-mt_open_llama_7b_id": 0,
+    "xstory_cloze-mt_open_llama_7b_my": 0,
+    "xstory_cloze-mt_open_llama_7b_ru": 0,
+    "xstory_cloze-mt_open_llama_7b_sw": 0,
+    "xstory_cloze-mt_open_llama_7b_te": 0,
+    "xstory_cloze-mt_open_llama_7b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_7b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

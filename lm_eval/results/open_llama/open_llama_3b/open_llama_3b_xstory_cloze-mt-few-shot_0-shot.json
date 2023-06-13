@@ -1,0 +1,67 @@
+{
+  "results": {
+    "xstory_cloze-mt_open_llama_3b_ar": {
+      "acc": 0.49636002647253474,
+      "acc_stderr": 0.012866784348289232
+    },
+    "xstory_cloze-mt_open_llama_3b_es": {
+      "acc": 0.6313699536730641,
+      "acc_stderr": 0.012415060691280346
+    },
+    "xstory_cloze-mt_open_llama_3b_eu": {
+      "acc": 0.500992720052945,
+      "acc_stderr": 0.01286709995542292
+    },
+    "xstory_cloze-mt_open_llama_3b_hi": {
+      "acc": 0.5254798146922568,
+      "acc_stderr": 0.01285040724077685
+    },
+    "xstory_cloze-mt_open_llama_3b_id": {
+      "acc": 0.5122435473196558,
+      "acc_stderr": 0.012863267059205544
+    },
+    "xstory_cloze-mt_open_llama_3b_my": {
+      "acc": 0.528127068166777,
+      "acc_stderr": 0.012846749995797695
+    },
+    "xstory_cloze-mt_open_llama_3b_ru": {
+      "acc": 0.5771012574454004,
+      "acc_stderr": 0.012713225009126208
+    },
+    "xstory_cloze-mt_open_llama_3b_sw": {
+      "acc": 0.499669093315685,
+      "acc_stderr": 0.012867122498493429
+    },
+    "xstory_cloze-mt_open_llama_3b_te": {
+      "acc": 0.514228987425546,
+      "acc_stderr": 0.012861913999596127
+    },
+    "xstory_cloze-mt_open_llama_3b_zh": {
+      "acc": 0.5512905360688286,
+      "acc_stderr": 0.012799246690109744
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_open_llama_3b_ar": 0,
+    "xstory_cloze-mt_open_llama_3b_es": 0,
+    "xstory_cloze-mt_open_llama_3b_eu": 0,
+    "xstory_cloze-mt_open_llama_3b_hi": 0,
+    "xstory_cloze-mt_open_llama_3b_id": 0,
+    "xstory_cloze-mt_open_llama_3b_my": 0,
+    "xstory_cloze-mt_open_llama_3b_ru": 0,
+    "xstory_cloze-mt_open_llama_3b_sw": 0,
+    "xstory_cloze-mt_open_llama_3b_te": 0,
+    "xstory_cloze-mt_open_llama_3b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_3b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
