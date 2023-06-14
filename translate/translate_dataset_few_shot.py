@@ -5,9 +5,19 @@ import os
 import argparse
 import pandas as pd
 from dataset_configs import dataset_configs
+from typing import Dict, Any, List
 
 
-def get_dataset(dataset_args):
+def get_dataset(dataset_args: Dict[str, Any]) -> DatasetDict:
+    """
+    Load the dataset specified in dataset_args and return a DatasetDict object.
+
+    Args:
+    - dataset_args: A dictionary containing the dataset name, dataset configurations, dataset split.
+
+    Returns:
+    - A DatasetDict object containing the loaded dataset.
+    """
     dataset = DatasetDict()
     for config in dataset_args["dataset_configs"]:
         dataset[config] = load_dataset(
@@ -16,7 +26,19 @@ def get_dataset(dataset_args):
     return dataset
 
 
-def get_texts(dataset, dataset_args):
+def get_texts(
+    dataset: DatasetDict, dataset_args: Dict[str, Any]
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Extract the texts from the dataset and return a dictionary containing the texts.
+
+    Args:
+    - dataset: A DatasetDict object containing the loaded dataset.
+    - dataset_args: A dictionary containing the dataset configurations.
+
+    Returns:
+    - A dictionary containing the texts extracted from the dataset.
+    """
     texts = defaultdict(dict)
     for config in dataset_args["dataset_configs"]:
         for field in dataset_args["dataset_fields"]:
@@ -24,7 +46,16 @@ def get_texts(dataset, dataset_args):
     return texts
 
 
-def get_few_shot_dataset(dataset_args):
+def get_few_shot_dataset(dataset_args: Dict[str, Any]) -> DatasetDict:
+    """
+    Load the few-shot dataset specified in dataset_args and return a DatasetDict object.
+
+    Args:
+    - dataset_args: A dictionary containing the few-shot dataset configurations.
+
+    Returns:
+    - A DatasetDict object containing the loaded few-shot dataset.
+    """
     dataset = DatasetDict()
     dataset["en"] = load_dataset("facebook/flores", "eng_Latn", split="dev")
     for config in dataset_args["dataset_configs"]:
@@ -34,7 +65,24 @@ def get_few_shot_dataset(dataset_args):
     return dataset
 
 
-def get_few_shot_prompts(dataset, dataset_args, translate_args, shots):
+def get_few_shot_prompts(
+    dataset: DatasetDict,
+    dataset_args: Dict[str, Any],
+    translate_args: Dict[str, Any],
+    shots: int,
+) -> Dict[str, str]:
+    """
+    Generate few-shot prompts for each language in dataset_args and return a dictionary containing the prompts.
+
+    Args:
+    - dataset: A DatasetDict object containing the few-shot dataset.
+    - dataset_args: A dictionary containing the dataset configurations.
+    - translate_args: A dictionary containing the translation configurations.
+    - shots: An integer representing the number of few-shot prompts to generate.
+
+    Returns:
+    - A dictionary containing the few-shot prompts for each language.
+    """
     prompts = {}
     for config in dataset_args["dataset_configs"]:
         prompts[config] = ""
@@ -44,30 +92,72 @@ def get_few_shot_prompts(dataset, dataset_args, translate_args, shots):
                 prompts[
                     config
                 ] += f'{dataset_args["lang_names"][config]}: {dataset[config][i]["sentence"]}{translate_args["eos_token"]}'
-                prompts[config] += f'English: {dataset["en"][i]["sentence"]}{translate_args["eos_token"]}'
+                prompts[
+                    config
+                ] += f'English: {dataset["en"][i]["sentence"]}{translate_args["eos_token"]}'
                 shot += 1
             i += 1
         prompts[config] += f'{dataset_args["lang_names"][config]}:'
     return prompts
 
 
-def text_with_prompt(text, prompt, translate_args):
+def text_with_prompt(text: str, prompt: str, translate_args: Dict[str, Any]) -> str:
+    """
+    Concatenate the text with the prompt and the eos_token.
+
+    Args:
+    - text: A string representing the text to be concatenated.
+    - prompt: A string representing the prompt to be concatenated.
+    - translate_args: A dictionary containing the translation configurations.
+
+    Returns:
+    - A string representing the concatenated text with the prompt and the eos_token.
+    """
     return f"{prompt} {text}{translate_args['eos_token']}English:"
 
 
-def map_texts_with_prompts(texts, prompts, translate_args):
+def map_texts_with_prompts(
+    texts: Dict[str, Dict[str, List[str]]],
+    prompts: Dict[str, str],
+    translate_args: Dict[str, Any],
+) -> Dict[str, Dict[str, List[str]]]:
+    """
+    Map the texts with the prompts.
+
+    Args:
+    - texts: A dictionary containing the texts to be mapped.
+    - prompts: A dictionary containing the prompts to be mapped.
+    - translate_args: A dictionary containing the translation configurations.
+
+    Returns:
+    - A dictionary containing the mapped texts with the prompts.
+    """
     texts_with_prompts = defaultdict(dict)
     for config in texts:
         for field in dataset_args["dataset_fields"]:
             texts_with_prompts[config][field] = [
-                text_with_prompt(text, prompt=prompts[config], translate_args=translate_args)
+                text_with_prompt(
+                    text, prompt=prompts[config], translate_args=translate_args
+                )
                 for text in texts[config][field]
             ]
     return texts_with_prompts
 
 
-def extract_translations(translations, texts, translate_args):
-    """Extract the translation from the output of the translation model."""
+def extract_translations(
+    translations: List[str], texts: List[str], translate_args: Dict[str, Any]
+) -> List[str]:
+    """
+    Extract the translation from the output of the translation model.
+
+    Args:
+    - translations: A list containing the translations to be extracted.
+    - texts: A list containing the texts to be extracted.
+    - translate_args: A dictionary containing the translation configurations.
+
+    Returns:
+    - A list containing the extracted translations.
+    """
     for i, text in enumerate(texts):
         if "xglm" in translate_args["model_name"]:
             translations[i] = translations[i].split("English:")[-1].strip()
@@ -84,7 +174,24 @@ def extract_translations(translations, texts, translate_args):
     return translations
 
 
-def translate_texts(dataset, texts, translate_args, dataset_args):
+def translate_texts(
+    dataset: DatasetDict,
+    texts: Dict[str, Dict[str, List[str]]],
+    translate_args: Dict[str, Any],
+    dataset_args: Dict[str, Any],
+) -> None:
+    """
+    Translate the texts.
+
+    Args:
+    - dataset: A DatasetDict object containing the dataset.
+    - texts: A dictionary containing the texts to be translated.
+    - translate_args: A dictionary containing the translation configurations.
+    - dataset_args: A dictionary containing the dataset configurations.
+
+    Returns:
+    - None
+    """
     translations = {}
     for config in dataset_args["dataset_configs"]:
         translations[config] = dataset[config].to_dict()
@@ -102,7 +209,24 @@ def translate_texts(dataset, texts, translate_args, dataset_args):
         save_file(translations[config], config, translate_args, dataset_args)
 
 
-def save_file(translations, config, translate_args, dataset_args):
+def save_file(
+    translations: Dict[str, List[str]],
+    config: str,
+    translate_args: Dict[str, Any],
+    dataset_args: Dict[str, Any],
+) -> None:
+    """
+    Save the translations to a file.
+
+    Args:
+    - translations: A dictionary containing the translations to be saved.
+    - config: A string representing the configuration.
+    - translate_args: A dictionary containing the translation configurations.
+    - dataset_args: A dictionary containing the dataset configurations.
+
+    Returns:
+    - None
+    """
     name = translate_args["model_name"].split("/")[-1]
     if "LLaMA" in translate_args["model_name"]:
         name = f"llama-{name}"
@@ -120,12 +244,26 @@ def save_file(translations, config, translate_args, dataset_args):
         raise ValueError("Unknown file format")
 
 
-def main(translate_args, dataset_args):
+def main(translate_args: Dict[str, Any], dataset_args: Dict[str, Any]) -> None:
+    """
+    Main function to translate the dataset.
+
+    Args:
+    - translate_args: A dictionary containing the translation configurations.
+    - dataset_args: A dictionary containing the dataset configurations.
+
+    Returns:
+    - None
+    """
     dataset = get_dataset(dataset_args)
     texts = get_texts(dataset, dataset_args)
     few_shot_dataset = get_few_shot_dataset(dataset_args)
-    prompts = get_few_shot_prompts(few_shot_dataset, dataset_args, translate_args, shots=4)
-    texts_with_prompts = map_texts_with_prompts(texts, prompts, translate_args=translate_args)
+    prompts = get_few_shot_prompts(
+        few_shot_dataset, dataset_args, translate_args, shots=4
+    )
+    texts_with_prompts = map_texts_with_prompts(
+        texts, prompts, translate_args=translate_args
+    )
     translate_texts(dataset, texts_with_prompts, translate_args, dataset_args)
 
 
@@ -239,7 +377,7 @@ if __name__ == "__main__":
         action="store_true",
         help="Keep special tokens in the decoded text.",
     )
-    
+
     parser.add_argument(
         "--eos_token",
         type=str,
