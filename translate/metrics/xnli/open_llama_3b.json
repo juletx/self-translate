@@ -1,0 +1,170 @@
+{
+  "ar": {
+    "premise": {
+      "sacrebleu": 1.71,
+      "chrf++": 14.1,
+      "comet": 48.69
+    },
+    "hypothesis": {
+      "sacrebleu": 2.21,
+      "chrf++": 17.44,
+      "comet": 53.09
+    }
+  },
+  "bg": {
+    "premise": {
+      "sacrebleu": 22.3,
+      "chrf++": 46.71,
+      "comet": 74.94
+    },
+    "hypothesis": {
+      "sacrebleu": 25.9,
+      "chrf++": 50.18,
+      "comet": 80.25
+    }
+  },
+  "de": {
+    "premise": {
+      "sacrebleu": 30.5,
+      "chrf++": 53.82,
+      "comet": 79.88
+    },
+    "hypothesis": {
+      "sacrebleu": 38.9,
+      "chrf++": 60.55,
+      "comet": 86.67
+    }
+  },
+  "el": {
+    "premise": {
+      "sacrebleu": 4.96,
+      "chrf++": 18.87,
+      "comet": 51.93
+    },
+    "hypothesis": {
+      "sacrebleu": 6.37,
+      "chrf++": 24.16,
+      "comet": 57.93
+    }
+  },
+  "es": {
+    "premise": {
+      "sacrebleu": 35.78,
+      "chrf++": 59.02,
+      "comet": 81.31
+    },
+    "hypothesis": {
+      "sacrebleu": 43.93,
+      "chrf++": 65.41,
+      "comet": 87.85
+    }
+  },
+  "fr": {
+    "premise": {
+      "sacrebleu": 33.63,
+      "chrf++": 57.38,
+      "comet": 81.46
+    },
+    "hypothesis": {
+      "sacrebleu": 40.07,
+      "chrf++": 63.0,
+      "comet": 87.33
+    }
+  },
+  "hi": {
+    "premise": {
+      "sacrebleu": 0.02,
+      "chrf++": 2.89,
+      "comet": 39.46
+    },
+    "hypothesis": {
+      "sacrebleu": 1.17,
+      "chrf++": 11.42,
+      "comet": 48.78
+    }
+  },
+  "ru": {
+    "premise": {
+      "sacrebleu": 18.77,
+      "chrf++": 43.61,
+      "comet": 74.93
+    },
+    "hypothesis": {
+      "sacrebleu": 22.47,
+      "chrf++": 47.21,
+      "comet": 80.32
+    }
+  },
+  "sw": {
+    "premise": {
+      "sacrebleu": 3.25,
+      "chrf++": 17.24,
+      "comet": 46.86
+    },
+    "hypothesis": {
+      "sacrebleu": 2.17,
+      "chrf++": 17.18,
+      "comet": 49.38
+    }
+  },
+  "th": {
+    "premise": {
+      "sacrebleu": 0.0,
+      "chrf++": 0.1,
+      "comet": 36.83
+    },
+    "hypothesis": {
+      "sacrebleu": 0.02,
+      "chrf++": 1.19,
+      "comet": 40.95
+    }
+  },
+  "tr": {
+    "premise": {
+      "sacrebleu": 2.96,
+      "chrf++": 18.55,
+      "comet": 51.86
+    },
+    "hypothesis": {
+      "sacrebleu": 2.22,
+      "chrf++": 18.63,
+      "comet": 54.0
+    }
+  },
+  "ur": {
+    "premise": {
+      "sacrebleu": 0.55,
+      "chrf++": 10.66,
+      "comet": 45.52
+    },
+    "hypothesis": {
+      "sacrebleu": 0.37,
+      "chrf++": 13.25,
+      "comet": 47.69
+    }
+  },
+  "vi": {
+    "premise": {
+      "sacrebleu": 2.88,
+      "chrf++": 15.15,
+      "comet": 48.41
+    },
+    "hypothesis": {
+      "sacrebleu": 2.83,
+      "chrf++": 17.31,
+      "comet": 51.86
+    }
+  },
+  "zh": {
+    "premise": {
+      "sacrebleu": 11.04,
+      "chrf++": 32.58,
+      "comet": 69.27
+    },
+    "hypothesis": {
+      "sacrebleu": 14.91,
+      "chrf++": 38.79,
+      "comet": 76.63
+    }
+  }
+}

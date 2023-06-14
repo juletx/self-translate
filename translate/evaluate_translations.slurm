@@ -5,7 +5,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
-#SBATCH --gres=gpu:0
+#SBATCH --gres=gpu:1
 #SBATCH --output=.slurm/evaluate_translations.out
 #SBATCH --error=.slurm/evaluate_translations.err
 
@@ -13,4 +13,4 @@
 source ../venv/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
-python3 evaluate_translations.py > .slurm/evaluate_translations.out 2> .slurm/evaluate_translations.err
+srun python3 evaluate_translations.py

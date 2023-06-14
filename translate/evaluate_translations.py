@@ -1,15 +1,20 @@
-from collections import defaultdict
-from datasets import load_dataset, DatasetDict
-import os
-from dataset_configs import dataset_configs
 import json
+import os
+from typing import List, Dict, DefaultDict, Optional
+from collections import defaultdict
+
+import torch
+from accelerate import find_executable_batch_size
+from comet import download_model, load_from_checkpoint
 import evaluate
-from typing import List, Dict, DefaultDict
+from dataset_configs import dataset_configs
+from datasets import load_dataset, DatasetDict
+
 
 _DATASETS = [
-    "xnli",
-    "xstory_cloze",
-    "mgsm",
+    # "xnli",
+    # "xstory_cloze",
+    # "mgsm",
     "xcopa",
     "pawsx",
 ]
@@ -35,6 +40,8 @@ _MODELS = [
     # "llama-65B",
     "RedPajama-INCITE-Base-3B-v1",
     "RedPajama-INCITE-7B-Base",
+    "open_llama_3b",
+    "open_llama_7b",
 ]
 
 
@@ -49,9 +56,14 @@ def get_dataset(dataset_args: Dict[str, str]) -> DatasetDict:
     - dataset (DatasetDict): A dictionary containing the dataset.
     """
     dataset = DatasetDict()
-    dataset["en"] = load_dataset(
-        dataset_args["dataset"], "en", split=dataset_args["dataset_split"]
-    )
+    if dataset_args["dataset"] == "xcopa":
+        dataset["en"] = load_dataset(
+            "super_glue", "copa", split=dataset_args["dataset_split"]
+        )
+    else:
+        dataset["en"] = load_dataset(
+            dataset_args["dataset"], "en", split=dataset_args["dataset_split"]
+        )
     for config in dataset_args["dataset_configs"]:
         dataset[config] = load_dataset(
             dataset_args["dataset"], config, split=dataset_args["dataset_split"]
@@ -96,6 +108,56 @@ def get_texts(
     return texts
 
 
+def load_comet(model_name: str = "Unbabel/wmt22-comet-da"):
+    """
+    Loads the COMET model from a checkpoint.
+
+    Args:
+    - model_name (str): The name of the COMET model.
+
+    Returns:
+    - model: The loaded COMET model.
+    """
+    model_path = download_model(model_name)
+    model = load_from_checkpoint(model_path)
+    return model
+
+
+@find_executable_batch_size(starting_batch_size=2048)
+def compute_comet(
+    batch_size: int,
+    model: load_from_checkpoint,
+    predictions: List[str],
+    references: List[str],
+    sources: List[str],
+    gpus: Optional[int] = None,
+    progress_bar: bool = False,
+) -> Dict[str, float]:
+    """
+    Computes the COMET score for a batch of translations.
+
+    Args:
+    - batch_size (int): The batch size for the COMET model.
+    - model (load_from_checkpoint): The loaded COMET model.
+    - predictions (List[str]): A list of translated sentences.
+    - references (List[str]): A list of reference sentences.
+    - sources (List[str]): A list of source sentences.
+    - gpus (int): The number of GPUs to use for computation.
+    - progress_bar (bool): Whether to display a progress bar during computation.
+
+    Returns:
+    - model_output (Dict[str, float]): A dictionary containing the COMET score for each sentence.
+    """
+    if gpus is None:
+        gpus = 1 if torch.cuda.is_available() else 0
+    data = {"src": sources, "mt": predictions, "ref": references}
+    data = [dict(zip(data, t)) for t in zip(*data.values())]
+    model_output = model.predict(
+        data, batch_size=batch_size, gpus=gpus, progress_bar=progress_bar
+    )
+    return model_output
+
+
 def evaluate_translations(
     predictions: List[str], references: List[str], sources: List[str]
 ) -> Dict[str, float]:
@@ -112,10 +174,12 @@ def evaluate_translations(
     """
     print("Loading sacrebleu...")
     sacrebleu = evaluate.load("sacrebleu")
+
     print("Loading chrf...")
     chrf = evaluate.load("chrf")
+
     print("Loading comet...")
-    comet = evaluate.load("comet", "Unbabel/wmt22-comet-da")
+    model = load_comet("Unbabel/wmt22-comet-da")
 
     result_dictionary = {}
     print(f"Computing sacrebleu")
@@ -123,19 +187,27 @@ def evaluate_translations(
         predictions=predictions, references=references
     )
     result_dictionary["sacrebleu"] = round(sacrebleu_results["score"], 2)
+
     print(f"Computing chrf score")
     chrf_results = chrf.compute(
         predictions=predictions, references=references, word_order=2
     )
     result_dictionary["chrf++"] = round(chrf_results["score"], 2)
+
     print("Computing comet score")
-    comet_results = comet.compute(
+    comet_results = compute_comet(
+        model=model,
         predictions=predictions,
         references=references,
         sources=sources,
         progress_bar=True,
     )
-    result_dictionary["comet"] = round(comet_results["mean_score"], 2)
+    comet_results["mean_score"] = sum(comet_results["scores"]) / len(
+        comet_results["scores"]
+    )
+    result_dictionary["comet"] = round(comet_results["mean_score"] * 100, 2)
+
+    print(result_dictionary)
 
     return result_dictionary
 

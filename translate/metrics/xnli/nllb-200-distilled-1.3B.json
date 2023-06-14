@@ -2,141 +2,169 @@
   "ar": {
     "premise": {
       "sacrebleu": 37.74,
-      "chrf++": 59.58
+      "chrf++": 59.58,
+      "comet": 82.85
     },
     "hypothesis": {
       "sacrebleu": 44.43,
-      "chrf++": 64.29
+      "chrf++": 64.29,
+      "comet": 87.69
     }
   },
   "bg": {
     "premise": {
       "sacrebleu": 41.23,
-      "chrf++": 62.97
+      "chrf++": 62.97,
+      "comet": 84.57
     },
     "hypothesis": {
       "sacrebleu": 46.38,
-      "chrf++": 66.43
+      "chrf++": 66.43,
+      "comet": 89.38
     }
   },
   "de": {
     "premise": {
       "sacrebleu": 43.37,
-      "chrf++": 64.3
+      "chrf++": 64.3,
+      "comet": 85.56
     },
     "hypothesis": {
       "sacrebleu": 50.58,
-      "chrf++": 69.44
+      "chrf++": 69.44,
+      "comet": 90.75
     }
   },
   "el": {
     "premise": {
       "sacrebleu": 46.38,
-      "chrf++": 65.66
+      "chrf++": 65.66,
+      "comet": 85.65
     },
     "hypothesis": {
       "sacrebleu": 50.7,
-      "chrf++": 68.97
+      "chrf++": 68.97,
+      "comet": 90.43
     }
   },
   "es": {
     "premise": {
       "sacrebleu": 49.89,
-      "chrf++": 69.26
+      "chrf++": 69.26,
+      "comet": 86.1
     },
     "hypothesis": {
       "sacrebleu": 56.14,
-      "chrf++": 73.93
+      "chrf++": 73.93,
+      "comet": 91.38
     }
   },
   "fr": {
     "premise": {
       "sacrebleu": 44.0,
-      "chrf++": 64.74
+      "chrf++": 64.74,
+      "comet": 85.19
     },
     "hypothesis": {
       "sacrebleu": 50.34,
-      "chrf++": 69.52
+      "chrf++": 69.52,
+      "comet": 90.5
     }
   },
   "hi": {
     "premise": {
       "sacrebleu": 37.39,
-      "chrf++": 59.32
+      "chrf++": 59.32,
+      "comet": 83.81
     },
     "hypothesis": {
       "sacrebleu": 44.17,
-      "chrf++": 64.75
+      "chrf++": 64.75,
+      "comet": 88.95
     }
   },
   "ru": {
     "premise": {
       "sacrebleu": 31.11,
-      "chrf++": 54.14
+      "chrf++": 54.14,
+      "comet": 81.11
     },
     "hypothesis": {
       "sacrebleu": 35.87,
-      "chrf++": 58.37
+      "chrf++": 58.37,
+      "comet": 86.45
     }
   },
   "sw": {
     "premise": {
       "sacrebleu": 35.58,
-      "chrf++": 55.86
+      "chrf++": 55.86,
+      "comet": 79.77
     },
     "hypothesis": {
       "sacrebleu": 37.02,
-      "chrf++": 57.02
+      "chrf++": 57.02,
+      "comet": 84.34
     }
   },
   "th": {
     "premise": {
       "sacrebleu": 27.71,
-      "chrf++": 51.05
+      "chrf++": 51.05,
+      "comet": 81.12
     },
     "hypothesis": {
       "sacrebleu": 32.3,
-      "chrf++": 54.8
+      "chrf++": 54.8,
+      "comet": 86.3
     }
   },
   "tr": {
     "premise": {
       "sacrebleu": 36.8,
-      "chrf++": 59.93
+      "chrf++": 59.93,
+      "comet": 84.78
     },
     "hypothesis": {
       "sacrebleu": 41.69,
-      "chrf++": 62.97
+      "chrf++": 62.97,
+      "comet": 89.38
     }
   },
   "ur": {
     "premise": {
       "sacrebleu": 31.76,
-      "chrf++": 54.29
+      "chrf++": 54.29,
+      "comet": 78.91
     },
     "hypothesis": {
       "sacrebleu": 33.93,
-      "chrf++": 55.44
+      "chrf++": 55.44,
+      "comet": 83.35
     }
   },
   "vi": {
     "premise": {
       "sacrebleu": 41.69,
-      "chrf++": 62.27
+      "chrf++": 62.27,
+      "comet": 83.81
     },
     "hypothesis": {
       "sacrebleu": 41.93,
-      "chrf++": 62.79
+      "chrf++": 62.79,
+      "comet": 88.24
     }
   },
   "zh": {
     "premise": {
       "sacrebleu": 27.61,
-      "chrf++": 52.01
+      "chrf++": 52.01,
+      "comet": 81.1
     },
     "hypothesis": {
       "sacrebleu": 31.35,
-      "chrf++": 55.24
+      "chrf++": 55.24,
+      "comet": 85.94
     }
   }
 }

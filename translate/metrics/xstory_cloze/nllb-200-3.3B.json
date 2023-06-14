@@ -2,261 +2,321 @@
   "ru": {
     "input_sentence_1": {
       "sacrebleu": 49.84,
-      "chrf++": 68.3
+      "chrf++": 68.3,
+      "comet": 90.56
     },
     "input_sentence_2": {
       "sacrebleu": 42.87,
-      "chrf++": 62.29
+      "chrf++": 62.29,
+      "comet": 87.87
     },
     "input_sentence_3": {
       "sacrebleu": 41.35,
-      "chrf++": 61.15
+      "chrf++": 61.15,
+      "comet": 87.18
     },
     "input_sentence_4": {
       "sacrebleu": 41.36,
-      "chrf++": 61.16
+      "chrf++": 61.16,
+      "comet": 87.34
     },
     "sentence_quiz1": {
       "sacrebleu": 46.19,
-      "chrf++": 64.89
+      "chrf++": 64.89,
+      "comet": 89.41
     },
     "sentence_quiz2": {
       "sacrebleu": 45.9,
-      "chrf++": 64.88
+      "chrf++": 64.88,
+      "comet": 89.41
     }
   },
   "zh": {
     "input_sentence_1": {
       "sacrebleu": 39.17,
-      "chrf++": 60.79
+      "chrf++": 60.79,
+      "comet": 89.44
     },
     "input_sentence_2": {
       "sacrebleu": 32.7,
-      "chrf++": 55.48
+      "chrf++": 55.48,
+      "comet": 86.73
     },
     "input_sentence_3": {
       "sacrebleu": 33.23,
-      "chrf++": 55.6
+      "chrf++": 55.6,
+      "comet": 86.62
     },
     "input_sentence_4": {
       "sacrebleu": 33.01,
-      "chrf++": 54.89
+      "chrf++": 54.89,
+      "comet": 86.41
     },
     "sentence_quiz1": {
       "sacrebleu": 34.91,
-      "chrf++": 56.71
+      "chrf++": 56.71,
+      "comet": 88.04
     },
     "sentence_quiz2": {
       "sacrebleu": 35.81,
-      "chrf++": 57.56
+      "chrf++": 57.56,
+      "comet": 87.97
     }
   },
   "es": {
     "input_sentence_1": {
       "sacrebleu": 58.62,
-      "chrf++": 74.83
+      "chrf++": 74.83,
+      "comet": 92.85
     },
     "input_sentence_2": {
       "sacrebleu": 47.85,
-      "chrf++": 66.57
+      "chrf++": 66.57,
+      "comet": 89.35
     },
     "input_sentence_3": {
       "sacrebleu": 47.27,
-      "chrf++": 66.14
+      "chrf++": 66.14,
+      "comet": 88.96
     },
     "input_sentence_4": {
       "sacrebleu": 47.6,
-      "chrf++": 66.05
+      "chrf++": 66.05,
+      "comet": 89.11
     },
     "sentence_quiz1": {
       "sacrebleu": 53.02,
-      "chrf++": 70.11
+      "chrf++": 70.11,
+      "comet": 91.4
     },
     "sentence_quiz2": {
       "sacrebleu": 53.61,
-      "chrf++": 70.74
+      "chrf++": 70.74,
+      "comet": 91.58
     }
   },
   "ar": {
     "input_sentence_1": {
       "sacrebleu": 59.75,
-      "chrf++": 75.15
+      "chrf++": 75.15,
+      "comet": 91.97
     },
     "input_sentence_2": {
       "sacrebleu": 53.51,
-      "chrf++": 69.77
+      "chrf++": 69.77,
+      "comet": 89.99
     },
     "input_sentence_3": {
       "sacrebleu": 51.37,
-      "chrf++": 68.42
+      "chrf++": 68.42,
+      "comet": 89.3
     },
     "input_sentence_4": {
       "sacrebleu": 50.89,
-      "chrf++": 67.3
+      "chrf++": 67.3,
+      "comet": 88.96
     },
     "sentence_quiz1": {
       "sacrebleu": 56.44,
-      "chrf++": 71.7
+      "chrf++": 71.7,
+      "comet": 90.99
     },
     "sentence_quiz2": {
       "sacrebleu": 56.82,
-      "chrf++": 72.08
+      "chrf++": 72.08,
+      "comet": 90.98
     }
   },
   "hi": {
     "input_sentence_1": {
       "sacrebleu": 57.41,
-      "chrf++": 74.29
+      "chrf++": 74.29,
+      "comet": 93.49
     },
     "input_sentence_2": {
       "sacrebleu": 46.92,
-      "chrf++": 65.75
+      "chrf++": 65.75,
+      "comet": 91.33
     },
     "input_sentence_3": {
       "sacrebleu": 45.74,
-      "chrf++": 65.14
+      "chrf++": 65.14,
+      "comet": 90.58
     },
     "input_sentence_4": {
       "sacrebleu": 44.46,
-      "chrf++": 64.28
+      "chrf++": 64.28,
+      "comet": 90.67
     },
     "sentence_quiz1": {
       "sacrebleu": 50.09,
-      "chrf++": 68.28
+      "chrf++": 68.28,
+      "comet": 91.93
     },
     "sentence_quiz2": {
       "sacrebleu": 50.33,
-      "chrf++": 68.8
+      "chrf++": 68.8,
+      "comet": 92.2
     }
   },
   "id": {
     "input_sentence_1": {
       "sacrebleu": 48.38,
-      "chrf++": 67.22
+      "chrf++": 67.22,
+      "comet": 91.51
     },
     "input_sentence_2": {
       "sacrebleu": 38.54,
-      "chrf++": 59.58
+      "chrf++": 59.58,
+      "comet": 88.58
     },
     "input_sentence_3": {
       "sacrebleu": 39.97,
-      "chrf++": 60.63
+      "chrf++": 60.63,
+      "comet": 88.63
     },
     "input_sentence_4": {
       "sacrebleu": 39.04,
-      "chrf++": 59.87
+      "chrf++": 59.87,
+      "comet": 88.56
     },
     "sentence_quiz1": {
       "sacrebleu": 43.33,
-      "chrf++": 62.68
+      "chrf++": 62.68,
+      "comet": 89.86
     },
     "sentence_quiz2": {
       "sacrebleu": 44.36,
-      "chrf++": 63.54
+      "chrf++": 63.54,
+      "comet": 90.1
     }
   },
   "te": {
     "input_sentence_1": {
       "sacrebleu": 41.41,
-      "chrf++": 62.15
+      "chrf++": 62.15,
+      "comet": 90.83
     },
     "input_sentence_2": {
       "sacrebleu": 30.39,
-      "chrf++": 51.81
+      "chrf++": 51.81,
+      "comet": 87.18
     },
     "input_sentence_3": {
       "sacrebleu": 30.28,
-      "chrf++": 51.83
+      "chrf++": 51.83,
+      "comet": 86.73
     },
     "input_sentence_4": {
       "sacrebleu": 29.0,
-      "chrf++": 50.1
+      "chrf++": 50.1,
+      "comet": 86.41
     },
     "sentence_quiz1": {
       "sacrebleu": 32.85,
-      "chrf++": 53.31
+      "chrf++": 53.31,
+      "comet": 88.16
     },
     "sentence_quiz2": {
       "sacrebleu": 34.61,
-      "chrf++": 55.12
+      "chrf++": 55.12,
+      "comet": 88.7
     }
   },
   "sw": {
     "input_sentence_1": {
       "sacrebleu": 54.82,
-      "chrf++": 71.57
+      "chrf++": 71.57,
+      "comet": 90.57
     },
     "input_sentence_2": {
       "sacrebleu": 42.32,
-      "chrf++": 61.43
+      "chrf++": 61.43,
+      "comet": 86.44
     },
     "input_sentence_3": {
       "sacrebleu": 41.08,
-      "chrf++": 60.34
+      "chrf++": 60.34,
+      "comet": 85.61
     },
     "input_sentence_4": {
       "sacrebleu": 40.99,
-      "chrf++": 59.65
+      "chrf++": 59.65,
+      "comet": 85.79
     },
     "sentence_quiz1": {
       "sacrebleu": 44.82,
-      "chrf++": 63.57
+      "chrf++": 63.57,
+      "comet": 88.16
     },
     "sentence_quiz2": {
       "sacrebleu": 45.97,
-      "chrf++": 64.34
+      "chrf++": 64.34,
+      "comet": 88.17
     }
   },
   "eu": {
     "input_sentence_1": {
       "sacrebleu": 43.61,
-      "chrf++": 64.39
+      "chrf++": 64.39,
+      "comet": 90.36
     },
     "input_sentence_2": {
       "sacrebleu": 30.09,
-      "chrf++": 52.53
+      "chrf++": 52.53,
+      "comet": 85.18
     },
     "input_sentence_3": {
       "sacrebleu": 28.94,
-      "chrf++": 52.01
+      "chrf++": 52.01,
+      "comet": 84.78
     },
     "input_sentence_4": {
       "sacrebleu": 30.38,
-      "chrf++": 52.65
+      "chrf++": 52.65,
+      "comet": 85.34
     },
     "sentence_quiz1": {
       "sacrebleu": 34.49,
-      "chrf++": 56.66
+      "chrf++": 56.66,
+      "comet": 88.04
     },
     "sentence_quiz2": {
       "sacrebleu": 33.78,
-      "chrf++": 56.42
+      "chrf++": 56.42,
+      "comet": 87.82
     }
   },
   "my": {
     "input_sentence_1": {
       "sacrebleu": 36.9,
-      "chrf++": 58.92
+      "chrf++": 58.92,
+      "comet": 89.08
     },
     "input_sentence_2": {
       "sacrebleu": 29.49,
-      "chrf++": 51.88
+      "chrf++": 51.88,
+      "comet": 86.59
     },
     "input_sentence_3": {
       "sacrebleu": 27.82,
-      "chrf++": 49.65
+      "chrf++": 49.65,
+      "comet": 85.63
     },
     "input_sentence_4": {
       "sacrebleu": 25.76,
-      "chrf++": 48.39
+      "chrf++": 48.39,
+      "comet": 85.02
     },
     "sentence_quiz1": {
       "sacrebleu": 28.62,
-      "chrf++": 51.71
+      "chrf++": 51.71,
+      "comet": 86.41
     },
     "sentence_quiz2": {
       "sacrebleu": 29.56,
-      "chrf++": 52.33
+      "chrf++": 52.33,
+      "comet": 86.84
     }
   }
 }

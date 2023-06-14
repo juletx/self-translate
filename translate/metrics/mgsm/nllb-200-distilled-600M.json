@@ -2,61 +2,71 @@
   "es": {
     "question": {
       "sacrebleu": 48.34,
-      "chrf++": 65.28
+      "chrf++": 65.28,
+      "comet": 83.35
     }
   },
   "fr": {
     "question": {
       "sacrebleu": 34.85,
-      "chrf++": 56.2
+      "chrf++": 56.2,
+      "comet": 81.43
     }
   },
   "de": {
     "question": {
       "sacrebleu": 44.57,
-      "chrf++": 64.09
+      "chrf++": 64.09,
+      "comet": 83.48
     }
   },
   "ru": {
     "question": {
       "sacrebleu": 31.39,
-      "chrf++": 53.35
+      "chrf++": 53.35,
+      "comet": 78.24
     }
   },
   "zh": {
     "question": {
       "sacrebleu": 28.14,
-      "chrf++": 50.33
+      "chrf++": 50.33,
+      "comet": 79.93
     }
   },
   "ja": {
     "question": {
       "sacrebleu": 17.99,
-      "chrf++": 39.91
+      "chrf++": 39.91,
+      "comet": 77.46
     }
   },
   "th": {
     "question": {
       "sacrebleu": 17.37,
-      "chrf++": 41.05
+      "chrf++": 41.05,
+      "comet": 75.73
     }
   },
   "sw": {
     "question": {
       "sacrebleu": 34.62,
-      "chrf++": 53.23
+      "chrf++": 53.23,
+      "comet": 77.38
     }
   },
   "bn": {
     "question": {
       "sacrebleu": 28.58,
-      "chrf++": 49.05
+      "chrf++": 49.05,
+      "comet": 82.09
     }
   },
   "te": {
     "question": {
       "sacrebleu": 34.68,
-      "chrf++": 54.23
+      "chrf++": 54.23,
+      "comet": 83.17
     }
   }
 }
