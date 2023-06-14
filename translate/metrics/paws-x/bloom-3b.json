@@ -2,61 +2,73 @@
   "de": {
     "sentence1": {
       "sacrebleu": 39.62,
-      "chrf++": 60.39
+      "chrf++": 60.39,
+      "comet": 78.45
     },
     "sentence2": {
       "sacrebleu": 39.56,
-      "chrf++": 60.26
+      "chrf++": 60.26,
+      "comet": 78.52
     }
   },
   "es": {
     "sentence1": {
       "sacrebleu": 54.69,
-      "chrf++": 72.69
+      "chrf++": 72.69,
+      "comet": 85.35
     },
     "sentence2": {
       "sacrebleu": 54.44,
-      "chrf++": 72.64
+      "chrf++": 72.64,
+      "comet": 85.26
     }
   },
   "fr": {
     "sentence1": {
       "sacrebleu": 53.57,
-      "chrf++": 72.06
+      "chrf++": 72.06,
+      "comet": 85.39
     },
     "sentence2": {
       "sacrebleu": 52.46,
-      "chrf++": 71.7
+      "chrf++": 71.7,
+      "comet": 85.32
     }
   },
   "ja": {
     "sentence1": {
       "sacrebleu": 11.33,
-      "chrf++": 32.02
+      "chrf++": 32.02,
+      "comet": 68.22
     },
     "sentence2": {
       "sacrebleu": 10.85,
-      "chrf++": 32.17
+      "chrf++": 32.17,
+      "comet": 68.38
     }
   },
   "ko": {
     "sentence1": {
       "sacrebleu": 6.61,
-      "chrf++": 22.32
+      "chrf++": 22.32,
+      "comet": 52.85
     },
     "sentence2": {
       "sacrebleu": 7.06,
-      "chrf++": 22.94
+      "chrf++": 22.94,
+      "comet": 53.2
     }
   },
   "zh": {
     "sentence1": {
       "sacrebleu": 21.39,
-      "chrf++": 45.24
+      "chrf++": 45.24,
+      "comet": 77.71
     },
     "sentence2": {
       "sacrebleu": 21.94,
-      "chrf++": 45.71
+      "chrf++": 45.71,
+      "comet": 77.77
     }
   }
 }

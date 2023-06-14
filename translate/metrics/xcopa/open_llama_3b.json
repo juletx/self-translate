@@ -1,0 +1,189 @@
+{
+  "et": {
+    "premise": {
+      "sacrebleu": 0.55,
+      "chrf++": 16.38,
+      "comet": 48.9
+    },
+    "choice1": {
+      "sacrebleu": 0.6,
+      "chrf++": 14.61,
+      "comet": 48.74
+    },
+    "choice2": {
+      "sacrebleu": 0.42,
+      "chrf++": 14.45,
+      "comet": 48.25
+    }
+  },
+  "ht": {
+    "premise": {
+      "sacrebleu": 0.94,
+      "chrf++": 15.76,
+      "comet": 47.35
+    },
+    "choice1": {
+      "sacrebleu": 0.88,
+      "chrf++": 14.42,
+      "comet": 47.61
+    },
+    "choice2": {
+      "sacrebleu": 0.86,
+      "chrf++": 15.01,
+      "comet": 48.3
+    }
+  },
+  "it": {
+    "premise": {
+      "sacrebleu": 34.74,
+      "chrf++": 57.82,
+      "comet": 81.94
+    },
+    "choice1": {
+      "sacrebleu": 28.72,
+      "chrf++": 51.61,
+      "comet": 80.39
+    },
+    "choice2": {
+      "sacrebleu": 28.08,
+      "chrf++": 51.74,
+      "comet": 79.18
+    }
+  },
+  "id": {
+    "premise": {
+      "sacrebleu": 7.61,
+      "chrf++": 28.01,
+      "comet": 61.53
+    },
+    "choice1": {
+      "sacrebleu": 6.68,
+      "chrf++": 24.36,
+      "comet": 60.51
+    },
+    "choice2": {
+      "sacrebleu": 7.33,
+      "chrf++": 25.64,
+      "comet": 61.18
+    }
+  },
+  "qu": {
+    "premise": {
+      "sacrebleu": 0.49,
+      "chrf++": 16.5,
+      "comet": 44.28
+    },
+    "choice1": {
+      "sacrebleu": 0.25,
+      "chrf++": 14.2,
+      "comet": 43.67
+    },
+    "choice2": {
+      "sacrebleu": 0.12,
+      "chrf++": 14.11,
+      "comet": 43.84
+    }
+  },
+  "sw": {
+    "premise": {
+      "sacrebleu": 0.59,
+      "chrf++": 16.04,
+      "comet": 45.91
+    },
+    "choice1": {
+      "sacrebleu": 0.38,
+      "chrf++": 14.19,
+      "comet": 47.14
+    },
+    "choice2": {
+      "sacrebleu": 0.38,
+      "chrf++": 14.3,
+      "comet": 46.69
+    }
+  },
+  "zh": {
+    "premise": {
+      "sacrebleu": 15.85,
+      "chrf++": 39.54,
+      "comet": 74.75
+    },
+    "choice1": {
+      "sacrebleu": 15.53,
+      "chrf++": 38.42,
+      "comet": 75.53
+    },
+    "choice2": {
+      "sacrebleu": 20.39,
+      "chrf++": 42.47,
+      "comet": 76.29
+    }
+  },
+  "ta": {
+    "premise": {
+      "sacrebleu": 0.0,
+      "chrf++": 0.0,
+      "comet": 42.22
+    },
+    "choice1": {
+      "sacrebleu": 0.0,
+      "chrf++": 0.0,
+      "comet": 44.72
+    },
+    "choice2": {
+      "sacrebleu": 0.0,
+      "chrf++": 0.0,
+      "comet": 44.28
+    }
+  },
+  "th": {
+    "premise": {
+      "sacrebleu": 0.21,
+      "chrf++": 5.8,
+      "comet": 42.15
+    },
+    "choice1": {
+      "sacrebleu": 0.11,
+      "chrf++": 8.63,
+      "comet": 44.55
+    },
+    "choice2": {
+      "sacrebleu": 0.13,
+      "chrf++": 7.78,
+      "comet": 44.47
+    }
+  },
+  "tr": {
+    "premise": {
+      "sacrebleu": 1.02,
+      "chrf++": 18.43,
+      "comet": 52.01
+    },
+    "choice1": {
+      "sacrebleu": 0.5,
+      "chrf++": 15.2,
+      "comet": 50.61
+    },
+    "choice2": {
+      "sacrebleu": 0.87,
+      "chrf++": 15.55,
+      "comet": 50.92
+    }
+  },
+  "vi": {
+    "premise": {
+      "sacrebleu": 0.76,
+      "chrf++": 16.27,
+      "comet": 47.11
+    },
+    "choice1": {
+      "sacrebleu": 0.38,
+      "chrf++": 14.04,
+      "comet": 47.64
+    },
+    "choice2": {
+      "sacrebleu": 0.16,
+      "chrf++": 13.88,
+      "comet": 46.79
+    }
+  }
+}

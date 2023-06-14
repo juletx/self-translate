@@ -2,155 +2,188 @@
   "et": {
     "premise": {
       "sacrebleu": 45.91,
-      "chrf++": 63.67
+      "chrf++": 63.67,
+      "comet": 86.18
     },
     "choice1": {
       "sacrebleu": 46.19,
-      "chrf++": 64.08
+      "chrf++": 64.08,
+      "comet": 86.92
     },
     "choice2": {
       "sacrebleu": 44.17,
-      "chrf++": 62.42
+      "chrf++": 62.42,
+      "comet": 86.62
     }
   },
   "ht": {
     "premise": {
       "sacrebleu": 43.03,
-      "chrf++": 61.56
+      "chrf++": 61.56,
+      "comet": 79.3
     },
     "choice1": {
       "sacrebleu": 39.3,
-      "chrf++": 59.68
+      "chrf++": 59.68,
+      "comet": 79.28
     },
     "choice2": {
       "sacrebleu": 38.88,
-      "chrf++": 57.3
+      "chrf++": 57.3,
+      "comet": 78.06
     }
   },
   "it": {
     "premise": {
       "sacrebleu": 53.16,
-      "chrf++": 71.1
+      "chrf++": 71.1,
+      "comet": 89.4
     },
     "choice1": {
       "sacrebleu": 49.96,
-      "chrf++": 68.67
+      "chrf++": 68.67,
+      "comet": 88.86
     },
     "choice2": {
       "sacrebleu": 49.9,
-      "chrf++": 68.4
+      "chrf++": 68.4,
+      "comet": 88.6
     }
   },
   "id": {
     "premise": {
       "sacrebleu": 43.88,
-      "chrf++": 64.16
+      "chrf++": 64.16,
+      "comet": 88.29
     },
     "choice1": {
       "sacrebleu": 34.9,
-      "chrf++": 58.52
+      "chrf++": 58.52,
+      "comet": 87.2
     },
     "choice2": {
       "sacrebleu": 33.44,
-      "chrf++": 56.39
+      "chrf++": 56.39,
+      "comet": 86.83
     }
   },
   "qu": {
     "premise": {
       "sacrebleu": 12.44,
-      "chrf++": 31.93
+      "chrf++": 31.93,
+      "comet": 64.1
     },
     "choice1": {
       "sacrebleu": 11.99,
-      "chrf++": 31.15
+      "chrf++": 31.15,
+      "comet": 64.46
     },
     "choice2": {
       "sacrebleu": 11.63,
-      "chrf++": 30.68
+      "chrf++": 30.68,
+      "comet": 64.21
     }
   },
   "sw": {
     "premise": {
       "sacrebleu": 37.55,
-      "chrf++": 58.0
+      "chrf++": 58.0,
+      "comet": 81.92
     },
     "choice1": {
       "sacrebleu": 36.37,
-      "chrf++": 56.49
+      "chrf++": 56.49,
+      "comet": 82.63
     },
     "choice2": {
       "sacrebleu": 32.79,
-      "chrf++": 54.19
+      "chrf++": 54.19,
+      "comet": 81.49
     }
   },
   "zh": {
     "premise": {
       "sacrebleu": 39.01,
-      "chrf++": 62.18
+      "chrf++": 62.18,
+      "comet": 86.85
     },
     "choice1": {
       "sacrebleu": 37.69,
-      "chrf++": 61.9
+      "chrf++": 61.9,
+      "comet": 87.86
     },
     "choice2": {
       "sacrebleu": 37.91,
-      "chrf++": 60.74
+      "chrf++": 60.74,
+      "comet": 86.51
     }
   },
   "ta": {
     "premise": {
       "sacrebleu": 39.05,
-      "chrf++": 60.41
+      "chrf++": 60.41,
+      "comet": 86.16
     },
     "choice1": {
       "sacrebleu": 37.38,
-      "chrf++": 59.44
+      "chrf++": 59.44,
+      "comet": 86.98
     },
     "choice2": {
       "sacrebleu": 35.99,
-      "chrf++": 57.31
+      "chrf++": 57.31,
+      "comet": 86.36
     }
   },
   "th": {
     "premise": {
       "sacrebleu": 24.53,
-      "chrf++": 45.85
+      "chrf++": 45.85,
+      "comet": 77.53
     },
     "choice1": {
       "sacrebleu": 24.78,
-      "chrf++": 44.17
+      "chrf++": 44.17,
+      "comet": 79.47
     },
     "choice2": {
       "sacrebleu": 24.93,
-      "chrf++": 45.38
+      "chrf++": 45.38,
+      "comet": 79.36
     }
   },
   "tr": {
     "premise": {
       "sacrebleu": 44.07,
-      "chrf++": 60.8
+      "chrf++": 60.8,
+      "comet": 87.49
     },
     "choice1": {
       "sacrebleu": 41.77,
-      "chrf++": 59.51
+      "chrf++": 59.51,
+      "comet": 86.33
     },
     "choice2": {
       "sacrebleu": 42.0,
-      "chrf++": 61.05
+      "chrf++": 61.05,
+      "comet": 87.1
     }
   },
   "vi": {
     "premise": {
       "sacrebleu": 41.42,
-      "chrf++": 61.94
+      "chrf++": 61.94,
+      "comet": 85.63
     },
     "choice1": {
       "sacrebleu": 35.28,
-      "chrf++": 55.14
+      "chrf++": 55.14,
+      "comet": 83.85
     },
     "choice2": {
       "sacrebleu": 35.71,
-      "chrf++": 54.65
+      "chrf++": 54.65,
+      "comet": 83.39
     }
   }
 }
