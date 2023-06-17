@@ -1,0 +1,217 @@
+{
+  "results": {
+    "xstory_cloze-mt_bloom-1b7_ar": {
+      "acc": 0.5565850430178689,
+      "acc_stderr": 0.012784462136657198
+    },
+    "xstory_cloze-mt_bloom-1b7_es": {
+      "acc": 0.6221045665122436,
+      "acc_stderr": 0.012477542072994658
+    },
+    "xstory_cloze-mt_bloom-1b7_eu": {
+      "acc": 0.5420251489080079,
+      "acc_stderr": 0.012821595164245275
+    },
+    "xstory_cloze-mt_bloom-1b7_hi": {
+      "acc": 0.557246856386499,
+      "acc_stderr": 0.012782510750319241
+    },
+    "xstory_cloze-mt_bloom-1b7_id": {
+      "acc": 0.5790866975512905,
+      "acc_stderr": 0.012705145598630695
+    },
+    "xstory_cloze-mt_bloom-1b7_my": {
+      "acc": 0.5095962938451357,
+      "acc_stderr": 0.012864755260408957
+    },
+    "xstory_cloze-mt_bloom-1b7_ru": {
+      "acc": 0.5043017868960953,
+      "acc_stderr": 0.012866649085718846
+    },
+    "xstory_cloze-mt_bloom-1b7_sw": {
+      "acc": 0.528788881535407,
+      "acc_stderr": 0.012845779070719484
+    },
+    "xstory_cloze-mt_bloom-1b7_te": {
+      "acc": 0.5453342157511581,
+      "acc_stderr": 0.012814127367359426
+    },
+    "xstory_cloze-mt_bloom-1b7_zh": {
+      "acc": 0.5982792852415619,
+      "acc_stderr": 0.01261611452692791
+    },
+    "xstory_cloze-mt_bloom-3b_ar": {
+      "acc": 0.5645268034414295,
+      "acc_stderr": 0.012759525506489228
+    },
+    "xstory_cloze-mt_bloom-3b_es": {
+      "acc": 0.6101919258769027,
+      "acc_stderr": 0.012550764190646999
+    },
+    "xstory_cloze-mt_bloom-3b_eu": {
+      "acc": 0.57114493712773,
+      "acc_stderr": 0.012736202713147784
+    },
+    "xstory_cloze-mt_bloom-3b_hi": {
+      "acc": 0.5823957643944407,
+      "acc_stderr": 0.012691211382848636
+    },
+    "xstory_cloze-mt_bloom-3b_id": {
+      "acc": 0.5962938451356717,
+      "acc_stderr": 0.01262624973524659
+    },
+    "xstory_cloze-mt_bloom-3b_my": {
+      "acc": 0.49702183984116477,
+      "acc_stderr": 0.012866897066011233
+    },
+    "xstory_cloze-mt_bloom-3b_ru": {
+      "acc": 0.5201853077432164,
+      "acc_stderr": 0.012856635706498292
+    },
+    "xstory_cloze-mt_bloom-3b_sw": {
+      "acc": 0.5400397088021178,
+      "acc_stderr": 0.012825802370083987
+    },
+    "xstory_cloze-mt_bloom-3b_te": {
+      "acc": 0.5592322964923891,
+      "acc_stderr": 0.012776518586332795
+    },
+    "xstory_cloze-mt_bloom-3b_zh": {
+      "acc": 0.5943084050297816,
+      "acc_stderr": 0.012636170220503926
+    },
+    "xstory_cloze-mt_bloom-560m_ar": {
+      "acc": 0.5188616810059563,
+      "acc_stderr": 0.012857966762464996
+    },
+    "xstory_cloze-mt_bloom-560m_es": {
+      "acc": 0.5261416280608868,
+      "acc_stderr": 0.012849526888044215
+    },
+    "xstory_cloze-mt_bloom-560m_eu": {
+      "acc": 0.5261416280608868,
+      "acc_stderr": 0.012849526888044213
+    },
+    "xstory_cloze-mt_bloom-560m_hi": {
+      "acc": 0.5579086697551291,
+      "acc_stderr": 0.012780536370279774
+    },
+    "xstory_cloze-mt_bloom-560m_id": {
+      "acc": 0.5565850430178689,
+      "acc_stderr": 0.012784462136657196
+    },
+    "xstory_cloze-mt_bloom-560m_my": {
+      "acc": 0.5095962938451357,
+      "acc_stderr": 0.012864755260408957
+    },
+    "xstory_cloze-mt_bloom-560m_ru": {
+      "acc": 0.48444738583719393,
+      "acc_stderr": 0.012860899111470791
+    },
+    "xstory_cloze-mt_bloom-560m_sw": {
+      "acc": 0.5274652547981469,
+      "acc_stderr": 0.012847698270388218
+    },
+    "xstory_cloze-mt_bloom-560m_te": {
+      "acc": 0.5327597617471873,
+      "acc_stderr": 0.012839477563855927
+    },
+    "xstory_cloze-mt_bloom-560m_zh": {
+      "acc": 0.5095962938451357,
+      "acc_stderr": 0.012864755260408957
+    },
+    "xstory_cloze-mt_bloom-7b1_ar": {
+      "acc": 0.5843812045003309,
+      "acc_stderr": 0.012682569054907646
+    },
+    "xstory_cloze-mt_bloom-7b1_es": {
+      "acc": 0.6161482461945731,
+      "acc_stderr": 0.01251514539172887
+    },
+    "xstory_cloze-mt_bloom-7b1_eu": {
+      "acc": 0.5598941098610192,
+      "acc_stderr": 0.012774475160716336
+    },
+    "xstory_cloze-mt_bloom-7b1_hi": {
+      "acc": 0.5903375248180013,
+      "acc_stderr": 0.012655369030750357
+    },
+    "xstory_cloze-mt_bloom-7b1_id": {
+      "acc": 0.5943084050297816,
+      "acc_stderr": 0.012636170220503923
+    },
+    "xstory_cloze-mt_bloom-7b1_my": {
+      "acc": 0.5294506949040371,
+      "acc_stderr": 0.012844785490017
+    },
+    "xstory_cloze-mt_bloom-7b1_ru": {
+      "acc": 0.5241561879549967,
+      "acc_stderr": 0.012852100057309608
+    },
+    "xstory_cloze-mt_bloom-7b1_sw": {
+      "acc": 0.5367306419589676,
+      "acc_stderr": 0.012832359240206969
+    },
+    "xstory_cloze-mt_bloom-7b1_te": {
+      "acc": 0.5731303772336201,
+      "acc_stderr": 0.012728753181936876
+    },
+    "xstory_cloze-mt_bloom-7b1_zh": {
+      "acc": 0.5976174718729318,
+      "acc_stderr": 0.012619516819528715
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_bloom-1b7_ar": 0,
+    "xstory_cloze-mt_bloom-1b7_es": 0,
+    "xstory_cloze-mt_bloom-1b7_eu": 0,
+    "xstory_cloze-mt_bloom-1b7_hi": 0,
+    "xstory_cloze-mt_bloom-1b7_id": 0,
+    "xstory_cloze-mt_bloom-1b7_my": 0,
+    "xstory_cloze-mt_bloom-1b7_ru": 0,
+    "xstory_cloze-mt_bloom-1b7_sw": 0,
+    "xstory_cloze-mt_bloom-1b7_te": 0,
+    "xstory_cloze-mt_bloom-1b7_zh": 0,
+    "xstory_cloze-mt_bloom-3b_ar": 0,
+    "xstory_cloze-mt_bloom-3b_es": 0,
+    "xstory_cloze-mt_bloom-3b_eu": 0,
+    "xstory_cloze-mt_bloom-3b_hi": 0,
+    "xstory_cloze-mt_bloom-3b_id": 0,
+    "xstory_cloze-mt_bloom-3b_my": 0,
+    "xstory_cloze-mt_bloom-3b_ru": 0,
+    "xstory_cloze-mt_bloom-3b_sw": 0,
+    "xstory_cloze-mt_bloom-3b_te": 0,
+    "xstory_cloze-mt_bloom-3b_zh": 0,
+    "xstory_cloze-mt_bloom-560m_ar": 0,
+    "xstory_cloze-mt_bloom-560m_es": 0,
+    "xstory_cloze-mt_bloom-560m_eu": 0,
+    "xstory_cloze-mt_bloom-560m_hi": 0,
+    "xstory_cloze-mt_bloom-560m_id": 0,
+    "xstory_cloze-mt_bloom-560m_my": 0,
+    "xstory_cloze-mt_bloom-560m_ru": 0,
+    "xstory_cloze-mt_bloom-560m_sw": 0,
+    "xstory_cloze-mt_bloom-560m_te": 0,
+    "xstory_cloze-mt_bloom-560m_zh": 0,
+    "xstory_cloze-mt_bloom-7b1_ar": 0,
+    "xstory_cloze-mt_bloom-7b1_es": 0,
+    "xstory_cloze-mt_bloom-7b1_eu": 0,
+    "xstory_cloze-mt_bloom-7b1_hi": 0,
+    "xstory_cloze-mt_bloom-7b1_id": 0,
+    "xstory_cloze-mt_bloom-7b1_my": 0,
+    "xstory_cloze-mt_bloom-7b1_ru": 0,
+    "xstory_cloze-mt_bloom-7b1_sw": 0,
+    "xstory_cloze-mt_bloom-7b1_te": 0,
+    "xstory_cloze-mt_bloom-7b1_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-1b7,dtype=float16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "results": {
+    "xnli-mt_xglm-1.7B_ar": {
+      "acc": 0.45728542914171655,
+      "acc_stderr": 0.007038885597058052
+    },
+    "xnli-mt_xglm-1.7B_bg": {
+      "acc": 0.49041916167664673,
+      "acc_stderr": 0.007063415335532708
+    },
+    "xnli-mt_xglm-1.7B_de": {
+      "acc": 0.48602794411177647,
+      "acc_stderr": 0.007061953567682461
+    },
+    "xnli-mt_xglm-1.7B_el": {
+      "acc": 0.48982035928143713,
+      "acc_stderr": 0.007063248114705912
+    },
+    "xnli-mt_xglm-1.7B_es": {
+      "acc": 0.4992015968063872,
+      "acc_stderr": 0.007064703422540922
+    },
+    "xnli-mt_xglm-1.7B_fr": {
+      "acc": 0.5057884231536927,
+      "acc_stderr": 0.0070642389951666345
+    },
+    "xnli-mt_xglm-1.7B_hi": {
+      "acc": 0.4608782435129741,
+      "acc_stderr": 0.007043053978003474
+    },
+    "xnli-mt_xglm-1.7B_ru": {
+      "acc": 0.4782435129740519,
+      "acc_stderr": 0.007058021171781037
+    },
+    "xnli-mt_xglm-1.7B_sw": {
+      "acc": 0.437125748502994,
+      "acc_stderr": 0.007008633817895685
+    },
+    "xnli-mt_xglm-1.7B_th": {
+      "acc": 0.4608782435129741,
+      "acc_stderr": 0.007043053978003474
+    },
+    "xnli-mt_xglm-1.7B_tr": {
+      "acc": 0.43213572854291415,
+      "acc_stderr": 0.00699933603016494
+    },
+    "xnli-mt_xglm-1.7B_ur": {
+      "acc": 0.43313373253493015,
+      "acc_stderr": 0.007001253378295776
+    },
+    "xnli-mt_xglm-1.7B_vi": {
+      "acc": 0.47005988023952094,
+      "acc_stderr": 0.007052035286547704
+    },
+    "xnli-mt_xglm-1.7B_zh": {
+      "acc": 0.4544910179640719,
+      "acc_stderr": 0.007035388579487143
+    },
+    "xnli-mt_xglm-2.9B_ar": {
+      "acc": 0.4668662674650699,
+      "acc_stderr": 0.007049183454584238
+    },
+    "xnli-mt_xglm-2.9B_bg": {
+      "acc": 0.5039920159680639,
+      "acc_stderr": 0.007064487256507021
+    },
+    "xnli-mt_xglm-2.9B_de": {
+      "acc": 0.5099800399201597,
+      "acc_stderr": 0.0070633049814919115
+    },
+    "xnli-mt_xglm-2.9B_el": {
+      "acc": 0.5015968063872256,
+      "acc_stderr": 0.00706467640214832
+    },
+    "xnli-mt_xglm-2.9B_es": {
+      "acc": 0.5011976047904192,
+      "acc_stderr": 0.0070646921640564984
+    },
+    "xnli-mt_xglm-2.9B_fr": {
+      "acc": 0.5107784431137724,
+      "acc_stderr": 0.007063070754956942
+    },
+    "xnli-mt_xglm-2.9B_hi": {
+      "acc": 0.4538922155688623,
+      "acc_stderr": 0.007034610160539604
+    },
+    "xnli-mt_xglm-2.9B_ru": {
+      "acc": 0.4846307385229541,
+      "acc_stderr": 0.00706137406979513
+    },
+    "xnli-mt_xglm-2.9B_sw": {
+      "acc": 0.45828343313373254,
+      "acc_stderr": 0.0070400804463398034
+    },
+    "xnli-mt_xglm-2.9B_th": {
+      "acc": 0.47005988023952094,
+      "acc_stderr": 0.00705203528654771
+    },
+    "xnli-mt_xglm-2.9B_tr": {
+      "acc": 0.4592814371257485,
+      "acc_stderr": 0.007041246852969208
+    },
+    "xnli-mt_xglm-2.9B_ur": {
+      "acc": 0.43213572854291415,
+      "acc_stderr": 0.006999336030164926
+    },
+    "xnli-mt_xglm-2.9B_vi": {
+      "acc": 0.47944111776447107,
+      "acc_stderr": 0.007058737852344524
+    },
+    "xnli-mt_xglm-2.9B_zh": {
+      "acc": 0.475249500998004,
+      "acc_stderr": 0.007056051615733838
+    },
+    "xnli-mt_xglm-564M_ar": {
+      "acc": 0.3964071856287425,
+      "acc_stderr": 0.006911419815000534
+    },
+    "xnli-mt_xglm-564M_bg": {
+      "acc": 0.4612774451097804,
+      "acc_stderr": 0.007043494394449798
+    },
+    "xnli-mt_xglm-564M_de": {
+      "acc": 0.4499001996007984,
+      "acc_stderr": 0.007029158248450994
+    },
+    "xnli-mt_xglm-564M_el": {
+      "acc": 0.4103792415169661,
+      "acc_stderr": 0.0069503001316727295
+    },
+    "xnli-mt_xglm-564M_es": {
+      "acc": 0.4477045908183633,
+      "acc_stderr": 0.007025964880868375
+    },
+    "xnli-mt_xglm-564M_fr": {
+      "acc": 0.4614770459081836,
+      "acc_stderr": 0.0070437128985425335
+    },
+    "xnli-mt_xglm-564M_hi": {
+      "acc": 0.40119760479041916,
+      "acc_stderr": 0.006925408798296856
+    },
+    "xnli-mt_xglm-564M_ru": {
+      "acc": 0.4413173652694611,
+      "acc_stderr": 0.007015886891352027
+    },
+    "xnli-mt_xglm-564M_sw": {
+      "acc": 0.3660678642714571,
+      "acc_stderr": 0.006806544227730866
+    },
+    "xnli-mt_xglm-564M_th": {
+      "acc": 0.4095808383233533,
+      "acc_stderr": 0.006948235364889488
+    },
+    "xnli-mt_xglm-564M_tr": {
+      "acc": 0.3844311377245509,
+      "acc_stderr": 0.006873407372071722
+    },
+    "xnli-mt_xglm-564M_ur": {
+      "acc": 0.39520958083832336,
+      "acc_stderr": 0.006907814516030685
+    },
+    "xnli-mt_xglm-564M_vi": {
+      "acc": 0.41996007984031936,
+      "acc_stderr": 0.0069736063913288125
+    },
+    "xnli-mt_xglm-564M_zh": {
+      "acc": 0.38063872255489023,
+      "acc_stderr": 0.006860456146930266
+    },
+    "xnli-mt_xglm-7.5B_ar": {
+      "acc": 0.475249500998004,
+      "acc_stderr": 0.007056051615733842
+    },
+    "xnli-mt_xglm-7.5B_bg": {
+      "acc": 0.5051896207584831,
+      "acc_stderr": 0.0070643318830840044
+    },
+    "xnli-mt_xglm-7.5B_de": {
+      "acc": 0.5079840319361277,
+      "acc_stderr": 0.007063811695013914
+    },
+    "xnli-mt_xglm-7.5B_el": {
+      "acc": 0.5121756487025948,
+      "acc_stderr": 0.007062617482030021
+    },
+    "xnli-mt_xglm-7.5B_es": {
+      "acc": 0.5155688622754491,
+      "acc_stderr": 0.007061286774932434
+    },
+    "xnli-mt_xglm-7.5B_fr": {
+      "acc": 0.5231536926147704,
+      "acc_stderr": 0.007057133671645289
+    },
+    "xnli-mt_xglm-7.5B_hi": {
+      "acc": 0.47904191616766467,
+      "acc_stderr": 0.0070585034742558055
+    },
+    "xnli-mt_xglm-7.5B_ru": {
+      "acc": 0.49540918163672654,
+      "acc_stderr": 0.007064414636745476
+    },
+    "xnli-mt_xglm-7.5B_sw": {
+      "acc": 0.47085828343313374,
+      "acc_stderr": 0.007052702953973549
+    },
+    "xnli-mt_xglm-7.5B_th": {
+      "acc": 0.47904191616766467,
+      "acc_stderr": 0.007058503474255799
+    },
+    "xnli-mt_xglm-7.5B_tr": {
+      "acc": 0.4660678642714571,
+      "acc_stderr": 0.007048425178540593
+    },
+    "xnli-mt_xglm-7.5B_ur": {
+      "acc": 0.4499001996007984,
+      "acc_stderr": 0.007029158248450996
+    },
+    "xnli-mt_xglm-7.5B_vi": {
+      "acc": 0.4930139720558882,
+      "acc_stderr": 0.007064022814920454
+    },
+    "xnli-mt_xglm-7.5B_zh": {
+      "acc": 0.47305389221556887,
+      "acc_stderr": 0.0070544456967006714
+    }
+  },
+  "versions": {
+    "xnli-mt_xglm-1.7B_ar": 0,
+    "xnli-mt_xglm-1.7B_bg": 0,
+    "xnli-mt_xglm-1.7B_de": 0,
+    "xnli-mt_xglm-1.7B_el": 0,
+    "xnli-mt_xglm-1.7B_es": 0,
+    "xnli-mt_xglm-1.7B_fr": 0,
+    "xnli-mt_xglm-1.7B_hi": 0,
+    "xnli-mt_xglm-1.7B_ru": 0,
+    "xnli-mt_xglm-1.7B_sw": 0,
+    "xnli-mt_xglm-1.7B_th": 0,
+    "xnli-mt_xglm-1.7B_tr": 0,
+    "xnli-mt_xglm-1.7B_ur": 0,
+    "xnli-mt_xglm-1.7B_vi": 0,
+    "xnli-mt_xglm-1.7B_zh": 0,
+    "xnli-mt_xglm-2.9B_ar": 0,
+    "xnli-mt_xglm-2.9B_bg": 0,
+    "xnli-mt_xglm-2.9B_de": 0,
+    "xnli-mt_xglm-2.9B_el": 0,
+    "xnli-mt_xglm-2.9B_es": 0,
+    "xnli-mt_xglm-2.9B_fr": 0,
+    "xnli-mt_xglm-2.9B_hi": 0,
+    "xnli-mt_xglm-2.9B_ru": 0,
+    "xnli-mt_xglm-2.9B_sw": 0,
+    "xnli-mt_xglm-2.9B_th": 0,
+    "xnli-mt_xglm-2.9B_tr": 0,
+    "xnli-mt_xglm-2.9B_ur": 0,
+    "xnli-mt_xglm-2.9B_vi": 0,
+    "xnli-mt_xglm-2.9B_zh": 0,
+    "xnli-mt_xglm-564M_ar": 0,
+    "xnli-mt_xglm-564M_bg": 0,
+    "xnli-mt_xglm-564M_de": 0,
+    "xnli-mt_xglm-564M_el": 0,
+    "xnli-mt_xglm-564M_es": 0,
+    "xnli-mt_xglm-564M_fr": 0,
+    "xnli-mt_xglm-564M_hi": 0,
+    "xnli-mt_xglm-564M_ru": 0,
+    "xnli-mt_xglm-564M_sw": 0,
+    "xnli-mt_xglm-564M_th": 0,
+    "xnli-mt_xglm-564M_tr": 0,
+    "xnli-mt_xglm-564M_ur": 0,
+    "xnli-mt_xglm-564M_vi": 0,
+    "xnli-mt_xglm-564M_zh": 0,
+    "xnli-mt_xglm-7.5B_ar": 0,
+    "xnli-mt_xglm-7.5B_bg": 0,
+    "xnli-mt_xglm-7.5B_de": 0,
+    "xnli-mt_xglm-7.5B_el": 0,
+    "xnli-mt_xglm-7.5B_es": 0,
+    "xnli-mt_xglm-7.5B_fr": 0,
+    "xnli-mt_xglm-7.5B_hi": 0,
+    "xnli-mt_xglm-7.5B_ru": 0,
+    "xnli-mt_xglm-7.5B_sw": 0,
+    "xnli-mt_xglm-7.5B_th": 0,
+    "xnli-mt_xglm-7.5B_tr": 0,
+    "xnli-mt_xglm-7.5B_ur": 0,
+    "xnli-mt_xglm-7.5B_vi": 0,
+    "xnli-mt_xglm-7.5B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=bigscience/bloom-7b1,dtype=float16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

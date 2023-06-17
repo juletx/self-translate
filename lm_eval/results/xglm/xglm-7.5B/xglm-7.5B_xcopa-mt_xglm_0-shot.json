@@ -1,0 +1,237 @@
+{
+  "results": {
+    "xcopa-mt_xglm-1.7B_et": {
+      "acc": 0.59,
+      "acc_stderr": 0.022017482578127676
+    },
+    "xcopa-mt_xglm-1.7B_ht": {
+      "acc": 0.602,
+      "acc_stderr": 0.02191237788577997
+    },
+    "xcopa-mt_xglm-1.7B_id": {
+      "acc": 0.622,
+      "acc_stderr": 0.021706550824518184
+    },
+    "xcopa-mt_xglm-1.7B_it": {
+      "acc": 0.618,
+      "acc_stderr": 0.02175082059125084
+    },
+    "xcopa-mt_xglm-1.7B_qu": {
+      "acc": 0.496,
+      "acc_stderr": 0.022382357781962132
+    },
+    "xcopa-mt_xglm-1.7B_sw": {
+      "acc": 0.57,
+      "acc_stderr": 0.022162634426652835
+    },
+    "xcopa-mt_xglm-1.7B_ta": {
+      "acc": 0.608,
+      "acc_stderr": 0.021854684955611263
+    },
+    "xcopa-mt_xglm-1.7B_th": {
+      "acc": 0.572,
+      "acc_stderr": 0.02214979066386193
+    },
+    "xcopa-mt_xglm-1.7B_tr": {
+      "acc": 0.61,
+      "acc_stderr": 0.02183468586936921
+    },
+    "xcopa-mt_xglm-1.7B_vi": {
+      "acc": 0.612,
+      "acc_stderr": 0.02181430098478764
+    },
+    "xcopa-mt_xglm-1.7B_zh": {
+      "acc": 0.616,
+      "acc_stderr": 0.02177236946554719
+    },
+    "xcopa-mt_xglm-2.9B_et": {
+      "acc": 0.654,
+      "acc_stderr": 0.021294951277234637
+    },
+    "xcopa-mt_xglm-2.9B_ht": {
+      "acc": 0.648,
+      "acc_stderr": 0.02138004238594605
+    },
+    "xcopa-mt_xglm-2.9B_id": {
+      "acc": 0.658,
+      "acc_stderr": 0.02123614719989927
+    },
+    "xcopa-mt_xglm-2.9B_it": {
+      "acc": 0.668,
+      "acc_stderr": 0.021081766571222852
+    },
+    "xcopa-mt_xglm-2.9B_qu": {
+      "acc": 0.514,
+      "acc_stderr": 0.022374298166353185
+    },
+    "xcopa-mt_xglm-2.9B_sw": {
+      "acc": 0.63,
+      "acc_stderr": 0.02161328916516578
+    },
+    "xcopa-mt_xglm-2.9B_ta": {
+      "acc": 0.596,
+      "acc_stderr": 0.021966635293832915
+    },
+    "xcopa-mt_xglm-2.9B_th": {
+      "acc": 0.624,
+      "acc_stderr": 0.021683827539286125
+    },
+    "xcopa-mt_xglm-2.9B_tr": {
+      "acc": 0.624,
+      "acc_stderr": 0.021683827539286125
+    },
+    "xcopa-mt_xglm-2.9B_vi": {
+      "acc": 0.65,
+      "acc_stderr": 0.021352091786223097
+    },
+    "xcopa-mt_xglm-2.9B_zh": {
+      "acc": 0.678,
+      "acc_stderr": 0.020916668330019882
+    },
+    "xcopa-mt_xglm-564M_et": {
+      "acc": 0.532,
+      "acc_stderr": 0.022337186479044296
+    },
+    "xcopa-mt_xglm-564M_ht": {
+      "acc": 0.56,
+      "acc_stderr": 0.02222133153414302
+    },
+    "xcopa-mt_xglm-564M_id": {
+      "acc": 0.582,
+      "acc_stderr": 0.022080014812228137
+    },
+    "xcopa-mt_xglm-564M_it": {
+      "acc": 0.53,
+      "acc_stderr": 0.022342748192502846
+    },
+    "xcopa-mt_xglm-564M_qu": {
+      "acc": 0.526,
+      "acc_stderr": 0.022352791650914156
+    },
+    "xcopa-mt_xglm-564M_sw": {
+      "acc": 0.51,
+      "acc_stderr": 0.02237859698923078
+    },
+    "xcopa-mt_xglm-564M_ta": {
+      "acc": 0.55,
+      "acc_stderr": 0.022270877485360437
+    },
+    "xcopa-mt_xglm-564M_th": {
+      "acc": 0.54,
+      "acc_stderr": 0.022311333245289666
+    },
+    "xcopa-mt_xglm-564M_tr": {
+      "acc": 0.548,
+      "acc_stderr": 0.02227969410784342
+    },
+    "xcopa-mt_xglm-564M_vi": {
+      "acc": 0.532,
+      "acc_stderr": 0.02233718647904429
+    },
+    "xcopa-mt_xglm-564M_zh": {
+      "acc": 0.528,
+      "acc_stderr": 0.02234794983266809
+    },
+    "xcopa-mt_xglm-7.5B_et": {
+      "acc": 0.668,
+      "acc_stderr": 0.021081766571222852
+    },
+    "xcopa-mt_xglm-7.5B_ht": {
+      "acc": 0.646,
+      "acc_stderr": 0.021407582047916447
+    },
+    "xcopa-mt_xglm-7.5B_id": {
+      "acc": 0.668,
+      "acc_stderr": 0.021081766571222852
+    },
+    "xcopa-mt_xglm-7.5B_it": {
+      "acc": 0.684,
+      "acc_stderr": 0.020812359515855854
+    },
+    "xcopa-mt_xglm-7.5B_qu": {
+      "acc": 0.508,
+      "acc_stderr": 0.022380208834928035
+    },
+    "xcopa-mt_xglm-7.5B_sw": {
+      "acc": 0.628,
+      "acc_stderr": 0.021637197985722396
+    },
+    "xcopa-mt_xglm-7.5B_ta": {
+      "acc": 0.656,
+      "acc_stderr": 0.02126575803797874
+    },
+    "xcopa-mt_xglm-7.5B_th": {
+      "acc": 0.628,
+      "acc_stderr": 0.0216371979857224
+    },
+    "xcopa-mt_xglm-7.5B_tr": {
+      "acc": 0.654,
+      "acc_stderr": 0.021294951277234648
+    },
+    "xcopa-mt_xglm-7.5B_vi": {
+      "acc": 0.652,
+      "acc_stderr": 0.021323728632807494
+    },
+    "xcopa-mt_xglm-7.5B_zh": {
+      "acc": 0.69,
+      "acc_stderr": 0.020704041021724788
+    }
+  },
+  "versions": {
+    "xcopa-mt_xglm-1.7B_et": 0,
+    "xcopa-mt_xglm-1.7B_ht": 0,
+    "xcopa-mt_xglm-1.7B_id": 0,
+    "xcopa-mt_xglm-1.7B_it": 0,
+    "xcopa-mt_xglm-1.7B_qu": 0,
+    "xcopa-mt_xglm-1.7B_sw": 0,
+    "xcopa-mt_xglm-1.7B_ta": 0,
+    "xcopa-mt_xglm-1.7B_th": 0,
+    "xcopa-mt_xglm-1.7B_tr": 0,
+    "xcopa-mt_xglm-1.7B_vi": 0,
+    "xcopa-mt_xglm-1.7B_zh": 0,
+    "xcopa-mt_xglm-2.9B_et": 0,
+    "xcopa-mt_xglm-2.9B_ht": 0,
+    "xcopa-mt_xglm-2.9B_id": 0,
+    "xcopa-mt_xglm-2.9B_it": 0,
+    "xcopa-mt_xglm-2.9B_qu": 0,
+    "xcopa-mt_xglm-2.9B_sw": 0,
+    "xcopa-mt_xglm-2.9B_ta": 0,
+    "xcopa-mt_xglm-2.9B_th": 0,
+    "xcopa-mt_xglm-2.9B_tr": 0,
+    "xcopa-mt_xglm-2.9B_vi": 0,
+    "xcopa-mt_xglm-2.9B_zh": 0,
+    "xcopa-mt_xglm-564M_et": 0,
+    "xcopa-mt_xglm-564M_ht": 0,
+    "xcopa-mt_xglm-564M_id": 0,
+    "xcopa-mt_xglm-564M_it": 0,
+    "xcopa-mt_xglm-564M_qu": 0,
+    "xcopa-mt_xglm-564M_sw": 0,
+    "xcopa-mt_xglm-564M_ta": 0,
+    "xcopa-mt_xglm-564M_th": 0,
+    "xcopa-mt_xglm-564M_tr": 0,
+    "xcopa-mt_xglm-564M_vi": 0,
+    "xcopa-mt_xglm-564M_zh": 0,
+    "xcopa-mt_xglm-7.5B_et": 0,
+    "xcopa-mt_xglm-7.5B_ht": 0,
+    "xcopa-mt_xglm-7.5B_id": 0,
+    "xcopa-mt_xglm-7.5B_it": 0,
+    "xcopa-mt_xglm-7.5B_qu": 0,
+    "xcopa-mt_xglm-7.5B_sw": 0,
+    "xcopa-mt_xglm-7.5B_ta": 0,
+    "xcopa-mt_xglm-7.5B_th": 0,
+    "xcopa-mt_xglm-7.5B_tr": 0,
+    "xcopa-mt_xglm-7.5B_vi": 0,
+    "xcopa-mt_xglm-7.5B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-7.5B,dtype=float16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

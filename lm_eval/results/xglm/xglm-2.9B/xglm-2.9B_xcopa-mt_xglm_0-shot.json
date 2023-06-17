@@ -1,0 +1,237 @@
+{
+  "results": {
+    "xcopa-mt_xglm-1.7B_et": {
+      "acc": 0.572,
+      "acc_stderr": 0.022149790663861923
+    },
+    "xcopa-mt_xglm-1.7B_ht": {
+      "acc": 0.584,
+      "acc_stderr": 0.02206494331392886
+    },
+    "xcopa-mt_xglm-1.7B_id": {
+      "acc": 0.628,
+      "acc_stderr": 0.021637197985722396
+    },
+    "xcopa-mt_xglm-1.7B_it": {
+      "acc": 0.608,
+      "acc_stderr": 0.02185468495561126
+    },
+    "xcopa-mt_xglm-1.7B_qu": {
+      "acc": 0.504,
+      "acc_stderr": 0.022382357781962132
+    },
+    "xcopa-mt_xglm-1.7B_sw": {
+      "acc": 0.574,
+      "acc_stderr": 0.022136577335085637
+    },
+    "xcopa-mt_xglm-1.7B_ta": {
+      "acc": 0.614,
+      "acc_stderr": 0.02179352921928117
+    },
+    "xcopa-mt_xglm-1.7B_th": {
+      "acc": 0.584,
+      "acc_stderr": 0.02206494331392886
+    },
+    "xcopa-mt_xglm-1.7B_tr": {
+      "acc": 0.602,
+      "acc_stderr": 0.02191237788577997
+    },
+    "xcopa-mt_xglm-1.7B_vi": {
+      "acc": 0.618,
+      "acc_stderr": 0.021750820591250844
+    },
+    "xcopa-mt_xglm-1.7B_zh": {
+      "acc": 0.624,
+      "acc_stderr": 0.021683827539286125
+    },
+    "xcopa-mt_xglm-2.9B_et": {
+      "acc": 0.642,
+      "acc_stderr": 0.02146143486285912
+    },
+    "xcopa-mt_xglm-2.9B_ht": {
+      "acc": 0.654,
+      "acc_stderr": 0.021294951277234637
+    },
+    "xcopa-mt_xglm-2.9B_id": {
+      "acc": 0.648,
+      "acc_stderr": 0.021380042385946055
+    },
+    "xcopa-mt_xglm-2.9B_it": {
+      "acc": 0.644,
+      "acc_stderr": 0.02143471235607265
+    },
+    "xcopa-mt_xglm-2.9B_qu": {
+      "acc": 0.522,
+      "acc_stderr": 0.02236139673920787
+    },
+    "xcopa-mt_xglm-2.9B_sw": {
+      "acc": 0.624,
+      "acc_stderr": 0.021683827539286122
+    },
+    "xcopa-mt_xglm-2.9B_ta": {
+      "acc": 0.594,
+      "acc_stderr": 0.021983962090086337
+    },
+    "xcopa-mt_xglm-2.9B_th": {
+      "acc": 0.612,
+      "acc_stderr": 0.021814300984787635
+    },
+    "xcopa-mt_xglm-2.9B_tr": {
+      "acc": 0.622,
+      "acc_stderr": 0.021706550824518184
+    },
+    "xcopa-mt_xglm-2.9B_vi": {
+      "acc": 0.652,
+      "acc_stderr": 0.021323728632807494
+    },
+    "xcopa-mt_xglm-2.9B_zh": {
+      "acc": 0.672,
+      "acc_stderr": 0.02101702716517548
+    },
+    "xcopa-mt_xglm-564M_et": {
+      "acc": 0.508,
+      "acc_stderr": 0.022380208834928028
+    },
+    "xcopa-mt_xglm-564M_ht": {
+      "acc": 0.552,
+      "acc_stderr": 0.02226169729227013
+    },
+    "xcopa-mt_xglm-564M_id": {
+      "acc": 0.602,
+      "acc_stderr": 0.021912377885779977
+    },
+    "xcopa-mt_xglm-564M_it": {
+      "acc": 0.534,
+      "acc_stderr": 0.02233126442325838
+    },
+    "xcopa-mt_xglm-564M_qu": {
+      "acc": 0.522,
+      "acc_stderr": 0.022361396739207878
+    },
+    "xcopa-mt_xglm-564M_sw": {
+      "acc": 0.516,
+      "acc_stderr": 0.0223716109825804
+    },
+    "xcopa-mt_xglm-564M_ta": {
+      "acc": 0.552,
+      "acc_stderr": 0.02226169729227013
+    },
+    "xcopa-mt_xglm-564M_th": {
+      "acc": 0.544,
+      "acc_stderr": 0.022296238348407053
+    },
+    "xcopa-mt_xglm-564M_tr": {
+      "acc": 0.564,
+      "acc_stderr": 0.022198954641476802
+    },
+    "xcopa-mt_xglm-564M_vi": {
+      "acc": 0.532,
+      "acc_stderr": 0.022337186479044292
+    },
+    "xcopa-mt_xglm-564M_zh": {
+      "acc": 0.53,
+      "acc_stderr": 0.022342748192502846
+    },
+    "xcopa-mt_xglm-7.5B_et": {
+      "acc": 0.662,
+      "acc_stderr": 0.021175665695209407
+    },
+    "xcopa-mt_xglm-7.5B_ht": {
+      "acc": 0.636,
+      "acc_stderr": 0.021539170637317695
+    },
+    "xcopa-mt_xglm-7.5B_id": {
+      "acc": 0.638,
+      "acc_stderr": 0.021513662527582404
+    },
+    "xcopa-mt_xglm-7.5B_it": {
+      "acc": 0.678,
+      "acc_stderr": 0.020916668330019882
+    },
+    "xcopa-mt_xglm-7.5B_qu": {
+      "acc": 0.498,
+      "acc_stderr": 0.02238289498648352
+    },
+    "xcopa-mt_xglm-7.5B_sw": {
+      "acc": 0.622,
+      "acc_stderr": 0.02170655082451818
+    },
+    "xcopa-mt_xglm-7.5B_ta": {
+      "acc": 0.642,
+      "acc_stderr": 0.021461434862859126
+    },
+    "xcopa-mt_xglm-7.5B_th": {
+      "acc": 0.604,
+      "acc_stderr": 0.021893529941665813
+    },
+    "xcopa-mt_xglm-7.5B_tr": {
+      "acc": 0.64,
+      "acc_stderr": 0.021487751089720526
+    },
+    "xcopa-mt_xglm-7.5B_vi": {
+      "acc": 0.658,
+      "acc_stderr": 0.021236147199899257
+    },
+    "xcopa-mt_xglm-7.5B_zh": {
+      "acc": 0.66,
+      "acc_stderr": 0.021206117013673063
+    }
+  },
+  "versions": {
+    "xcopa-mt_xglm-1.7B_et": 0,
+    "xcopa-mt_xglm-1.7B_ht": 0,
+    "xcopa-mt_xglm-1.7B_id": 0,
+    "xcopa-mt_xglm-1.7B_it": 0,
+    "xcopa-mt_xglm-1.7B_qu": 0,
+    "xcopa-mt_xglm-1.7B_sw": 0,
+    "xcopa-mt_xglm-1.7B_ta": 0,
+    "xcopa-mt_xglm-1.7B_th": 0,
+    "xcopa-mt_xglm-1.7B_tr": 0,
+    "xcopa-mt_xglm-1.7B_vi": 0,
+    "xcopa-mt_xglm-1.7B_zh": 0,
+    "xcopa-mt_xglm-2.9B_et": 0,
+    "xcopa-mt_xglm-2.9B_ht": 0,
+    "xcopa-mt_xglm-2.9B_id": 0,
+    "xcopa-mt_xglm-2.9B_it": 0,
+    "xcopa-mt_xglm-2.9B_qu": 0,
+    "xcopa-mt_xglm-2.9B_sw": 0,
+    "xcopa-mt_xglm-2.9B_ta": 0,
+    "xcopa-mt_xglm-2.9B_th": 0,
+    "xcopa-mt_xglm-2.9B_tr": 0,
+    "xcopa-mt_xglm-2.9B_vi": 0,
+    "xcopa-mt_xglm-2.9B_zh": 0,
+    "xcopa-mt_xglm-564M_et": 0,
+    "xcopa-mt_xglm-564M_ht": 0,
+    "xcopa-mt_xglm-564M_id": 0,
+    "xcopa-mt_xglm-564M_it": 0,
+    "xcopa-mt_xglm-564M_qu": 0,
+    "xcopa-mt_xglm-564M_sw": 0,
+    "xcopa-mt_xglm-564M_ta": 0,
+    "xcopa-mt_xglm-564M_th": 0,
+    "xcopa-mt_xglm-564M_tr": 0,
+    "xcopa-mt_xglm-564M_vi": 0,
+    "xcopa-mt_xglm-564M_zh": 0,
+    "xcopa-mt_xglm-7.5B_et": 0,
+    "xcopa-mt_xglm-7.5B_ht": 0,
+    "xcopa-mt_xglm-7.5B_id": 0,
+    "xcopa-mt_xglm-7.5B_it": 0,
+    "xcopa-mt_xglm-7.5B_qu": 0,
+    "xcopa-mt_xglm-7.5B_sw": 0,
+    "xcopa-mt_xglm-7.5B_ta": 0,
+    "xcopa-mt_xglm-7.5B_th": 0,
+    "xcopa-mt_xglm-7.5B_tr": 0,
+    "xcopa-mt_xglm-7.5B_vi": 0,
+    "xcopa-mt_xglm-7.5B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=facebook/xglm-2.9B,dtype=float16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
