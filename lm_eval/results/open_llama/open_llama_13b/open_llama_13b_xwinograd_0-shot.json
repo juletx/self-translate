@@ -1,0 +1,47 @@
+{
+  "results": {
+    "xwinograd_en": {
+      "acc": 0.8722580645161291,
+      "acc_stderr": 0.006924225147336619
+    },
+    "xwinograd_fr": {
+      "acc": 0.7228915662650602,
+      "acc_stderr": 0.049425892997830914
+    },
+    "xwinograd_jp": {
+      "acc": 0.5797705943691345,
+      "acc_stderr": 0.0159473511479723
+    },
+    "xwinograd_pt": {
+      "acc": 0.688212927756654,
+      "acc_stderr": 0.028618035592352372
+    },
+    "xwinograd_ru": {
+      "acc": 0.7047619047619048,
+      "acc_stderr": 0.025742017645837018
+    },
+    "xwinograd_zh": {
+      "acc": 0.6567460317460317,
+      "acc_stderr": 0.0211700809891982
+    }
+  },
+  "versions": {
+    "xwinograd_en": 0,
+    "xwinograd_fr": 0,
+    "xwinograd_jp": 0,
+    "xwinograd_pt": 0,
+    "xwinograd_ru": 0,
+    "xwinograd_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
