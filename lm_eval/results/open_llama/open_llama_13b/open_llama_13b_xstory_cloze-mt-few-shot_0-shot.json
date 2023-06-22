@@ -1,0 +1,67 @@
+{
+  "results": {
+    "xstory_cloze-mt_open_llama_13b_ar": {
+      "acc": 0.528788881535407,
+      "acc_stderr": 0.01284577907071949
+    },
+    "xstory_cloze-mt_open_llama_13b_es": {
+      "acc": 0.6485771012574454,
+      "acc_stderr": 0.012285910871738331
+    },
+    "xstory_cloze-mt_open_llama_13b_eu": {
+      "acc": 0.4937127729980146,
+      "acc_stderr": 0.012866108021218212
+    },
+    "xstory_cloze-mt_open_llama_13b_hi": {
+      "acc": 0.5479814692256784,
+      "acc_stderr": 0.012807742345189275
+    },
+    "xstory_cloze-mt_open_llama_13b_id": {
+      "acc": 0.5704831237590999,
+      "acc_stderr": 0.012738639381353993
+    },
+    "xstory_cloze-mt_open_llama_13b_my": {
+      "acc": 0.528127068166777,
+      "acc_stderr": 0.012846749995797695
+    },
+    "xstory_cloze-mt_open_llama_13b_ru": {
+      "acc": 0.6234281932495036,
+      "acc_stderr": 0.012468914489659356
+    },
+    "xstory_cloze-mt_open_llama_13b_sw": {
+      "acc": 0.5036399735274653,
+      "acc_stderr": 0.012866784348289232
+    },
+    "xstory_cloze-mt_open_llama_13b_te": {
+      "acc": 0.514890800794176,
+      "acc_stderr": 0.012861417842074004
+    },
+    "xstory_cloze-mt_open_llama_13b_zh": {
+      "acc": 0.5830575777630708,
+      "acc_stderr": 0.012688354121607806
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_open_llama_13b_ar": 0,
+    "xstory_cloze-mt_open_llama_13b_es": 0,
+    "xstory_cloze-mt_open_llama_13b_eu": 0,
+    "xstory_cloze-mt_open_llama_13b_hi": 0,
+    "xstory_cloze-mt_open_llama_13b_id": 0,
+    "xstory_cloze-mt_open_llama_13b_my": 0,
+    "xstory_cloze-mt_open_llama_13b_ru": 0,
+    "xstory_cloze-mt_open_llama_13b_sw": 0,
+    "xstory_cloze-mt_open_llama_13b_te": 0,
+    "xstory_cloze-mt_open_llama_13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
