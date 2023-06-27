@@ -16,8 +16,9 @@ export TOKENIZERS_PARALLELISM=false
 
 # open_llama model names
 model_names=(
-    "openlm-research/open_llama_3b"
-    "openlm-research/open_llama_7b"
+    #"openlm-research/open_llama_3b"
+    #"openlm-research/open_llama_7b"
+    "openlm-research/open_llama_13b"
 )
 
 # load tasks
