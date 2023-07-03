@@ -1,0 +1,47 @@
+{
+  "results": {
+    "xwinograd_en": {
+      "acc": 0.8404301075268817,
+      "acc_stderr": 0.007596406827054169
+    },
+    "xwinograd_fr": {
+      "acc": 0.6987951807228916,
+      "acc_stderr": 0.0506639425494172
+    },
+    "xwinograd_jp": {
+      "acc": 0.6256517205422315,
+      "acc_stderr": 0.015635849723669916
+    },
+    "xwinograd_pt": {
+      "acc": 0.6958174904942965,
+      "acc_stderr": 0.02842262232104953
+    },
+    "xwinograd_ru": {
+      "acc": 0.6730158730158731,
+      "acc_stderr": 0.026473487980890994
+    },
+    "xwinograd_zh": {
+      "acc": 0.6984126984126984,
+      "acc_stderr": 0.02046343784622378
+    }
+  },
+  "versions": {
+    "xwinograd_en": 0,
+    "xwinograd_fr": 0,
+    "xwinograd_jp": 0,
+    "xwinograd_pt": 0,
+    "xwinograd_ru": 0,
+    "xwinograd_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-8k-base,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

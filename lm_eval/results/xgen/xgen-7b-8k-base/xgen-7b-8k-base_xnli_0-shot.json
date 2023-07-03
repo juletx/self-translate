@@ -1,0 +1,92 @@
+{
+  "results": {
+    "xnli_ar": {
+      "acc": 0.33532934131736525,
+      "acc_stderr": 0.006670578754212843
+    },
+    "xnli_bg": {
+      "acc": 0.37445109780439123,
+      "acc_stderr": 0.006838371198927302
+    },
+    "xnli_de": {
+      "acc": 0.45129740518962075,
+      "acc_stderr": 0.007031118369491676
+    },
+    "xnli_el": {
+      "acc": 0.3534930139720559,
+      "acc_stderr": 0.006754629196407282
+    },
+    "xnli_en": {
+      "acc": 0.5325349301397205,
+      "acc_stderr": 0.0070497402616122255
+    },
+    "xnli_es": {
+      "acc": 0.442315369261477,
+      "acc_stderr": 0.007017539037145391
+    },
+    "xnli_fr": {
+      "acc": 0.456686626746507,
+      "acc_stderr": 0.007038155029004151
+    },
+    "xnli_hi": {
+      "acc": 0.3714570858283433,
+      "acc_stderr": 0.006827257373602342
+    },
+    "xnli_ru": {
+      "acc": 0.43892215568862275,
+      "acc_stderr": 0.007011804451341984
+    },
+    "xnli_sw": {
+      "acc": 0.34970059880239523,
+      "acc_stderr": 0.006737974284938399
+    },
+    "xnli_th": {
+      "acc": 0.3437125748502994,
+      "acc_stderr": 0.006710721818911557
+    },
+    "xnli_tr": {
+      "acc": 0.37684630738522956,
+      "acc_stderr": 0.006847061089041559
+    },
+    "xnli_ur": {
+      "acc": 0.3337325349301397,
+      "acc_stderr": 0.006662666282522686
+    },
+    "xnli_vi": {
+      "acc": 0.36227544910179643,
+      "acc_stderr": 0.006791418670232302
+    },
+    "xnli_zh": {
+      "acc": 0.3315369261477046,
+      "acc_stderr": 0.006651646309907706
+    }
+  },
+  "versions": {
+    "xnli_ar": 0,
+    "xnli_bg": 0,
+    "xnli_de": 0,
+    "xnli_el": 0,
+    "xnli_en": 0,
+    "xnli_es": 0,
+    "xnli_fr": 0,
+    "xnli_hi": 0,
+    "xnli_ru": 0,
+    "xnli_sw": 0,
+    "xnli_th": 0,
+    "xnli_tr": 0,
+    "xnli_ur": 0,
+    "xnli_vi": 0,
+    "xnli_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-8k-base,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

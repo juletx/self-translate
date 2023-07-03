@@ -1,0 +1,72 @@
+{
+  "results": {
+    "xcopa_et": {
+      "acc": 0.474,
+      "acc_stderr": 0.02235279165091416
+    },
+    "xcopa_ht": {
+      "acc": 0.526,
+      "acc_stderr": 0.022352791650914167
+    },
+    "xcopa_id": {
+      "acc": 0.54,
+      "acc_stderr": 0.022311333245289663
+    },
+    "xcopa_it": {
+      "acc": 0.616,
+      "acc_stderr": 0.021772369465547187
+    },
+    "xcopa_qu": {
+      "acc": 0.51,
+      "acc_stderr": 0.022378596989230774
+    },
+    "xcopa_sw": {
+      "acc": 0.512,
+      "acc_stderr": 0.02237662679792717
+    },
+    "xcopa_ta": {
+      "acc": 0.558,
+      "acc_stderr": 0.02223197069632112
+    },
+    "xcopa_th": {
+      "acc": 0.554,
+      "acc_stderr": 0.022252153078595897
+    },
+    "xcopa_tr": {
+      "acc": 0.526,
+      "acc_stderr": 0.02235279165091416
+    },
+    "xcopa_vi": {
+      "acc": 0.516,
+      "acc_stderr": 0.0223716109825804
+    },
+    "xcopa_zh": {
+      "acc": 0.59,
+      "acc_stderr": 0.022017482578127683
+    }
+  },
+  "versions": {
+    "xcopa_et": 0,
+    "xcopa_ht": 0,
+    "xcopa_id": 0,
+    "xcopa_it": 0,
+    "xcopa_qu": 0,
+    "xcopa_sw": 0,
+    "xcopa_ta": 0,
+    "xcopa_th": 0,
+    "xcopa_tr": 0,
+    "xcopa_vi": 0,
+    "xcopa_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-4k-base,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

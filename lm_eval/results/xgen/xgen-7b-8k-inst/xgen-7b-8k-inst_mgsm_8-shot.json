@@ -1,0 +1,72 @@
+{
+  "results": {
+    "mgsm_bn": {
+      "acc": 0.016,
+      "acc_stderr": 0.00795166118887434
+    },
+    "mgsm_de": {
+      "acc": 0.064,
+      "acc_stderr": 0.015510587134374143
+    },
+    "mgsm_en": {
+      "acc": 0.136,
+      "acc_stderr": 0.021723342617052072
+    },
+    "mgsm_es": {
+      "acc": 0.092,
+      "acc_stderr": 0.018316275379429644
+    },
+    "mgsm_fr": {
+      "acc": 0.096,
+      "acc_stderr": 0.018668961419477166
+    },
+    "mgsm_ja": {
+      "acc": 0.036,
+      "acc_stderr": 0.011805655169278133
+    },
+    "mgsm_ru": {
+      "acc": 0.068,
+      "acc_stderr": 0.015953748410747016
+    },
+    "mgsm_sw": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm_te": {
+      "acc": 0.008,
+      "acc_stderr": 0.0056454836766901655
+    },
+    "mgsm_th": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874337
+    },
+    "mgsm_zh": {
+      "acc": 0.06,
+      "acc_stderr": 0.015050117079158732
+    }
+  },
+  "versions": {
+    "mgsm_bn": 0,
+    "mgsm_de": 0,
+    "mgsm_en": 0,
+    "mgsm_es": 0,
+    "mgsm_fr": 0,
+    "mgsm_ja": 0,
+    "mgsm_ru": 0,
+    "mgsm_sw": 0,
+    "mgsm_te": 0,
+    "mgsm_th": 0,
+    "mgsm_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-8k-inst,dtype=bfloat16",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
