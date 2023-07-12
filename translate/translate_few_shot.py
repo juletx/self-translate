@@ -90,7 +90,10 @@ def main(
 
     print(f"Loading tokenizer {model_name}...")
     tokenizer = AutoTokenizer.from_pretrained(
-        pretrained_model_name_or_path=model_name, cache_dir=cache_dir
+        pretrained_model_name_or_path=model_name,
+        cache_dir=cache_dir,
+        trust_remote_code="xgen" in model_name,
+        pad_token="<|endoftext|>" if "xgen" in model_name else None,
     )
     tokenizer.padding_side = "left"
     if tokenizer.pad_token_id is None:
