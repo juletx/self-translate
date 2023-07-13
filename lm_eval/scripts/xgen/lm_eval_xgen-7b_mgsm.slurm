@@ -33,9 +33,9 @@ num_fewshot=8
 
 for model_name in "${model_names[@]}"; do
     for group_name in "${tasks_selected[@]}"; do
-        python3 ../../lm-evaluation-harness/main.py \
+        srun python3 ../../lm-evaluation-harness/main.py \
             --model hf-causal-experimental \
-            --model_args pretrained=$model_name,dtype=bfloat16 \
+            --model_args pretrained=$model_name,dtype=bfloat16,trust_remote_code=True \
             --tasks ${tasks[${group_name}]} \
             --device cuda \
             --output_path ../../results/xgen/${model_name:11}/${model_name:11}_${group_name}_${num_fewshot}-shot.json \

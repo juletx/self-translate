@@ -1,0 +1,218 @@
+{
+  "results": {
+    "mgsm-mt_nllb-200-1.3B_bn": {
+      "acc": 0.06,
+      "acc_stderr": 0.01505011707915877
+    },
+    "mgsm-mt_nllb-200-1.3B_de": {
+      "acc": 0.08,
+      "acc_stderr": 0.01719250794146297
+    },
+    "mgsm-mt_nllb-200-1.3B_es": {
+      "acc": 0.092,
+      "acc_stderr": 0.018316275379429644
+    },
+    "mgsm-mt_nllb-200-1.3B_fr": {
+      "acc": 0.076,
+      "acc_stderr": 0.016793573067859672
+    },
+    "mgsm-mt_nllb-200-1.3B_ja": {
+      "acc": 0.06,
+      "acc_stderr": 0.015050117079158778
+    },
+    "mgsm-mt_nllb-200-1.3B_ru": {
+      "acc": 0.064,
+      "acc_stderr": 0.015510587134374152
+    },
+    "mgsm-mt_nllb-200-1.3B_sw": {
+      "acc": 0.068,
+      "acc_stderr": 0.015953748410747016
+    },
+    "mgsm-mt_nllb-200-1.3B_te": {
+      "acc": 0.076,
+      "acc_stderr": 0.016793573067859658
+    },
+    "mgsm-mt_nllb-200-1.3B_th": {
+      "acc": 0.072,
+      "acc_stderr": 0.016381005750490108
+    },
+    "mgsm-mt_nllb-200-1.3B_zh": {
+      "acc": 0.04,
+      "acc_stderr": 0.01241840841130131
+    },
+    "mgsm-mt_nllb-200-3.3B_bn": {
+      "acc": 0.052,
+      "acc_stderr": 0.014070391025641634
+    },
+    "mgsm-mt_nllb-200-3.3B_de": {
+      "acc": 0.08,
+      "acc_stderr": 0.01719250794146297
+    },
+    "mgsm-mt_nllb-200-3.3B_es": {
+      "acc": 0.068,
+      "acc_stderr": 0.01595374841074702
+    },
+    "mgsm-mt_nllb-200-3.3B_fr": {
+      "acc": 0.076,
+      "acc_stderr": 0.016793573067859658
+    },
+    "mgsm-mt_nllb-200-3.3B_ja": {
+      "acc": 0.068,
+      "acc_stderr": 0.015953748410747016
+    },
+    "mgsm-mt_nllb-200-3.3B_ru": {
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899604
+    },
+    "mgsm-mt_nllb-200-3.3B_sw": {
+      "acc": 0.084,
+      "acc_stderr": 0.017578738526776338
+    },
+    "mgsm-mt_nllb-200-3.3B_te": {
+      "acc": 0.068,
+      "acc_stderr": 0.015953748410747023
+    },
+    "mgsm-mt_nllb-200-3.3B_th": {
+      "acc": 0.048,
+      "acc_stderr": 0.013546884228085697
+    },
+    "mgsm-mt_nllb-200-3.3B_zh": {
+      "acc": 0.064,
+      "acc_stderr": 0.015510587134374136
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_bn": {
+      "acc": 0.072,
+      "acc_stderr": 0.016381005750490105
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.068,
+      "acc_stderr": 0.015953748410747016
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.08,
+      "acc_stderr": 0.01719250794146298
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.096,
+      "acc_stderr": 0.018668961419477142
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.068,
+      "acc_stderr": 0.01595374841074701
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_ru": {
+      "acc": 0.076,
+      "acc_stderr": 0.016793573067859637
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_sw": {
+      "acc": 0.048,
+      "acc_stderr": 0.01354688422808569
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_te": {
+      "acc": 0.096,
+      "acc_stderr": 0.01866896141947716
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_th": {
+      "acc": 0.044,
+      "acc_stderr": 0.012997373846574945
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.048,
+      "acc_stderr": 0.013546884228085693
+    },
+    "mgsm-mt_nllb-200-distilled-600M_bn": {
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899602
+    },
+    "mgsm-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.06,
+      "acc_stderr": 0.01505011707915876
+    },
+    "mgsm-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899602
+    },
+    "mgsm-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.068,
+      "acc_stderr": 0.015953748410747023
+    },
+    "mgsm-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.044,
+      "acc_stderr": 0.01299737384657496
+    },
+    "mgsm-mt_nllb-200-distilled-600M_ru": {
+      "acc": 0.052,
+      "acc_stderr": 0.014070391025641659
+    },
+    "mgsm-mt_nllb-200-distilled-600M_sw": {
+      "acc": 0.048,
+      "acc_stderr": 0.01354688422808568
+    },
+    "mgsm-mt_nllb-200-distilled-600M_te": {
+      "acc": 0.052,
+      "acc_stderr": 0.01407039102564164
+    },
+    "mgsm-mt_nllb-200-distilled-600M_th": {
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899589
+    },
+    "mgsm-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.064,
+      "acc_stderr": 0.015510587134374143
+    }
+  },
+  "versions": {
+    "mgsm-mt_nllb-200-1.3B_bn": 0,
+    "mgsm-mt_nllb-200-1.3B_de": 0,
+    "mgsm-mt_nllb-200-1.3B_es": 0,
+    "mgsm-mt_nllb-200-1.3B_fr": 0,
+    "mgsm-mt_nllb-200-1.3B_ja": 0,
+    "mgsm-mt_nllb-200-1.3B_ru": 0,
+    "mgsm-mt_nllb-200-1.3B_sw": 0,
+    "mgsm-mt_nllb-200-1.3B_te": 0,
+    "mgsm-mt_nllb-200-1.3B_th": 0,
+    "mgsm-mt_nllb-200-1.3B_zh": 0,
+    "mgsm-mt_nllb-200-3.3B_bn": 0,
+    "mgsm-mt_nllb-200-3.3B_de": 0,
+    "mgsm-mt_nllb-200-3.3B_es": 0,
+    "mgsm-mt_nllb-200-3.3B_fr": 0,
+    "mgsm-mt_nllb-200-3.3B_ja": 0,
+    "mgsm-mt_nllb-200-3.3B_ru": 0,
+    "mgsm-mt_nllb-200-3.3B_sw": 0,
+    "mgsm-mt_nllb-200-3.3B_te": 0,
+    "mgsm-mt_nllb-200-3.3B_th": 0,
+    "mgsm-mt_nllb-200-3.3B_zh": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_bn": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_de": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_es": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_fr": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_ja": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_ru": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_sw": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_te": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_th": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_zh": 0,
+    "mgsm-mt_nllb-200-distilled-600M_bn": 0,
+    "mgsm-mt_nllb-200-distilled-600M_de": 0,
+    "mgsm-mt_nllb-200-distilled-600M_es": 0,
+    "mgsm-mt_nllb-200-distilled-600M_fr": 0,
+    "mgsm-mt_nllb-200-distilled-600M_ja": 0,
+    "mgsm-mt_nllb-200-distilled-600M_ru": 0,
+    "mgsm-mt_nllb-200-distilled-600M_sw": 0,
+    "mgsm-mt_nllb-200-distilled-600M_te": 0,
+    "mgsm-mt_nllb-200-distilled-600M_th": 0,
+    "mgsm-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-4k-base,dtype=bfloat16,trust_remote_code=True",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

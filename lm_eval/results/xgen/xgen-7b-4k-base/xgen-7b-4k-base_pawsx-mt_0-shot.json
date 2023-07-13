@@ -1,0 +1,138 @@
+{
+  "results": {
+    "pawsx-mt_nllb-200-1.3B_de": {
+      "acc": 0.6535,
+      "acc_stderr": 0.01064309695325457
+    },
+    "pawsx-mt_nllb-200-1.3B_es": {
+      "acc": 0.6375,
+      "acc_stderr": 0.010751961557718986
+    },
+    "pawsx-mt_nllb-200-1.3B_fr": {
+      "acc": 0.636,
+      "acc_stderr": 0.010761501054800691
+    },
+    "pawsx-mt_nllb-200-1.3B_ja": {
+      "acc": 0.591,
+      "acc_stderr": 0.010996361215419952
+    },
+    "pawsx-mt_nllb-200-1.3B_ko": {
+      "acc": 0.588,
+      "acc_stderr": 0.011008569130325177
+    },
+    "pawsx-mt_nllb-200-1.3B_zh": {
+      "acc": 0.6015,
+      "acc_stderr": 0.01095028901055619
+    },
+    "pawsx-mt_nllb-200-3.3B_de": {
+      "acc": 0.648,
+      "acc_stderr": 0.010681996654477083
+    },
+    "pawsx-mt_nllb-200-3.3B_es": {
+      "acc": 0.6455,
+      "acc_stderr": 0.010699164035359287
+    },
+    "pawsx-mt_nllb-200-3.3B_fr": {
+      "acc": 0.6445,
+      "acc_stderr": 0.010705941508891122
+    },
+    "pawsx-mt_nllb-200-3.3B_ja": {
+      "acc": 0.603,
+      "acc_stderr": 0.010943280024235941
+    },
+    "pawsx-mt_nllb-200-3.3B_ko": {
+      "acc": 0.5885,
+      "acc_stderr": 0.011006563824537302
+    },
+    "pawsx-mt_nllb-200-3.3B_zh": {
+      "acc": 0.601,
+      "acc_stderr": 0.010952601505572451
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.635,
+      "acc_stderr": 0.010767797952059087
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.651,
+      "acc_stderr": 0.010660972196009384
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.6345,
+      "acc_stderr": 0.010770927603540937
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.5895,
+      "acc_stderr": 0.011002518016406627
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": {
+      "acc": 0.5775,
+      "acc_stderr": 0.011047981894987798
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.595,
+      "acc_stderr": 0.010979425025334414
+    },
+    "pawsx-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.6425,
+      "acc_stderr": 0.010719343597608063
+    },
+    "pawsx-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.643,
+      "acc_stderr": 0.010716012152766236
+    },
+    "pawsx-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.636,
+      "acc_stderr": 0.01076150105480069
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.585,
+      "acc_stderr": 0.011020354990292212
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ko": {
+      "acc": 0.5635,
+      "acc_stderr": 0.011092583003919658
+    },
+    "pawsx-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.584,
+      "acc_stderr": 0.011024190055654286
+    }
+  },
+  "versions": {
+    "pawsx-mt_nllb-200-1.3B_de": 0,
+    "pawsx-mt_nllb-200-1.3B_es": 0,
+    "pawsx-mt_nllb-200-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-3.3B_de": 0,
+    "pawsx-mt_nllb-200-3.3B_es": 0,
+    "pawsx-mt_nllb-200-3.3B_fr": 0,
+    "pawsx-mt_nllb-200-3.3B_ja": 0,
+    "pawsx-mt_nllb-200-3.3B_ko": 0,
+    "pawsx-mt_nllb-200-3.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_de": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_es": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-600M_de": 0,
+    "pawsx-mt_nllb-200-distilled-600M_es": 0,
+    "pawsx-mt_nllb-200-distilled-600M_fr": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ja": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ko": 0,
+    "pawsx-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-4k-base,dtype=bfloat16,trust_remote_code=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

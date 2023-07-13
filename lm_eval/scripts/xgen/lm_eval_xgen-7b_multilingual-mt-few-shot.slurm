@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_xgen-7b_multilingual
+#SBATCH --job-name=lm_eval_xgen-7b_multilingual-mt
 #SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=../.slurm/lm_eval_xgen-7b_multilingual.out
-#SBATCH --error=../.slurm/lm_eval_xgen-7b_multilingual.err
+#SBATCH --output=../.slurm/lm_eval_xgen-7b_multilingual-mt.out
+#SBATCH --error=../.slurm/lm_eval_xgen-7b_multilingual-mt.err
 
 # activate virtual environment
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
@@ -26,11 +26,11 @@ source ../tasks.sh
 
 # select tasks
 tasks_selected=(
-    #"xcopa"
-    #"xstory_cloze"
-    #"xwinograd"
-    "pawsx"
-    "xnli"
+    "xcopa-mt"
+    "xstory_cloze-mt"
+    "pawsx-mt"
+    "xnli-mt"
+    "xnli-mt-all"
 )
 
 num_fewshot=0
@@ -40,7 +40,7 @@ for model_name in "${model_names[@]}"; do
         srun python3 ../../lm-evaluation-harness/main.py \
             --model hf-causal-experimental \
             --model_args pretrained=$model_name,dtype=bfloat16,trust_remote_code=True \
-            --tasks ${tasks[${group_name}]} \
+            --tasks ${group_name}_${model_name:11}_* \
             --device cuda \
             --output_path ../../results/xgen/${model_name:11}/${model_name:11}_${group_name}_${num_fewshot}-shot.json \
             --batch_size auto \
