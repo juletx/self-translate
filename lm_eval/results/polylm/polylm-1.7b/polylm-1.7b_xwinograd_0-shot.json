@@ -1,0 +1,50 @@
+{
+  "results": {
+    "xwinograd_en": {
+      "acc": 0.6460215053763441,
+      "acc_stderr": 0.009919593260350123
+    },
+    "xwinograd_fr": {
+      "acc": 0.5301204819277109,
+      "acc_stderr": 0.055115483700295974
+    },
+    "xwinograd_jp": {
+      "acc": 0.5255474452554745,
+      "acc_stderr": 0.016133166089128848
+    },
+    "xwinograd_pt": {
+      "acc": 0.55893536121673,
+      "acc_stderr": 0.0306747666644263
+    },
+    "xwinograd_ru": {
+      "acc": 0.5523809523809524,
+      "acc_stderr": 0.0280613656383537
+    },
+    "xwinograd_zh": {
+      "acc": 0.5892857142857143,
+      "acc_stderr": 0.02193556718669846
+    }
+  },
+  "versions": {
+    "xwinograd_en": 0,
+    "xwinograd_fr": 0,
+    "xwinograd_jp": 0,
+    "xwinograd_pt": 0,
+    "xwinograd_ru": 0,
+    "xwinograd_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-1.7b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      256
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

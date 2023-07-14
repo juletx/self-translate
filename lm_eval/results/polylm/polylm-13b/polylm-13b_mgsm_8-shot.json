@@ -1,0 +1,73 @@
+{
+  "results": {
+    "mgsm_bn": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_de": {
+      "acc": 0.064,
+      "acc_stderr": 0.015510587134374143
+    },
+    "mgsm_en": {
+      "acc": 0.088,
+      "acc_stderr": 0.01795308477705288
+    },
+    "mgsm_es": {
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899596
+    },
+    "mgsm_fr": {
+      "acc": 0.076,
+      "acc_stderr": 0.01679357306785967
+    },
+    "mgsm_ja": {
+      "acc": 0.032,
+      "acc_stderr": 0.011153546809230823
+    },
+    "mgsm_ru": {
+      "acc": 0.072,
+      "acc_stderr": 0.016381005750490105
+    },
+    "mgsm_sw": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964247
+    },
+    "mgsm_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_th": {
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899596
+    },
+    "mgsm_zh": {
+      "acc": 0.064,
+      "acc_stderr": 0.015510587134374133
+    }
+  },
+  "versions": {
+    "mgsm_bn": 0,
+    "mgsm_de": 0,
+    "mgsm_en": 0,
+    "mgsm_es": 0,
+    "mgsm_fr": 0,
+    "mgsm_ja": 0,
+    "mgsm_ru": 0,
+    "mgsm_sw": 0,
+    "mgsm_te": 0,
+    "mgsm_th": 0,
+    "mgsm_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-13b",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
