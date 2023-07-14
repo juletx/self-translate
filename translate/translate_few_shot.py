@@ -93,7 +93,8 @@ def main(
         pretrained_model_name_or_path=model_name,
         cache_dir=cache_dir,
         trust_remote_code="xgen" in model_name,
-        pad_token="<|endoftext|>" if "xgen" in model_name else None,
+        # pad_token="<|endoftext|>" if "xgen" in model_name else None,
+        use_fast="polylm" not in model_name,
     )
     tokenizer.padding_side = "left"
     if tokenizer.pad_token_id is None:
