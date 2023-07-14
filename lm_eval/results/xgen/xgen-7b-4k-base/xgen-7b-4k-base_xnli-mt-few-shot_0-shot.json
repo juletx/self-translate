@@ -1,0 +1,88 @@
+{
+  "results": {
+    "xnli-mt_xgen-7b-4k-base_ar": {
+      "acc": 0.4157684630738523,
+      "acc_stderr": 0.00696374331374447
+    },
+    "xnli-mt_xgen-7b-4k-base_bg": {
+      "acc": 0.49740518962075847,
+      "acc_stderr": 0.007064617294679297
+    },
+    "xnli-mt_xgen-7b-4k-base_de": {
+      "acc": 0.5115768463073852,
+      "acc_stderr": 0.007062818502309178
+    },
+    "xnli-mt_xgen-7b-4k-base_el": {
+      "acc": 0.45149700598802395,
+      "acc_stderr": 0.007031393817455073
+    },
+    "xnli-mt_xgen-7b-4k-base_es": {
+      "acc": 0.5329341317365269,
+      "acc_stderr": 0.007049370190110193
+    },
+    "xnli-mt_xgen-7b-4k-base_fr": {
+      "acc": 0.518562874251497,
+      "acc_stderr": 0.007059842029029195
+    },
+    "xnli-mt_xgen-7b-4k-base_hi": {
+      "acc": 0.40099800399201596,
+      "acc_stderr": 0.0069248396969599545
+    },
+    "xnli-mt_xgen-7b-4k-base_ru": {
+      "acc": 0.4940119760479042,
+      "acc_stderr": 0.007064205780402841
+    },
+    "xnli-mt_xgen-7b-4k-base_sw": {
+      "acc": 0.350499001996008,
+      "acc_stderr": 0.006741519396128819
+    },
+    "xnli-mt_xgen-7b-4k-base_th": {
+      "acc": 0.36766467065868264,
+      "acc_stderr": 0.006812776750557049
+    },
+    "xnli-mt_xgen-7b-4k-base_tr": {
+      "acc": 0.39600798403193616,
+      "acc_stderr": 0.006910222861744996
+    },
+    "xnli-mt_xgen-7b-4k-base_ur": {
+      "acc": 0.37405189620758483,
+      "acc_stderr": 0.006836905523069518
+    },
+    "xnli-mt_xgen-7b-4k-base_vi": {
+      "acc": 0.38882235528942116,
+      "acc_stderr": 0.0068878523318794205
+    },
+    "xnli-mt_xgen-7b-4k-base_zh": {
+      "acc": 0.47964071856287427,
+      "acc_stderr": 0.007058853348299951
+    }
+  },
+  "versions": {
+    "xnli-mt_xgen-7b-4k-base_ar": 0,
+    "xnli-mt_xgen-7b-4k-base_bg": 0,
+    "xnli-mt_xgen-7b-4k-base_de": 0,
+    "xnli-mt_xgen-7b-4k-base_el": 0,
+    "xnli-mt_xgen-7b-4k-base_es": 0,
+    "xnli-mt_xgen-7b-4k-base_fr": 0,
+    "xnli-mt_xgen-7b-4k-base_hi": 0,
+    "xnli-mt_xgen-7b-4k-base_ru": 0,
+    "xnli-mt_xgen-7b-4k-base_sw": 0,
+    "xnli-mt_xgen-7b-4k-base_th": 0,
+    "xnli-mt_xgen-7b-4k-base_tr": 0,
+    "xnli-mt_xgen-7b-4k-base_ur": 0,
+    "xnli-mt_xgen-7b-4k-base_vi": 0,
+    "xnli-mt_xgen-7b-4k-base_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-4k-base,dtype=bfloat16,trust_remote_code=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

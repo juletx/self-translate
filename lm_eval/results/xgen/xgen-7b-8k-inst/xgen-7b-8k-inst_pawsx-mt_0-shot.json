@@ -1,0 +1,138 @@
+{
+  "results": {
+    "pawsx-mt_nllb-200-1.3B_de": {
+      "acc": 0.6455,
+      "acc_stderr": 0.01069916403535929
+    },
+    "pawsx-mt_nllb-200-1.3B_es": {
+      "acc": 0.632,
+      "acc_stderr": 0.010786388324483072
+    },
+    "pawsx-mt_nllb-200-1.3B_fr": {
+      "acc": 0.651,
+      "acc_stderr": 0.010660972196009385
+    },
+    "pawsx-mt_nllb-200-1.3B_ja": {
+      "acc": 0.5855,
+      "acc_stderr": 0.011018419931591762
+    },
+    "pawsx-mt_nllb-200-1.3B_ko": {
+      "acc": 0.5725,
+      "acc_stderr": 0.011064948781886604
+    },
+    "pawsx-mt_nllb-200-1.3B_zh": {
+      "acc": 0.6085,
+      "acc_stderr": 0.010916659824821179
+    },
+    "pawsx-mt_nllb-200-3.3B_de": {
+      "acc": 0.6445,
+      "acc_stderr": 0.010705941508891124
+    },
+    "pawsx-mt_nllb-200-3.3B_es": {
+      "acc": 0.6395,
+      "acc_stderr": 0.010739066010104792
+    },
+    "pawsx-mt_nllb-200-3.3B_fr": {
+      "acc": 0.6445,
+      "acc_stderr": 0.010705941508891124
+    },
+    "pawsx-mt_nllb-200-3.3B_ja": {
+      "acc": 0.5865,
+      "acc_stderr": 0.011014514731361837
+    },
+    "pawsx-mt_nllb-200-3.3B_ko": {
+      "acc": 0.599,
+      "acc_stderr": 0.01096173251771343
+    },
+    "pawsx-mt_nllb-200-3.3B_zh": {
+      "acc": 0.6025,
+      "acc_stderr": 0.010945628277499654
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.651,
+      "acc_stderr": 0.010660972196009385
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.6415,
+      "acc_stderr": 0.010725968403790007
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.6535,
+      "acc_stderr": 0.01064309695325457
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.583,
+      "acc_stderr": 0.011027978425535509
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": {
+      "acc": 0.576,
+      "acc_stderr": 0.011053193499766084
+    },
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.5905,
+      "acc_stderr": 0.010998425236316455
+    },
+    "pawsx-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.644,
+      "acc_stderr": 0.010709311120344542
+    },
+    "pawsx-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.6415,
+      "acc_stderr": 0.010725968403790007
+    },
+    "pawsx-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.6345,
+      "acc_stderr": 0.010770927603540937
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.558,
+      "acc_stderr": 0.011107641056719636
+    },
+    "pawsx-mt_nllb-200-distilled-600M_ko": {
+      "acc": 0.5685,
+      "acc_stderr": 0.011077690761900853
+    },
+    "pawsx-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.5945,
+      "acc_stderr": 0.010981583336946123
+    }
+  },
+  "versions": {
+    "pawsx-mt_nllb-200-1.3B_de": 0,
+    "pawsx-mt_nllb-200-1.3B_es": 0,
+    "pawsx-mt_nllb-200-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-3.3B_de": 0,
+    "pawsx-mt_nllb-200-3.3B_es": 0,
+    "pawsx-mt_nllb-200-3.3B_fr": 0,
+    "pawsx-mt_nllb-200-3.3B_ja": 0,
+    "pawsx-mt_nllb-200-3.3B_ko": 0,
+    "pawsx-mt_nllb-200-3.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_de": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_es": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_fr": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ja": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_ko": 0,
+    "pawsx-mt_nllb-200-distilled-1.3B_zh": 0,
+    "pawsx-mt_nllb-200-distilled-600M_de": 0,
+    "pawsx-mt_nllb-200-distilled-600M_es": 0,
+    "pawsx-mt_nllb-200-distilled-600M_fr": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ja": 0,
+    "pawsx-mt_nllb-200-distilled-600M_ko": 0,
+    "pawsx-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-8k-inst,dtype=bfloat16,trust_remote_code=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

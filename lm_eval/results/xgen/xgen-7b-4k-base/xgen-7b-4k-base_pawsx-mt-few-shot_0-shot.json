@@ -1,0 +1,48 @@
+{
+  "results": {
+    "pawsx-mt_xgen-7b-4k-base_de": {
+      "acc": 0.6365,
+      "acc_stderr": 0.010758333787019994
+    },
+    "pawsx-mt_xgen-7b-4k-base_es": {
+      "acc": 0.625,
+      "acc_stderr": 0.010828024891988879
+    },
+    "pawsx-mt_xgen-7b-4k-base_fr": {
+      "acc": 0.629,
+      "acc_stderr": 0.010804530019138519
+    },
+    "pawsx-mt_xgen-7b-4k-base_ja": {
+      "acc": 0.559,
+      "acc_stderr": 0.011105006104468738
+    },
+    "pawsx-mt_xgen-7b-4k-base_ko": {
+      "acc": 0.55,
+      "acc_stderr": 0.011127079848413738
+    },
+    "pawsx-mt_xgen-7b-4k-base_zh": {
+      "acc": 0.5805,
+      "acc_stderr": 0.011037245371590673
+    }
+  },
+  "versions": {
+    "pawsx-mt_xgen-7b-4k-base_de": 0,
+    "pawsx-mt_xgen-7b-4k-base_es": 0,
+    "pawsx-mt_xgen-7b-4k-base_fr": 0,
+    "pawsx-mt_xgen-7b-4k-base_ja": 0,
+    "pawsx-mt_xgen-7b-4k-base_ko": 0,
+    "pawsx-mt_xgen-7b-4k-base_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-4k-base,dtype=bfloat16,trust_remote_code=True",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "results": {
+    "mgsm-mt_xgen-7b-8k-inst_bn": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_xgen-7b-8k-inst_de": {
+      "acc": 0.104,
+      "acc_stderr": 0.019345100974843897
+    },
+    "mgsm-mt_xgen-7b-8k-inst_es": {
+      "acc": 0.116,
+      "acc_stderr": 0.02029342980308387
+    },
+    "mgsm-mt_xgen-7b-8k-inst_fr": {
+      "acc": 0.1,
+      "acc_stderr": 0.01901172751573437
+    },
+    "mgsm-mt_xgen-7b-8k-inst_ja": {
+      "acc": 0.104,
+      "acc_stderr": 0.019345100974843894
+    },
+    "mgsm-mt_xgen-7b-8k-inst_ru": {
+      "acc": 0.104,
+      "acc_stderr": 0.019345100974843897
+    },
+    "mgsm-mt_xgen-7b-8k-inst_sw": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874325
+    },
+    "mgsm-mt_xgen-7b-8k-inst_te": {
+      "acc": 0.028,
+      "acc_stderr": 0.010454721651927274
+    },
+    "mgsm-mt_xgen-7b-8k-inst_th": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_xgen-7b-8k-inst_zh": {
+      "acc": 0.068,
+      "acc_stderr": 0.01595374841074702
+    }
+  },
+  "versions": {
+    "mgsm-mt_xgen-7b-8k-inst_bn": 0,
+    "mgsm-mt_xgen-7b-8k-inst_de": 0,
+    "mgsm-mt_xgen-7b-8k-inst_es": 0,
+    "mgsm-mt_xgen-7b-8k-inst_fr": 0,
+    "mgsm-mt_xgen-7b-8k-inst_ja": 0,
+    "mgsm-mt_xgen-7b-8k-inst_ru": 0,
+    "mgsm-mt_xgen-7b-8k-inst_sw": 0,
+    "mgsm-mt_xgen-7b-8k-inst_te": 0,
+    "mgsm-mt_xgen-7b-8k-inst_th": 0,
+    "mgsm-mt_xgen-7b-8k-inst_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=Salesforce/xgen-7b-8k-inst,dtype=bfloat16,trust_remote_code=True",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

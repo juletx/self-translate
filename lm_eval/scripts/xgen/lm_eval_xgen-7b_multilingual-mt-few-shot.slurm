@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=lm_eval_xgen-7b_multilingual-mt
+#SBATCH --job-name=lm_eval_xgen-7b_multilingual-mt-few-shot
 #SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=../.slurm/lm_eval_xgen-7b_multilingual-mt.out
-#SBATCH --error=../.slurm/lm_eval_xgen-7b_multilingual-mt.err
+#SBATCH --output=../.slurm/lm_eval_xgen-7b_multilingual-mt-few-shot.out
+#SBATCH --error=../.slurm/lm_eval_xgen-7b_multilingual-mt-few-shot.err
 
 # activate virtual environment
 source /gaueko0/users/jetxaniz007/phd/venv2/bin/activate
@@ -42,7 +42,7 @@ for model_name in "${model_names[@]}"; do
             --model_args pretrained=$model_name,dtype=bfloat16,trust_remote_code=True \
             --tasks ${group_name}_${model_name:11}_* \
             --device cuda \
-            --output_path ../../results/xgen/${model_name:11}/${model_name:11}_${group_name}_${num_fewshot}-shot.json \
+            --output_path ../../results/xgen/${model_name:11}/${model_name:11}_${group_name}-few-shot_${num_fewshot}-shot.json \
             --batch_size auto \
             --no_cache \
             --num_fewshot ${num_fewshot}
