@@ -1,0 +1,75 @@
+{
+  "results": {
+    "xcopa-mt_polylm-13b_et": {
+      "acc": 0.48,
+      "acc_stderr": 0.022365160424231336
+    },
+    "xcopa-mt_polylm-13b_ht": {
+      "acc": 0.54,
+      "acc_stderr": 0.022311333245289666
+    },
+    "xcopa-mt_polylm-13b_id": {
+      "acc": 0.698,
+      "acc_stderr": 0.020553269174209184
+    },
+    "xcopa-mt_polylm-13b_it": {
+      "acc": 0.678,
+      "acc_stderr": 0.020916668330019882
+    },
+    "xcopa-mt_polylm-13b_qu": {
+      "acc": 0.466,
+      "acc_stderr": 0.022331264423258383
+    },
+    "xcopa-mt_polylm-13b_sw": {
+      "acc": 0.518,
+      "acc_stderr": 0.02236856511738799
+    },
+    "xcopa-mt_polylm-13b_ta": {
+      "acc": 0.498,
+      "acc_stderr": 0.022382894986483524
+    },
+    "xcopa-mt_polylm-13b_th": {
+      "acc": 0.632,
+      "acc_stderr": 0.02158898256835354
+    },
+    "xcopa-mt_polylm-13b_tr": {
+      "acc": 0.642,
+      "acc_stderr": 0.021461434862859126
+    },
+    "xcopa-mt_polylm-13b_vi": {
+      "acc": 0.712,
+      "acc_stderr": 0.02027150383507522
+    },
+    "xcopa-mt_polylm-13b_zh": {
+      "acc": 0.776,
+      "acc_stderr": 0.018663994464710804
+    }
+  },
+  "versions": {
+    "xcopa-mt_polylm-13b_et": 0,
+    "xcopa-mt_polylm-13b_ht": 0,
+    "xcopa-mt_polylm-13b_id": 0,
+    "xcopa-mt_polylm-13b_it": 0,
+    "xcopa-mt_polylm-13b_qu": 0,
+    "xcopa-mt_polylm-13b_sw": 0,
+    "xcopa-mt_polylm-13b_ta": 0,
+    "xcopa-mt_polylm-13b_th": 0,
+    "xcopa-mt_polylm-13b_tr": 0,
+    "xcopa-mt_polylm-13b_vi": 0,
+    "xcopa-mt_polylm-13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

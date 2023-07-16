@@ -1,0 +1,68 @@
+{
+  "results": {
+    "mgsm-mt_open_llama_7b_v2_bn": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874325
+    },
+    "mgsm-mt_open_llama_7b_v2_de": {
+      "acc": 0.104,
+      "acc_stderr": 0.019345100974843897
+    },
+    "mgsm-mt_open_llama_7b_v2_es": {
+      "acc": 0.112,
+      "acc_stderr": 0.019985536939171433
+    },
+    "mgsm-mt_open_llama_7b_v2_fr": {
+      "acc": 0.108,
+      "acc_stderr": 0.01966955938156875
+    },
+    "mgsm-mt_open_llama_7b_v2_ja": {
+      "acc": 0.056,
+      "acc_stderr": 0.014570697336899599
+    },
+    "mgsm-mt_open_llama_7b_v2_ru": {
+      "acc": 0.084,
+      "acc_stderr": 0.017578738526776348
+    },
+    "mgsm-mt_open_llama_7b_v2_sw": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694265
+    },
+    "mgsm-mt_open_llama_7b_v2_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_open_llama_7b_v2_th": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    },
+    "mgsm-mt_open_llama_7b_v2_zh": {
+      "acc": 0.06,
+      "acc_stderr": 0.015050117079158728
+    }
+  },
+  "versions": {
+    "mgsm-mt_open_llama_7b_v2_bn": 0,
+    "mgsm-mt_open_llama_7b_v2_de": 0,
+    "mgsm-mt_open_llama_7b_v2_es": 0,
+    "mgsm-mt_open_llama_7b_v2_fr": 0,
+    "mgsm-mt_open_llama_7b_v2_ja": 0,
+    "mgsm-mt_open_llama_7b_v2_ru": 0,
+    "mgsm-mt_open_llama_7b_v2_sw": 0,
+    "mgsm-mt_open_llama_7b_v2_te": 0,
+    "mgsm-mt_open_llama_7b_v2_th": 0,
+    "mgsm-mt_open_llama_7b_v2_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_7b_v2",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

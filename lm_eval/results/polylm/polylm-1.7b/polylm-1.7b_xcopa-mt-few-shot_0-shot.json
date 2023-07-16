@@ -1,0 +1,75 @@
+{
+  "results": {
+    "xcopa-mt_polylm-1.7b_et": {
+      "acc": 0.536,
+      "acc_stderr": 0.02232498173838525
+    },
+    "xcopa-mt_polylm-1.7b_ht": {
+      "acc": 0.494,
+      "acc_stderr": 0.022381462412439324
+    },
+    "xcopa-mt_polylm-1.7b_id": {
+      "acc": 0.576,
+      "acc_stderr": 0.0221229937781354
+    },
+    "xcopa-mt_polylm-1.7b_it": {
+      "acc": 0.514,
+      "acc_stderr": 0.02237429816635319
+    },
+    "xcopa-mt_polylm-1.7b_qu": {
+      "acc": 0.5,
+      "acc_stderr": 0.022383074051792257
+    },
+    "xcopa-mt_polylm-1.7b_sw": {
+      "acc": 0.5,
+      "acc_stderr": 0.022383074051792257
+    },
+    "xcopa-mt_polylm-1.7b_ta": {
+      "acc": 0.506,
+      "acc_stderr": 0.022381462412439324
+    },
+    "xcopa-mt_polylm-1.7b_th": {
+      "acc": 0.52,
+      "acc_stderr": 0.02236516042423134
+    },
+    "xcopa-mt_polylm-1.7b_tr": {
+      "acc": 0.51,
+      "acc_stderr": 0.02237859698923078
+    },
+    "xcopa-mt_polylm-1.7b_vi": {
+      "acc": 0.588,
+      "acc_stderr": 0.02203367799374087
+    },
+    "xcopa-mt_polylm-1.7b_zh": {
+      "acc": 0.604,
+      "acc_stderr": 0.021893529941665817
+    }
+  },
+  "versions": {
+    "xcopa-mt_polylm-1.7b_et": 0,
+    "xcopa-mt_polylm-1.7b_ht": 0,
+    "xcopa-mt_polylm-1.7b_id": 0,
+    "xcopa-mt_polylm-1.7b_it": 0,
+    "xcopa-mt_polylm-1.7b_qu": 0,
+    "xcopa-mt_polylm-1.7b_sw": 0,
+    "xcopa-mt_polylm-1.7b_ta": 0,
+    "xcopa-mt_polylm-1.7b_th": 0,
+    "xcopa-mt_polylm-1.7b_tr": 0,
+    "xcopa-mt_polylm-1.7b_vi": 0,
+    "xcopa-mt_polylm-1.7b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-1.7b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      256
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "results": {
+    "xcopa_et": {
+      "acc": 0.49,
+      "acc_stderr": 0.02237859698923078
+    },
+    "xcopa_ht": {
+      "acc": 0.518,
+      "acc_stderr": 0.02236856511738799
+    },
+    "xcopa_id": {
+      "acc": 0.712,
+      "acc_stderr": 0.02027150383507522
+    },
+    "xcopa_it": {
+      "acc": 0.672,
+      "acc_stderr": 0.021017027165175485
+    },
+    "xcopa_qu": {
+      "acc": 0.49,
+      "acc_stderr": 0.02237859698923078
+    },
+    "xcopa_sw": {
+      "acc": 0.524,
+      "acc_stderr": 0.0223572738810164
+    },
+    "xcopa_ta": {
+      "acc": 0.554,
+      "acc_stderr": 0.022252153078595897
+    },
+    "xcopa_th": {
+      "acc": 0.586,
+      "acc_stderr": 0.02204949796982787
+    },
+    "xcopa_tr": {
+      "acc": 0.594,
+      "acc_stderr": 0.02198396209008634
+    },
+    "xcopa_vi": {
+      "acc": 0.724,
+      "acc_stderr": 0.02001121929807353
+    },
+    "xcopa_zh": {
+      "acc": 0.748,
+      "acc_stderr": 0.019435727282249536
+    }
+  },
+  "versions": {
+    "xcopa_et": 0,
+    "xcopa_ht": 0,
+    "xcopa_id": 0,
+    "xcopa_it": 0,
+    "xcopa_qu": 0,
+    "xcopa_sw": 0,
+    "xcopa_ta": 0,
+    "xcopa_th": 0,
+    "xcopa_tr": 0,
+    "xcopa_vi": 0,
+    "xcopa_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-multialpaca-13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      16
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

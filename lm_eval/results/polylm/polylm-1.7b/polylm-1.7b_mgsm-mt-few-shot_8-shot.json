@@ -1,0 +1,68 @@
+{
+  "results": {
+    "mgsm-mt_polylm-1.7b_bn": {
+      "acc": 0.016,
+      "acc_stderr": 0.007951661188874345
+    },
+    "mgsm-mt_polylm-1.7b_de": {
+      "acc": 0.02,
+      "acc_stderr": 0.00887213950734269
+    },
+    "mgsm-mt_polylm-1.7b_es": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694269
+    },
+    "mgsm-mt_polylm-1.7b_fr": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342681
+    },
+    "mgsm-mt_polylm-1.7b_ja": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_polylm-1.7b_ru": {
+      "acc": 0.032,
+      "acc_stderr": 0.011153546809230822
+    },
+    "mgsm-mt_polylm-1.7b_sw": {
+      "acc": 0.012,
+      "acc_stderr": 0.006900323023694278
+    },
+    "mgsm-mt_polylm-1.7b_te": {
+      "acc": 0.008,
+      "acc_stderr": 0.005645483676690161
+    },
+    "mgsm-mt_polylm-1.7b_th": {
+      "acc": 0.024,
+      "acc_stderr": 0.009699087026964252
+    },
+    "mgsm-mt_polylm-1.7b_zh": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    }
+  },
+  "versions": {
+    "mgsm-mt_polylm-1.7b_bn": 0,
+    "mgsm-mt_polylm-1.7b_de": 0,
+    "mgsm-mt_polylm-1.7b_es": 0,
+    "mgsm-mt_polylm-1.7b_fr": 0,
+    "mgsm-mt_polylm-1.7b_ja": 0,
+    "mgsm-mt_polylm-1.7b_ru": 0,
+    "mgsm-mt_polylm-1.7b_sw": 0,
+    "mgsm-mt_polylm-1.7b_te": 0,
+    "mgsm-mt_polylm-1.7b_th": 0,
+    "mgsm-mt_polylm-1.7b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-1.7b",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

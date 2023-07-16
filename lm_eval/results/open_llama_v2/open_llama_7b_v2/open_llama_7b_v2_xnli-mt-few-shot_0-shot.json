@@ -1,0 +1,88 @@
+{
+  "results": {
+    "xnli-mt_open_llama_7b_v2_ar": {
+      "acc": 0.40199600798403196,
+      "acc_stderr": 0.006927673254973618
+    },
+    "xnli-mt_open_llama_7b_v2_bg": {
+      "acc": 0.4906187624750499,
+      "acc_stderr": 0.0070634688228406305
+    },
+    "xnli-mt_open_llama_7b_v2_de": {
+      "acc": 0.5125748502994012,
+      "acc_stderr": 0.0070624778343224785
+    },
+    "xnli-mt_open_llama_7b_v2_el": {
+      "acc": 0.4315369261477046,
+      "acc_stderr": 0.006998171730538879
+    },
+    "xnli-mt_open_llama_7b_v2_es": {
+      "acc": 0.5111776447105788,
+      "acc_stderr": 0.007062946882014571
+    },
+    "xnli-mt_open_llama_7b_v2_fr": {
+      "acc": 0.5103792415169661,
+      "acc_stderr": 0.007063190121373265
+    },
+    "xnli-mt_open_llama_7b_v2_hi": {
+      "acc": 0.4027944111776447,
+      "acc_stderr": 0.006929918607812049
+    },
+    "xnli-mt_open_llama_7b_v2_ru": {
+      "acc": 0.5005988023952096,
+      "acc_stderr": 0.007064707363006151
+    },
+    "xnli-mt_open_llama_7b_v2_sw": {
+      "acc": 0.35728542914171657,
+      "acc_stderr": 0.00677081908405606
+    },
+    "xnli-mt_open_llama_7b_v2_th": {
+      "acc": 0.40079840319361276,
+      "acc_stderr": 0.006924269400167919
+    },
+    "xnli-mt_open_llama_7b_v2_tr": {
+      "acc": 0.42095808383233535,
+      "acc_stderr": 0.006975878576227379
+    },
+    "xnli-mt_open_llama_7b_v2_ur": {
+      "acc": 0.35728542914171657,
+      "acc_stderr": 0.006770819084056058
+    },
+    "xnli-mt_open_llama_7b_v2_vi": {
+      "acc": 0.45708582834331335,
+      "acc_stderr": 0.007038643212814923
+    },
+    "xnli-mt_open_llama_7b_v2_zh": {
+      "acc": 0.4816367265469062,
+      "acc_stderr": 0.007059946240868602
+    }
+  },
+  "versions": {
+    "xnli-mt_open_llama_7b_v2_ar": 0,
+    "xnli-mt_open_llama_7b_v2_bg": 0,
+    "xnli-mt_open_llama_7b_v2_de": 0,
+    "xnli-mt_open_llama_7b_v2_el": 0,
+    "xnli-mt_open_llama_7b_v2_es": 0,
+    "xnli-mt_open_llama_7b_v2_fr": 0,
+    "xnli-mt_open_llama_7b_v2_hi": 0,
+    "xnli-mt_open_llama_7b_v2_ru": 0,
+    "xnli-mt_open_llama_7b_v2_sw": 0,
+    "xnli-mt_open_llama_7b_v2_th": 0,
+    "xnli-mt_open_llama_7b_v2_tr": 0,
+    "xnli-mt_open_llama_7b_v2_ur": 0,
+    "xnli-mt_open_llama_7b_v2_vi": 0,
+    "xnli-mt_open_llama_7b_v2_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_7b_v2",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "results": {
+    "pawsx-mt_polylm-1.7b_de": {
+      "acc": 0.509,
+      "acc_stderr": 0.011181324206260288
+    },
+    "pawsx-mt_polylm-1.7b_es": {
+      "acc": 0.5065,
+      "acc_stderr": 0.011182191006142296
+    },
+    "pawsx-mt_polylm-1.7b_fr": {
+      "acc": 0.499,
+      "acc_stderr": 0.01118311365477018
+    },
+    "pawsx-mt_polylm-1.7b_ja": {
+      "acc": 0.483,
+      "acc_stderr": 0.011176670299310675
+    },
+    "pawsx-mt_polylm-1.7b_ko": {
+      "acc": 0.4745,
+      "acc_stderr": 0.011168582883330072
+    },
+    "pawsx-mt_polylm-1.7b_zh": {
+      "acc": 0.4925,
+      "acc_stderr": 0.011181877847485998
+    }
+  },
+  "versions": {
+    "pawsx-mt_polylm-1.7b_de": 0,
+    "pawsx-mt_polylm-1.7b_es": 0,
+    "pawsx-mt_polylm-1.7b_fr": 0,
+    "pawsx-mt_polylm-1.7b_ja": 0,
+    "pawsx-mt_polylm-1.7b_ko": 0,
+    "pawsx-mt_polylm-1.7b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-1.7b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
