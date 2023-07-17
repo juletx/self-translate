@@ -1,0 +1,70 @@
+{
+  "results": {
+    "xstory_cloze-mt_open_llama_7b_v2_ar": {
+      "acc": 0.4884182660489742,
+      "acc_stderr": 0.012863672949335887
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_es": {
+      "acc": 0.6796823295830576,
+      "acc_stderr": 0.012007565507943364
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_eu": {
+      "acc": 0.500992720052945,
+      "acc_stderr": 0.012867099955422926
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_hi": {
+      "acc": 0.5043017868960953,
+      "acc_stderr": 0.012866649085718848
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_id": {
+      "acc": 0.6168100595632032,
+      "acc_stderr": 0.012511065565305202
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_my": {
+      "acc": 0.5188616810059563,
+      "acc_stderr": 0.012857966762465
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_ru": {
+      "acc": 0.6532097948378557,
+      "acc_stderr": 0.012248172150852332
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_sw": {
+      "acc": 0.4870946393117141,
+      "acc_stderr": 0.01286283860572848
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_te": {
+      "acc": 0.4923891462607545,
+      "acc_stderr": 0.012865634571114485
+    },
+    "xstory_cloze-mt_open_llama_7b_v2_zh": {
+      "acc": 0.6247518199867638,
+      "acc_stderr": 0.012460187815757997
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_open_llama_7b_v2_ar": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_es": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_eu": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_hi": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_id": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_my": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_ru": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_sw": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_te": 0,
+    "xstory_cloze-mt_open_llama_7b_v2_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_7b_v2",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      256
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

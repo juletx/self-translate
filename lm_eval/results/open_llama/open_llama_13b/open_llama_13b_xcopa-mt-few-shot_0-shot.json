@@ -1,0 +1,75 @@
+{
+  "results": {
+    "xcopa-mt_open_llama_13b_et": {
+      "acc": 0.534,
+      "acc_stderr": 0.02233126442325838
+    },
+    "xcopa-mt_open_llama_13b_ht": {
+      "acc": 0.544,
+      "acc_stderr": 0.022296238348407056
+    },
+    "xcopa-mt_open_llama_13b_id": {
+      "acc": 0.606,
+      "acc_stderr": 0.02187429930168925
+    },
+    "xcopa-mt_open_llama_13b_it": {
+      "acc": 0.702,
+      "acc_stderr": 0.02047511809298897
+    },
+    "xcopa-mt_open_llama_13b_qu": {
+      "acc": 0.488,
+      "acc_stderr": 0.02237662679792717
+    },
+    "xcopa-mt_open_llama_13b_sw": {
+      "acc": 0.544,
+      "acc_stderr": 0.022296238348407056
+    },
+    "xcopa-mt_open_llama_13b_ta": {
+      "acc": 0.486,
+      "acc_stderr": 0.02237429816635319
+    },
+    "xcopa-mt_open_llama_13b_th": {
+      "acc": 0.506,
+      "acc_stderr": 0.022381462412439324
+    },
+    "xcopa-mt_open_llama_13b_tr": {
+      "acc": 0.538,
+      "acc_stderr": 0.022318338119870527
+    },
+    "xcopa-mt_open_llama_13b_vi": {
+      "acc": 0.55,
+      "acc_stderr": 0.022270877485360434
+    },
+    "xcopa-mt_open_llama_13b_zh": {
+      "acc": 0.662,
+      "acc_stderr": 0.021175665695209407
+    }
+  },
+  "versions": {
+    "xcopa-mt_open_llama_13b_et": 0,
+    "xcopa-mt_open_llama_13b_ht": 0,
+    "xcopa-mt_open_llama_13b_id": 0,
+    "xcopa-mt_open_llama_13b_it": 0,
+    "xcopa-mt_open_llama_13b_qu": 0,
+    "xcopa-mt_open_llama_13b_sw": 0,
+    "xcopa-mt_open_llama_13b_ta": 0,
+    "xcopa-mt_open_llama_13b_th": 0,
+    "xcopa-mt_open_llama_13b_tr": 0,
+    "xcopa-mt_open_llama_13b_vi": 0,
+    "xcopa-mt_open_llama_13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      128
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
