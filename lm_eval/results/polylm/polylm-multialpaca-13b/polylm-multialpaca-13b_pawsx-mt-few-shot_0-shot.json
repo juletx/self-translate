@@ -1,0 +1,48 @@
+{
+  "results": {
+    "pawsx-mt_polylm-multialpaca-13b_de": {
+      "acc": 0.624,
+      "acc_stderr": 0.010833775211931946
+    },
+    "pawsx-mt_polylm-multialpaca-13b_es": {
+      "acc": 0.6175,
+      "acc_stderr": 0.010869956438573785
+    },
+    "pawsx-mt_polylm-multialpaca-13b_fr": {
+      "acc": 0.612,
+      "acc_stderr": 0.010898962964284812
+    },
+    "pawsx-mt_polylm-multialpaca-13b_ja": {
+      "acc": 0.545,
+      "acc_stderr": 0.011137752231145225
+    },
+    "pawsx-mt_polylm-multialpaca-13b_ko": {
+      "acc": 0.558,
+      "acc_stderr": 0.011107641056719623
+    },
+    "pawsx-mt_polylm-multialpaca-13b_zh": {
+      "acc": 0.561,
+      "acc_stderr": 0.011099599116647338
+    }
+  },
+  "versions": {
+    "pawsx-mt_polylm-multialpaca-13b_de": 0,
+    "pawsx-mt_polylm-multialpaca-13b_es": 0,
+    "pawsx-mt_polylm-multialpaca-13b_fr": 0,
+    "pawsx-mt_polylm-multialpaca-13b_ja": 0,
+    "pawsx-mt_polylm-multialpaca-13b_ko": 0,
+    "pawsx-mt_polylm-multialpaca-13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-multialpaca-13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

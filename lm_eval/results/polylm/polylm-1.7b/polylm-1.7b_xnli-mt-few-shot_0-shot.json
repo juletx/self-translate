@@ -1,0 +1,88 @@
+{
+  "results": {
+    "xnli-mt_polylm-1.7b_ar": {
+      "acc": 0.43992015968063874,
+      "acc_stderr": 0.007013525602929791
+    },
+    "xnli-mt_polylm-1.7b_bg": {
+      "acc": 0.38003992015968063,
+      "acc_stderr": 0.006858370710387266
+    },
+    "xnli-mt_polylm-1.7b_de": {
+      "acc": 0.4656686626746507,
+      "acc_stderr": 0.007048039238872629
+    },
+    "xnli-mt_polylm-1.7b_el": {
+      "acc": 0.33692614770459084,
+      "acc_stderr": 0.006678405629815029
+    },
+    "xnli-mt_polylm-1.7b_es": {
+      "acc": 0.4674650698602794,
+      "acc_stderr": 0.007049740261612224
+    },
+    "xnli-mt_polylm-1.7b_fr": {
+      "acc": 0.46367265469061875,
+      "acc_stderr": 0.007046041494004664
+    },
+    "xnli-mt_polylm-1.7b_hi": {
+      "acc": 0.32994011976047904,
+      "acc_stderr": 0.006643529315011171
+    },
+    "xnli-mt_polylm-1.7b_ru": {
+      "acc": 0.4439121756487026,
+      "acc_stderr": 0.007020122746066691
+    },
+    "xnli-mt_polylm-1.7b_sw": {
+      "acc": 0.3335329341317365,
+      "acc_stderr": 0.006661671189931657
+    },
+    "xnli-mt_polylm-1.7b_th": {
+      "acc": 0.424750499001996,
+      "acc_stderr": 0.006984246492041757
+    },
+    "xnli-mt_polylm-1.7b_tr": {
+      "acc": 0.36227544910179643,
+      "acc_stderr": 0.006791418670232302
+    },
+    "xnli-mt_polylm-1.7b_ur": {
+      "acc": 0.3397205588822355,
+      "acc_stderr": 0.006691897598048392
+    },
+    "xnli-mt_polylm-1.7b_vi": {
+      "acc": 0.4544910179640719,
+      "acc_stderr": 0.007035388579487143
+    },
+    "xnli-mt_polylm-1.7b_zh": {
+      "acc": 0.44510978043912175,
+      "acc_stderr": 0.007022012330977023
+    }
+  },
+  "versions": {
+    "xnli-mt_polylm-1.7b_ar": 0,
+    "xnli-mt_polylm-1.7b_bg": 0,
+    "xnli-mt_polylm-1.7b_de": 0,
+    "xnli-mt_polylm-1.7b_el": 0,
+    "xnli-mt_polylm-1.7b_es": 0,
+    "xnli-mt_polylm-1.7b_fr": 0,
+    "xnli-mt_polylm-1.7b_hi": 0,
+    "xnli-mt_polylm-1.7b_ru": 0,
+    "xnli-mt_polylm-1.7b_sw": 0,
+    "xnli-mt_polylm-1.7b_th": 0,
+    "xnli-mt_polylm-1.7b_tr": 0,
+    "xnli-mt_polylm-1.7b_ur": 0,
+    "xnli-mt_polylm-1.7b_vi": 0,
+    "xnli-mt_polylm-1.7b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-1.7b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "results": {
+    "xstory_cloze-mt_nllb-200-1.3B_ar": {
+      "acc": 0.6499007279947054,
+      "acc_stderr": 0.012275258369751083
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_es": {
+      "acc": 0.6750496360026472,
+      "acc_stderr": 0.012052798442200198
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_eu": {
+      "acc": 0.6644606221045665,
+      "acc_stderr": 0.012151164438163902
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_hi": {
+      "acc": 0.6684315023163467,
+      "acc_stderr": 0.0121150890818801
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_id": {
+      "acc": 0.6452680344142951,
+      "acc_stderr": 0.012312089524603838
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_my": {
+      "acc": 0.6088682991396426,
+      "acc_stderr": 0.012558411693622696
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_ru": {
+      "acc": 0.6829913964262078,
+      "acc_stderr": 0.011974424977110298
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_sw": {
+      "acc": 0.6505625413633356,
+      "acc_stderr": 0.012269893190222854
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_te": {
+      "acc": 0.6472534745201853,
+      "acc_stderr": 0.01229645978885373
+    },
+    "xstory_cloze-mt_nllb-200-1.3B_zh": {
+      "acc": 0.6353408338848445,
+      "acc_stderr": 0.012386781532906177
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_ar": {
+      "acc": 0.6651224354731966,
+      "acc_stderr": 0.012145219027833158
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_es": {
+      "acc": 0.6776968894771674,
+      "acc_stderr": 0.012027116588107721
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_eu": {
+      "acc": 0.6479152878888154,
+      "acc_stderr": 0.01229119826167458
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_hi": {
+      "acc": 0.6796823295830576,
+      "acc_stderr": 0.012007565507943366
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_id": {
+      "acc": 0.6664460622104567,
+      "acc_stderr": 0.012133247747835346
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_my": {
+      "acc": 0.6194573130377233,
+      "acc_stderr": 0.012494500786685356
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_ru": {
+      "acc": 0.6902713434811383,
+      "acc_stderr": 0.011899045981288764
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_sw": {
+      "acc": 0.6399735274652548,
+      "acc_stderr": 0.012352638981498531
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_te": {
+      "acc": 0.6525479814692257,
+      "acc_stderr": 0.012253641527935285
+    },
+    "xstory_cloze-mt_nllb-200-3.3B_zh": {
+      "acc": 0.6763732627399074,
+      "acc_stderr": 0.012040012546210342
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_ar": {
+      "acc": 0.6538716082064858,
+      "acc_stderr": 0.012242676637496357
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.671078755790867,
+      "acc_stderr": 0.012090499234239507
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_eu": {
+      "acc": 0.6386499007279947,
+      "acc_stderr": 0.01236252093465088
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_hi": {
+      "acc": 0.6505625413633356,
+      "acc_stderr": 0.012269893190222854
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_id": {
+      "acc": 0.6604897418927862,
+      "acc_stderr": 0.012186276146659443
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_my": {
+      "acc": 0.5962938451356717,
+      "acc_stderr": 0.012626249735246587
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_ru": {
+      "acc": 0.6829913964262078,
+      "acc_stderr": 0.0119744249771103
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_sw": {
+      "acc": 0.6320317670416943,
+      "acc_stderr": 0.012410410404915698
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_te": {
+      "acc": 0.6472534745201853,
+      "acc_stderr": 0.012296459788853737
+    },
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.6485771012574454,
+      "acc_stderr": 0.012285910871738331
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_ar": {
+      "acc": 0.6293845135671741,
+      "acc_stderr": 0.012428861084065901
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.657180675049636,
+      "acc_stderr": 0.01221480578606755
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_eu": {
+      "acc": 0.6379880873593646,
+      "acc_stderr": 0.012367423769456435
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_hi": {
+      "acc": 0.6360026472534746,
+      "acc_stderr": 0.012381980068788363
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_id": {
+      "acc": 0.6307081403044341,
+      "acc_stderr": 0.01241968588127359
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_my": {
+      "acc": 0.5671740569159497,
+      "acc_stderr": 0.012750474502985833
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_ru": {
+      "acc": 0.6551952349437459,
+      "acc_stderr": 0.012231607060884924
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_sw": {
+      "acc": 0.6207809397749835,
+      "acc_stderr": 0.01248607077117133
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_te": {
+      "acc": 0.6353408338848445,
+      "acc_stderr": 0.012386781532906174
+    },
+    "xstory_cloze-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.6101919258769027,
+      "acc_stderr": 0.012550764190647002
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_nllb-200-1.3B_ar": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_es": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_eu": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_hi": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_id": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_my": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_ru": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_sw": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_te": 0,
+    "xstory_cloze-mt_nllb-200-1.3B_zh": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_ar": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_es": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_eu": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_hi": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_id": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_my": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_ru": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_sw": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_te": 0,
+    "xstory_cloze-mt_nllb-200-3.3B_zh": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_ar": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_es": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_eu": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_hi": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_id": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_my": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_ru": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_sw": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_te": 0,
+    "xstory_cloze-mt_nllb-200-distilled-1.3B_zh": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_ar": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_es": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_eu": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_hi": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_id": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_my": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_ru": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_sw": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_te": 0,
+    "xstory_cloze-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_3b_v2",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      512
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

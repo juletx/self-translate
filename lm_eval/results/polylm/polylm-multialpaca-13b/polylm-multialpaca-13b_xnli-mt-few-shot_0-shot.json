@@ -1,0 +1,88 @@
+{
+  "results": {
+    "xnli-mt_polylm-multialpaca-13b_ar": {
+      "acc": 0.45828343313373254,
+      "acc_stderr": 0.007040080446339793
+    },
+    "xnli-mt_polylm-multialpaca-13b_bg": {
+      "acc": 0.3874251497005988,
+      "acc_stderr": 0.006883320161260836
+    },
+    "xnli-mt_polylm-multialpaca-13b_de": {
+      "acc": 0.5039920159680639,
+      "acc_stderr": 0.007064487256507021
+    },
+    "xnli-mt_polylm-multialpaca-13b_el": {
+      "acc": 0.3457085828343313,
+      "acc_stderr": 0.006719936616603221
+    },
+    "xnli-mt_polylm-multialpaca-13b_es": {
+      "acc": 0.5081836327345309,
+      "acc_stderr": 0.007063766092285601
+    },
+    "xnli-mt_polylm-multialpaca-13b_fr": {
+      "acc": 0.48502994011976047,
+      "acc_stderr": 0.0070615452772302845
+    },
+    "xnli-mt_polylm-multialpaca-13b_hi": {
+      "acc": 0.3409181636726547,
+      "acc_stderr": 0.006697600297167044
+    },
+    "xnli-mt_polylm-multialpaca-13b_ru": {
+      "acc": 0.48343313373253494,
+      "acc_stderr": 0.007060833387482741
+    },
+    "xnli-mt_polylm-multialpaca-13b_sw": {
+      "acc": 0.3465069860279441,
+      "acc_stderr": 0.006723585876575392
+    },
+    "xnli-mt_polylm-multialpaca-13b_th": {
+      "acc": 0.46187624750499,
+      "acc_stderr": 0.007044146498996042
+    },
+    "xnli-mt_polylm-multialpaca-13b_tr": {
+      "acc": 0.449500998003992,
+      "acc_stderr": 0.0070285879287797495
+    },
+    "xnli-mt_polylm-multialpaca-13b_ur": {
+      "acc": 0.34550898203592817,
+      "acc_stderr": 0.006719021032497249
+    },
+    "xnli-mt_polylm-multialpaca-13b_vi": {
+      "acc": 0.47924151696606787,
+      "acc_stderr": 0.007058621227682139
+    },
+    "xnli-mt_polylm-multialpaca-13b_zh": {
+      "acc": 0.4812375249500998,
+      "acc_stderr": 0.007059736689012326
+    }
+  },
+  "versions": {
+    "xnli-mt_polylm-multialpaca-13b_ar": 0,
+    "xnli-mt_polylm-multialpaca-13b_bg": 0,
+    "xnli-mt_polylm-multialpaca-13b_de": 0,
+    "xnli-mt_polylm-multialpaca-13b_el": 0,
+    "xnli-mt_polylm-multialpaca-13b_es": 0,
+    "xnli-mt_polylm-multialpaca-13b_fr": 0,
+    "xnli-mt_polylm-multialpaca-13b_hi": 0,
+    "xnli-mt_polylm-multialpaca-13b_ru": 0,
+    "xnli-mt_polylm-multialpaca-13b_sw": 0,
+    "xnli-mt_polylm-multialpaca-13b_th": 0,
+    "xnli-mt_polylm-multialpaca-13b_tr": 0,
+    "xnli-mt_polylm-multialpaca-13b_ur": 0,
+    "xnli-mt_polylm-multialpaca-13b_vi": 0,
+    "xnli-mt_polylm-multialpaca-13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-multialpaca-13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

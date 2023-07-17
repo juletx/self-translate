@@ -1,0 +1,88 @@
+{
+  "results": {
+    "xnli-mt_nllb-200-3.3B_ar": {
+      "acc": 0.5033932135728543,
+      "acc_stderr": 0.007064549742680752
+    },
+    "xnli-mt_nllb-200-3.3B_bg": {
+      "acc": 0.5187624750499003,
+      "acc_stderr": 0.007059736689012326
+    },
+    "xnli-mt_nllb-200-3.3B_de": {
+      "acc": 0.5193612774451097,
+      "acc_stderr": 0.007059413899386843
+    },
+    "xnli-mt_nllb-200-3.3B_el": {
+      "acc": 0.5057884231536927,
+      "acc_stderr": 0.00706423899516663
+    },
+    "xnli-mt_nllb-200-3.3B_es": {
+      "acc": 0.5289421157684631,
+      "acc_stderr": 0.007052867041612214
+    },
+    "xnli-mt_nllb-200-3.3B_fr": {
+      "acc": 0.5149700598802395,
+      "acc_stderr": 0.007061545277230291
+    },
+    "xnli-mt_nllb-200-3.3B_hi": {
+      "acc": 0.492814371257485,
+      "acc_stderr": 0.007063982843369456
+    },
+    "xnli-mt_nllb-200-3.3B_ru": {
+      "acc": 0.5099800399201597,
+      "acc_stderr": 0.007063304981491915
+    },
+    "xnli-mt_nllb-200-3.3B_sw": {
+      "acc": 0.4864271457085828,
+      "acc_stderr": 0.00706210899343056
+    },
+    "xnli-mt_nllb-200-3.3B_th": {
+      "acc": 0.4872255489021956,
+      "acc_stderr": 0.0070624063201131515
+    },
+    "xnli-mt_nllb-200-3.3B_tr": {
+      "acc": 0.5065868263473053,
+      "acc_stderr": 0.007064099379513963
+    },
+    "xnli-mt_nllb-200-3.3B_ur": {
+      "acc": 0.4726546906187625,
+      "acc_stderr": 0.007054139014220706
+    },
+    "xnli-mt_nllb-200-3.3B_vi": {
+      "acc": 0.5055888223552895,
+      "acc_stderr": 0.007064271083857858
+    },
+    "xnli-mt_nllb-200-3.3B_zh": {
+      "acc": 0.5011976047904192,
+      "acc_stderr": 0.007064692164056495
+    }
+  },
+  "versions": {
+    "xnli-mt_nllb-200-3.3B_ar": 0,
+    "xnli-mt_nllb-200-3.3B_bg": 0,
+    "xnli-mt_nllb-200-3.3B_de": 0,
+    "xnli-mt_nllb-200-3.3B_el": 0,
+    "xnli-mt_nllb-200-3.3B_es": 0,
+    "xnli-mt_nllb-200-3.3B_fr": 0,
+    "xnli-mt_nllb-200-3.3B_hi": 0,
+    "xnli-mt_nllb-200-3.3B_ru": 0,
+    "xnli-mt_nllb-200-3.3B_sw": 0,
+    "xnli-mt_nllb-200-3.3B_th": 0,
+    "xnli-mt_nllb-200-3.3B_tr": 0,
+    "xnli-mt_nllb-200-3.3B_ur": 0,
+    "xnli-mt_nllb-200-3.3B_vi": 0,
+    "xnli-mt_nllb-200-3.3B_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=openlm-research/open_llama_3b_v2",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

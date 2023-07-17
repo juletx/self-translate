@@ -1,0 +1,88 @@
+{
+  "results": {
+    "xnli-mt_polylm-13b_ar": {
+      "acc": 0.492814371257485,
+      "acc_stderr": 0.007063982843369455
+    },
+    "xnli-mt_polylm-13b_bg": {
+      "acc": 0.4219560878243513,
+      "acc_stderr": 0.00697812152591294
+    },
+    "xnli-mt_polylm-13b_de": {
+      "acc": 0.5275449101796407,
+      "acc_stderr": 0.007053983976643461
+    },
+    "xnli-mt_polylm-13b_el": {
+      "acc": 0.3500998003992016,
+      "acc_stderr": 0.0067397494338847916
+    },
+    "xnli-mt_polylm-13b_es": {
+      "acc": 0.5291417165668663,
+      "acc_stderr": 0.007052702953973549
+    },
+    "xnli-mt_polylm-13b_fr": {
+      "acc": 0.5269461077844312,
+      "acc_stderr": 0.0070544456967006584
+    },
+    "xnli-mt_polylm-13b_hi": {
+      "acc": 0.344311377245509,
+      "acc_stderr": 0.006713500026087813
+    },
+    "xnli-mt_polylm-13b_ru": {
+      "acc": 0.5027944111776447,
+      "acc_stderr": 0.007064602095535848
+    },
+    "xnli-mt_polylm-13b_sw": {
+      "acc": 0.34810379241516964,
+      "acc_stderr": 0.006730821739872415
+    },
+    "xnli-mt_polylm-13b_th": {
+      "acc": 0.49181636726546907,
+      "acc_stderr": 0.007063766092285602
+    },
+    "xnli-mt_polylm-13b_tr": {
+      "acc": 0.49600798403193613,
+      "acc_stderr": 0.007064487256507023
+    },
+    "xnli-mt_polylm-13b_ur": {
+      "acc": 0.3385229540918164,
+      "acc_stderr": 0.006686147209928335
+    },
+    "xnli-mt_polylm-13b_vi": {
+      "acc": 0.5067864271457085,
+      "acc_stderr": 0.007064061660296377
+    },
+    "xnli-mt_polylm-13b_zh": {
+      "acc": 0.5069860279441117,
+      "acc_stderr": 0.007064022814920454
+    }
+  },
+  "versions": {
+    "xnli-mt_polylm-13b_ar": 0,
+    "xnli-mt_polylm-13b_bg": 0,
+    "xnli-mt_polylm-13b_de": 0,
+    "xnli-mt_polylm-13b_el": 0,
+    "xnli-mt_polylm-13b_es": 0,
+    "xnli-mt_polylm-13b_fr": 0,
+    "xnli-mt_polylm-13b_hi": 0,
+    "xnli-mt_polylm-13b_ru": 0,
+    "xnli-mt_polylm-13b_sw": 0,
+    "xnli-mt_polylm-13b_th": 0,
+    "xnli-mt_polylm-13b_tr": 0,
+    "xnli-mt_polylm-13b_ur": 0,
+    "xnli-mt_polylm-13b_vi": 0,
+    "xnli-mt_polylm-13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
