@@ -1,0 +1,70 @@
+{
+  "results": {
+    "xstory_cloze-mt_polylm-multialpaca-13b_ar": {
+      "acc": 0.6360026472534746,
+      "acc_stderr": 0.012381980068788363
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_es": {
+      "acc": 0.7227001985440106,
+      "acc_stderr": 0.01152034254826844
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_eu": {
+      "acc": 0.5036399735274653,
+      "acc_stderr": 0.01286678434828923
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_hi": {
+      "acc": 0.5049636002647253,
+      "acc_stderr": 0.012866491277589945
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_id": {
+      "acc": 0.6882859033752482,
+      "acc_stderr": 0.011919943180399337
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_my": {
+      "acc": 0.5109199205823958,
+      "acc_stderr": 0.012864056278255046
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_ru": {
+      "acc": 0.7061548643282595,
+      "acc_stderr": 0.0117225139109852
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_sw": {
+      "acc": 0.49503639973527463,
+      "acc_stderr": 0.012866491277589948
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_te": {
+      "acc": 0.5076108537392455,
+      "acc_stderr": 0.012865634571114483
+    },
+    "xstory_cloze-mt_polylm-multialpaca-13b_zh": {
+      "acc": 0.7273328921244209,
+      "acc_stderr": 0.011460261203822045
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_polylm-multialpaca-13b_ar": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_es": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_eu": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_hi": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_id": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_my": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_ru": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_sw": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_te": 0,
+    "xstory_cloze-mt_polylm-multialpaca-13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-multialpaca-13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      32
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

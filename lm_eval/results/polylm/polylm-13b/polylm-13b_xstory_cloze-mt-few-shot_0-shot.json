@@ -1,0 +1,70 @@
+{
+  "results": {
+    "xstory_cloze-mt_polylm-13b_ar": {
+      "acc": 0.5830575777630708,
+      "acc_stderr": 0.012688354121607808
+    },
+    "xstory_cloze-mt_polylm-13b_es": {
+      "acc": 0.6730641958967571,
+      "acc_stderr": 0.012071771683911365
+    },
+    "xstory_cloze-mt_polylm-13b_eu": {
+      "acc": 0.49768365320979485,
+      "acc_stderr": 0.012866987239478045
+    },
+    "xstory_cloze-mt_polylm-13b_hi": {
+      "acc": 0.5016545334215751,
+      "acc_stderr": 0.012867054869163346
+    },
+    "xstory_cloze-mt_polylm-13b_id": {
+      "acc": 0.6412971542025149,
+      "acc_stderr": 0.01234265511311237
+    },
+    "xstory_cloze-mt_polylm-13b_my": {
+      "acc": 0.514228987425546,
+      "acc_stderr": 0.01286191399959612
+    },
+    "xstory_cloze-mt_polylm-13b_ru": {
+      "acc": 0.6750496360026472,
+      "acc_stderr": 0.012052798442200216
+    },
+    "xstory_cloze-mt_polylm-13b_sw": {
+      "acc": 0.4798146922567836,
+      "acc_stderr": 0.012856635706498289
+    },
+    "xstory_cloze-mt_polylm-13b_te": {
+      "acc": 0.49702183984116477,
+      "acc_stderr": 0.01286689706601123
+    },
+    "xstory_cloze-mt_polylm-13b_zh": {
+      "acc": 0.6776968894771674,
+      "acc_stderr": 0.012027116588107725
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_polylm-13b_ar": 0,
+    "xstory_cloze-mt_polylm-13b_es": 0,
+    "xstory_cloze-mt_polylm-13b_eu": 0,
+    "xstory_cloze-mt_polylm-13b_hi": 0,
+    "xstory_cloze-mt_polylm-13b_id": 0,
+    "xstory_cloze-mt_polylm-13b_my": 0,
+    "xstory_cloze-mt_polylm-13b_ru": 0,
+    "xstory_cloze-mt_polylm-13b_sw": 0,
+    "xstory_cloze-mt_polylm-13b_te": 0,
+    "xstory_cloze-mt_polylm-13b_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=DAMO-NLP-MT/polylm-13b",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      32
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
