@@ -1,0 +1,75 @@
+{
+  "results": {
+    "xcopa-mt_Llama-2-13b-hf_et": {
+      "acc": 0.538,
+      "acc_stderr": 0.022318338119870523
+    },
+    "xcopa-mt_Llama-2-13b-hf_ht": {
+      "acc": 0.564,
+      "acc_stderr": 0.0221989546414768
+    },
+    "xcopa-mt_Llama-2-13b-hf_id": {
+      "acc": 0.726,
+      "acc_stderr": 0.019966103540279473
+    },
+    "xcopa-mt_Llama-2-13b-hf_it": {
+      "acc": 0.766,
+      "acc_stderr": 0.018952741564893683
+    },
+    "xcopa-mt_Llama-2-13b-hf_qu": {
+      "acc": 0.472,
+      "acc_stderr": 0.022347949832668093
+    },
+    "xcopa-mt_Llama-2-13b-hf_sw": {
+      "acc": 0.502,
+      "acc_stderr": 0.02238289498648353
+    },
+    "xcopa-mt_Llama-2-13b-hf_ta": {
+      "acc": 0.49,
+      "acc_stderr": 0.02237859698923078
+    },
+    "xcopa-mt_Llama-2-13b-hf_th": {
+      "acc": 0.542,
+      "acc_stderr": 0.02230396677426995
+    },
+    "xcopa-mt_Llama-2-13b-hf_tr": {
+      "acc": 0.642,
+      "acc_stderr": 0.021461434862859122
+    },
+    "xcopa-mt_Llama-2-13b-hf_vi": {
+      "acc": 0.734,
+      "acc_stderr": 0.019780559675655483
+    },
+    "xcopa-mt_Llama-2-13b-hf_zh": {
+      "acc": 0.766,
+      "acc_stderr": 0.018952741564893693
+    }
+  },
+  "versions": {
+    "xcopa-mt_Llama-2-13b-hf_et": 0,
+    "xcopa-mt_Llama-2-13b-hf_ht": 0,
+    "xcopa-mt_Llama-2-13b-hf_id": 0,
+    "xcopa-mt_Llama-2-13b-hf_it": 0,
+    "xcopa-mt_Llama-2-13b-hf_qu": 0,
+    "xcopa-mt_Llama-2-13b-hf_sw": 0,
+    "xcopa-mt_Llama-2-13b-hf_ta": 0,
+    "xcopa-mt_Llama-2-13b-hf_th": 0,
+    "xcopa-mt_Llama-2-13b-hf_tr": 0,
+    "xcopa-mt_Llama-2-13b-hf_vi": 0,
+    "xcopa-mt_Llama-2-13b-hf_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-13b-hf",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      512
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

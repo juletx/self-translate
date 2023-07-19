@@ -1,0 +1,48 @@
+{
+  "results": {
+    "pawsx-mt_Llama-2-7b-hf_de": {
+      "acc": 0.65,
+      "acc_stderr": 0.010668031845271564
+    },
+    "pawsx-mt_Llama-2-7b-hf_es": {
+      "acc": 0.643,
+      "acc_stderr": 0.010716012152766236
+    },
+    "pawsx-mt_Llama-2-7b-hf_fr": {
+      "acc": 0.645,
+      "acc_stderr": 0.01070255915125888
+    },
+    "pawsx-mt_Llama-2-7b-hf_ja": {
+      "acc": 0.589,
+      "acc_stderr": 0.011004546788714929
+    },
+    "pawsx-mt_Llama-2-7b-hf_ko": {
+      "acc": 0.5645,
+      "acc_stderr": 0.011089696374691113
+    },
+    "pawsx-mt_Llama-2-7b-hf_zh": {
+      "acc": 0.586,
+      "acc_stderr": 0.011016473180681314
+    }
+  },
+  "versions": {
+    "pawsx-mt_Llama-2-7b-hf_de": 0,
+    "pawsx-mt_Llama-2-7b-hf_es": 0,
+    "pawsx-mt_Llama-2-7b-hf_fr": 0,
+    "pawsx-mt_Llama-2-7b-hf_ja": 0,
+    "pawsx-mt_Llama-2-7b-hf_ko": 0,
+    "pawsx-mt_Llama-2-7b-hf_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-7b-hf",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

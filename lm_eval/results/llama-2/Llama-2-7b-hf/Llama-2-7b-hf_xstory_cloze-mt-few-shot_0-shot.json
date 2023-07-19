@@ -1,0 +1,70 @@
+{
+  "results": {
+    "xstory_cloze-mt_Llama-2-7b-hf_ar": {
+      "acc": 0.5195234943745863,
+      "acc_stderr": 0.01285731253183686
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_es": {
+      "acc": 0.6829913964262078,
+      "acc_stderr": 0.011974424977110303
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_eu": {
+      "acc": 0.48643282594308407,
+      "acc_stderr": 0.012862387586650075
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_hi": {
+      "acc": 0.5724685638649901,
+      "acc_stderr": 0.012731259626982527
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_id": {
+      "acc": 0.6532097948378557,
+      "acc_stderr": 0.012248172150852341
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_my": {
+      "acc": 0.4923891462607545,
+      "acc_stderr": 0.012865634571114485
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_ru": {
+      "acc": 0.6975512905360688,
+      "acc_stderr": 0.011820217487929054
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_sw": {
+      "acc": 0.48974189278623426,
+      "acc_stderr": 0.012864417047980472
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_te": {
+      "acc": 0.5261416280608868,
+      "acc_stderr": 0.012849526888044215
+    },
+    "xstory_cloze-mt_Llama-2-7b-hf_zh": {
+      "acc": 0.6585043017868961,
+      "acc_stderr": 0.01220347324121444
+    }
+  },
+  "versions": {
+    "xstory_cloze-mt_Llama-2-7b-hf_ar": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_es": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_eu": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_hi": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_id": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_my": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_ru": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_sw": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_te": 0,
+    "xstory_cloze-mt_Llama-2-7b-hf_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-7b-hf",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      256
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

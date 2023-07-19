@@ -1,0 +1,68 @@
+{
+  "results": {
+    "mgsm-mt_Llama-2-7b-hf_bn": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    },
+    "mgsm-mt_Llama-2-7b-hf_de": {
+      "acc": 0.132,
+      "acc_stderr": 0.021450980824038113
+    },
+    "mgsm-mt_Llama-2-7b-hf_es": {
+      "acc": 0.124,
+      "acc_stderr": 0.02088638225867326
+    },
+    "mgsm-mt_Llama-2-7b-hf_fr": {
+      "acc": 0.132,
+      "acc_stderr": 0.021450980824038117
+    },
+    "mgsm-mt_Llama-2-7b-hf_ja": {
+      "acc": 0.052,
+      "acc_stderr": 0.014070391025641645
+    },
+    "mgsm-mt_Llama-2-7b-hf_ru": {
+      "acc": 0.116,
+      "acc_stderr": 0.02029342980308386
+    },
+    "mgsm-mt_Llama-2-7b-hf_sw": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    },
+    "mgsm-mt_Llama-2-7b-hf_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm-mt_Llama-2-7b-hf_th": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    },
+    "mgsm-mt_Llama-2-7b-hf_zh": {
+      "acc": 0.104,
+      "acc_stderr": 0.019345100974843904
+    }
+  },
+  "versions": {
+    "mgsm-mt_Llama-2-7b-hf_bn": 0,
+    "mgsm-mt_Llama-2-7b-hf_de": 0,
+    "mgsm-mt_Llama-2-7b-hf_es": 0,
+    "mgsm-mt_Llama-2-7b-hf_fr": 0,
+    "mgsm-mt_Llama-2-7b-hf_ja": 0,
+    "mgsm-mt_Llama-2-7b-hf_ru": 0,
+    "mgsm-mt_Llama-2-7b-hf_sw": 0,
+    "mgsm-mt_Llama-2-7b-hf_te": 0,
+    "mgsm-mt_Llama-2-7b-hf_th": 0,
+    "mgsm-mt_Llama-2-7b-hf_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-7b-hf",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
