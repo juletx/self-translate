@@ -1,21 +1,21 @@
 #!/bin/bash
-#SBATCH --job-name=translate_few_shot_open_llama_7b_v2
+#SBATCH --job-name=translate_few_shot_llama-2-7b
 #SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=0
 #SBATCH --mem=50GB
 #SBATCH --gres=gpu:1
-#SBATCH --output=.slurm/translate_few_shot_open_llama_7b_v2.out
-#SBATCH --error=.slurm/translate_few_shot_open_llama_7b_v2.err
+#SBATCH --output=.slurm/translate_few_shot_llama-2-7b.out
+#SBATCH --error=.slurm/translate_few_shot_llama-2-7b.err
 
 # activate virtual environment
 source ../venv2/bin/activate
 export TRANSFORMERS_CACHE="/gaueko0/transformers_cache/"
 
-# redpajama model names
+# llama model names
 model_names=(
-    "openlm-research/open_llama_7b_v2"
+    "meta-llama/Llama-2-7b-hf"
 )
 
 
