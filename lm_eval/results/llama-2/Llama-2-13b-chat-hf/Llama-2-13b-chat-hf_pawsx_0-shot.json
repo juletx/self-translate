@@ -1,0 +1,53 @@
+{
+  "results": {
+    "pawsx_de": {
+      "acc": 0.619,
+      "acc_stderr": 0.010861790333302174
+    },
+    "pawsx_en": {
+      "acc": 0.6605,
+      "acc_stderr": 0.01059131545094804
+    },
+    "pawsx_es": {
+      "acc": 0.546,
+      "acc_stderr": 0.011135708419359798
+    },
+    "pawsx_fr": {
+      "acc": 0.5925,
+      "acc_stderr": 0.010990098549743105
+    },
+    "pawsx_ja": {
+      "acc": 0.4885,
+      "acc_stderr": 0.011180177690296082
+    },
+    "pawsx_ko": {
+      "acc": 0.4685,
+      "acc_stderr": 0.01116092102288327
+    },
+    "pawsx_zh": {
+      "acc": 0.4965,
+      "acc_stderr": 0.011182862030875934
+    }
+  },
+  "versions": {
+    "pawsx_de": 0,
+    "pawsx_en": 0,
+    "pawsx_es": 0,
+    "pawsx_fr": 0,
+    "pawsx_ja": 0,
+    "pawsx_ko": 0,
+    "pawsx_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-13b-chat-hf",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

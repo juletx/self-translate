@@ -1,0 +1,73 @@
+{
+  "results": {
+    "mgsm_bn": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_de": {
+      "acc": 0.04,
+      "acc_stderr": 0.01241840841130131
+    },
+    "mgsm_en": {
+      "acc": 0.228,
+      "acc_stderr": 0.02658743248726847
+    },
+    "mgsm_es": {
+      "acc": 0.18,
+      "acc_stderr": 0.02434689065029353
+    },
+    "mgsm_fr": {
+      "acc": 0.084,
+      "acc_stderr": 0.01757873852677634
+    },
+    "mgsm_ja": {
+      "acc": 0.096,
+      "acc_stderr": 0.01866896141947716
+    },
+    "mgsm_ru": {
+      "acc": 0.028,
+      "acc_stderr": 0.010454721651927281
+    },
+    "mgsm_sw": {
+      "acc": 0.02,
+      "acc_stderr": 0.008872139507342683
+    },
+    "mgsm_te": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_th": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "mgsm_zh": {
+      "acc": 0.176,
+      "acc_stderr": 0.024133497525457116
+    }
+  },
+  "versions": {
+    "mgsm_bn": 0,
+    "mgsm_de": 0,
+    "mgsm_en": 0,
+    "mgsm_es": 0,
+    "mgsm_fr": 0,
+    "mgsm_ja": 0,
+    "mgsm_ru": 0,
+    "mgsm_sw": 0,
+    "mgsm_te": 0,
+    "mgsm_th": 0,
+    "mgsm_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-7b-chat-hf",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

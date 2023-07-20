@@ -1,0 +1,50 @@
+{
+  "results": {
+    "xwinograd_en": {
+      "acc": 0.8701075268817204,
+      "acc_stderr": 0.0069736539656277
+    },
+    "xwinograd_fr": {
+      "acc": 0.6987951807228916,
+      "acc_stderr": 0.05066394254941721
+    },
+    "xwinograd_jp": {
+      "acc": 0.7059436913451512,
+      "acc_stderr": 0.014720329345103825
+    },
+    "xwinograd_pt": {
+      "acc": 0.714828897338403,
+      "acc_stderr": 0.027893509660438312
+    },
+    "xwinograd_ru": {
+      "acc": 0.6888888888888889,
+      "acc_stderr": 0.026125675418954514
+    },
+    "xwinograd_zh": {
+      "acc": 0.6845238095238095,
+      "acc_stderr": 0.020720182711742436
+    }
+  },
+  "versions": {
+    "xwinograd_en": 0,
+    "xwinograd_fr": 0,
+    "xwinograd_jp": 0,
+    "xwinograd_pt": 0,
+    "xwinograd_ru": 0,
+    "xwinograd_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-13b-chat-hf",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [
+      128
+    ],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

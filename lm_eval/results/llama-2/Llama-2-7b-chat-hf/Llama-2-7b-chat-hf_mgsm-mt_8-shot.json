@@ -1,0 +1,218 @@
+{
+  "results": {
+    "mgsm-mt_nllb-200-1.3B_bn": {
+      "acc": 0.164,
+      "acc_stderr": 0.02346526100207676
+    },
+    "mgsm-mt_nllb-200-1.3B_de": {
+      "acc": 0.196,
+      "acc_stderr": 0.025156857313255936
+    },
+    "mgsm-mt_nllb-200-1.3B_es": {
+      "acc": 0.224,
+      "acc_stderr": 0.02642136168734791
+    },
+    "mgsm-mt_nllb-200-1.3B_fr": {
+      "acc": 0.208,
+      "acc_stderr": 0.025721398901416385
+    },
+    "mgsm-mt_nllb-200-1.3B_ja": {
+      "acc": 0.252,
+      "acc_stderr": 0.027513851933031352
+    },
+    "mgsm-mt_nllb-200-1.3B_ru": {
+      "acc": 0.184,
+      "acc_stderr": 0.02455581299422256
+    },
+    "mgsm-mt_nllb-200-1.3B_sw": {
+      "acc": 0.172,
+      "acc_stderr": 0.023915513944486218
+    },
+    "mgsm-mt_nllb-200-1.3B_te": {
+      "acc": 0.16,
+      "acc_stderr": 0.02323271478206066
+    },
+    "mgsm-mt_nllb-200-1.3B_th": {
+      "acc": 0.12,
+      "acc_stderr": 0.020593600596839956
+    },
+    "mgsm-mt_nllb-200-1.3B_zh": {
+      "acc": 0.18,
+      "acc_stderr": 0.024346890650293534
+    },
+    "mgsm-mt_nllb-200-3.3B_bn": {
+      "acc": 0.18,
+      "acc_stderr": 0.024346890650293523
+    },
+    "mgsm-mt_nllb-200-3.3B_de": {
+      "acc": 0.184,
+      "acc_stderr": 0.02455581299422256
+    },
+    "mgsm-mt_nllb-200-3.3B_es": {
+      "acc": 0.228,
+      "acc_stderr": 0.02658743248726848
+    },
+    "mgsm-mt_nllb-200-3.3B_fr": {
+      "acc": 0.232,
+      "acc_stderr": 0.02675007037486517
+    },
+    "mgsm-mt_nllb-200-3.3B_ja": {
+      "acc": 0.216,
+      "acc_stderr": 0.02607865766373273
+    },
+    "mgsm-mt_nllb-200-3.3B_ru": {
+      "acc": 0.208,
+      "acc_stderr": 0.02572139890141639
+    },
+    "mgsm-mt_nllb-200-3.3B_sw": {
+      "acc": 0.184,
+      "acc_stderr": 0.02455581299422256
+    },
+    "mgsm-mt_nllb-200-3.3B_te": {
+      "acc": 0.22,
+      "acc_stderr": 0.02625179282460584
+    },
+    "mgsm-mt_nllb-200-3.3B_th": {
+      "acc": 0.176,
+      "acc_stderr": 0.024133497525457123
+    },
+    "mgsm-mt_nllb-200-3.3B_zh": {
+      "acc": 0.168,
+      "acc_stderr": 0.023692813205492592
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_bn": {
+      "acc": 0.224,
+      "acc_stderr": 0.02642136168734791
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_de": {
+      "acc": 0.212,
+      "acc_stderr": 0.02590188469054116
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_es": {
+      "acc": 0.236,
+      "acc_stderr": 0.026909337594953845
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_fr": {
+      "acc": 0.204,
+      "acc_stderr": 0.025537121574548176
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_ja": {
+      "acc": 0.18,
+      "acc_stderr": 0.024346890650293516
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_ru": {
+      "acc": 0.212,
+      "acc_stderr": 0.02590188469054116
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_sw": {
+      "acc": 0.18,
+      "acc_stderr": 0.024346890650293523
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_te": {
+      "acc": 0.192,
+      "acc_stderr": 0.024960691989172012
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_th": {
+      "acc": 0.124,
+      "acc_stderr": 0.02088638225867326
+    },
+    "mgsm-mt_nllb-200-distilled-1.3B_zh": {
+      "acc": 0.172,
+      "acc_stderr": 0.023915513944486218
+    },
+    "mgsm-mt_nllb-200-distilled-600M_bn": {
+      "acc": 0.108,
+      "acc_stderr": 0.019669559381568752
+    },
+    "mgsm-mt_nllb-200-distilled-600M_de": {
+      "acc": 0.18,
+      "acc_stderr": 0.024346890650293523
+    },
+    "mgsm-mt_nllb-200-distilled-600M_es": {
+      "acc": 0.164,
+      "acc_stderr": 0.02346526100207676
+    },
+    "mgsm-mt_nllb-200-distilled-600M_fr": {
+      "acc": 0.16,
+      "acc_stderr": 0.023232714782060643
+    },
+    "mgsm-mt_nllb-200-distilled-600M_ja": {
+      "acc": 0.084,
+      "acc_stderr": 0.01757873852677636
+    },
+    "mgsm-mt_nllb-200-distilled-600M_ru": {
+      "acc": 0.12,
+      "acc_stderr": 0.020593600596839953
+    },
+    "mgsm-mt_nllb-200-distilled-600M_sw": {
+      "acc": 0.124,
+      "acc_stderr": 0.02088638225867326
+    },
+    "mgsm-mt_nllb-200-distilled-600M_te": {
+      "acc": 0.164,
+      "acc_stderr": 0.02346526100207676
+    },
+    "mgsm-mt_nllb-200-distilled-600M_th": {
+      "acc": 0.116,
+      "acc_stderr": 0.02029342980308386
+    },
+    "mgsm-mt_nllb-200-distilled-600M_zh": {
+      "acc": 0.156,
+      "acc_stderr": 0.022995023034068734
+    }
+  },
+  "versions": {
+    "mgsm-mt_nllb-200-1.3B_bn": 0,
+    "mgsm-mt_nllb-200-1.3B_de": 0,
+    "mgsm-mt_nllb-200-1.3B_es": 0,
+    "mgsm-mt_nllb-200-1.3B_fr": 0,
+    "mgsm-mt_nllb-200-1.3B_ja": 0,
+    "mgsm-mt_nllb-200-1.3B_ru": 0,
+    "mgsm-mt_nllb-200-1.3B_sw": 0,
+    "mgsm-mt_nllb-200-1.3B_te": 0,
+    "mgsm-mt_nllb-200-1.3B_th": 0,
+    "mgsm-mt_nllb-200-1.3B_zh": 0,
+    "mgsm-mt_nllb-200-3.3B_bn": 0,
+    "mgsm-mt_nllb-200-3.3B_de": 0,
+    "mgsm-mt_nllb-200-3.3B_es": 0,
+    "mgsm-mt_nllb-200-3.3B_fr": 0,
+    "mgsm-mt_nllb-200-3.3B_ja": 0,
+    "mgsm-mt_nllb-200-3.3B_ru": 0,
+    "mgsm-mt_nllb-200-3.3B_sw": 0,
+    "mgsm-mt_nllb-200-3.3B_te": 0,
+    "mgsm-mt_nllb-200-3.3B_th": 0,
+    "mgsm-mt_nllb-200-3.3B_zh": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_bn": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_de": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_es": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_fr": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_ja": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_ru": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_sw": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_te": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_th": 0,
+    "mgsm-mt_nllb-200-distilled-1.3B_zh": 0,
+    "mgsm-mt_nllb-200-distilled-600M_bn": 0,
+    "mgsm-mt_nllb-200-distilled-600M_de": 0,
+    "mgsm-mt_nllb-200-distilled-600M_es": 0,
+    "mgsm-mt_nllb-200-distilled-600M_fr": 0,
+    "mgsm-mt_nllb-200-distilled-600M_ja": 0,
+    "mgsm-mt_nllb-200-distilled-600M_ru": 0,
+    "mgsm-mt_nllb-200-distilled-600M_sw": 0,
+    "mgsm-mt_nllb-200-distilled-600M_te": 0,
+    "mgsm-mt_nllb-200-distilled-600M_th": 0,
+    "mgsm-mt_nllb-200-distilled-600M_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-7b-chat-hf",
+    "num_fewshot": 8,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
