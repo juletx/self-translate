@@ -1,0 +1,88 @@
+{
+  "results": {
+    "xnli-mt_Llama-2-13b-chat-hf_ar": {
+      "acc": 0.4163672654690619,
+      "acc_stderr": 0.006965184012213393
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_bg": {
+      "acc": 0.49860279441117766,
+      "acc_stderr": 0.00706468484603215
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_de": {
+      "acc": 0.49540918163672654,
+      "acc_stderr": 0.007064414636745477
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_el": {
+      "acc": 0.4469061876247505,
+      "acc_stderr": 0.007024769329029054
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_es": {
+      "acc": 0.5085828343313373,
+      "acc_stderr": 0.0070636715079099325
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_fr": {
+      "acc": 0.5101796407185629,
+      "acc_stderr": 0.007063248114705901
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_hi": {
+      "acc": 0.4177644710578842,
+      "acc_stderr": 0.006968504535128256
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_ru": {
+      "acc": 0.48283433133732534,
+      "acc_stderr": 0.007060547822928964
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_sw": {
+      "acc": 0.35788423153692617,
+      "acc_stderr": 0.006773333093586676
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_th": {
+      "acc": 0.38842315369261476,
+      "acc_stderr": 0.006886563505202136
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_tr": {
+      "acc": 0.42594810379241516,
+      "acc_stderr": 0.006986801530134786
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_ur": {
+      "acc": 0.3786427145708583,
+      "acc_stderr": 0.0068534616049051285
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_vi": {
+      "acc": 0.47644710578842314,
+      "acc_stderr": 0.007056869935809592
+    },
+    "xnli-mt_Llama-2-13b-chat-hf_zh": {
+      "acc": 0.48363273453093814,
+      "acc_stderr": 0.00706092632020187
+    }
+  },
+  "versions": {
+    "xnli-mt_Llama-2-13b-chat-hf_ar": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_bg": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_de": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_el": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_es": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_fr": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_hi": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_ru": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_sw": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_th": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_tr": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_ur": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_vi": 0,
+    "xnli-mt_Llama-2-13b-chat-hf_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-13b-chat-hf",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

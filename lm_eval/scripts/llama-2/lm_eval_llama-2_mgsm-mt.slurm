@@ -16,8 +16,10 @@ export TOKENIZERS_PARALLELISM=false
 
 # llama-2 model names
 model_names=(
-    "meta-llama/Llama-2-7b-hf"
-    "meta-llama/Llama-2-13b-hf"
+    #"meta-llama/Llama-2-7b-hf"
+    #"meta-llama/Llama-2-13b-hf"
+    "meta-llama/Llama-2-7b-chat-hf"
+    "meta-llama/Llama-2-13b-chat-hf"
 )
 
 # load tasks

@@ -1,0 +1,48 @@
+{
+  "results": {
+    "pawsx-mt_Llama-2-13b-chat-hf_de": {
+      "acc": 0.6025,
+      "acc_stderr": 0.01094562827749966
+    },
+    "pawsx-mt_Llama-2-13b-chat-hf_es": {
+      "acc": 0.5875,
+      "acc_stderr": 0.011010562712487564
+    },
+    "pawsx-mt_Llama-2-13b-chat-hf_fr": {
+      "acc": 0.5935,
+      "acc_stderr": 0.010985864536294245
+    },
+    "pawsx-mt_Llama-2-13b-chat-hf_ja": {
+      "acc": 0.5525,
+      "acc_stderr": 0.011121318125943093
+    },
+    "pawsx-mt_Llama-2-13b-chat-hf_ko": {
+      "acc": 0.5375,
+      "acc_stderr": 0.0111516390959923
+    },
+    "pawsx-mt_Llama-2-13b-chat-hf_zh": {
+      "acc": 0.58,
+      "acc_stderr": 0.011039063840074272
+    }
+  },
+  "versions": {
+    "pawsx-mt_Llama-2-13b-chat-hf_de": 0,
+    "pawsx-mt_Llama-2-13b-chat-hf_es": 0,
+    "pawsx-mt_Llama-2-13b-chat-hf_fr": 0,
+    "pawsx-mt_Llama-2-13b-chat-hf_ja": 0,
+    "pawsx-mt_Llama-2-13b-chat-hf_ko": 0,
+    "pawsx-mt_Llama-2-13b-chat-hf_zh": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=meta-llama/Llama-2-13b-chat-hf",
+    "num_fewshot": 0,
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
