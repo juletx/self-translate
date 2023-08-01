@@ -83,7 +83,46 @@ For evaluation we use LM Evaluation Harness. The scripts are in the `lm_eval/scr
 
 For each model there are scripts to evaluate using the three different methods: direct, self-translate and MT.
 
+For example, this is the script to evaluate XGLM model on each dataset using self-translate:
+
+```bash
+# xglm model names
+model_names=(
+    "facebook/xglm-564M"
+    "facebook/xglm-1.7B"
+    "facebook/xglm-2.9B"
+    "facebook/xglm-4.5B"
+    "facebook/xglm-7.5B"
+)
+
+# select tasks
+tasks_selected=(
+    "xcopa-mt"
+    "xstory_cloze-mt"
+    "pawsx-mt"
+    "xnli-mt"
+)
+
+num_fewshot=0
+
+for model_name in "${model_names[@]}"; do
+    for group_name in "${tasks_selected[@]}"; do
+        python3 ../../lm-evaluation-harness/main.py \
+            --model hf-causal-experimental \
+            --model_args pretrained=$model_name,use_accelerate=True \
+            --tasks ${group_name}_${model_name:9}_* \
+            --device cuda \
+            --output_path ../../results/xglm/${model_name:9}/${model_name:9}_${group_name}-few-shot_${num_fewshot}-shot.json \
+            --batch_size auto \
+            --no_cache \
+            --num_fewshot ${num_fewshot}
+    done
+done
+```
+
 ## Results
+
+![Main Results](images/main_results.png)
 
 ![XGLM Average](images/xglm_avg.png)
 
