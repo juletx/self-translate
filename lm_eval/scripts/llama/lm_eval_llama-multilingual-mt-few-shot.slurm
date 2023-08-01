@@ -18,7 +18,7 @@ export TOKENIZERS_PARALLELISM=false
 model_names=(
     "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/7B"
     "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/13B"
-    #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
+    "/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/30B"
     #"/gaueko1/hizkuntza-ereduak/LLaMA/lm/huggingface/65B"
 )
 
