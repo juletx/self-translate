@@ -4,6 +4,10 @@ Multilingual LMs show impressive capabilities on many tasks, but the performance
 
 ## Methods
 
+As shown in Figure 2, we compare two methods for each model: **direct** inference, where we feed the original (non-English) input to the model, and **self-translate**, where we first translate the input into English using the model itself, and then feed this translated input to the same model to solve the task. For analysis, we additionally
+compare self-translate to using an external state-of-
+the-art **MT** system.
+
 ![Methods](images/methods_v2.png)
 
 ## Install
@@ -23,11 +27,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-You will need to install [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) for evaluation in the `lm_eval` folder:
+You will need to install [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) for evaluation in the `lm_eval` folder. To evaluate with the `self-translate` and `mt` methods, you will need to install our fork of LM Evaluation Harness:
 
 ```bash
 cd lm_eval
-git clone https://github.com/EleutherAI/lm-evaluation-harness
+git clone -b translation https://github.com/juletx/lm-evaluation-harness
 cd lm-evaluation-harness
 pip install -e .
 ```
@@ -121,6 +125,8 @@ done
 ```
 
 ## Results
+
+Table 1 reports our main results, and Figure 1 visualizes the average accuracy of XGLM as a function of scale. Figure 3 compares the downstream performance and translation quality of self-translate and NLLB, grouped by low-resource and high-resource languages. As shown in Figure 1, we find that self-translate works better than solving the task directly in the original language. This demonstrates that multilingual language models are unable to leverage their full potential when prompted in non-English languages.
 
 ![Main Results](images/main_results.png)
 
