@@ -1,12 +1,13 @@
-# Do Multilingual Language Models Think Better in English?
+# [Do Multilingual Language Models Think Better in English?](https://arxiv.org/abs/2308.01223)
+
+**Julen Etxaniz, Gorka Azkune, Aitor Soroa, Oier Lopez de Lacalle, Mikel Artetxe**
 
 Multilingual LMs show impressive capabilities on many tasks, but the performance for non-English languages is much lower. Translate-test is a successful technique that improves results, but it is not clear whether the improvements come from external data or whether the models inherently prefer English to solve the tasks. In this work, we introduce a self-translate method that uses the multilingual model itself to translate into English before solving the task. We perform evaluations on 5 common multilingual tasks that involve some kind of reasoning, and test our method on many models of different architectures and sizes. We show that our method consistently improves performance, and that the gap is bigger for models with higher capabilities. Our results suggest that language processing and task solving are coupled to some extent in multilingual language models.
 
 ## Methods
 
 As shown in Figure 2, we compare two methods for each model: **direct** inference, where we feed the original (non-English) input to the model, and **self-translate**, where we first translate the input into English using the model itself, and then feed this translated input to the same model to solve the task. For analysis, we additionally
-compare self-translate to using an external state-of-
-the-art **MT** system.
+compare self-translate to using an external state-of-the-art **MT** system.
 
 ![Methods](images/methods_v2.png)
 
@@ -133,3 +134,16 @@ Table 1 reports our main results, and Figure 1 visualizes the average accuracy o
 ![XGLM Average](images/xglm_avg.png)
 
 ![XGLM Low/High](images/xglm_low_high.png)
+
+## Citation
+
+```bibtex	
+@misc{etxaniz2023multilingual,
+      title={Do Multilingual Language Models Think Better in English?}, 
+      author={Julen Etxaniz and Gorka Azkune and Aitor Soroa and Oier Lopez de Lacalle and Mikel Artetxe},
+      year={2023},
+      eprint={2308.01223},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
